@@ -8,6 +8,47 @@ import json
 TOKEN = os.environ.get("GIT_TOKEN")
 git = Github(TOKEN)
 
+def create_md_table(project):
+    """
+    Uses 'project' parameter to generate markdown table.
+    :param project: 
+    :return: 
+    """
+    
+    current_dir = os.path.dirname(os.path.realpath(__file__))
+    json_data = open('./changelog.json').read()
+    data = json.loads(json_data)
+    base_table = "| Commit Number | Commiter | Commit Message | Date | \n" + \
+                 "|:---:|:----:|:----------------------------------:|:----:| \n"
+    tables = {}
+    md_title = ['{} markdown table'.format(project)]
+    for repo in md_title:
+        tables[repo] = base_table
+
+    for key in data:
+        commit_number = key
+        commiter = data[key]["author_info"]["name"]
+        date = data[key]["author_info"]["date"]
+        message = data[key]["commit_message"]
+
+        row = "|" + commit_number + \
+              "|" + commiter + \
+              "|" + message + \
+              "|" + date + '\n'
+
+        for repo in tables.keys():
+            tables[repo] = tables[repo] + row
+
+    md_file_name = "{}.md".format(project)
+    md_file = open(current_dir + "/repositories/" + md_file_name, 'w')
+
+    for key, value in tables.items():
+        if value != base_table:
+            md_file.write("## " + key.upper() + "\n\n")
+            md_file.write(value + "\n\n")
+
+    md_file.close()
+
 
 def create_git_link(project):
     """
@@ -68,24 +109,6 @@ def filter_commit_data(commit):
     return repo_dict
 
 
-# Get Name of Repositories of user.
-# Then print only first 2 results.
-# for repo in git.get_user().get_repos()[:2]:
-#     print(repo.name)
-
-# Get Commits in a Repository and print the author.
-# Print last 5 committer names.
-# for commit in git.get_user().get_repo("taskcluster-worker-checker").get_commits()[:5]:
-#     print(commit.author.login)
-#
-# # Get Commits only made in the last 3 days!
-# last_3days = datetime.now() - timedelta(days=3)
-# repo = git.get_user().get_repo("taskcluster-worker-checker").get_commits(since=last_3days)
-# for data in repo:
-#     print(data.commit.author.name)
-#     print(data.commit.message)
-
-
 if __name__ == "__main__":
     user = git.get_user()  # Get Name of user.
     print(user.name + " is asking: ")
@@ -93,3 +116,4 @@ if __name__ == "__main__":
     commit_data = get_commits(create_git_link(str(project)))
     useful_data = filter_commit_data(commit_data)
     write_commits(useful_data, "changelog.json")
+    create_md_table(project)
