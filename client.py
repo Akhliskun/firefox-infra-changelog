@@ -11,12 +11,14 @@ git = Github(TOKEN)
 
 def hg_timestamps_handler(timestamp, timezone):
     """
-    This function handles the mercurial timestamps so that all of the modifications to be traceable in time, in concordance to one
+    This function handles the mercurial timestamps so that all of the modifications to be traceable in time, in
+    concordance to one
     another and returns the date-time format.
+    Part of Mercurial Wrapper
     Example :
         print(handle_timestamps("1499225169.0", "-43200"))
     Output:
-        2017-07-05 15:26:09
+        07-05-2017 15:26:09
     :param timestamp: Timestamp in unix systems (an unique time represented in how many seconds past a certain event)
     :param timezone: Timezone of the timestamp
     :return: Returns "YYYY-MM-DD HH:MM:SS"
@@ -25,7 +27,30 @@ def hg_timestamps_handler(timestamp, timezone):
         ts = int(timestamp[:-2]) - int(timezone)
     else:
         ts = int(timestamp[:-2]) + int(timezone)
-    return datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M:%S")
+    return datetime.utcfromtimestamp(ts).strftime("%m-%d-%Y %H:%M:%S")
+
+
+def get_hg_changes(repository_name, push_type):
+    """
+    This function takes a repository and push type and returns a json object that contains changes in that specific
+    repository.
+    The HG API also supports xml and rss.
+
+    Example:
+    example = get_push("https://hg.mozilla.org/build/nagios-tools/", "json-log")
+    This will be later used to get the commits from https://hg.mozilla.org/
+
+    :param repository_name: link of the repository, eg: https://hg.mozilla.org/build/nagios-tools/
+    :param push_type: would probably be "json-log" most of the time.
+    :return:
+    """
+    if push_type == "json-log":
+        request_url = repository_name + push_type
+        push_response = requests.get(request_url)
+        hg_changes_result = push_response.json()
+    else:
+        print("Feature not implemented. Please use \"json-log\".")
+    return hg_changes_result
 
 
 def create_git_link(project):
@@ -69,7 +94,7 @@ def write_commits(commit_content, file_name):
 def filter_commit_data(commit):
     """
     Filters out only the data that we need from a commit
-    :param commit_data:
+    :param commit:
     :return: filtered json data
     """
     repo_dict = {}
