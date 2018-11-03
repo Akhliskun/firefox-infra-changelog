@@ -70,20 +70,20 @@ def filter_commit_data(commit):
 
 # Get Name of Repositories of user.
 # Then print only first 2 results.
-# for repo in git.get_user().get_repos()[:2]:
-#     print(repo.name)
+ for repo in git.get_user().get_repos()[:2]:
+     print(repo.name)
 
 # Get Commits in a Repository and print the author.
 # Print last 5 committer names.
-# for commit in git.get_user().get_repo("taskcluster-worker-checker").get_commits()[:5]:
-#     print(commit.author.login)
-#
-# # Get Commits only made in the last 3 days!
-# last_3days = datetime.now() - timedelta(days=3)
-# repo = git.get_user().get_repo("taskcluster-worker-checker").get_commits(since=last_3days)
-# for data in repo:
-#     print(data.commit.author.name)
-#     print(data.commit.message)
+ for commit in git.get_user().get_repo("taskcluster-worker-checker").get_commits()[:5]:
+     print(commit.author.login)
+
+ # Get Commits only made in the last 3 days!
+ last_3days = datetime.now() - timedelta(days=3)
+ repo = git.get_user().get_repo("taskcluster-worker-checker").get_commits(since=last_3days)
+ for data in repo:
+     print(data.commit.author.name)
+     print(data.commit.message)
 
 
 if __name__ == "__main__":
