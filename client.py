@@ -9,6 +9,25 @@ TOKEN = os.environ.get("GIT_TOKEN")
 git = Github(TOKEN)
 
 
+def hg_timestamps_handler(timestamp, timezone):
+    """
+    This function handles the mercurial timestamps so that all of the modifications to be traceable in time, in concordance to one
+    another and returns the date-time format.
+    Example :
+        print(handle_timestamps("1499225169.0", "-43200"))
+    Output:
+        2017-07-05 15:26:09
+    :param timestamp: Timestamp in unix systems (an unique time represented in how many seconds past a certain event)
+    :param timezone: Timezone of the timestamp
+    :return: Returns "YYYY-MM-DD HH:MM:SS"
+    """
+    if "-" in timezone:
+        ts = int(timestamp[:-2]) - int(timezone)
+    else:
+        ts = int(timestamp[:-2]) + int(timezone)
+    return datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M:%S")
+
+
 def create_git_link(project):
     """
     Expects the name of a project as a parameter and creates the api link for the json.
