@@ -99,10 +99,12 @@ def filter_commit_data(commit):
     for item in commit:
         each_commit = {}
         author_info = {}
+        commit_message = item['commit']['message']
+        message = re.sub('[*\n\r]', ' ', commit_message)
         author_info.update({'sha': item['sha'],
                             'url': item['url'],
                             'author_info': item['commit']['author'],
-                            'commit_message': item['commit']['message']})
+                            'commit_message': message})
         each_commit.update({number: author_info})
         number += 1
         repo_dict.update(each_commit)
