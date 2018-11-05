@@ -1,7 +1,158 @@
 {
-  "node": "e44c2edea27ed2af96ed796b31db5bc23f195ced",
-  "changeset_count": 6683,
+  "node": "1c2dfc347631f4d543815a9b83139142cafca00b",
+  "changeset_count": 6690,
   "changesets": [
+    {
+      "node": "1c2dfc347631f4d543815a9b83139142cafca00b",
+      "date": [
+        1541444706.0,
+        0
+      ],
+      "desc": "hgserver: fix `test-clonebundles.t` test output in 4.8+ (Bug 1501686) r=gps\n\nSeveral of the function line numbers in the clonebundles test\nhave been updated under Mercurial 4.8, as well as a new layer\non the call stack. This commit makes the line numbers generic\nusing regular expressions and adds a conditional check for\nthe extra function call under 4.8+.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10939",
+      "branch": "default",
+      "bookmarks": [
+        "@"
+      ],
+      "tags": [
+        "tip"
+      ],
+      "user": "Connor Sheehan <sheehan@mozilla.com>",
+      "phase": "public",
+      "parents": [
+        "6b67bef46badcbb90eab545e35f9134dfd24aea0"
+      ],
+      "pushid": 3311,
+      "pushdate": [
+        1541444718,
+        0
+      ]
+    },
+    {
+      "node": "6b67bef46badcbb90eab545e35f9134dfd24aea0",
+      "date": [
+        1541444686.0,
+        0
+      ],
+      "desc": "serverlog: use `req.apppath` instead of deprecated `env['REPO_NAME']` (Bug 1501686) r=gps\n\n`env.get('REPO_NAME')` now resolves to the full local\nrepo path under Mercurial 4.8 (ie `mozilla-central` is\nnow `/repo_local/mozilla/mozilla/mozilla-central`.\nRecent versions of Mercurial now support `req.apppath`\nwhich returns values similar to the old behaviour,\nso we switch to that value and updates tests accordingly.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10938",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Connor Sheehan <sheehan@mozilla.com>",
+      "phase": "public",
+      "parents": [
+        "d36fea6ba0b5ae373c75e562bc71ae7437d6930a"
+      ],
+      "pushid": 3311,
+      "pushdate": [
+        1541444718,
+        0
+      ]
+    },
+    {
+      "node": "d36fea6ba0b5ae373c75e562bc71ae7437d6930a",
+      "date": [
+        1541444593.0,
+        0
+      ],
+      "desc": "pushlog: fix test output difference between 4.8rc0 and 4.8 (Bug 1501686) r=gps\n\nAs with the previous commit, error output is now in a JSON\nobject format instead of a raw string.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10937",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Connor Sheehan <sheehan@mozilla.com>",
+      "phase": "public",
+      "parents": [
+        "2ee5f7e7ca11c3cb0e1ac67777a8d952ebc7f3e9"
+      ],
+      "pushid": 3311,
+      "pushdate": [
+        1541444718,
+        0
+      ]
+    },
+    {
+      "node": "2ee5f7e7ca11c3cb0e1ac67777a8d952ebc7f3e9",
+      "date": [
+        1541444580.0,
+        0
+      ],
+      "desc": "hgmo: fix breakages between candidate and official 4.8 release (Bug 1501686) r=gps\n\nIt seems there were a few breakages between 4.8rc0 and 4.8,\nmainly with regard to using the \"error\" template. The\ntemplate now takes an string as the `error` kwarg, instead\nof a dict with a redundant `error` key in previous releases.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10936",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Connor Sheehan <sheehan@mozilla.com>",
+      "phase": "public",
+      "parents": [
+        "0b7651251a49dab87836055182187b4a2317ab4d"
+      ],
+      "pushid": 3311,
+      "pushdate": [
+        1541444718,
+        0
+      ]
+    },
+    {
+      "node": "0b7651251a49dab87836055182187b4a2317ab4d",
+      "date": [
+        1541441476.0,
+        0
+      ],
+      "desc": "firefoxtree: enable compatibility with Mercurial 4.8 (Bug 1501686) r=gps\n\nIn versions above 4.8, the old-style template keyword\ndefinitions will be deprecated. This commit forces\nthe `fxheads` template keyword to be dynamically\ndefined with the new API in versions above 4.6, and\nwith the old API for versions below 4.6. Doing so\nfixes a deprecation warning in tests on version\n4.8 and makes us compatible with modern hg.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10917",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Connor Sheehan <sheehan@mozilla.com>",
+      "phase": "public",
+      "parents": [
+        "fb334ef4adbbe3cc7fa1c4d0fae3bc29c55fbd8c"
+      ],
+      "pushid": 3310,
+      "pushdate": [
+        1541441486,
+        0
+      ]
+    },
+    {
+      "node": "fb334ef4adbbe3cc7fa1c4d0fae3bc29c55fbd8c",
+      "date": [
+        1541441409.0,
+        0
+      ],
+      "desc": "firefoxtree: remove 4.3 compatibility code r=gps\n\nNow that 4.8 is out, we support versions 4.4+.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10916",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Connor Sheehan <sheehan@mozilla.com>",
+      "phase": "public",
+      "parents": [
+        "00ccbed63e76757e89cfdbd03af39ae2fa0e6cc9"
+      ],
+      "pushid": 3310,
+      "pushdate": [
+        1541441486,
+        0
+      ]
+    },
+    {
+      "node": "00ccbed63e76757e89cfdbd03af39ae2fa0e6cc9",
+      "date": [
+        1541441339.0,
+        0
+      ],
+      "desc": "vcsreplicator: update test output and mark as 4.8 compatible (Bug 1501686) r=gps\n\nvcsreplicator has some changed output in tests under\nMercurial 4.8, with no other changes required for\npassing tests. Marking as 4.8 compatible.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10408",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Connor Sheehan <sheehan@mozilla.com>",
+      "phase": "public",
+      "parents": [
+        "e44c2edea27ed2af96ed796b31db5bc23f195ced"
+      ],
+      "pushid": 3309,
+      "pushdate": [
+        1541441372,
+        0
+      ]
+    },
     {
       "node": "e44c2edea27ed2af96ed796b31db5bc23f195ced",
       "date": [
@@ -10,12 +161,8 @@
       ],
       "desc": "testing: install Mercurial 4.8 final\n\nIt was released a few hours ago.",
       "branch": "default",
-      "bookmarks": [
-        "@"
-      ],
-      "tags": [
-        "tip"
-      ],
+      "bookmarks": [],
+      "tags": [],
       "user": "Gregory Szorc <gps@mozilla.com>",
       "phase": "public",
       "parents": [
@@ -276,153 +423,6 @@
       "pushid": 3306,
       "pushdate": [
         1541173483,
-        0
-      ]
-    },
-    {
-      "node": "d5e3b21d269a90d3082afa5bf2dfa6bc5f29e6fa",
-      "date": [
-        1541170890.0,
-        0
-      ],
-      "desc": "github-webhooks: manage lambda-requirements.txt with pip-compile; r=sheehan\n\nThe march continues.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10639",
-      "branch": "default",
-      "bookmarks": [],
-      "tags": [],
-      "user": "Gregory Szorc <gps@mozilla.com>",
-      "phase": "public",
-      "parents": [
-        "7a57b87620e2dff7b5ce45ada0a9e4fa9e6e0c64"
-      ],
-      "pushid": 3306,
-      "pushdate": [
-        1541173483,
-        0
-      ]
-    },
-    {
-      "node": "7a57b87620e2dff7b5ce45ada0a9e4fa9e6e0c64",
-      "date": [
-        1541116870.0,
-        0
-      ],
-      "desc": "env: copy --find-links to generated requirements.txt files; r=sheehan\n\npip-compile dropped these lines.\n\nLet's teach upgrade-python-packages to preserve them.\n\nThis should unbreak the building of the hgweb image due to missing\nbloxtool package.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10636",
-      "branch": "default",
-      "bookmarks": [],
-      "tags": [],
-      "user": "Gregory Szorc <gps@mozilla.com>",
-      "phase": "public",
-      "parents": [
-        "44e4d6d60a67c2d87e988e342104c43de71be662"
-      ],
-      "pushid": 3306,
-      "pushdate": [
-        1541173483,
-        0
-      ]
-    },
-    {
-      "node": "44e4d6d60a67c2d87e988e342104c43de71be662",
-      "date": [
-        1541116367.0,
-        0
-      ],
-      "desc": "env: define CUSTOM_COMPILE_COMMAND; r=sheehan\n\nThis will annotate the requirements.txt with the proper script to use.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10635",
-      "branch": "default",
-      "bookmarks": [],
-      "tags": [],
-      "user": "Gregory Szorc <gps@mozilla.com>",
-      "phase": "public",
-      "parents": [
-        "20d34355be82519c8602361bbab3dd12cb73a460"
-      ],
-      "pushid": 3306,
-      "pushdate": [
-        1541173483,
-        0
-      ]
-    },
-    {
-      "node": "20d34355be82519c8602361bbab3dd12cb73a460",
-      "date": [
-        1541116183.0,
-        0
-      ],
-      "desc": "testing: re-attach to container after timeout; r=sheehan\n\nNew behavior after the docker-py or requests upgrade has resulted in\nattach() returning prematurely after 60s of no output. This behavior\nis a bit wonky and I filed\nhttps://github.com/docker/docker-py/issues/2166 to track it.\n\nThis commit works around the new behavior.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10634",
-      "branch": "default",
-      "bookmarks": [],
-      "tags": [],
-      "user": "Gregory Szorc <gps@mozilla.com>",
-      "phase": "public",
-      "parents": [
-        "e4b99b6399701f7dfab7e899a702772e40a19716"
-      ],
-      "pushid": 3306,
-      "pushdate": [
-        1541173483,
-        0
-      ]
-    },
-    {
-      "node": "e4b99b6399701f7dfab7e899a702772e40a19716",
-      "date": [
-        1541110008.0,
-        25200
-      ],
-      "desc": "testing: refresh base CentOS 7 Docker image\n\nApparently I did this on November 1 last year too. Must be something\nabout November 1 making me want to update the v-c-t environment.\n\nThis change results in the elimination of ~159 package updates when\nrunning `yum update`, making fresh image builds substantially faster.",
-      "branch": "default",
-      "bookmarks": [],
-      "tags": [],
-      "user": "Gregory Szorc <gps@mozilla.com>",
-      "phase": "public",
-      "parents": [
-        "fc79f0995d919fb9c06849b141197419fbc10274"
-      ],
-      "pushid": 3305,
-      "pushdate": [
-        1541110447,
-        0
-      ]
-    },
-    {
-      "node": "fc79f0995d919fb9c06849b141197419fbc10274",
-      "date": [
-        1541107894.0,
-        0
-      ],
-      "desc": "env: upgrade to latest ansible 1.9 release; r=sheehan\n\nWe should always use the latest available version to pull in\nbug fixes, etc.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10618",
-      "branch": "default",
-      "bookmarks": [],
-      "tags": [],
-      "user": "Gregory Szorc <gps@mozilla.com>",
-      "phase": "public",
-      "parents": [
-        "a6fb12f21d7c9b42547fd8f2f5a2dbc722d17d91"
-      ],
-      "pushid": 3304,
-      "pushdate": [
-        1541108173,
-        0
-      ]
-    },
-    {
-      "node": "a6fb12f21d7c9b42547fd8f2f5a2dbc722d17d91",
-      "date": [
-        1541107880.0,
-        0
-      ],
-      "desc": "env: reference requirements-ansible-1.9.in in deploy-requirements.in; r=sheehan\n\nThe side effect is we now use a consistent Ansible version for\ndeploys and in Docker images. And that consistent version is newer\nthan what we were using for deploys. I'm not sure why we didn't\nhave the deploy version upgraded. Probably an oversight.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D10617",
-      "branch": "default",
-      "bookmarks": [],
-      "tags": [],
-      "user": "Gregory Szorc <gps@mozilla.com>",
-      "phase": "public",
-      "parents": [
-        "1a5daa6f0342b7b04960f48d341aa2cd9801740d"
-      ],
-      "pushid": 3304,
-      "pushdate": [
-        1541108173,
         0
       ]
     }
