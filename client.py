@@ -3,10 +3,53 @@ from github import Github  # pip3 install PyGitHub
 from datetime import datetime, timedelta
 import requests
 import json
+import re
 
 # Create a Github instance:
 TOKEN = os.environ.get("GIT_TOKEN")
 git = Github(TOKEN)
+
+
+def create_md_table(project):
+    """
+    Uses 'project' parameter to generate markdown table.
+    :param project:
+    :return:
+    """
+
+    current_dir = os.path.dirname(os.path.realpath(__file__))
+    json_data = open('./changelog.json').read()
+    data = json.loads(json_data)
+    base_table = "| Commit Number | Commiter | Commit Message | Date | \n" + \
+                 "|:---:|:----:|:----------------------------------:|:----:| \n"
+    tables = {}
+    md_title = ['{} markdown table'.format(project)]
+    for repo in md_title:
+        tables[repo] = base_table
+
+    for key in data:
+        commit_number = key
+        commiter = data[key]["author_info"]["name"]
+        date = data[key]["author_info"]["date"]
+        message = data[key]["commit_message"]
+
+        row = "|" + commit_number + \
+              "|" + commiter + \
+              "|" + message + \
+              "|" + date + '\n'
+
+        for repo in tables.keys():
+            tables[repo] = tables[repo] + row
+
+    md_file_name = "{}.md".format(project)
+    md_file = open(current_dir + "/repositories/" + md_file_name, 'w')
+
+    for key, value in tables.items():
+        if value != base_table:
+            md_file.write("## " + key.upper() + "\n\n")
+            md_file.write(value + "\n\n")
+
+    md_file.close()
 
 
 def hg_timestamps_handler(timestamp, timezone):
@@ -53,7 +96,7 @@ def get_hg_changes(repository_name, push_type):
     return hg_changes_result
 
 
-def create_git_link(project):
+def create_git_link(team, project):
     """
     Expects the name of a project as a parameter and creates the api link for the json.
     We know 'services' is the only project in the mozilla repo while the rest are in mozilla-releng
@@ -62,10 +105,7 @@ def create_git_link(project):
     """
     beginning_url = "https://api.github.com/repos/"
     end_url = "/commits"
-    if project == "release-services":
-        git_url = beginning_url + "mozilla/" + project + end_url
-    else:
-        git_url = beginning_url + "mozilla-releng/" + project + end_url
+    git_url = beginning_url + team + project + end_url
     return git_url
 
 
@@ -95,45 +135,51 @@ def filter_commit_data(commit):
     """
     Filters out only the data that we need from a commit
     :param commit:
+    Substitute the special characters from commit message using 'sub' function from 're' library
+    :param commit:
     :return: filtered json data
     """
     repo_dict = {}
-    number = 1
+    number = 0
     for item in commit:
         each_commit = {}
         author_info = {}
+        commit_message = item['commit']['message']
+        message = re.sub('[*\n\r]', ' ', commit_message)
         author_info.update({'sha': item['sha'],
                             'url': item['url'],
                             'author_info': item['commit']['author'],
-                            'commit_message': item['commit']['message']})
+                            'commit_message': message})
         each_commit.update({number: author_info})
         number += 1
         repo_dict.update(each_commit)
     return repo_dict
 
 
-# Get Name of Repositories of user.
-# Then print only first 2 results.
-# for repo in git.get_user().get_repos()[:2]:
-#     print(repo.name)
-
-# Get Commits in a Repository and print the author.
-# Print last 5 committer names.
-# for commit in git.get_user().get_repo("taskcluster-worker-checker").get_commits()[:5]:
-#     print(commit.author.login)
-#
-# # Get Commits only made in the last 3 days!
-# last_3days = datetime.now() - timedelta(days=3)
-# repo = git.get_user().get_repo("taskcluster-worker-checker").get_commits(since=last_3days)
-# for data in repo:
-#     print(data.commit.author.name)
-#     print(data.commit.message)
-
-
 if __name__ == "__main__":
-    user = git.get_user()  # Get Name of user.
-    print(user.name + " is asking: ")
-    project = input("What to search? : ")
-    commit_data = get_commits(create_git_link(str(project)))
-    useful_data = filter_commit_data(commit_data)
-    write_commits(useful_data, "changelog.json")
+    repositories_data = open('./repositories.json').read()
+    repositories = json.loads(repositories_data)
+
+    # Github
+    """
+    Goes through every repo under github and creates a separate MD file for each one
+    """
+    for repo in repositories["Github"]:
+        repository_name = repositories["Github"][repo]["name"]
+        repository_team = repositories["Github"][repo]["team"]
+        git_link = create_git_link(repository_team, repository_name)
+        commit_data = get_commits(git_link)
+        useful_data = filter_commit_data(commit_data)
+        write_commits(useful_data, "changelog.json")
+        create_md_table(repository_name)
+    # Mercurial
+    """
+    Goes through every repo under mercurial and creates a separate MD file for each one
+    """
+    for repo in repositories["Mercurial"]:
+        repository_url = repositories["Mercurial"][repo]["url"]
+        repository_push_type = repositories["Mercurial"][repo]["configuration"]["push_type"]
+        repository_name = repositories["Mercurial"][repo]["name"]
+        hg_changes = get_hg_changes(repository_url, repository_push_type)
+        hg_json_name = "./repositories/" + "{}.json".format(repository_name)
+        write_commits(hg_changes, hg_json_name)
