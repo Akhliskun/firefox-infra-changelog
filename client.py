@@ -48,7 +48,7 @@ def create_md_table(project):
 
     for key, value in tables.items():
         if value != base_table:
-            md_file.write('##' + key.upper() + '\n\n')
+            md_file.write('## ' + key.upper() + '\n\n')
             md_file.write(value + '\n\n')
 
     md_file.close()
