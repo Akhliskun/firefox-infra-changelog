@@ -52,6 +52,110 @@
         "push_type": "json-log"
       }
     },
+    "mozilla-central": {
+      "name": "Mozilla Central",
+      "url": "https://hg.mozilla.org/mozilla-central/",
+      "team": "",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "try": {
+      "name": "Mozilla Try",
+      "url": "https://hg.mozilla.org/try/",
+      "team": "",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "autoland": {
+      "name": "Mozilla Autoland",
+      "url": "https://hg.mozilla.org/integration/autoland/",
+      "team": "",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "inbound": {
+      "name": "Mozilla Inbound",
+      "url": "https://hg.mozilla.org/integration/mozilla-inbound/",
+      "team": "",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "comm-esr60": {
+      "name": "comm ESR60",
+      "url": "https://hg.mozilla.org/releases/comm-esr60/",
+      "team": "",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "beta": {
+      "name": "Mozilla Beta",
+      "url": "https://hg.mozilla.org/releases/mozilla-beta/",
+      "team": "",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "mozilla-esr60": {
+      "name": "Mozilla ESR60",
+      "url": "https://hg.mozilla.org/releases/mozilla-esr60/",
+      "team": "",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "mozilla-release": {
+      "name": "Mozilla Release",
+      "url": "https://hg.mozilla.org/releases/mozilla-release/",
+      "team": "",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
     "braindump": {
       "name": "BrainDump",
       "url": "https://hg.mozilla.org/build/braindump/",
