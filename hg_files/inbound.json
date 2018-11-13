@@ -1,48 +1,155 @@
 {
-  "node": "8105dec7146e2fdba5c88ba65721c2ff51574fef",
-  "changeset_count": 445947,
+  "node": "2599b449d317ad862d059fdc5fe0d97e9caa15b2",
+  "changeset_count": 445989,
   "changesets": [
     {
-      "node": "8105dec7146e2fdba5c88ba65721c2ff51574fef",
+      "node": "2599b449d317ad862d059fdc5fe0d97e9caa15b2",
       "date": [
-        1542078951.0,
-        0
+        1541621565.0,
+        -3600
       ],
-      "desc": "Bug 1506492 - Report WebRender swap-chain memory usage. r=bholley\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11594",
+      "desc": "Bug 1505181 - Use canonical function in TypeNewScript::rollbackPartiallyInitializedObjects. r=bhackett\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11224",
       "branch": "default",
       "bookmarks": [],
       "tags": [
         "tip"
       ],
-      "user": "Matt Woodrow <mwoodrow@mozilla.com>",
-      "phase": "draft",
+      "user": "Jan de Mooij <jdemooij@mozilla.com>",
+      "phase": "public",
       "parents": [
-        "c007a3321fe075a21c64b56d82f2cd2346039bcf"
+        "ae382e944ea805fb71443ed02fb399044836809a"
       ],
-      "pushid": 72840,
+      "pushid": 109810,
       "pushdate": [
-        1542080053,
+        1542110237,
         0
       ]
     },
     {
-      "node": "c007a3321fe075a21c64b56d82f2cd2346039bcf",
+      "node": "ae382e944ea805fb71443ed02fb399044836809a",
       "date": [
-        1542075821.0,
-        0
+        1542024233.0,
+        -3600
       ],
-      "desc": "Bug 1506676. blob-inval: handle the parent item being removed. r=mattwoodrow\n\nIf the parent item is removed our assertions will be wrong because\nthe parent item's bounds will not be added to the invalid rect until\nafter we've traversed all of the items. Further, the new unbounded rect\nfor the child item won't be added to the invalid rect unless we do it\nourselves. This makes sure we add the old and new rects to the invalid\nrect.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11724",
+      "desc": "Bug 1506554 part 4 - Remove an unnecessary ensureHasTypes call in DebugEnvironmentProxyHandler::handleUnaliasedAccess. r=bhackett\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11627",
       "branch": "default",
       "bookmarks": [],
       "tags": [],
-      "user": "Jeff Muizelaar <jrmuizel@gmail.com>",
-      "phase": "draft",
+      "user": "Jan de Mooij <jdemooij@mozilla.com>",
+      "phase": "public",
       "parents": [
-        "d056f0ff51c05e69ab26e690a42238b53a52d1a8"
+        "4d7d3b7b0b12fb88be5970b248cd23ba244a6c1e"
       ],
-      "pushid": 72839,
+      "pushid": 109809,
       "pushdate": [
-        1542076154,
+        1542105183,
+        0
+      ]
+    },
+    {
+      "node": "4d7d3b7b0b12fb88be5970b248cd23ba244a6c1e",
+      "date": [
+        1542021402.0,
+        -3600
+      ],
+      "desc": "Bug 1506554 part 1 - Sweep JitZone/JitRealm *after* discarding JIT code. r=jonco\n\nThis is not a problem yet because of how GC/TypeScript/BaselineScript interact,\nbut this caused crashes on Try with the patch for bug 1499644.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11616",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Jan de Mooij <jdemooij@mozilla.com>",
+      "phase": "public",
+      "parents": [
+        "2e5960963eb8c07e374247fab9f1c87e30f32339"
+      ],
+      "pushid": 109809,
+      "pushdate": [
+        1542105183,
+        0
+      ]
+    },
+    {
+      "node": "2e5960963eb8c07e374247fab9f1c87e30f32339",
+      "date": [
+        1542099074.0,
+        -3600
+      ],
+      "desc": "Bug 1505212 - Test for Partitioned localStorage, r=asuth",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Andrea Marchesini <amarchesini@mozilla.com>",
+      "phase": "public",
+      "parents": [
+        "2ea203032bf75206c8c9b2ce8b6463b43d2da5c2"
+      ],
+      "pushid": 109808,
+      "pushdate": [
+        1542099116,
+        0
+      ]
+    },
+    {
+      "node": "2ea203032bf75206c8c9b2ce8b6463b43d2da5c2",
+      "date": [
+        1542099074.0,
+        -3600
+      ],
+      "desc": "Bug 1505212 - Partitioned localStorage for 3rd party tracker pages, r=ehsan, r=asuth\n\nLocalStorage needs to be exposed in every context except for sandboxes and\nNullPrincipals (data: URLs, for instance). But we need to keep data\nseparate in some scenarios: private-browsing and trackers.\nIn private-browsing, LocalStorage keeps data in memory, and it shares\nStorageEvents just with other origins in the same private-browsing\nenvironment.\nFor Trackers, we expose a partitioned LocalStorage, which doesn't share\ndata with other contexts, and it's just in memory. Partitioned localStorage\nis available only for trackers listed in the\nprivacy.restrict3rdpartystorage.partitionedHosts pref. See\nnsContentUtils::IsURIInPrefList to know the syntax for the pref value.",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Andrea Marchesini <amarchesini@mozilla.com>",
+      "phase": "public",
+      "parents": [
+        "c3fe7a80a8e84e859b76a16bb49395911fef5f17"
+      ],
+      "pushid": 109808,
+      "pushdate": [
+        1542099116,
+        0
+      ]
+    },
+    {
+      "node": "c3fe7a80a8e84e859b76a16bb49395911fef5f17",
+      "date": [
+        1542083626.0,
+        -7200
+      ],
+      "desc": "Merge mozilla-central to mozilla-inbound. a=merge",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Cosmin Sabou <csabou@mozilla.com>",
+      "phase": "public",
+      "parents": [
+        "c7705516c1e3c820660296a965b267e7fc4d575f",
+        "f6df375b86987b2772067a61873ebfe3a98c353a"
+      ],
+      "pushid": 109807,
+      "pushdate": [
+        1542083656,
+        0
+      ]
+    },
+    {
+      "node": "f6df375b86987b2772067a61873ebfe3a98c353a",
+      "date": [
+        1542082981.0,
+        -7200
+      ],
+      "desc": "Merge mozilla-inbound to mozilla-central. a=merge",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Cosmin Sabou <csabou@mozilla.com>",
+      "phase": "public",
+      "parents": [
+        "d056f0ff51c05e69ab26e690a42238b53a52d1a8",
+        "17243a560006c6db1f9e4cc0fea57a8ae29b1dbc"
+      ],
+      "pushid": 109807,
+      "pushdate": [
+        1542083656,
         0
       ]
     },
@@ -57,13 +164,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "WR Updater Bot <graphics-team@mozilla.staktrace.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "36e5bf9afd5087412f58db25698f9fdb68bfa6c8"
       ],
-      "pushid": 72838,
+      "pushid": 109807,
       "pushdate": [
-        1542068861,
+        1542083656,
         0
       ]
     },
@@ -78,13 +185,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "Boris Chiou <boris.chiou@gmail.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "3bd1f4cc8f9e0e6276faa1e21cb20b6d870e04dc"
       ],
-      "pushid": 72837,
+      "pushid": 109807,
       "pushdate": [
-        1542064702,
+        1542083656,
         0
       ]
     },
@@ -99,13 +206,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "Boris Chiou <boris.chiou@gmail.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "f94bba680dc272425f9e5045bb1a13ae24e62e15"
       ],
-      "pushid": 72837,
+      "pushid": 109807,
       "pushdate": [
-        1542064702,
+        1542083656,
         0
       ]
     },
@@ -120,13 +227,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "Boris Chiou <boris.chiou@gmail.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "40399d94b5dad6b35379e5e6099b2f8bb2819026"
       ],
-      "pushid": 72837,
+      "pushid": 109807,
       "pushdate": [
-        1542064702,
+        1542083656,
         0
       ]
     },
@@ -141,13 +248,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "Philip Chimento <philip.chimento@gmail.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "673121bbb18d4a8737007dd4db2f21a055a02e1b"
       ],
-      "pushid": 72836,
+      "pushid": 109807,
       "pushdate": [
-        1542064006,
+        1542083656,
         0
       ]
     },
@@ -162,13 +269,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "Miko Mynttinen <mikokm@gmail.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "de143a4bdcc0aede056851d10477a50dd81c7946"
       ],
-      "pushid": 72835,
+      "pushid": 109807,
       "pushdate": [
-        1542062296,
+        1542083656,
         0
       ]
     },
@@ -183,13 +290,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "Miko Mynttinen <mikokm@gmail.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "61bf7dbab25ec5e64b8258818a8087ad4abf7f5e"
       ],
-      "pushid": 72835,
+      "pushid": 109807,
       "pushdate": [
-        1542062296,
+        1542083656,
         0
       ]
     },
@@ -204,13 +311,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "Miko Mynttinen <mikokm@gmail.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "f50639806f7fb5692e9c7e2ca7c0b59c1c92da7b"
       ],
-      "pushid": 72835,
+      "pushid": 109807,
       "pushdate": [
-        1542062296,
+        1542083656,
         0
       ]
     },
@@ -225,13 +332,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "Miko Mynttinen <mikokm@gmail.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "8bb9edd7ca13ba1d4eceb5c72a182830e7209cbc"
       ],
-      "pushid": 72834,
+      "pushid": 109807,
       "pushdate": [
-        1542061314,
+        1542083656,
         0
       ]
     },
@@ -246,13 +353,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "Narcis Beleuzu <nbeleuzu@mozilla.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "7566a8c23a4a96a2698b4c5af9fd776b5457f4e8"
       ],
-      "pushid": 72833,
+      "pushid": 109807,
       "pushdate": [
-        1542058616,
+        1542083656,
         0
       ]
     },
@@ -267,13 +374,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "Byron Campen [:bwc] <docfaraday@gmail.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "6ad8b10cc0d6951618ca814d87a28ac651f1f333"
       ],
-      "pushid": 72832,
+      "pushid": 109807,
       "pushdate": [
-        1542054146,
+        1542083656,
         0
       ]
     },
@@ -288,13 +395,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "Perry Jiang <proxy@perryjiang.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "8e4063938d4ba12e1c2c888b902c159534a83202"
       ],
-      "pushid": 72831,
+      "pushid": 109807,
       "pushdate": [
-        1542053703,
+        1542083656,
         0
       ]
     },
@@ -309,118 +416,13 @@
       "bookmarks": [],
       "tags": [],
       "user": "Chris Manchester <cmanchester@mozilla.com>",
-      "phase": "draft",
+      "phase": "public",
       "parents": [
         "de5d9f1a6e4ab3345720fe0840295100d953423a"
       ],
-      "pushid": 72830,
+      "pushid": 109807,
       "pushdate": [
-        1542053493,
-        0
-      ]
-    },
-    {
-      "node": "de5d9f1a6e4ab3345720fe0840295100d953423a",
-      "date": [
-        1541861979.0,
-        0
-      ],
-      "desc": "Bug 1505859 - Allow rusttests to run when requested without --enable-rust-tests. r=firefox-build-system-reviewers,ted\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11514",
-      "branch": "default",
-      "bookmarks": [],
-      "tags": [],
-      "user": "Chris Manchester <cmanchester@mozilla.com>",
-      "phase": "draft",
-      "parents": [
-        "88fb9e85339cb0de54bae6da11cfd8ec390eec46"
-      ],
-      "pushid": 72830,
-      "pushdate": [
-        1542053493,
-        0
-      ]
-    },
-    {
-      "node": "88fb9e85339cb0de54bae6da11cfd8ec390eec46",
-      "date": [
-        1542052785.0,
-        0
-      ],
-      "desc": "Bug 1506643 - [marionette] Disable \"about:newtab\" page, and always load \"about:blank\". r=ato\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11691",
-      "branch": "default",
-      "bookmarks": [],
-      "tags": [],
-      "user": "Henrik Skupin <mail@hskupin.info>",
-      "phase": "draft",
-      "parents": [
-        "22834ab21180ef200695b0264c3027c2d5301ea9"
-      ],
-      "pushid": 72829,
-      "pushdate": [
-        1542052881,
-        0
-      ]
-    },
-    {
-      "node": "22834ab21180ef200695b0264c3027c2d5301ea9",
-      "date": [
-        1542037360.0,
-        0
-      ],
-      "desc": "Bug 1390768 - Use new SmartTrace component in webconsole; r=Honza.\n\nDepends on D11603\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11604",
-      "branch": "default",
-      "bookmarks": [],
-      "tags": [],
-      "user": "Nicolas Chevobbe <nchevobbe@mozilla.com>",
-      "phase": "draft",
-      "parents": [
-        "c22c5074ba48159f64425b73730070750d50a065"
-      ],
-      "pushid": 72828,
-      "pushdate": [
-        1542051281,
-        0
-      ]
-    },
-    {
-      "node": "c22c5074ba48159f64425b73730070750d50a065",
-      "date": [
-        1542037326.0,
-        0
-      ],
-      "desc": "Bug 1390768 - Create a new React component to render stacktraces; r=Honza.\n\nThe component is wrapping the `Frames` component from the debugger\nin order to have access to frames grouping.\nIt also handles sourcemaps, since the debugger component\ndoes not by itself.\nTests are added to ensure the component behaves as expected.\n\nDepends on D11602\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11603",
-      "branch": "default",
-      "bookmarks": [],
-      "tags": [],
-      "user": "Nicolas Chevobbe <nchevobbe@mozilla.com>",
-      "phase": "draft",
-      "parents": [
-        "677553f9d910752a3de92994745b1a54f1c0caf6"
-      ],
-      "pushid": 72828,
-      "pushdate": [
-        1542051281,
-        0
-      ]
-    },
-    {
-      "node": "677553f9d910752a3de92994745b1a54f1c0caf6",
-      "date": [
-        1542037292.0,
-        0
-      ],
-      "desc": "Bug 1390768 - Insert tab and new line chars in Frame component; r=Honza.\n\nThis will allow the \"copy message\" context menu\nentry to work as expected for console messages\nwith a stacktrace (exception, error message, console.trace, \u2026)\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11602",
-      "branch": "default",
-      "bookmarks": [],
-      "tags": [],
-      "user": "Nicolas Chevobbe <nchevobbe@mozilla.com>",
-      "phase": "draft",
-      "parents": [
-        "234f5f3db94f034242a525783c0f2776a425b0e5"
-      ],
-      "pushid": 72828,
-      "pushdate": [
-        1542051281,
+        1542083656,
         0
       ]
     }

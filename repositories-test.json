@@ -1,0 +1,16 @@
+{
+  "Github": {
+    "beetmoverscript": {
+      "name": "Beet Mover Script",
+      "url": "https://github.com/mozilla-releng/beetmoverscript",
+      "team": "mozilla-releng/",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " "
+      }
+    }
+  }
+}

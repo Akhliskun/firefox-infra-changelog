@@ -1,0 +1,428 @@
+{
+  "node": "c65f689903f6a519e603f3d5f70ecabc95ef325e",
+  "changeset_count": 446031,
+  "changesets": [
+    {
+      "node": "c65f689903f6a519e603f3d5f70ecabc95ef325e",
+      "date": [
+        1542110012.0,
+        0
+      ],
+      "desc": "Bug 1506341 - Let the autohiding menu bar match the tab bar's height. r=stransky\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11550",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [
+        "tip"
+      ],
+      "user": "D\u00e3o Gottwald <dao@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "2d349c077a2ad861a8207a5d3718743393fef2c5"
+      ],
+      "pushid": 72858,
+      "pushdate": [
+        1542110222,
+        0
+      ]
+    },
+    {
+      "node": "2d349c077a2ad861a8207a5d3718743393fef2c5",
+      "date": [
+        1542024870.0,
+        0
+      ],
+      "desc": "Bug 1504205 - Enable Ctrl+Shift+D shortcut on Linux. r=stransky\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11549",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "D\u00e3o Gottwald <dao@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "b208cb6b1aa4eeed3f8d6943e5904bd4c12bf37e"
+      ],
+      "pushid": 72857,
+      "pushdate": [
+        1542107119,
+        0
+      ]
+    },
+    {
+      "node": "b208cb6b1aa4eeed3f8d6943e5904bd4c12bf37e",
+      "date": [
+        1542106846.0,
+        0
+      ],
+      "desc": "Bug 1506580 - Remove useless pointer-chase + function call in nsPresContext::AppUnitsPerDevPixel. r=miko\n\nWe already keep a cached version of the up-to-date value in nsPresContext,\nthere's no need to go through nsDeviceContext at all.\n\nI don't expect this to fix bug 1424968 entirely, but it should make it a bit\nbetter.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11639",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Emilio Cobos \u00c1lvarez <emilio@crisal.io>",
+      "phase": "draft",
+      "parents": [
+        "34ee07ca08e9ca5418d83574be6c1f6bbf3b5a3e"
+      ],
+      "pushid": 72856,
+      "pushdate": [
+        1542106927,
+        0
+      ]
+    },
+    {
+      "node": "34ee07ca08e9ca5418d83574be6c1f6bbf3b5a3e",
+      "date": [
+        1542105540.0,
+        0
+      ],
+      "desc": "Bug 1506774 - Discard TypeScripts whenever we discard JIT code. r=jonco\n\nBug 1506479 started unifying discarding of TypeScript and JIT code. This patch\nremoves the JIT_SCRIPT_RELEASE_TYPES_PERIOD heuristic so we now use the same\npreserve-code heuristics for both.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11737",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Jan de Mooij <jdemooij@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "25413533daa2119771a046431854918b3f42d017"
+      ],
+      "pushid": 72855,
+      "pushdate": [
+        1542106785,
+        0
+      ]
+    },
+    {
+      "node": "25413533daa2119771a046431854918b3f42d017",
+      "date": [
+        1542104638.0,
+        0
+      ],
+      "desc": "Bug 1495667 - Re-enable js/xpconnect/tests/marionette/test_loader_global_sharing.py on Windows. r=jgraham\n\nPreviously disabled via bug 1433905 to allow a refactoring of Marionette, this test can be re-enabled now given that bug 1433873 also got landed.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11744",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Henrik Skupin <mail@hskupin.info>",
+      "phase": "draft",
+      "parents": [
+        "63fca07a71b8825782cbd1d0eb40eef4b45e12b4"
+      ],
+      "pushid": 72854,
+      "pushdate": [
+        1542106747,
+        0
+      ]
+    },
+    {
+      "node": "63fca07a71b8825782cbd1d0eb40eef4b45e12b4",
+      "date": [
+        1542106559.0,
+        0
+      ],
+      "desc": "Bug 1506592 - Make sure to only display the broken image icon if there's a request at all. r=bzbarsky\n\nThis is enough to fix the devtools regression and matches what other browsers\ndo in the no-attribute case.\n\nAlso, I think this change over all makes sense: it doesn't make any sense to\ndisplay the broken image icon if there's no request, and we already assume in\nEnsureIntrinsicSizeAndRatio() that we don't paint the icon for those (and make\nthe intrinsic size 0x0).\n\nWe still show the border, which matches other UAs (note that devtools\neffectively masks the border away with mask-image).\n\nThis technically also can change behavior of <object> and <input>, but I think\nit's better to be consistent, since EnsureIntrinsicSizeAndRatio also doesn't\nspecial-case <img> either.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11659",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Emilio Cobos \u00c1lvarez <emilio@crisal.io>",
+      "phase": "draft",
+      "parents": [
+        "dae86d421021b034d6a2994447157d8518bbc049"
+      ],
+      "pushid": 72853,
+      "pushdate": [
+        1542106684,
+        0
+      ]
+    },
+    {
+      "node": "dae86d421021b034d6a2994447157d8518bbc049",
+      "date": [
+        1542105567.0,
+        0
+      ],
+      "desc": "Bug 1466613 - Prevent creation of DynamicImage instances that are excessively large. r=mstange\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11528",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Kartikaya Gupta <kgupta@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "75de649833be8205dab1366634f550858049486c"
+      ],
+      "pushid": 72852,
+      "pushdate": [
+        1542105684,
+        0
+      ]
+    },
+    {
+      "node": "75de649833be8205dab1366634f550858049486c",
+      "date": [
+        1542105542.0,
+        0
+      ],
+      "desc": "Bug 1466613 - Robustify DrawTargetRecording codepaths that create new drawtargets. r=mstange\n\nBadly-behaved consumers of DrawTargetRecording can trigger recording of\ndraw calls that will fail to allocate required draw targets when the\nrecording is replayed. This patch tries to guard against this by\ndetecting these situations at record-time rather than crashing at\nreplay-time. When such a situation is detected, it will crash (for\ncontent processes, to catch such scenarios) or gracefully fail (for\nother processes).\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11527",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Kartikaya Gupta <kgupta@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "e80a0b2502e961b5baa5ede031de7b8c266294f8"
+      ],
+      "pushid": 72852,
+      "pushdate": [
+        1542105684,
+        0
+      ]
+    },
+    {
+      "node": "e80a0b2502e961b5baa5ede031de7b8c266294f8",
+      "date": [
+        1542105504.0,
+        0
+      ],
+      "desc": "Bug 1466613 - Add a gfxCriticalNote to provide more details on replay failure. r=jrmuizel\n\nDifferential Revision: https://phabricator.services.mozilla.com/D8257",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Kartikaya Gupta <kgupta@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "c84f0ad36ce92d46fcde4fdcb83dcb42af9745fe"
+      ],
+      "pushid": 72852,
+      "pushdate": [
+        1542105684,
+        0
+      ]
+    },
+    {
+      "node": "c84f0ad36ce92d46fcde4fdcb83dcb42af9745fe",
+      "date": [
+        1542104310.0,
+        0
+      ],
+      "desc": "Bug 1504929 - Start animations once after a MozReftestInvalidate event is received. r=sotaro\n\nWe need the same workaround for\nhttps://bugzilla.mozilla.org/show_bug.cgi?id=1489327 .\n\nAnd unfortunately we have to disable animate-backface-hidden.html on MacOSX opt\nbuilds for WebRender because the test fails intermittently, we will enable it\nin bug 1506758.\n\nDepends on D11601\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11726",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Hiroyuki Ikezoe <hikezoe@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "de569bb95b1c7ccb1abb0be686800a5ba3a789b2"
+      ],
+      "pushid": 72851,
+      "pushdate": [
+        1542104784,
+        0
+      ]
+    },
+    {
+      "node": "de569bb95b1c7ccb1abb0be686800a5ba3a789b2",
+      "date": [
+        1542104303.0,
+        0
+      ],
+      "desc": "Bug 1504929 - Break RestyleManager::GetAnimationGenerationForFrame into EffectSet::GetEffect and EffectSet::GetAnimationGeneration in AddAnimationsForProperty. r=birtles,sotaro\n\nSince we use the EffectSet later in the same function.\n\nDepends on D11599\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11601",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Hiroyuki Ikezoe <hikezoe@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "b59d17710f5cc00763a8ef1c3b550b09aa264e51"
+      ],
+      "pushid": 72851,
+      "pushdate": [
+        1542104784,
+        0
+      ]
+    },
+    {
+      "node": "b59d17710f5cc00763a8ef1c3b550b09aa264e51",
+      "date": [
+        1542104289.0,
+        0
+      ],
+      "desc": "Bug 1504929 - Factor out IsEffectiveProperty(). r=birtles\n\nDepends on D11598\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11599",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Hiroyuki Ikezoe <hikezoe@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "d77f35fe6d73f31466a8be5c39d5b1c8ff2f7e3a"
+      ],
+      "pushid": 72851,
+      "pushdate": [
+        1542104784,
+        0
+      ]
+    },
+    {
+      "node": "d77f35fe6d73f31466a8be5c39d5b1c8ff2f7e3a",
+      "date": [
+        1542104276.0,
+        0
+      ],
+      "desc": "Bug 1504929 - Make `if` conditions in KeyframeEffect::GetEffectiveAnimationOfProperty negative. r=birtles\n\nI.e., continue the loop if the CSS property is not what we want and set the\nresult value only if the CSS property is effective.\n\nThis change makes the function match\nwhat KeyframeEffect::GetEffectiveAnimationProperties does in the similar loop\nso that we can unify the iteration into a single function in the next commit.\n\nDepends on D11597\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11598",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Hiroyuki Ikezoe <hikezoe@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "160a7716c1b39cf8b53a79b3263edb61289f8a63"
+      ],
+      "pushid": 72851,
+      "pushdate": [
+        1542104784,
+        0
+      ]
+    },
+    {
+      "node": "160a7716c1b39cf8b53a79b3263edb61289f8a63",
+      "date": [
+        1542104264.0,
+        0
+      ],
+      "desc": "Bug 1504929 - Avoid hashmap lookups in nsLayoutUtils::HasEffectiveAnimation and EffectCompositor::FindAnimationsForCompositor. r=birtles\n\nDepends on D11427\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11597",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Hiroyuki Ikezoe <hikezoe@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "33ac76a8930d4e0591975acdaad31e50207e3929"
+      ],
+      "pushid": 72851,
+      "pushdate": [
+        1542104784,
+        0
+      ]
+    },
+    {
+      "node": "33ac76a8930d4e0591975acdaad31e50207e3929",
+      "date": [
+        1542104262.0,
+        0
+      ],
+      "desc": "Bug 1504929 - Drop LayerAnimationInfo::sRecords. r=birtles\n\nDepends on D11426\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11427",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Hiroyuki Ikezoe <hikezoe@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "f82c7330018b3ad8cf263e1b7fa7eef311d90870"
+      ],
+      "pushid": 72851,
+      "pushdate": [
+        1542104784,
+        0
+      ]
+    },
+    {
+      "node": "f82c7330018b3ad8cf263e1b7fa7eef311d90870",
+      "date": [
+        1542104600.0,
+        0
+      ],
+      "desc": "Bug 1504929 - Further optimizations for RestyleManager::AddLayerChangesForAnimations.. r=birtles,sotaro\n\nThis change eliminates\n - nsLayoutUtils::LastContinuationOrIBSplitSibling calls for each CSS\n   properties on WebRender\n - iterating over each display item for each compositor runnable CSS properties\n - a bunch of stuff in the case where the layer manager has not yet created,\n   i.e. the compositor thread is not ready to receive animations\n\nDepends on D11425\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11426",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Hiroyuki Ikezoe <hikezoe@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "c1bad90a5650591a56adaf809d60baa926442a90"
+      ],
+      "pushid": 72851,
+      "pushdate": [
+        1542104784,
+        0
+      ]
+    },
+    {
+      "node": "c1bad90a5650591a56adaf809d60baa926442a90",
+      "date": [
+        1542104544.0,
+        0
+      ],
+      "desc": "Bug 1504929 - Introduce LayerAnimationInfo::sDisplayItemTypes and iterate it instead of LayerAnimationInfo::sRecords. r=birtles\n\nDepends on D11425\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11596",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Hiroyuki Ikezoe <hikezoe@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "4a805bf94a328007cba285e4fe9eabf5911170ba"
+      ],
+      "pushid": 72851,
+      "pushdate": [
+        1542104784,
+        0
+      ]
+    },
+    {
+      "node": "4a805bf94a328007cba285e4fe9eabf5911170ba",
+      "date": [
+        1542104546.0,
+        0
+      ],
+      "desc": "Bug 1504929 - Stop iterating EffectSets and KeyframeEffect::mProperties for each CSS properties that can be animated on the compositor. r=birtles\n\nThis change gets all effective CSS properties on an nsIFrame just once.\n\nNote that LayerAnimationInfo::GetCSSPropertiesFor intentionally returns\nnsCSSPropertyIDSet instead of nsCSSPropertyID since when we support individual\ntransform properties for the compositor the mapping between display item types\nand nsCSSProperty has to be 1:N. E.g. all scale/translate/rotate properties are\nmapped to transform display item.\n\nDepends on D11424\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11425",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Hiroyuki Ikezoe <hikezoe@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "98a44b1a44cdcde0ecb34977811946461a7f7b67"
+      ],
+      "pushid": 72851,
+      "pushdate": [
+        1542104784,
+        0
+      ]
+    },
+    {
+      "node": "98a44b1a44cdcde0ecb34977811946461a7f7b67",
+      "date": [
+        1542104254.0,
+        0
+      ],
+      "desc": "Bug 1504929 - Mark AnimationInfo::GetAnimationGeneration as a const function. r=birtles\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11424",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "Hiroyuki Ikezoe <hikezoe@mozilla.com>",
+      "phase": "draft",
+      "parents": [
+        "f39daca43ec887a7999d086b741820efc24f201f"
+      ],
+      "pushid": 72851,
+      "pushdate": [
+        1542104784,
+        0
+      ]
+    },
+    {
+      "node": "f39daca43ec887a7999d086b741820efc24f201f",
+      "date": [
+        1542104291.0,
+        0
+      ],
+      "desc": "Bug 1506738 - Update webrender to commit dfb2517eea37bce19e686032faae4053cb427ff8 (WR PR #3275). r=kats\n\nDifferential Revision: https://phabricator.services.mozilla.com/D11743",
+      "branch": "default",
+      "bookmarks": [],
+      "tags": [],
+      "user": "WR Updater Bot <graphics-team@mozilla.staktrace.com>",
+      "phase": "draft",
+      "parents": [
+        "2fe06d08265c281b7be098d4929683d6329657e9"
+      ],
+      "pushid": 72850,
+      "pushdate": [
+        1542104321,
+        0
+      ]
+    }
+  ]
+}

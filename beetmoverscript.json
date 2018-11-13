@@ -1,0 +1,2346 @@
+{
+  "2": {
+    "sha": "9685581ceafe838d1753f895d39d162dab4a4eee",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/9685581ceafe838d1753f895d39d162dab4a4eee",
+    "commiter_name": "Callek",
+    "commiter_email": "Callek@gmail.com",
+    "commit_message": "Version Bump to 7.10.2",
+    "commit_date": "2018-11-07 20:54:49"
+  },
+  "3": {
+    "sha": "827349146c7c9aa227fe11108c24f3bf4d7cbca1",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/827349146c7c9aa227fe11108c24f3bf4d7cbca1",
+    "commiter_name": "Callek",
+    "commiter_email": "Callek@gmail.com",
+    "commit_message": "Add newsfragment entry for msi mime fix",
+    "commit_date": "2018-11-07 20:53:20"
+  },
+  "4": {
+    "sha": "68b1869d4549c956ff1dcaf10fa8f0d57cdc99f2",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/68b1869d4549c956ff1dcaf10fa8f0d57cdc99f2",
+    "commiter_name": "Callek",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #190 from Callek/msi_mime  Support msi mime type",
+    "commit_date": "2018-11-02 14:33:03"
+  },
+  "5": {
+    "sha": "b799418b88d47c699bbbb62b77da5fb31aefefa2",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/b799418b88d47c699bbbb62b77da5fb31aefefa2",
+    "commiter_name": "Callek",
+    "commiter_email": "Callek@gmail.com",
+    "commit_message": "Support msi mime type",
+    "commit_date": "2018-11-02 13:10:32"
+  },
+  "6": {
+    "sha": "865fcd75c0cb9c0b82d910a27249a6180d44c76b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/865fcd75c0cb9c0b82d910a27249a6180d44c76b",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "7.10.1",
+    "commit_date": "2018-11-01 11:47:22"
+  },
+  "7": {
+    "sha": "ea294e8d8df5952b1fa271cb901e2038970fa6ee",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/ea294e8d8df5952b1fa271cb901e2038970fa6ee",
+    "commiter_name": "Callek",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #189 from Callek/msi  Bug 1475512 - Add support for .msi to templates",
+    "commit_date": "2018-10-31 23:19:34"
+  },
+  "8": {
+    "sha": "ebb8e41189cf38004d2cb5c72de98dc3d83ec6a7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/ebb8e41189cf38004d2cb5c72de98dc3d83ec6a7",
+    "commiter_name": "Callek",
+    "commiter_email": "Callek@gmail.com",
+    "commit_message": "Bug 1475512 - Add support for .msi to templates",
+    "commit_date": "2018-10-31 18:46:27"
+  },
+  "9": {
+    "sha": "4713db6c26ec6b1a36042fdc48750c30c89744cc",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4713db6c26ec6b1a36042fdc48750c30c89744cc",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1442684 - remove bouncer.apk as it seems unused. (#188)",
+    "commit_date": "2018-10-29 16:11:43"
+  },
+  "10": {
+    "sha": "c6f1f781a93a004bddee02956c3597e601b7672c",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c6f1f781a93a004bddee02956c3597e601b7672c",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1408083 - Drop support for beta/releases of single locale repacks for Fennec (#187)",
+    "commit_date": "2018-10-03 10:31:17"
+  },
+  "11": {
+    "sha": "acf857c5697e332e4fce49ad9844036fffb45a99",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/acf857c5697e332e4fce49ad9844036fffb45a99",
+    "commiter_name": "mozbhearsum",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Beetmove the updater-dep test package into candidates dirs. (#186)    Beetmove the updater-dep test package into candidates dirs.      Update CHANGELOG/version.      Add updater-dep for devedition, too.      Add missing blank line to make flake8 happy.",
+    "commit_date": "2018-09-28 13:28:21"
+  },
+  "12": {
+    "sha": "893a86bd810d8279cde7f62d1f724dbb030fd988",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/893a86bd810d8279cde7f62d1f724dbb030fd988",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "7.10.0",
+    "commit_date": "2018-09-28 09:11:35"
+  },
+  "13": {
+    "sha": "66c35710a1358a304f7aad422222ac7736efa7e0",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/66c35710a1358a304f7aad422222ac7736efa7e0",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1491335 - Handle android-components to be deployed on maven.mozilla.org",
+    "commit_date": "2018-09-24 11:11:25"
+  },
+  "14": {
+    "sha": "7a9b04b2f54853ed9a46d278f15a00a98387d6f3",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/7a9b04b2f54853ed9a46d278f15a00a98387d6f3",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "7.9.1",
+    "commit_date": "2018-09-07 13:56:13"
+  },
+  "15": {
+    "sha": "6c1bf83ab44189643084286e575a8d0f0f85a124",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/6c1bf83ab44189643084286e575a8d0f0f85a124",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Bug 1489132 - Change geckoview versions to MAJOR.MINOR.BUILDID",
+    "commit_date": "2018-09-07 13:49:01"
+  },
+  "16": {
+    "sha": "e554f3a7afbe8a68085dee94ab829d2ea96e6553",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e554f3a7afbe8a68085dee94ab829d2ea96e6553",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #179 from tp-tc/bz2-support  Add multiple format support.",
+    "commit_date": "2018-08-30 18:09:07"
+  },
+  "17": {
+    "sha": "e5379bc17c083617d949b8723c7b9c306b58fa2a",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e5379bc17c083617d949b8723c7b9c306b58fa2a",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "7.9.0",
+    "commit_date": "2018-08-30 18:03:15"
+  },
+  "18": {
+    "sha": "4470b4b8cb3ace62e757b7d2dbc4e9d028d8a3d5",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4470b4b8cb3ace62e757b7d2dbc4e9d028d8a3d5",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Add newsfragment.",
+    "commit_date": "2018-08-30 17:58:06"
+  },
+  "19": {
+    "sha": "3cd1110e7683df2acc16f4b7b29f7497f3563078",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/3cd1110e7683df2acc16f4b7b29f7497f3563078",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "7.8.2",
+    "commit_date": "2018-08-29 08:40:52"
+  },
+  "20": {
+    "sha": "08a63e6921778505b4ffc6b9e901501a223c92bc",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/08a63e6921778505b4ffc6b9e901501a223c92bc",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Bug 1484932 - Update GeckoView maven group id: org.mozilla.geckoview (#180)",
+    "commit_date": "2018-08-29 08:37:52"
+  },
+  "21": {
+    "sha": "2b489c0fa8e102cf488f71a607eea51a551d66bb",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/2b489c0fa8e102cf488f71a607eea51a551d66bb",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Bug 1481121: Add multiple update format support.",
+    "commit_date": "2018-08-24 03:08:31"
+  },
+  "22": {
+    "sha": "b8613fdfb5fae533b5dc7332eb99566c940c50ac",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/b8613fdfb5fae533b5dc7332eb99566c940c50ac",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "7.8.1",
+    "commit_date": "2018-08-17 13:24:26"
+  },
+  "23": {
+    "sha": "6983ff6f959359e31ce1f0631af44b6cc6d1424f",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/6983ff6f959359e31ce1f0631af44b6cc6d1424f",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Bug 1470942 - part 2: Fix maven-production bucket (#178)  Also raise known error on bad bucket",
+    "commit_date": "2018-08-17 13:20:57"
+  },
+  "24": {
+    "sha": "49679035dafec557e6da8bc626f6a7f070af24a0",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/49679035dafec557e6da8bc626f6a7f070af24a0",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Update tests + Raise known error on bad bucket",
+    "commit_date": "2018-08-17 13:14:13"
+  },
+  "25": {
+    "sha": "3f0c036768a56ca66dd89bf47f7b87ee1362d058",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/3f0c036768a56ca66dd89bf47f7b87ee1362d058",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Bug 1470942 - part 2: Fix maven-production bucket",
+    "commit_date": "2018-08-17 12:54:52"
+  },
+  "26": {
+    "sha": "51565872ccab4e13967301abafdfb0bf6b4f369d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/51565872ccab4e13967301abafdfb0bf6b4f369d",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "7.8.0",
+    "commit_date": "2018-08-13 15:11:56"
+  },
+  "27": {
+    "sha": "aee370ae1002ae1845189225f9cdfd3c0879bc65",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/aee370ae1002ae1845189225f9cdfd3c0879bc65",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Bug 1470942 - Support maven on S3 (#163)    Use scriptworker's get_and_check_single_upstream_artifact_full_path    Allow tasks without locales in upstream artifact",
+    "commit_date": "2018-08-13 15:07:46"
+  },
+  "28": {
+    "sha": "ede18b33a606a93c54ad10dffe423da4ce76cb1d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/ede18b33a606a93c54ad10dffe423da4ce76cb1d",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "7.7.0",
+    "commit_date": "2018-08-09 10:10:12"
+  },
+  "29": {
+    "sha": "d0dcd1b07625c2fe6e6d083d52cecfe38beab018",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d0dcd1b07625c2fe6e6d083d52cecfe38beab018",
+    "commiter_name": "Callek",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Add support for language pack checksums files. (#174)    Add support for language pack checksums files.      Add CHANGELOG entry for feature      Fix proper tag in beetmover-signed-langpacks      Address review comments and add _repack template changes.      Fix test",
+    "commit_date": "2018-08-09 10:08:27"
+  },
+  "30": {
+    "sha": "062612f2f85f3c4bb73adcd6395858da281f5230",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/062612f2f85f3c4bb73adcd6395858da281f5230",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Fix fake_session breakage by pinning pytest to 3.6.4 (#176)",
+    "commit_date": "2018-07-31 13:02:17"
+  },
+  "31": {
+    "sha": "9508cdb46d8e55ebb8b1682ad8f1427bc15e9171",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/9508cdb46d8e55ebb8b1682ad8f1427bc15e9171",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #175 from escapewindow/py37  require python3.7 tests to be green",
+    "commit_date": "2018-07-27 21:51:41"
+  },
+  "32": {
+    "sha": "8b9069b23f791e938470133abb7ae60fde1bbef9",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8b9069b23f791e938470133abb7ae60fde1bbef9",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "add py37 to setup.py",
+    "commit_date": "2018-07-27 21:45:38"
+  },
+  "33": {
+    "sha": "21bd8ce59fdf184224c137dc4f11cad69d056097",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/21bd8ce59fdf184224c137dc4f11cad69d056097",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "require python3.7 tests to be green",
+    "commit_date": "2018-07-27 21:28:00"
+  },
+  "34": {
+    "sha": "2d89210b85d081e6ee20d169ffa1c8b20907e068",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/2d89210b85d081e6ee20d169ffa1c8b20907e068",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "7.6.0",
+    "commit_date": "2018-07-20 18:11:02"
+  },
+  "35": {
+    "sha": "6e1a66be08573e53e5b45f6a4512cac7cf798b4b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/6e1a66be08573e53e5b45f6a4512cac7cf798b4b",
+    "commiter_name": "choller",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Support win64-asan-reporter and mac-asan-reporter platforms (#170)    Bug 1473259 - Support win64-asan-reporter and mac-asan-reporter platforms      Add newsfragment file instead of CHANGELOG file.",
+    "commit_date": "2018-07-20 18:06:29"
+  },
+  "36": {
+    "sha": "129c70157cdd60d277381c8a026437183c9742c2",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/129c70157cdd60d277381c8a026437183c9742c2",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Fix in version.",
+    "commit_date": "2018-07-13 14:08:18"
+  },
+  "37": {
+    "sha": "4d83ddec4dd443d3757d12516b00b081d92b0ecb",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4d83ddec4dd443d3757d12516b00b081d92b0ecb",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bump version retroactively to 7.5.0 to cope with reality.",
+    "commit_date": "2018-07-13 14:05:43"
+  },
+  "38": {
+    "sha": "2b47a403f2c1e494ae4f1bed049be1afeb0c280c",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/2b47a403f2c1e494ae4f1bed049be1afeb0c280c",
+    "commiter_name": "escapewindow",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "stop using scriptworker event_loop fixture (#169)  This fixture is being removed in mozilla-releng/scriptworker#241 ; let's stop  using it.",
+    "commit_date": "2018-07-05 10:04:35"
+  },
+  "39": {
+    "sha": "dbaf1471262e487463fdc83fb7d153053198e430",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/dbaf1471262e487463fdc83fb7d153053198e430",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "7.5.0",
+    "commit_date": "2018-07-02 15:44:00"
+  },
+  "40": {
+    "sha": "141fa2fa4ff8a71608f8cd529d70a0b3b40804bb",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/141fa2fa4ff8a71608f8cd529d70a0b3b40804bb",
+    "commiter_name": "catlee",
+    "commiter_email": null,
+    "commit_message": "Bug 733530: add support for tests.tar.gz (#165)  Bug 733530: add support for tests.tar.gz",
+    "commit_date": "2018-06-29 19:26:40"
+  },
+  "41": {
+    "sha": "443bf26a5be1c9e0c87559780c54611b9245f0d3",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/443bf26a5be1c9e0c87559780c54611b9245f0d3",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "s,scl3,mdc1 (#164)",
+    "commit_date": "2018-06-27 10:06:02"
+  },
+  "42": {
+    "sha": "f4b1e13923d565e78d86ed6da361636c947e1768",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/f4b1e13923d565e78d86ed6da361636c947e1768",
+    "commiter_name": "nthomas-mozilla",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Production push doc update (#158)",
+    "commit_date": "2018-06-26 09:03:43"
+  },
+  "43": {
+    "sha": "87b6ff362dd0c22ebd543b8b0263f13f28364fa2",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/87b6ff362dd0c22ebd543b8b0263f13f28364fa2",
+    "commiter_name": "lisajguo",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Add support for Buildhub (#155)    fixed branch      should be done       added BUILDHUB_ARTIFACT constant to imports      fixed typo - all tests pass      fixed flake8 style errors      fixed import error      more flake8      added buildhub paths to templates, and added buildhub artifact to the fake task json      fixed tests      add fake buildhub.json for testing      yet untested fix to url and size      fixed tests for buildhub update      added fake target.apk file      fixed flake8      fixed flake8      added forward slash in url      changed url to point to installer instead of buildhub.json      flake8 fix      flake8 fix      flake8 fix      added space to test to test buildhub.json url encoding      added urlencoding to buildhub url      only URL encode the whitespaces      changed URL encoding to better coding practice of encoding each piece      added production beetmover roll-out newsfragment, and changed buildhub.json move_beets logic to accomodate all beetmover types      flake8      using urllib.parse for all url operations in get_updated_buildhub_artifact      fixed buildhub entries in templates      moved newsfragment to proper location      style changes and fixed template errors",
+    "commit_date": "2018-06-26 08:55:35"
+  },
+  "44": {
+    "sha": "00b6bf0ddc17dd2968e7894db717c90f65cff5c8",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/00b6bf0ddc17dd2968e7894db717c90f65cff5c8",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #162 from escapewindow/dephash  update requirements-prod.txt",
+    "commit_date": "2018-06-21 19:54:27"
+  },
+  "45": {
+    "sha": "4e2e7aaa178b446cf87b9979cb58734bb603ae83",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4e2e7aaa178b446cf87b9979cb58734bb603ae83",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "update requirements-prod.txt",
+    "commit_date": "2018-06-21 18:20:12"
+  },
+  "46": {
+    "sha": "bfad01cc694c60f189e3e3d99cd82e4c12f82ff7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/bfad01cc694c60f189e3e3d99cd82e4c12f82ff7",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Fix multiple omits in .coveragerc (#161)    Fix multiple omits in .coveragerc      Add newsfragments      Rename the newsfragment from added to fixed",
+    "commit_date": "2018-06-13 18:38:00"
+  },
+  "47": {
+    "sha": "fc4cb8106c2a68694394e5710579c682324225c0",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/fc4cb8106c2a68694394e5710579c682324225c0",
+    "commiter_name": "nthomas-mozilla",
+    "commiter_email": null,
+    "commit_message": "7.4.0",
+    "commit_date": "2018-06-12 22:07:35"
+  },
+  "48": {
+    "sha": "767078f8cbd9dfc5a505ef4dc9adc49c5cc13b33",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/767078f8cbd9dfc5a505ef4dc9adc49c5cc13b33",
+    "commiter_name": "nthomas-mozilla",
+    "commiter_email": null,
+    "commit_message": "Create checksums for public partner builds (#150)  ... namely EME-free builds which end up in firefox/releases/{version}/ on archive.mozilla.org",
+    "commit_date": "2018-06-12 22:03:30"
+  },
+  "49": {
+    "sha": "eb5fcdcc3cea2e42af9e0c378b86176a1c3d8f68",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/eb5fcdcc3cea2e42af9e0c378b86176a1c3d8f68",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "7.3.0",
+    "commit_date": "2018-06-07 21:07:50"
+  },
+  "50": {
+    "sha": "ee6c0980e061c8a3d6d76973466bb636a52a50a7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/ee6c0980e061c8a3d6d76973466bb636a52a50a7",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #153 from MihaiTabara/strip-balrog-props  Strip balrog props",
+    "commit_date": "2018-06-06 16:27:03"
+  },
+  "51": {
+    "sha": "046e58f631417d88b300acec62941549ead39abe",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/046e58f631417d88b300acec62941549ead39abe",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Remove dead code",
+    "commit_date": "2018-06-06 02:55:21"
+  },
+  "52": {
+    "sha": "cc895ee74a0702a225c15c9f54c26b46be1cf4fd",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/cc895ee74a0702a225c15c9f54c26b46be1cf4fd",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Remove ugly devedition hacks; cleanup comments",
+    "commit_date": "2018-06-06 02:45:11"
+  },
+  "53": {
+    "sha": "99778d019f6240012cf873700d26c8d23bc3d85b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/99778d019f6240012cf873700d26c8d23bc3d85b",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Fix flake8 to make it happy",
+    "commit_date": "2018-06-06 02:28:46"
+  },
+  "54": {
+    "sha": "cfa046ab32e85a1ea063576e3cfc2a9005672531",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/cfa046ab32e85a1ea063576e3cfc2a9005672531",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Minor cleanup in testing task.json files. Fixing some tests",
+    "commit_date": "2018-06-06 01:51:37"
+  },
+  "55": {
+    "sha": "d3a8b9e645876828613725654b5d637a3036e1e9",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d3a8b9e645876828613725654b5d637a3036e1e9",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Finally remove the ugly update_props hack",
+    "commit_date": "2018-06-06 01:51:04"
+  },
+  "56": {
+    "sha": "3759f99ce67042267993cf4d23c980d37b87d667",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/3759f99ce67042267993cf4d23c980d37b87d667",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Fix schema to enforce releaseProperties and remove stagePlatform",
+    "commit_date": "2018-06-06 00:26:50"
+  },
+  "57": {
+    "sha": "8e9ab0e74bdcd6a4ed542e74fdf3f0a34713eeda",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8e9ab0e74bdcd6a4ed542e74fdf3f0a34713eeda",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Importing Lisa's PR #149",
+    "commit_date": "2018-06-06 00:25:26"
+  },
+  "58": {
+    "sha": "8a946de74436f46546d0117c7685397b0e59267a",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8a946de74436f46546d0117c7685397b0e59267a",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "nitfix in README (#154)    nitfix in README      Switch the puppet urls from hg to git counterparts",
+    "commit_date": "2018-06-06 02:40:27"
+  },
+  "59": {
+    "sha": "26cadbd558496aad0c521e687dc858aa8f956ccb",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/26cadbd558496aad0c521e687dc858aa8f956ccb",
+    "commiter_name": "nthomas-mozilla",
+    "commiter_email": null,
+    "commit_message": "Update docs for requirements.txt (bug 1458329) (#151)",
+    "commit_date": "2018-06-01 03:08:39"
+  },
+  "60": {
+    "sha": "6c82e0f3da436cd15755dc383b5aee18ba1785d7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/6c82e0f3da436cd15755dc383b5aee18ba1785d7",
+    "commiter_name": "lisajguo",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Create SCOPES.md for beetmoverscript (#144)    Create SCOPES.md      Update SCOPES.md      Made Mihai's fixes      modified push-to-partner branch restriction      made Callek's suggested fixes",
+    "commit_date": "2018-05-29 13:13:16"
+  },
+  "61": {
+    "sha": "9e0d65801746465775989770ec2232bdc15fa304",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/9e0d65801746465775989770ec2232bdc15fa304",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "7.2.3",
+    "commit_date": "2018-05-24 20:46:04"
+  },
+  "62": {
+    "sha": "5752a569ae9a3a16d12aab49906093a11c6ff695",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/5752a569ae9a3a16d12aab49906093a11c6ff695",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Add some news fragements.",
+    "commit_date": "2018-05-24 20:43:27"
+  },
+  "63": {
+    "sha": "d7057d234fae35f22c808f0c64923e51ee83c7e4",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d7057d234fae35f22c808f0c64923e51ee83c7e4",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #143 from tp-tc/thunderbird  Fix capitalization of `Thunderbird` in windows installer and dmg files.",
+    "commit_date": "2018-05-24 20:18:53"
+  },
+  "64": {
+    "sha": "524a252ae4e880934ed83dd8e02644c8e91260a0",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/524a252ae4e880934ed83dd8e02644c8e91260a0",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Fix capitalization of `Thunderbird` in windows installer and dmg files.",
+    "commit_date": "2018-05-23 08:37:04"
+  },
+  "65": {
+    "sha": "16d9ee0834494d507329fea04740ddf9ee2e0515",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/16d9ee0834494d507329fea04740ddf9ee2e0515",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #142 from mozilla-releng/lisajguo-patch-1  re-ran dephash",
+    "commit_date": "2018-05-22 16:49:30"
+  },
+  "66": {
+    "sha": "26a99f6767e078fa64e7238e3ed50aa10ffbdbfd",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/26a99f6767e078fa64e7238e3ed50aa10ffbdbfd",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "re-ran dephash",
+    "commit_date": "2018-05-22 16:14:36"
+  },
+  "67": {
+    "sha": "e3322ed2a2e018eefbe906217d5b8e153ab567c2",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e3322ed2a2e018eefbe906217d5b8e153ab567c2",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #141 from mozilla-releng/lisajguo-patch-1  updated programming language to py36",
+    "commit_date": "2018-05-17 16:21:35"
+  },
+  "68": {
+    "sha": "4b96544933c3280067a26bed5350716eaab9561f",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4b96544933c3280067a26bed5350716eaab9561f",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "updated programming language to py36",
+    "commit_date": "2018-05-17 16:17:51"
+  },
+  "69": {
+    "sha": "45f726e00d90f92475d7b2fa126c64a88d2acf36",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/45f726e00d90f92475d7b2fa126c64a88d2acf36",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #140 from lisajguo/master  Drop py35 support; add py37 tests",
+    "commit_date": "2018-05-17 16:17:02"
+  },
+  "70": {
+    "sha": "38a736da5ba9c042c94ba258c204b941a24b0f60",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/38a736da5ba9c042c94ba258c204b941a24b0f60",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Merge branch 'master' into master",
+    "commit_date": "2018-05-17 15:19:51"
+  },
+  "71": {
+    "sha": "2f65c9397a79fd5fb31d4da23604c1c725754a6e",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/2f65c9397a79fd5fb31d4da23604c1c725754a6e",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "Drop py35 support; add py37 tests",
+    "commit_date": "2018-05-17 15:11:04"
+  },
+  "72": {
+    "sha": "d0ffeea007249acdadc3005335828cc59f81dcc4",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d0ffeea007249acdadc3005335828cc59f81dcc4",
+    "commiter_name": "lisajguo",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1387021 - Retire nightly stub installer old format from automation",
+    "commit_date": "2018-05-17 12:55:07"
+  },
+  "73": {
+    "sha": "e9716d421ec4ce5ba2df2aae51b4141ae3a51e99",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e9716d421ec4ce5ba2df2aae51b4141ae3a51e99",
+    "commiter_name": "lisajguo",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1461663 - bring beetmover schema up to date (#137)    updated payload schema      reverted to original      added optional locale property      added locale and maxRunTime      made maxRunTime optional      added next_version and appVersion      made next_version optional      added releaseProperties      Update beetmover_task_schema.json      Update beetmover_task_schema.json      removed nightly stub installer lines    removed \"firefox-{{ version }}.{{ locale }}.{{ platform }}.installer-stub.exe\" entries from line 67's entry      added maxRunTime optional property      undoing stub installer changes      undoing stub installer changes      removed extra space",
+    "commit_date": "2018-05-16 14:40:39"
+  },
+  "74": {
+    "sha": "925d24c97a3a991cdbebf9827884ac8b43395bcc",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/925d24c97a3a991cdbebf9827884ac8b43395bcc",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "removed extra space",
+    "commit_date": "2018-05-15 18:30:48"
+  },
+  "75": {
+    "sha": "4ae5ef923279265d311812b536ed65e180d7a6fd",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4ae5ef923279265d311812b536ed65e180d7a6fd",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "undoing stub installer changes",
+    "commit_date": "2018-05-15 18:28:17"
+  },
+  "76": {
+    "sha": "a79e6f98f4e8ae0e2110941644e1ac9f63927157",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/a79e6f98f4e8ae0e2110941644e1ac9f63927157",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "undoing stub installer changes",
+    "commit_date": "2018-05-15 18:27:22"
+  },
+  "77": {
+    "sha": "6aefc3b057740e5fa62ae8902bb561842fb863d0",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/6aefc3b057740e5fa62ae8902bb561842fb863d0",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "added maxRunTime optional property",
+    "commit_date": "2018-05-15 15:56:14"
+  },
+  "78": {
+    "sha": "fa33196bc2da1e8326bd1a58e680d4249d09912c",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/fa33196bc2da1e8326bd1a58e680d4249d09912c",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "removed nightly stub installer lines  removed \"firefox-{{ version }}.{{ locale }}.{{ platform }}.installer-stub.exe\" entries from line 67's entry",
+    "commit_date": "2018-05-15 13:49:26"
+  },
+  "79": {
+    "sha": "78efca7ba8a2d6ad2c924306534a6db4d58ad1db",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/78efca7ba8a2d6ad2c924306534a6db4d58ad1db",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "Update beetmover_task_schema.json",
+    "commit_date": "2018-05-15 13:16:28"
+  },
+  "80": {
+    "sha": "3147d5e54d37ac24905919713c0e6b80806584c2",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/3147d5e54d37ac24905919713c0e6b80806584c2",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "Update beetmover_task_schema.json",
+    "commit_date": "2018-05-15 13:13:54"
+  },
+  "81": {
+    "sha": "88dabcd888155951d4cbea6210143e04814f1f13",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/88dabcd888155951d4cbea6210143e04814f1f13",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "added releaseProperties",
+    "commit_date": "2018-05-15 13:10:28"
+  },
+  "82": {
+    "sha": "c524e19f68709467973f4ad9d3a76f6cb8693d62",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c524e19f68709467973f4ad9d3a76f6cb8693d62",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "made next_version optional",
+    "commit_date": "2018-05-15 13:06:57"
+  },
+  "83": {
+    "sha": "64030a535d1b86e0f5df04865565919c3b3efbe7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/64030a535d1b86e0f5df04865565919c3b3efbe7",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "added next_version and appVersion",
+    "commit_date": "2018-05-15 13:04:31"
+  },
+  "84": {
+    "sha": "f7b3e34a5de8473641e4586e254ce8f243e09345",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/f7b3e34a5de8473641e4586e254ce8f243e09345",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "made maxRunTime optional",
+    "commit_date": "2018-05-15 12:58:44"
+  },
+  "85": {
+    "sha": "b8c566ac149c5a429e766c08772b98bfee10f6a4",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/b8c566ac149c5a429e766c08772b98bfee10f6a4",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "added locale and maxRunTime",
+    "commit_date": "2018-05-15 12:45:07"
+  },
+  "86": {
+    "sha": "c7bc63ea4c3b03c3af5c8a8458dd50be47563c1a",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c7bc63ea4c3b03c3af5c8a8458dd50be47563c1a",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "added optional locale property",
+    "commit_date": "2018-05-15 12:40:34"
+  },
+  "87": {
+    "sha": "8e2d2dbdf8916b513fd9d9805fcb450731fcb3cc",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8e2d2dbdf8916b513fd9d9805fcb450731fcb3cc",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "reverted to original",
+    "commit_date": "2018-05-15 12:30:33"
+  },
+  "88": {
+    "sha": "486fd89c2e6c37e43cb3d4cb7ef2dfdcbd4c2a51",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/486fd89c2e6c37e43cb3d4cb7ef2dfdcbd4c2a51",
+    "commiter_name": "lisajguo",
+    "commiter_email": null,
+    "commit_message": "updated payload schema",
+    "commit_date": "2018-05-15 12:12:35"
+  },
+  "89": {
+    "sha": "ad8b199d736d4444acae58988b1c0dc9963e8539",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/ad8b199d736d4444acae58988b1c0dc9963e8539",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "7.2.2",
+    "commit_date": "2018-05-03 10:42:49"
+  },
+  "90": {
+    "sha": "0854a3e6dbd81da25bd93aee0352e8fbef311d91",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/0854a3e6dbd81da25bd93aee0352e8fbef311d91",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Fix fennec checksums platform for 60. (#133)",
+    "commit_date": "2018-05-03 10:41:52"
+  },
+  "91": {
+    "sha": "4c8134bd756d8609c8cbfe8e63cbf54771347215",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4c8134bd756d8609c8cbfe8e63cbf54771347215",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "7.2.1",
+    "commit_date": "2018-05-03 09:54:56"
+  },
+  "92": {
+    "sha": "c53de29617441a3391448e6f60db3e936bce65a8",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c53de29617441a3391448e6f60db3e936bce65a8",
+    "commiter_name": "tomprince",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Fix fennec source platform for 60. (#132)    Fix fennec source platform for 60.    Apprarently, `android-api-16` is a possible platform there.      7.2.1",
+    "commit_date": "2018-05-03 09:49:04"
+  },
+  "93": {
+    "sha": "d198e0eecaeffccd1b858f7f45fb0dbe86f9b98e",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d198e0eecaeffccd1b858f7f45fb0dbe86f9b98e",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": " Bug 1446815 - configure beetmover to handle source checksums  (#130)    Bug 1446815 - add custom flexibility for checksums filename      Bug 1446815 - add mappings for source checksums      Bug 1446815 - stop uploading asc files as .beet      Improve README with staging deployment for beetmoverscript      Add CHANGELOG info      Minor improvements      Rename function to make it specific to checksums.      Suggest a better staging versioning in README.",
+    "commit_date": "2018-05-02 15:47:24"
+  },
+  "94": {
+    "sha": "2550a3ed4c52fb74860a8535798d475702b9913e",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/2550a3ed4c52fb74860a8535798d475702b9913e",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "7.1.1",
+    "commit_date": "2018-04-26 05:56:52"
+  },
+  "95": {
+    "sha": "d5608fdb6372156748bb0ef18efd7fcc70c84184",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d5608fdb6372156748bb0ef18efd7fcc70c84184",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Bug 1456234: Fix support for fennec  sources to be on ` -release` platform.",
+    "commit_date": "2018-04-26 05:54:34"
+  },
+  "96": {
+    "sha": "2df914b021fc32fb905d722d11370ce05709c02d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/2df914b021fc32fb905d722d11370ce05709c02d",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "7.1.0",
+    "commit_date": "2018-04-24 20:05:06"
+  },
+  "97": {
+    "sha": "85d262b70ca2fc62da1674c0fce2e95b687e582f",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/85d262b70ca2fc62da1674c0fce2e95b687e582f",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #123 from tp-tc/thunderbird-manifests  Add thunderbird manifests.",
+    "commit_date": "2018-04-24 20:01:45"
+  },
+  "98": {
+    "sha": "cfcb104213533cd97af2e184638de1f7608e623b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/cfcb104213533cd97af2e184638de1f7608e623b",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Add thunderbird manifests for candidate repacks.",
+    "commit_date": "2018-04-22 15:08:58"
+  },
+  "99": {
+    "sha": "6159c4f981efd54f404f8e3e3a744b95e8550aa4",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/6159c4f981efd54f404f8e3e3a744b95e8550aa4",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Add multi-locale support to thunderbird manifests.",
+    "commit_date": "2018-04-22 15:07:51"
+  },
+  "100": {
+    "sha": "40c07fbcd16f439ce51492618d5cdce3b7cb01e8",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/40c07fbcd16f439ce51492618d5cdce3b7cb01e8",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #122 from tp-tc/balrog-url  Use the URL appropriate for the bucket in balrog manifests.",
+    "commit_date": "2018-04-24 19:29:35"
+  },
+  "101": {
+    "sha": "a27407607d5754af22462b3da706a6ced62c784f",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/a27407607d5754af22462b3da706a6ced62c784f",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Use the URL appropriate for the bucket in balrog manifests.",
+    "commit_date": "2018-04-17 20:18:56"
+  },
+  "102": {
+    "sha": "63e04a9e3f8b5a83df5f81e2ad823704c096f9c4",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/63e04a9e3f8b5a83df5f81e2ad823704c096f9c4",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #127 from tp-tc/release-platform  Bug 1456234: Add support for checksums and sources to be on ` -release` platforms.",
+    "commit_date": "2018-04-24 19:24:19"
+  },
+  "103": {
+    "sha": "90ef60749141cdd234e9e91cf9bfc1ce57298210",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/90ef60749141cdd234e9e91cf9bfc1ce57298210",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Merge branch 'master' into release-platform",
+    "commit_date": "2018-04-24 19:15:54"
+  },
+  "104": {
+    "sha": "478887e3acbcdfaa66a266c8277e678518a95612",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/478887e3acbcdfaa66a266c8277e678518a95612",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Bug 1456234: Add support for checksums and sources to be on ` -release` platforms.",
+    "commit_date": "2018-04-23 18:12:52"
+  },
+  "105": {
+    "sha": "91354aaf13924413bb21c6356cc64be39e3d4fae",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/91354aaf13924413bb21c6356cc64be39e3d4fae",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #126 from tp-tc/towncrier  Add `Fixed` section to changelog generation.",
+    "commit_date": "2018-04-23 18:32:10"
+  },
+  "106": {
+    "sha": "b7f56d467187b2187cb279baa0a0d6a6b28ed4c1",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/b7f56d467187b2187cb279baa0a0d6a6b28ed4c1",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Add `Fixed` section to changelog generation.",
+    "commit_date": "2018-04-23 18:24:45"
+  },
+  "107": {
+    "sha": "bab00dc505ff6f3e3229b6bbdba11dfb61a749f9",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/bab00dc505ff6f3e3229b6bbdba11dfb61a749f9",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #125 from tp-tc/wheel  Use wheels.",
+    "commit_date": "2018-04-23 15:42:32"
+  },
+  "108": {
+    "sha": "499ad12eb53b787232f84d715ec668bc9ec93a20",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/499ad12eb53b787232f84d715ec668bc9ec93a20",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Switch to using wheels.",
+    "commit_date": "2018-04-22 17:46:11"
+  },
+  "109": {
+    "sha": "183e681a80fabd00fcb4d859b0e9265306421174",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/183e681a80fabd00fcb4d859b0e9265306421174",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #124 from tp-tc/towncrier    Add automatic changelog generation support.",
+    "commit_date": "2018-04-23 15:24:22"
+  },
+  "110": {
+    "sha": "f5c9b4a277aafdd30a6d117b86e7f4c9fbb163e7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/f5c9b4a277aafdd30a6d117b86e7f4c9fbb163e7",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Add towncrier support.",
+    "commit_date": "2018-04-22 17:11:39"
+  },
+  "111": {
+    "sha": "8a3b123448f908b0a67f79f85f14c3ac661c3720",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8a3b123448f908b0a67f79f85f14c3ac661c3720",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Convert changelog to reStructuredText.",
+    "commit_date": "2018-04-22 15:59:12"
+  },
+  "112": {
+    "sha": "7709e1e84c34fc9d3509cd8ea986e285bd8b47de",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/7709e1e84c34fc9d3509cd8ea986e285bd8b47de",
+    "commiter_name": "tomprince",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Move version in to package.",
+    "commit_date": "2018-04-22 15:58:33"
+  },
+  "113": {
+    "sha": "d6302228e39e244357d1abee4f24c53248a76be9",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d6302228e39e244357d1abee4f24c53248a76be9",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #119 from escapewindow/partner-path  use `locale` as the path in partner repacks.",
+    "commit_date": "2018-04-18 17:51:14"
+  },
+  "114": {
+    "sha": "a4c01b10264cbc23bf95b0fec050de09ad7706c0",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/a4c01b10264cbc23bf95b0fec050de09ad7706c0",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "7.0.0",
+    "commit_date": "2018-04-18 17:43:13"
+  },
+  "115": {
+    "sha": "f9655632f4d79588dd42c8a35e1abaa6bb34480a",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/f9655632f4d79588dd42c8a35e1abaa6bb34480a",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "remove debug log msg",
+    "commit_date": "2018-04-16 22:11:24"
+  },
+  "116": {
+    "sha": "9b0ee04094563f049abdc64ed054faeccd082d59",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/9b0ee04094563f049abdc64ed054faeccd082d59",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "allow for . in partner paths, other than . and ..",
+    "commit_date": "2018-04-16 20:43:46"
+  },
+  "117": {
+    "sha": "f2cb0badd06dd36a00feeee79565adefe9aa16f1",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/f2cb0badd06dd36a00feeee79565adefe9aa16f1",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "test coverage + fixes",
+    "commit_date": "2018-04-13 00:25:22"
+  },
+  "118": {
+    "sha": "d284264f4711af6d258e71b770b4a163eaf25f78",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d284264f4711af6d258e71b770b4a163eaf25f78",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "add sanity check for private partner paths",
+    "commit_date": "2018-04-12 19:59:33"
+  },
+  "119": {
+    "sha": "0eb738ed64ca456ea56f7a34e76775301fe974e9",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/0eb738ed64ca456ea56f7a34e76775301fe974e9",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "changes to allow for staging partner bucket",
+    "commit_date": "2018-04-12 16:38:14"
+  },
+  "120": {
+    "sha": "69ca3fe252a1050f6c160fba8c69e5cd29553d3f",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/69ca3fe252a1050f6c160fba8c69e5cd29553d3f",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "fix get_hash test on osx",
+    "commit_date": "2018-04-12 15:28:00"
+  },
+  "121": {
+    "sha": "8d1a428131cc38c76e9dd788bb9a5f0dd1238049",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8d1a428131cc38c76e9dd788bb9a5f0dd1238049",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "use `locale` as the path in partner repacks.",
+    "commit_date": "2018-04-12 00:04:42"
+  },
+  "122": {
+    "sha": "244f3b4af8e6a793426d4c9fda89e7acec95433a",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/244f3b4af8e6a793426d4c9fda89e7acec95433a",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #100 from JohanLorenzo/bug-1421062  Bug 1421062 - Add thunderbird nightly template",
+    "commit_date": "2018-04-18 17:22:47"
+  },
+  "123": {
+    "sha": "06735e4bfdc6b0ef0b971cf7638d0595c52df44d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/06735e4bfdc6b0ef0b971cf7638d0595c52df44d",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Remove dummy file",
+    "commit_date": "2018-02-13 11:03:46"
+  },
+  "124": {
+    "sha": "f4270b25acf0a41c0415aa3f1cd2bcaee84d4f4d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/f4270b25acf0a41c0415aa3f1cd2bcaee84d4f4d",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Add dummy file to show test is now fixed because broken dep is no more",
+    "commit_date": "2018-02-13 11:00:11"
+  },
+  "125": {
+    "sha": "cefcd8c7fdeccd89995216758e8d6a1952f77e6f",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/cefcd8c7fdeccd89995216758e8d6a1952f77e6f",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": "tom.prince@twistedmatrix.com",
+    "commit_message": "Bug 1421062 - Add thunderbird nightly template",
+    "commit_date": "2018-02-13 09:47:21"
+  },
+  "126": {
+    "sha": "7ac5f1143af2ad61c0e68b2c273b65a96591c6be",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/7ac5f1143af2ad61c0e68b2c273b65a96591c6be",
+    "commiter_name": "Callek",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #120 from mozilla-releng/fix_fennec_locales  Make fennec nightly work as well",
+    "commit_date": "2018-04-12 16:21:11"
+  },
+  "127": {
+    "sha": "daa73867b03bc9a5291abd6b231d1a596b2450c0",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/daa73867b03bc9a5291abd6b231d1a596b2450c0",
+    "commiter_name": "Callek",
+    "commiter_email": "Callek@gmail.com",
+    "commit_message": "Make fennec nightly work as well",
+    "commit_date": "2018-04-12 14:03:49"
+  },
+  "128": {
+    "sha": "94fd0f39b5d8fe1f8f1520511ab521a4e596badc",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/94fd0f39b5d8fe1f8f1520511ab521a4e596badc",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "6.0.0",
+    "commit_date": "2018-04-11 08:06:44"
+  },
+  "129": {
+    "sha": "39868d128e8e906787192c98bc77bcd3ecad3429",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/39868d128e8e906787192c98bc77bcd3ecad3429",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Add missing tests for is_partner_{private,public}_task()",
+    "commit_date": "2018-04-10 09:01:17"
+  },
+  "130": {
+    "sha": "e2736da832993f8ff8e31b6498be98fa3c25c3a1",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e2736da832993f8ff8e31b6498be98fa3c25c3a1",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Fix partner test 2",
+    "commit_date": "2018-04-10 08:30:45"
+  },
+  "131": {
+    "sha": "e4d528e68437a54dc118e0ca00c39fc72a4bb93e",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e4d528e68437a54dc118e0ca00c39fc72a4bb93e",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Fix locales list",
+    "commit_date": "2018-04-09 19:10:17"
+  },
+  "132": {
+    "sha": "3b9469664fbd5d53d1d690ccfefab88a1bbb425d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/3b9469664fbd5d53d1d690ccfefab88a1bbb425d",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Fix missed {{ locale }}",
+    "commit_date": "2018-04-09 18:55:46"
+  },
+  "133": {
+    "sha": "b3c72753e3622c9d980e12f166ad208769b8e7d0",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/b3c72753e3622c9d980e12f166ad208769b8e7d0",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Fix partner test 1",
+    "commit_date": "2018-04-09 16:59:37"
+  },
+  "134": {
+    "sha": "229a23774766c5db412944fa9e4a1a0c6bb16d16",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/229a23774766c5db412944fa9e4a1a0c6bb16d16",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Bug 1441353 - Support several locales in `task.payload.upstreamArtifacts`",
+    "commit_date": "2018-04-09 15:38:14"
+  },
+  "135": {
+    "sha": "ff711578945fc2a9fd09428a6482e0f4bead4a54",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/ff711578945fc2a9fd09428a6482e0f4bead4a54",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Add sorted list to cope with py 3.5 index issue.",
+    "commit_date": "2018-04-06 18:47:21"
+  },
+  "136": {
+    "sha": "c776cce6d7fa33918d3ab9e522d6fa6edb769db4",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c776cce6d7fa33918d3ab9e522d6fa6edb769db4",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Fix sha1 that accidetally slipped in testing commits.",
+    "commit_date": "2018-04-06 18:43:35"
+  },
+  "137": {
+    "sha": "86a82b8683167ec432d3435ea8088897d4c09e99",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/86a82b8683167ec432d3435ea8088897d4c09e99",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Attempt to cover 100% code coverage",
+    "commit_date": "2018-04-06 18:38:57"
+  },
+  "138": {
+    "sha": "d96e25af3f1fbe937db8c10c106bf4b8a9f6598d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d96e25af3f1fbe937db8c10c106bf4b8a9f6598d",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "92% code coverage, done with utils.py and task.py",
+    "commit_date": "2018-04-06 16:00:27"
+  },
+  "139": {
+    "sha": "3101c9b1a9fc806a6c9bbb7aeab5f8e60536ba24",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/3101c9b1a9fc806a6c9bbb7aeab5f8e60536ba24",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Implement default private behavior and public behavior.",
+    "commit_date": "2018-04-05 13:50:37"
+  },
+  "140": {
+    "sha": "8d255ffac384a43a3ec3cf822f1db239d865d4bd",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8d255ffac384a43a3ec3cf822f1db239d865d4bd",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1447673 - first draft to fix EME-free partner repacks.",
+    "commit_date": "2018-03-21 17:38:04"
+  },
+  "141": {
+    "sha": "f627203464b8f920e6ad77c8bfb50882d63155af",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/f627203464b8f920e6ad77c8bfb50882d63155af",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Add Thunderbird paths to constants.",
+    "commit_date": "2018-03-21 15:05:23"
+  },
+  "142": {
+    "sha": "c559fb73c8914abbb59e69221fe6974c3fa455a1",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c559fb73c8914abbb59e69221fe6974c3fa455a1",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Bug 1443588: Cleanup up missing coverage.",
+    "commit_date": "2018-04-06 16:01:23"
+  },
+  "143": {
+    "sha": "bb72b33b64db6f66734af45de7cd8b94f00f5fca",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/bb72b33b64db6f66734af45de7cd8b94f00f5fca",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Bug 1443588: Use the template key directly to get beetmover manifest templates, rather than indirecting through a config file.",
+    "commit_date": "2018-03-06 20:29:02"
+  },
+  "144": {
+    "sha": "24d5ffc1c2079e63e47aeb202b0983eeea012fc0",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/24d5ffc1c2079e63e47aeb202b0983eeea012fc0",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Bug 1443588: Refactor the fennect templates, so that they don't vary by platform.  Before, the only essential difference between them is the `android- ` slug in the file names. Make this a template parameter, so they can be merged.",
+    "commit_date": "2018-03-06 19:35:28"
+  },
+  "145": {
+    "sha": "8b92d73e839f21f7168f8c35fedff76f1927d010",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8b92d73e839f21f7168f8c35fedff76f1927d010",
+    "commiter_name": "tomprince",
+    "commiter_email": null,
+    "commit_message": "Bug 1421062: Add support for the thunderbird scope prefixes.",
+    "commit_date": "2018-02-21 19:52:29"
+  },
+  "146": {
+    "sha": "4261e3ecac86b2a79cb6770341a93a520993cd9b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4261e3ecac86b2a79cb6770341a93a520993cd9b",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Bug 1421062: Add support for the thunderbird scope prefixes",
+    "commit_date": "2018-02-22 15:33:08"
+  },
+  "147": {
+    "sha": "d118e4ecf25b508f86920a5a4ed7440a6d5596bd",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d118e4ecf25b508f86920a5a4ed7440a6d5596bd",
+    "commiter_name": "mozbhearsum",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #114 from mozbhearsum/KEY  Add KEY file to candidates templates.",
+    "commit_date": "2018-04-05 13:49:26"
+  },
+  "148": {
+    "sha": "d83c45adc085cbe6955e95f7ead940508b75b71f",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d83c45adc085cbe6955e95f7ead940508b75b71f",
+    "commiter_name": "mozbhearsum",
+    "commiter_email": "bhearsum@mozilla.com",
+    "commit_message": "Version bump.",
+    "commit_date": "2018-04-04 11:09:06"
+  },
+  "149": {
+    "sha": "332dc1a3f2c111f0d1b519f60629f3db778bccdf",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/332dc1a3f2c111f0d1b519f60629f3db778bccdf",
+    "commiter_name": "mozbhearsum",
+    "commiter_email": "bhearsum@mozilla.com",
+    "commit_message": "Add KEY file to candidates templates.",
+    "commit_date": "2018-04-03 19:41:26"
+  },
+  "150": {
+    "sha": "a929929f47f7c1542ffb7d687640628ee58f1e22",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/a929929f47f7c1542ffb7d687640628ee58f1e22",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "5.1.1",
+    "commit_date": "2018-04-03 13:52:35"
+  },
+  "151": {
+    "sha": "ba6847b4db13e4b524ced8553e39724fae87d670",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/ba6847b4db13e4b524ced8553e39724fae87d670",
+    "commiter_name": "catlee",
+    "commiter_email": null,
+    "commit_message": "Bug 1403548: Add asan platforms to platform specific nightly templates (#113)",
+    "commit_date": "2018-04-03 13:51:06"
+  },
+  "152": {
+    "sha": "221763bf370592c637bf1534bfbbaf5ad4b0a14b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/221763bf370592c637bf1534bfbbaf5ad4b0a14b",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "5.1.0",
+    "commit_date": "2018-03-27 12:10:08"
+  },
+  "153": {
+    "sha": "12d94ea2b1b926bbb44f821043d74b4c4dc5a661",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/12d94ea2b1b926bbb44f821043d74b4c4dc5a661",
+    "commiter_name": "catlee",
+    "commiter_email": null,
+    "commit_message": "Bug 1403548: Support linux64-asan-reporter platform (#111)",
+    "commit_date": "2018-03-27 12:08:08"
+  },
+  "154": {
+    "sha": "90eaee0f8c527be5422c809b27a03109a341f24d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/90eaee0f8c527be5422c809b27a03109a341f24d",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #107 from escapewindow/source2  bug 1432591 - use pretty naming.",
+    "commit_date": "2018-03-19 20:10:40"
+  },
+  "155": {
+    "sha": "a41601d19767c27e21d0b1e99741507a9f5da451",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/a41601d19767c27e21d0b1e99741507a9f5da451",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "5.0.1",
+    "commit_date": "2018-03-15 22:32:57"
+  },
+  "156": {
+    "sha": "8773e6471432dd8fdf30dbc56abae731abb329db",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8773e6471432dd8fdf30dbc56abae731abb329db",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "update readme",
+    "commit_date": "2018-03-15 22:14:46"
+  },
+  "157": {
+    "sha": "9e0bef7274650e78ccd8530e7bc87b8e4e1bfa8e",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/9e0bef7274650e78ccd8530e7bc87b8e4e1bfa8e",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "source: keep the old name",
+    "commit_date": "2018-03-15 22:13:59"
+  },
+  "158": {
+    "sha": "5795bbb890b89c3579a9ef61766c583aa8caf5b9",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/5795bbb890b89c3579a9ef61766c583aa8caf5b9",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "5.0.0",
+    "commit_date": "2018-03-16 14:20:31"
+  },
+  "159": {
+    "sha": "e26b4c69f9ed25ad0028e6423c8dae45e4d5f4dc",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e26b4c69f9ed25ad0028e6423c8dae45e4d5f4dc",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Bug 1445593 - Use fonctions exposed by scriptworker.client",
+    "commit_date": "2018-03-16 13:50:26"
+  },
+  "160": {
+    "sha": "e25f27ae3ab15627d542f221baf2d361e98285de",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e25f27ae3ab15627d542f221baf2d361e98285de",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #106 from escapewindow/source-tarball  bug 1432591 - Source tarball",
+    "commit_date": "2018-03-15 19:18:15"
+  },
+  "161": {
+    "sha": "4c69998e6487afe01675703d3e734110a1eabb47",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4c69998e6487afe01675703d3e734110a1eabb47",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "4.2.0",
+    "commit_date": "2018-03-14 23:25:19"
+  },
+  "162": {
+    "sha": "c4cda98bef0caa8e23aa1145b214afe421c3362c",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c4cda98bef0caa8e23aa1145b214afe421c3362c",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "bug 1432591 - add source.tar.xz",
+    "commit_date": "2018-03-13 20:36:16"
+  },
+  "163": {
+    "sha": "b4d4f5501425e5dbbfb121b7e891f485b3f6f5ad",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/b4d4f5501425e5dbbfb121b7e891f485b3f6f5ad",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "4.1.0",
+    "commit_date": "2018-02-28 09:48:01"
+  },
+  "164": {
+    "sha": "821df29851b2dc350f0321103180907fa1d24e70",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/821df29851b2dc350f0321103180907fa1d24e70",
+    "commiter_name": "catlee",
+    "commiter_email": null,
+    "commit_message": "Add support for linux64-asan platform from bug 1403548",
+    "commit_date": "2018-02-22 11:16:08"
+  },
+  "165": {
+    "sha": "64f69dce6392e0ab2bc0c6e15f363659eea1cc76",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/64f69dce6392e0ab2bc0c6e15f363659eea1cc76",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Yet another fix for balrog platforms.",
+    "commit_date": "2018-02-21 16:13:08"
+  },
+  "166": {
+    "sha": "be682ae8657017d2405b8664dfed2577c062a26d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/be682ae8657017d2405b8664dfed2577c062a26d",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Yet another fix because why not.",
+    "commit_date": "2018-02-21 10:18:34"
+  },
+  "167": {
+    "sha": "6e64d71177c976a1abd9d5a082f55f581d69d619",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/6e64d71177c976a1abd9d5a082f55f581d69d619",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Fix platform for beetmover-repackage jobs.",
+    "commit_date": "2018-02-20 18:22:00"
+  },
+  "168": {
+    "sha": "36ac1072b3f3cf4ad6cf36037adcdd94c5669cfc",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/36ac1072b3f3cf4ad6cf36037adcdd94c5669cfc",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Add linux64-devedition-devedition as temp template key as hack.",
+    "commit_date": "2018-02-20 13:48:50"
+  },
+  "169": {
+    "sha": "9e62503eac8d82ef2bc281c572a17acdd204ab2e",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/9e62503eac8d82ef2bc281c572a17acdd204ab2e",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Add android as single platform.",
+    "commit_date": "2018-02-19 14:11:05"
+  },
+  "170": {
+    "sha": "64395510647fe2cd5a20254d6d51cffccf252544",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/64395510647fe2cd5a20254d6d51cffccf252544",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1432219 - add SUMS and SUMMARY files to product templates.",
+    "commit_date": "2018-02-16 18:11:08"
+  },
+  "171": {
+    "sha": "6ee8f036f8bcd103b3e5a7429123fe66f43c79a8",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/6ee8f036f8bcd103b3e5a7429123fe66f43c79a8",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Rename to payload.releaseProperties as a matter of consistency",
+    "commit_date": "2018-02-15 17:12:48"
+  },
+  "172": {
+    "sha": "fab54c79c299c0bf065522dbf8f1290a25d34b9b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/fab54c79c299c0bf065522dbf8f1290a25d34b9b",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Make sure get_release_props returns the right file",
+    "commit_date": "2018-02-15 10:56:34"
+  },
+  "173": {
+    "sha": "4617a0aa2ee09a388f96da67bbce0a0168093b7b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4617a0aa2ee09a388f96da67bbce0a0168093b7b",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Add support for task.payload.release_properties",
+    "commit_date": "2018-02-15 10:33:56"
+  },
+  "174": {
+    "sha": "b866796eacbc0ac1fb4b08a32d9c47abddd074fa",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/b866796eacbc0ac1fb4b08a32d9c47abddd074fa",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Determine release_props_file within get_release_props",
+    "commit_date": "2018-02-15 10:20:56"
+  },
+  "175": {
+    "sha": "c679b3c4a91c38bcdd123effdcc7b7d23d43f6e7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c679b3c4a91c38bcdd123effdcc7b7d23d43f6e7",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Add .pytest_cache directory to gitignore (#102)",
+    "commit_date": "2018-02-15 12:54:19"
+  },
+  "176": {
+    "sha": "e7f0a428ec8c65e92040704c6c6e50797055e799",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e7f0a428ec8c65e92040704c6c6e50797055e799",
+    "commiter_name": "srfraser",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Clearer logs of what's moving where (#98)",
+    "commit_date": "2017-12-16 17:56:20"
+  },
+  "177": {
+    "sha": "42b1ea70956338740c6ab72cad5d476579f7e8f3",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/42b1ea70956338740c6ab72cad5d476579f7e8f3",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1423885 - Yet another milestone beetmoverscript  (#96)    Bug 1398805 - stop transfering checksums.asc as beet files. Leave them be are.      3.4.1-dev1      Add temp devedition templates and fix appName hassle.      3.4.1-dev2      maybe fix devedition      dev3      try to match actual balrog_props      dev4      ah, this is the real fix?      dev5      ARGH      dev6      Fix l10n BM for devedition      Fix README      3.4.1-dev7      Fix the 403, rewrite product bucket logic.      3.4.1-dev8      Adjust product name in Balrog manifest for Devedition      3.4.1-dev9      fix devedition beetmover-cdns      dev10      Fix platforms for Balrog manifests      3.4.1-dev10      3.4.1-dev11      3.5.0      3.5.0      Add a break statement in generate_balrog_info() to tiny improve perf.      Fix source, checksums and bump to 4.0.0      Remove SOURCE as beetmover-checksums      4.0.2      4.0.2 in Changelog for 2017-12-14",
+    "commit_date": "2017-12-14 16:57:08"
+  },
+  "178": {
+    "sha": "dc2f8cdd19ef7dd1e5a34e1c62cecd970c5d410d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/dc2f8cdd19ef7dd1e5a34e1c62cecd970c5d410d",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1413149 - add beetmoverscript support firefox releases and rollout 3.4.0 (#92)    Bug 1413149 - add beetmoverscript templates to support firefox releases      Addressing reviewing comments.      add missing tests for releases under templates      Fix tabs in template      3.3.0-dev1      Fix firefox candidates yml file      Fix firefox_candidates.yml for missing s3_prefix      Fix partials templates.      Add missing target.tar.bz2.asc file in templates.      Add mac mar/mbsdiff entries in templates      Fix partials naming      Fix tests      Prep groundwork for balrogworkers.      Adjust manifest.json to encompass missings release argsuments.      3.3.0-dev8      Fix stupid type comparison in buildid.      3.3.0-dev9      add SOURCE files    I added these to the top level - not sure if that is ok. It seems to  make sense to me, but I'm open where it goes / what it's named.      fix enrich balrog manifest test      3.3.0.dev10      Add checksums in candidates templates.      3.3.0-dev11      Fix coverage back to 100%      Bugfix that could have potentially broke firefox nightlies.      Fix linters.      3.4.0 + CHANGELOG update      Prepping CHANGELOG to 3.4.0 release date",
+    "commit_date": "2017-12-06 06:40:42"
+  },
+  "179": {
+    "sha": "7137134707ede857075a171d07393a9472cce03f",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/7137134707ede857075a171d07393a9472cce03f",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "3.3.0",
+    "commit_date": "2017-11-22 13:33:32"
+  },
+  "180": {
+    "sha": "970d4c625ef6f8e98401db5462d5eab7d7de78bd",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/970d4c625ef6f8e98401db5462d5eab7d7de78bd",
+    "commiter_name": "rail",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #95 from rail/jsshell  Bug 1336514 - Publish jsshell- .zip",
+    "commit_date": "2017-11-20 20:15:34"
+  },
+  "181": {
+    "sha": "0822fbec281183ecce530ab72ae2e55ed327a697",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/0822fbec281183ecce530ab72ae2e55ed327a697",
+    "commiter_name": "rail",
+    "commiter_email": "rail@mozilla.com",
+    "commit_message": "Bug 1336514 - Publish jsshell- .zip",
+    "commit_date": "2017-11-16 20:23:30"
+  },
+  "182": {
+    "sha": "071df154b33d44dd12298012437243c7f2becd66",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/071df154b33d44dd12298012437243c7f2becd66",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1417568 - beetmoverscript push-to-cdns should not silently return success if nothing has been copied over (#94)    Bug 1417568 - fail of not artifacts are to be copied for push-to-cdns.      3.2.1-dev1      Fix tests      Changelog input",
+    "commit_date": "2017-11-15 21:25:21"
+  },
+  "183": {
+    "sha": "45cc5c6195020002610fa180a2ffa21338d83264",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/45cc5c6195020002610fa180a2ffa21338d83264",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1405622 - Stop publishing PMARs under latest dirs and assign dedicated subdir. (#93)    Bug 1405622 - Stop publishing PMARs under latest dirs and assign dedicated subdir.      3.2.0",
+    "commit_date": "2017-11-06 10:54:54"
+  },
+  "184": {
+    "sha": "a3d536d166199523126bfca809bbb40e3a8a8d57",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/a3d536d166199523126bfca809bbb40e3a8a8d57",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #90 from escapewindow/fix  fixes: bucket name, prefix",
+    "commit_date": "2017-10-26 18:19:50"
+  },
+  "185": {
+    "sha": "49b4d627487d2284695003bfdd4ad9501bc9df21",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/49b4d627487d2284695003bfdd4ad9501bc9df21",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "3.1.0",
+    "commit_date": "2017-10-26 18:16:52"
+  },
+  "186": {
+    "sha": "36c200a3fbddf1a155d7e05e9ee1219d2e39cc96",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/36c200a3fbddf1a155d7e05e9ee1219d2e39cc96",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "PRODUCT_TO_PATH, to avoid the mobile / fennec product issue",
+    "commit_date": "2017-10-26 17:59:21"
+  },
+  "187": {
+    "sha": "37e90609d7bbbf09fb4b1eb1f5e70667a62e38d9",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/37e90609d7bbbf09fb4b1eb1f5e70667a62e38d9",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "fixes: bucket name, prefix  - `bucket.objects.filter` takes a `Prefix` kwarg; I was passing in an arg. Fixed. - I was using `context.bucket` as the bucket name. This is `nightly` or `dep`, which is really our bucket nickname, not the actual bucket name. Added a `get_bucket_name` function and set `context.bucket_name` when appropriate.",
+    "commit_date": "2017-10-26 01:51:35"
+  },
+  "188": {
+    "sha": "cafc9d3b8409938486c3aa628265de86a3443be3",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/cafc9d3b8409938486c3aa628265de86a3443be3",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #89 from escapewindow/fix_candidates  fix fennec beetmover candidates",
+    "commit_date": "2017-10-24 19:28:54"
+  },
+  "189": {
+    "sha": "70ce3400147e71b07b0d7eecbb3d5b4a6a30bc7a",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/70ce3400147e71b07b0d7eecbb3d5b4a6a30bc7a",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "3.0.0",
+    "commit_date": "2017-10-24 19:26:28"
+  },
+  "190": {
+    "sha": "42eb0e5b1895a7edd1439ba71c3fa6d1f190ed2a",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/42eb0e5b1895a7edd1439ba71c3fa6d1f190ed2a",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "address review comments",
+    "commit_date": "2017-10-24 19:23:57"
+  },
+  "191": {
+    "sha": "ebcad9db0da0b338a3d0d670fc39efa33aa83f09",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/ebcad9db0da0b338a3d0d670fc39efa33aa83f09",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "fix fennec beetmover candidates  I debated lumping push-to-candidates with push-to-releases, and it looks like the schema change busted push-to-candidates. This patch separates them back out.",
+    "commit_date": "2017-10-24 19:06:57"
+  },
+  "192": {
+    "sha": "250df301eb5ca8295a7d86aa6d16a4ecb18f5058",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/250df301eb5ca8295a7d86aa6d16a4ecb18f5058",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #87 from escapewindow/release  add push_to_releases support",
+    "commit_date": "2017-10-23 17:30:12"
+  },
+  "193": {
+    "sha": "a249b8da2bb2473dd21ac65782d5a909419ad993",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/a249b8da2bb2473dd21ac65782d5a909419ad993",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "2.0.0",
+    "commit_date": "2017-10-23 17:17:57"
+  },
+  "194": {
+    "sha": "a7cb06fecb263ecfb20dc30ee3cdd2a63b003945",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/a7cb06fecb263ecfb20dc30ee3cdd2a63b003945",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "address review comments",
+    "commit_date": "2017-10-23 16:59:08"
+  },
+  "195": {
+    "sha": "80f2d0e236ca3dc5c730afb0df001b15cf1d48bb",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/80f2d0e236ca3dc5c730afb0df001b15cf1d48bb",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "copy to releases",
+    "commit_date": "2017-10-19 05:41:20"
+  },
+  "196": {
+    "sha": "6ac2c9b5091e28f0efd8924c6792881c23de62f5",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/6ac2c9b5091e28f0efd8924c6792881c23de62f5",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "add test coverage",
+    "commit_date": "2017-10-17 19:33:43"
+  },
+  "197": {
+    "sha": "c2cf7a83456f667e545f3968465016fd5a09e11b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c2cf7a83456f667e545f3968465016fd5a09e11b",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "use release schema; fix tests",
+    "commit_date": "2017-10-17 19:23:09"
+  },
+  "198": {
+    "sha": "89e7dcb2b83664649e6f2c3f4ba241ff501090d6",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/89e7dcb2b83664649e6f2c3f4ba241ff501090d6",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "start working on release support",
+    "commit_date": "2017-10-07 21:27:25"
+  },
+  "199": {
+    "sha": "d19c41f67f8bf486462ae7f5b58acd19b1fb09b7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d19c41f67f8bf486462ae7f5b58acd19b1fb09b7",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #85 from escapewindow/tests  Test improvements",
+    "commit_date": "2017-09-11 20:00:17"
+  },
+  "200": {
+    "sha": "a741195b6a99ac0c98dba61103a7af24cd1af435",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/a741195b6a99ac0c98dba61103a7af24cd1af435",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "ignore beetmoverscript/test/test_artifact_dir",
+    "commit_date": "2017-09-08 23:53:25"
+  },
+  "201": {
+    "sha": "acf0ee1410fe706b2f6854e1859ceeac066ab813",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/acf0ee1410fe706b2f6854e1859ceeac066ab813",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "deal with random ordered completeInfo",
+    "commit_date": "2017-09-08 23:52:31"
+  },
+  "202": {
+    "sha": "ac41878c9cad7e1a17c23f577da598b70b52e538",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/ac41878c9cad7e1a17c23f577da598b70b52e538",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "1.0.0 (#84)",
+    "commit_date": "2017-09-06 08:26:02"
+  },
+  "203": {
+    "sha": "80c83c2b59827c1365048beca99bd78729e41717",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/80c83c2b59827c1365048beca99bd78729e41717",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "Bug 1396797 Support for partials in manifest (#83)    Bug 1396797 Support for partials in manifest    The outbound manifest, used by balrog scriptworker, needs to  have information about partials added.    It's unwise to add a partial if there's no related complete,  so this involves a refactor so that instead of directly  populating context.balrog_manifest, we instead fill a  staging area with details about the files we have uploaded.    Once all uploads are done, we generate the balrog manifest  to be of the expected form.",
+    "commit_date": "2017-09-06 07:53:32"
+  },
+  "204": {
+    "sha": "eaca8d0656fa7ad968f28114be3567f2bb6a72f9",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/eaca8d0656fa7ad968f28114be3567f2bb6a72f9",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "Fix iteritems->items for py3 (#82)    Fix iteritems->items for py3      0.5.17",
+    "commit_date": "2017-09-04 17:43:02"
+  },
+  "205": {
+    "sha": "5435df273ac4babf182254f053ec9a2a436da182",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/5435df273ac4babf182254f053ec9a2a436da182",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "Version bump & commit squash (#81)    Bug 1395649 Add support for partials    Provided artifacts are of the form target.partial-N.mar where currently 1 <= N <= 4  In the task's extra field there is data that allows a mapping from partial-N to the  right buildid, that lets us fill out the template.      0.5.16",
+    "commit_date": "2017-09-04 14:35:35"
+  },
+  "206": {
+    "sha": "e2179d42d775c06fcfff9108a0d99a5dc60b967e",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e2179d42d775c06fcfff9108a0d99a5dc60b967e",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #80 from srfraser/bug_1395649_partials_updates  Bug 1395649 Add support for partials",
+    "commit_date": "2017-09-04 13:03:18"
+  },
+  "207": {
+    "sha": "97d6af841f27731df8af08ae2712b28215b9c5d7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/97d6af841f27731df8af08ae2712b28215b9c5d7",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "Update based on feedback",
+    "commit_date": "2017-09-04 12:39:36"
+  },
+  "208": {
+    "sha": "32d19b96fa9aa4c0fff32d6ea0f4d1147852ff26",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/32d19b96fa9aa4c0fff32d6ea0f4d1147852ff26",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "Update test coverage",
+    "commit_date": "2017-08-31 18:33:50"
+  },
+  "209": {
+    "sha": "47b318345614e76f0616560e12d23926c1a9d03a",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/47b318345614e76f0616560e12d23926c1a9d03a",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "Add new test file",
+    "commit_date": "2017-08-31 17:49:20"
+  },
+  "210": {
+    "sha": "63c47ba165da5fbf194917b8e6dac1674f1da71e",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/63c47ba165da5fbf194917b8e6dac1674f1da71e",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "Bug 1395649 Add support for partials  Provided artifacts are of the form target.partial-N.mar where currently 1 <= N <= 4 In the task's extra field there is data that allows a mapping from partial-N to the right buildid, that lets us fill out the template.",
+    "commit_date": "2017-08-31 17:44:44"
+  },
+  "211": {
+    "sha": "bca0b235f51e9b410850778587c01f54254fc767",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/bca0b235f51e9b410850778587c01f54254fc767",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "0.5.15 (#79)",
+    "commit_date": "2017-08-14 08:59:18"
+  },
+  "212": {
+    "sha": "e1009d93ba9841c47dbf61b395ca6b049957daa8",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e1009d93ba9841c47dbf61b395ca6b049957daa8",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Bug 1384482 - Support android-api-16 (#78)",
+    "commit_date": "2017-08-14 08:49:36"
+  },
+  "213": {
+    "sha": "b24e90eeb804ee452e05a746e60fb20bbec7c920",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/b24e90eeb804ee452e05a746e60fb20bbec7c920",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.5.14",
+    "commit_date": "2017-07-25 22:25:43"
+  },
+  "214": {
+    "sha": "cc68efa12183bbf6af7ae6d95feb11d4f32dd736",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/cc68efa12183bbf6af7ae6d95feb11d4f32dd736",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1372260 - keep both old and new stub installer formats for now. (#77)",
+    "commit_date": "2017-07-25 22:23:44"
+  },
+  "215": {
+    "sha": "335550e625e7d0d209f57f4329793ffb636ef220",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/335550e625e7d0d209f57f4329793ffb636ef220",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.5.13",
+    "commit_date": "2017-07-25 11:54:01"
+  },
+  "216": {
+    "sha": "732e2de158985ea92b4b81bae981d06174b7d29e",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/732e2de158985ea92b4b81bae981d06174b7d29e",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1372260 - change stub installer filename to Firefox Installer.r=jlorenzo (#76)",
+    "commit_date": "2017-07-25 11:52:40"
+  },
+  "217": {
+    "sha": "f540126bee805a9b6cc84ff2450d54fb63dafcbf",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/f540126bee805a9b6cc84ff2450d54fb63dafcbf",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "0.5.12",
+    "commit_date": "2017-07-19 09:52:23"
+  },
+  "218": {
+    "sha": "cedab94a45c75e8485ee4047d3d14fd8e999a4a4",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/cedab94a45c75e8485ee4047d3d14fd8e999a4a4",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1381508 - part 2: Upload win en-US installers to l10n dirs (#74)",
+    "commit_date": "2017-07-19 09:43:13"
+  },
+  "219": {
+    "sha": "8db4cd4779834f7607d3c127dc4a1970292d1e61",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8db4cd4779834f7607d3c127dc4a1970292d1e61",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.5.11",
+    "commit_date": "2017-07-17 16:24:27"
+  },
+  "220": {
+    "sha": "4fe4f2834eea8e8114ea976978bbb33451dd30e9",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4fe4f2834eea8e8114ea976978bbb33451dd30e9",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": null,
+    "commit_message": "Bug 1381508 - Upload win repacks to l10n dirs (#73)",
+    "commit_date": "2017-07-17 16:18:28"
+  },
+  "221": {
+    "sha": "3e015c99413bbca14566ec23742d698b76943904",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/3e015c99413bbca14566ec23742d698b76943904",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #72 from srfraser/win_templates_update  Win templates update",
+    "commit_date": "2017-07-15 21:11:22"
+  },
+  "222": {
+    "sha": "d54e51744aa7bf7591158104200babfe4dfe7cb7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d54e51744aa7bf7591158104200babfe4dfe7cb7",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "0.5.10",
+    "commit_date": "2017-07-15 21:08:30"
+  },
+  "223": {
+    "sha": "48cd5ee695b95e8bb9112d25f56f2b5db9326bc3",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/48cd5ee695b95e8bb9112d25f56f2b5db9326bc3",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "add missing files for repacks",
+    "commit_date": "2017-07-15 09:42:15"
+  },
+  "224": {
+    "sha": "37340bd575dc780ada7d1c67e83391ffda6c8798",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/37340bd575dc780ada7d1c67e83391ffda6c8798",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "merge",
+    "commit_date": "2017-07-15 09:40:12"
+  },
+  "225": {
+    "sha": "a87a4caab7f0fa444783a647bc2215da3a645e18",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/a87a4caab7f0fa444783a647bc2215da3a645e18",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #71 from escapewindow/spacing  fix spacing",
+    "commit_date": "2017-07-14 21:13:21"
+  },
+  "226": {
+    "sha": "c1a8776ba2ec3064190692f437050a626997eba7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c1a8776ba2ec3064190692f437050a626997eba7",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "0.5.9",
+    "commit_date": "2017-07-14 21:09:46"
+  },
+  "227": {
+    "sha": "9dfc52fc978fc77ee52cc403c6ff171af32a829f",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/9dfc52fc978fc77ee52cc403c6ff171af32a829f",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "fix spacing  yaml is reading these as subkeys rather than keys, because they're indented too far.",
+    "commit_date": "2017-07-14 21:07:29"
+  },
+  "228": {
+    "sha": "a4aff9265d8b597636aa08a6d37a4d9f7304ea8c",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/a4aff9265d8b597636aa08a6d37a4d9f7304ea8c",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.5.8.",
+    "commit_date": "2017-07-14 13:49:33"
+  },
+  "229": {
+    "sha": "61fbd2f2cb2ef207b27c81b2459230e4322fb30a",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/61fbd2f2cb2ef207b27c81b2459230e4322fb30a",
+    "commiter_name": "srfraser",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Adjust templates for use with win32/64 (#70)    Adjust templates for use with win32/64      fix name of original stub installer",
+    "commit_date": "2017-07-14 13:48:37"
+  },
+  "230": {
+    "sha": "4e3abb53010d3c4bd8f1cdcd7acfce91e72be76b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4e3abb53010d3c4bd8f1cdcd7acfce91e72be76b",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "fix name of original stub installer",
+    "commit_date": "2017-07-13 19:15:27"
+  },
+  "231": {
+    "sha": "8c9f933f4d17eff19948beb00c5002c46a0a491d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8c9f933f4d17eff19948beb00c5002c46a0a491d",
+    "commiter_name": "srfraser",
+    "commiter_email": null,
+    "commit_message": "Adjust templates for use with win32/64",
+    "commit_date": "2017-07-06 17:09:41"
+  },
+  "232": {
+    "sha": "91ce50c54e1f886da3ede4dfdb09cb36bc61d756",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/91ce50c54e1f886da3ede4dfdb09cb36bc61d756",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Improvements to beetmoverscript deployment docs. (#69)    Improve deployment info in beetmoverscript      Fix styling      Fix nits after review.",
+    "commit_date": "2017-06-20 01:07:07"
+  },
+  "233": {
+    "sha": "4b8b310a181d7539a6819cc6b23dfc27ac374579",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4b8b310a181d7539a6819cc6b23dfc27ac374579",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.5.7",
+    "commit_date": "2017-06-19 23:53:13"
+  },
+  "234": {
+    "sha": "e96808dfe3a7bf9b53dc7a5938aea888b6994c62",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e96808dfe3a7bf9b53dc7a5938aea888b6994c62",
+    "commiter_name": "JohanLorenzo",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1373673 - Let beetmover upload en-US nightlies to latest-mozilla-central-l10n (#68)",
+    "commit_date": "2017-06-19 23:50:15"
+  },
+  "235": {
+    "sha": "7190a26595334420fa5e483c00fb676c203549c6",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/7190a26595334420fa5e483c00fb676c203549c6",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #67 from escapewindow/retry-async-exc  bug 1364765 - retry on any exception.",
+    "commit_date": "2017-06-14 20:26:36"
+  },
+  "236": {
+    "sha": "20adfb43de4774dbf3ff0b502ed0c2bf1a613a60",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/20adfb43de4774dbf3ff0b502ed0c2bf1a613a60",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "0.5.6",
+    "commit_date": "2017-06-14 19:51:20"
+  },
+  "237": {
+    "sha": "8da69c10194e9c73461518aff50d328ada8426f2",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8da69c10194e9c73461518aff50d328ada8426f2",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "bug 1364765 - retry on any exception.",
+    "commit_date": "2017-06-14 16:31:41"
+  },
+  "238": {
+    "sha": "e8ee94d68f0c9581149feecd8d3efa2db9a5e49a",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e8ee94d68f0c9581149feecd8d3efa2db9a5e49a",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.5.5",
+    "commit_date": "2017-06-01 20:05:35"
+  },
+  "239": {
+    "sha": "5e651f54c99f827ee16cb12912c9e999b21bcc56",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/5e651f54c99f827ee16cb12912c9e999b21bcc56",
+    "commiter_name": "indygreg",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1359965 - Update web platform test archive name (#63)    Bug 1359965 - Update web platform test archive name    The archive type changed from zip to tar.gz.      Bug 1359965 - enable both zip and tar.gz formats for now.",
+    "commit_date": "2017-06-01 20:03:52"
+  },
+  "240": {
+    "sha": "2a4c6b597cf162895d5dbf32ad55e9270a2f407c",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/2a4c6b597cf162895d5dbf32ad55e9270a2f407c",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #66 from escapewindow/054-branch  0.5.4",
+    "commit_date": "2017-05-26 20:37:43"
+  },
+  "241": {
+    "sha": "8589010c17bbbd089408ee77b28c405901cfac3d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8589010c17bbbd089408ee77b28c405901cfac3d",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "0.5.4",
+    "commit_date": "2017-05-26 19:48:07"
+  },
+  "242": {
+    "sha": "43f364c37a33d8c6a1c5e8a7d713547a45e6734b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/43f364c37a33d8c6a1c5e8a7d713547a45e6734b",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "hg->git in readme",
+    "commit_date": "2017-05-26 19:49:22"
+  },
+  "243": {
+    "sha": "89c21a637a02c8bb71c4d3f61d0e146a0b58de0b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/89c21a637a02c8bb71c4d3f61d0e146a0b58de0b",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #65 from darchons/fennec-aarch64  Bug 1366404 - Add templates for AArch64",
+    "commit_date": "2017-05-26 19:28:53"
+  },
+  "244": {
+    "sha": "dca99aa73ead6c7edbe096c7b96ae8544f31aea7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/dca99aa73ead6c7edbe096c7b96ae8544f31aea7",
+    "commiter_name": "darchons",
+    "commiter_email": null,
+    "commit_message": "Bug 1366404 - Add templates for AArch64  Add templates for uploading the new Fennec AArch64 Nightly. The templates are copied from the corresponding x86 templates, with the architecture name replaced.",
+    "commit_date": "2017-05-26 18:53:42"
+  },
+  "245": {
+    "sha": "87350d3dbb57190bb1257699fd7b4b64de8bff10",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/87350d3dbb57190bb1257699fd7b4b64de8bff10",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Improve README to encompass the deployment (version bump) procedure.",
+    "commit_date": "2017-05-16 21:02:16"
+  },
+  "246": {
+    "sha": "8defd684725efdbc04b5716e92319cc452b6ccfe",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8defd684725efdbc04b5716e92319cc452b6ccfe",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.5.3",
+    "commit_date": "2017-05-16 20:32:05"
+  },
+  "247": {
+    "sha": "8e541373cb341573b62545c183c6f2fcd969a7d2",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8e541373cb341573b62545c183c6f2fcd969a7d2",
+    "commiter_name": "mozbhearsum",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Add old id fennec platforms. (#62)",
+    "commit_date": "2017-05-16 20:30:51"
+  },
+  "248": {
+    "sha": "3e4a070105d2a2e426dd2c4dcf8b74c1e74dc881",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/3e4a070105d2a2e426dd2c4dcf8b74c1e74dc881",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.5.2",
+    "commit_date": "2017-05-09 08:39:27"
+  },
+  "249": {
+    "sha": "b7576df15949a8d75eec1ed4a631dd5c1492a17d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/b7576df15949a8d75eec1ed4a631dd5c1492a17d",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1363287 - add missing target.awsy.tests.zip in Fennec beta templates. (#61)",
+    "commit_date": "2017-05-09 08:37:45"
+  },
+  "250": {
+    "sha": "03e30b21a7211c38742be609ef0c2d3296376eff",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/03e30b21a7211c38742be609ef0c2d3296376eff",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.5.1",
+    "commit_date": "2017-05-05 13:22:48"
+  },
+  "251": {
+    "sha": "cbaff6164d19eb6601575ea779d7c5865376fa41",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/cbaff6164d19eb6601575ea779d7c5865376fa41",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1344572 - add Cache-Control headers for beetmoved artifacts. r=catlee (#59)    Bug 1344572 - add Cache-Control headers for beetmoved artifacts. r=catlee      get tests green with aiohttp 2.0.0      Adjust cache-control to 4h at a first run.",
+    "commit_date": "2017-05-05 12:57:45"
+  },
+  "252": {
+    "sha": "7d26176fd2ad63cffcec8e53fa73479f49181b99",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/7d26176fd2ad63cffcec8e53fa73479f49181b99",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.5.0",
+    "commit_date": "2017-04-12 05:37:16"
+  },
+  "253": {
+    "sha": "fdb76d7cced867e785beb65e0e447b08b379e188",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/fdb76d7cced867e785beb65e0e447b08b379e188",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1345524 - add changes needed for mac nightlies. r=aki (#60)    Get tests green past aiohttp 2.0.0      Bug 1345524 - add changes needed for mac nightlies. r=aki",
+    "commit_date": "2017-04-12 05:34:38"
+  },
+  "254": {
+    "sha": "8359e13d5a138468e45bb09b4d68ef7dec3e86b7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/8359e13d5a138468e45bb09b4d68ef7dec3e86b7",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.4.4",
+    "commit_date": "2017-03-17 23:26:00"
+  },
+  "255": {
+    "sha": "29f5a9aad88381f2a6dd9dab8a21c1e7611ce024",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/29f5a9aad88381f2a6dd9dab8a21c1e7611ce024",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1348286 - fix awsy.tests bustage in beetmoverscript. r=bustage",
+    "commit_date": "2017-03-17 23:25:09"
+  },
+  "256": {
+    "sha": "c1bad6f5c833ff3fdbdc103b72d4cd8a53f8c010",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c1bad6f5c833ff3fdbdc103b72d4cd8a53f8c010",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.4.3",
+    "commit_date": "2017-03-17 22:30:59"
+  },
+  "257": {
+    "sha": "30738cc6e8d21fe1d5211c332fca60675a7f1965",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/30738cc6e8d21fe1d5211c332fca60675a7f1965",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.4.2",
+    "commit_date": "2017-03-17 21:42:56"
+  },
+  "258": {
+    "sha": "810127ead556352a790e32a9abe28f6af3bfe2c7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/810127ead556352a790e32a9abe28f6af3bfe2c7",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Bug 1348286 - add missing target.awsy.tests.zip templates. r=jlund (#57)",
+    "commit_date": "2017-03-17 21:35:25"
+  },
+  "259": {
+    "sha": "ffc951f4cea3dc3dde7201b54f02acbe41177db9",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/ffc951f4cea3dc3dde7201b54f02acbe41177db9",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.4.1",
+    "commit_date": "2017-03-07 12:59:45"
+  },
+  "260": {
+    "sha": "549e60a5fdc8f2a967624198126a5c87168aeb4b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/549e60a5fdc8f2a967624198126a5c87168aeb4b",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #56 from MihaiTabara/1343649  Bug 1343649 - fix build_number and version within various action types. r=jlorenzo",
+    "commit_date": "2017-03-07 12:58:13"
+  },
+  "261": {
+    "sha": "793b0589072454e889d246cb5889d2b4328939b7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/793b0589072454e889d246cb5889d2b4328939b7",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Refactoring upon review.",
+    "commit_date": "2017-03-07 12:53:43"
+  },
+  "262": {
+    "sha": "de79871cb398ae8973b2f016a21856424a9336f6",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/de79871cb398ae8973b2f016a21856424a9336f6",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1343649 - fix build_number and version within various action types. r=jlorenzo",
+    "commit_date": "2017-03-07 12:18:40"
+  },
+  "263": {
+    "sha": "44c2645cd0488cb383d9496117f27e0f95835a41",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/44c2645cd0488cb383d9496117f27e0f95835a41",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #55 from escapewindow/version  add task.payload.version support",
+    "commit_date": "2017-03-01 20:33:20"
+  },
+  "264": {
+    "sha": "4313b9833045b90194b4a740b912f981fa8d6052",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4313b9833045b90194b4a740b912f981fa8d6052",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "0.4.0",
+    "commit_date": "2017-03-01 20:25:47"
+  },
+  "265": {
+    "sha": "309b2d528e80bd64aceaae56288743b59d74668d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/309b2d528e80bd64aceaae56288743b59d74668d",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "add task.payload.version support",
+    "commit_date": "2017-03-01 19:52:31"
+  },
+  "266": {
+    "sha": "5ac1c1d2ea93520820d9c17320f5d8cd533f40b8",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/5ac1c1d2ea93520820d9c17320f5d8cd533f40b8",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.3.1",
+    "commit_date": "2017-02-27 23:57:16"
+  },
+  "267": {
+    "sha": "a7745e494fe3fdc474438d66dcae5e4f4760b910",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/a7745e494fe3fdc474438d66dcae5e4f4760b910",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #54 from MihaiTabara/bug1343092  Bug 1343092 - fix fennec manifest.json to point to dated location ins\u2026",
+    "commit_date": "2017-02-27 23:55:24"
+  },
+  "268": {
+    "sha": "c2a29a06f8e1a48ee1b483a2426118db592c2739",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c2a29a06f8e1a48ee1b483a2426118db592c2739",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1343092 - fix fennec manifest.json to point to dated location instead of latest. r=me",
+    "commit_date": "2017-02-27 23:44:59"
+  },
+  "269": {
+    "sha": "64aa7f577b076e5fb4f0168ff5758d9081f056a4",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/64aa7f577b076e5fb4f0168ff5758d9081f056a4",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.3.0",
+    "commit_date": "2017-02-27 19:56:47"
+  },
+  "270": {
+    "sha": "d6d69ef5ee2789569b076f46557f8f9d36b5ffda",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d6d69ef5ee2789569b076f46557f8f9d36b5ffda",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #53 from MihaiTabara/cleanup  Bug 1338186 - revert the hacking to use real release/nightly scopes n\u2026",
+    "commit_date": "2017-02-26 13:49:50"
+  },
+  "271": {
+    "sha": "07429b1ba29355703bfdfa8ad64952c4c6564ab3",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/07429b1ba29355703bfdfa8ad64952c4c6564ab3",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1338186 - revert the hacking to use real release/nightly scopes now. r=aki",
+    "commit_date": "2017-02-23 23:00:35"
+  },
+  "272": {
+    "sha": "df4f206c96d73e8dff52a6c7284c0b697115bfa7",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/df4f206c96d73e8dff52a6c7284c0b697115bfa7",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #51 from MihaiTabara/releasify  Bug 1338186 - add beetmoverscript support for releases. r=aki",
+    "commit_date": "2017-02-23 18:16:38"
+  },
+  "273": {
+    "sha": "ef9ea9b17e7ecbd67a1088919625ea12d2cbfc47",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/ef9ea9b17e7ecbd67a1088919625ea12d2cbfc47",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.3.0-beta1",
+    "commit_date": "2017-02-23 14:01:25"
+  },
+  "274": {
+    "sha": "18684098072e482d3882c7028ef5bb3238c14818",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/18684098072e482d3882c7028ef5bb3238c14818",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Remove annoying cert occurrence of cert from README.",
+    "commit_date": "2017-02-23 13:21:30"
+  },
+  "275": {
+    "sha": "574a0d094a29da1040bfb6ee235e99aef357a687",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/574a0d094a29da1040bfb6ee235e99aef357a687",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Temporary hack in bug 1338186 to cope with nightly-hardcoded scopes. r=aki",
+    "commit_date": "2017-02-23 13:11:59"
+  },
+  "276": {
+    "sha": "6520cceef0cdd31c241f7af60f63d0241b4de25d",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/6520cceef0cdd31c241f7af60f63d0241b4de25d",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Merge branch 'master' into releasify",
+    "commit_date": "2017-02-22 23:01:49"
+  },
+  "277": {
+    "sha": "e50556907c031c854a787794b50881dfd150e1f2",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e50556907c031c854a787794b50881dfd150e1f2",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Standardize the new templates format along nightlies as well. Refactoring, improvements.",
+    "commit_date": "2017-02-22 22:59:18"
+  },
+  "278": {
+    "sha": "fd5624a40f5bd8f9c49e4bc465a70a012055c711",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/fd5624a40f5bd8f9c49e4bc465a70a012055c711",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #48 from MihaiTabara/removals  Finally send update_manifest to graveyard.r=aki",
+    "commit_date": "2017-02-22 13:47:24"
+  },
+  "279": {
+    "sha": "3a9292376fb4740cdebc93724226b692382ded99",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/3a9292376fb4740cdebc93724226b692382ded99",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Rename buckets to bucket_config within configuration logic.",
+    "commit_date": "2017-02-22 13:28:37"
+  },
+  "280": {
+    "sha": "28b351c1741c9b7bc156fac0e8bc1308771370fc",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/28b351c1741c9b7bc156fac0e8bc1308771370fc",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Tweak config_example and README accordingly to last commit.",
+    "commit_date": "2017-02-21 16:51:27"
+  },
+  "281": {
+    "sha": "c77451c83d124e185e16bfe32a6f56b495c6ef6a",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c77451c83d124e185e16bfe32a6f56b495c6ef6a",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1338186 - refactoring. r=aki",
+    "commit_date": "2017-02-21 16:47:16"
+  },
+  "282": {
+    "sha": "e0b8a11543e21dbe08e523ac16eb1293a267b667",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e0b8a11543e21dbe08e523ac16eb1293a267b667",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1338186 - add Fennec logic for push-to-candidates.",
+    "commit_date": "2017-02-17 12:46:18"
+  },
+  "283": {
+    "sha": "e1d98d08154c584a0b4d32ec5788a1a64f069452",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/e1d98d08154c584a0b4d32ec5788a1a64f069452",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1338186 - first iteration, split behavior per action/scope.",
+    "commit_date": "2017-02-16 19:36:40"
+  },
+  "284": {
+    "sha": "1f043f2c0cba10e7b5668404aac9b6194786ceb1",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/1f043f2c0cba10e7b5668404aac9b6194786ceb1",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Fix and improve tox, travis and coveralls.",
+    "commit_date": "2017-02-15 16:39:54"
+  },
+  "285": {
+    "sha": "d88af24da622e38595167b1673422bfcb5e526e8",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/d88af24da622e38595167b1673422bfcb5e526e8",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Fix and improve tox file.",
+    "commit_date": "2017-02-15 14:12:52"
+  },
+  "286": {
+    "sha": "ce7754d59c7e491cfcdcc94974378a23e2a85f7c",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/ce7754d59c7e491cfcdcc94974378a23e2a85f7c",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Improve README.",
+    "commit_date": "2017-02-15 13:41:19"
+  },
+  "287": {
+    "sha": "5a4f17f7ed03a366e442e4638242282101374ae9",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/5a4f17f7ed03a366e442e4638242282101374ae9",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Fix tests.",
+    "commit_date": "2017-02-15 13:17:50"
+  },
+  "288": {
+    "sha": "c33353b3eed2e6fe3e65002aef3e1eda7ee466ea",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/c33353b3eed2e6fe3e65002aef3e1eda7ee466ea",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1338232 - remove sha1, md5 checksums digests.",
+    "commit_date": "2017-02-10 05:03:42"
+  },
+  "289": {
+    "sha": "76d50e81d4f8e86d76af8b4634cbe3db97898544",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/76d50e81d4f8e86d76af8b4634cbe3db97898544",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Finally send update_manifest to graveyard.r=aki",
+    "commit_date": "2017-02-09 04:25:45"
+  },
+  "290": {
+    "sha": "37f38676c27e59679b93643e897e490e65c0b54e",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/37f38676c27e59679b93643e897e490e65c0b54e",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "0.2.2",
+    "commit_date": "2017-02-09 02:01:32"
+  },
+  "291": {
+    "sha": "4460f4ef7d884cc55ddcde4a39d5edfd9dbe0bdf",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/4460f4ef7d884cc55ddcde4a39d5edfd9dbe0bdf",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #46 from MihaiTabara/prettynaming  Bug 1336926 - fix broken test-packages.json. r=aki",
+    "commit_date": "2017-02-08 20:51:00"
+  },
+  "292": {
+    "sha": "fb5d9b9ec54d98291fee205935a1b91ee9e4950b",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/fb5d9b9ec54d98291fee205935a1b91ee9e4950b",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": "tabara.mihai@gmail.com",
+    "commit_message": "Bug 1336926 - fix broken test-packages.json. r=aki",
+    "commit_date": "2017-02-07 04:14:08"
+  },
+  "293": {
+    "sha": "45f5e9cb46508608500360b9d137dbf4bdf71b80",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/45f5e9cb46508608500360b9d137dbf4bdf71b80",
+    "commiter_name": "MihaiTabara",
+    "commiter_email": null,
+    "commit_message": "Merge pull request #47 from SanchayPahalwani/change_serving_for_direct_install_langpacks  Bug 1336754 (Bugzilla) - Changed application/zip to application/x-xpinstall",
+    "commit_date": "2017-02-08 16:42:48"
+  },
+  "294": {
+    "sha": "6647325474c4802dba3060128954dbc708f1594f",
+    "url": "https://api.github.com/repos/mozilla-releng/beetmoverscript/commits/6647325474c4802dba3060128954dbc708f1594f",
+    "commiter_name": "SanchayPahalwani",
+    "commiter_email": null,
+    "commit_message": "Changed application/zip to application/x-xpinstall for direct install of langpacks in archive.mozilla.org",
+    "commit_date": "2017-02-08 15:24:37"
+  }
+}
