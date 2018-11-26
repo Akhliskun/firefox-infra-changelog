@@ -165,7 +165,7 @@ def filter_git_commit_data(repository_name, repository_team):
     json_file.close()
 
 
-def filter_hg_commit_data(repository_url, push_type):
+def filter_hg_commit_data(repository_name, repository_url):
     """
     This function takes a repository url and push type and returns a dictionary that contains changes in that specific
     repository.
@@ -177,31 +177,26 @@ def filter_hg_commit_data(repository_url, push_type):
     :param push_type: would probably be "json-log" most of the time.
     :return: returns a dictionary that contains the commits in the provided hg_repository_name
     """
-    request_url = ""
-    if push_type == "json-log":
-        request_url = repository_url + push_type
-    else:
-        print("Feature not implemented. Please use \"json-log\".")
-    r = requests.get(request_url)
-    p = r.json()
-    changelog = {}
+    request_url = repository_url + "json-log"
+    data = json.loads(requests.get(request_url).text)
+    hg_repo_data = {}
     commit_number = 0
-    for keys in p["changesets"]:
-        commit = {}
-        timestamp = keys["date"][0]
-        value = datetime.fromtimestamp(timestamp)
-        commit_date = value.strftime("%Y-%m-%d %H:%M:%S")
-        commiter_name = (keys["user"])
-        commit_message = keys["desc"]
+    for entry in data["changesets"]:
+        date = entry["date"]
+        commit_message = entry["desc"]
         message = re.sub("[*\n\r]", " ", commit_message)
-        commit_node = keys["node"]
-        commit.update({"commiter_name": commiter_name,
-                       "commit_date": commit_date,
-                       "commit_message": message,
-                       "node": commit_node})
-        changelog.update({commit_number: commit})
+        hg_repo_data.update({commit_number: {
+            "node": entry["node"],
+            "commiter_name": entry["user"],
+            "commit_message": message,
+            "commit_date": datetime.utcfromtimestamp(date[0]).strftime('%Y-%m-%d %H:%M:%S')
+        }})
         commit_number += 1
-    return changelog
+
+    hg_json_filename = "{}.json".format(repository_name)
+    json_file = open(current_dir + "/hg_files/" + hg_json_filename, "w")
+    json.dump(hg_repo_data, json_file, indent=2)
+    json_file.close()
 
 
 def create_files_for_hg(repositories_holder):
@@ -213,14 +208,9 @@ def create_files_for_hg(repositories_holder):
     :return: the end result is a .json and a .md file for every git repository. can be found inside hg_files/
     """
     for repo in repositories_holder["Mercurial"]:
-        repository_url = repositories_holder["Mercurial"][repo]["url"]
-        repository_push_type = repositories_holder["Mercurial"][repo]["configuration"]["push_type"]
         repository_name = repo
-        hg_changes = filter_hg_commit_data(repository_url, repository_push_type)
-        hg_json_name = "./hg_files/" + "{}.json".format(repository_name)
-        with open(hg_json_name, "w") as json_file:
-            json.dump(hg_changes, json_file, indent=2)
-        json_file.close()
+        repository_url = repositories_holder["Mercurial"][repo]["url"]
+        filter_hg_commit_data(repository_name, repository_url)
         create_hg_md_table(repository_name)
 
 
