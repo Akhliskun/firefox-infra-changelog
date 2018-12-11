@@ -224,7 +224,6 @@ def filter_git_commit_data(
 
     our_ignore_list = folders_to_ignore + files_to_ignore  # all files and folder we want to ignore
     our_care_list = files_to_care_for  # list of paths that we care about
-    number += 1
 
     for commit in git.get_repo(repository_path).get_commits(since=lastWeek):
         commit_date = commit.commit.author.date
