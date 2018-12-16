@@ -28,15 +28,15 @@ def limit_checker():
         return 1
     else:
         try:
-            print("You have reached the requests limit!")
-            print("The requests limit is reset to: " + str(reset_time))
+            print("\nYou have reached the requests limit!")
+            print("\nThe requests limit is reset to: " + str(reset_time))
             while rate_limit < 5000 and reset_time >= datetime.now():
                 unix_reset_time = git.rate_limiting_resettime
                 reset_time = datetime.fromtimestamp(unix_reset_time)
             print("\nThe requests limit has been reset! ")
             return 1
         except:
-            print("The requests limit is reset to: " + str(reset_time))
+            print("\nThe requests limit is reset to: " + str(reset_time))
 
 
 def create_files_for_git(repositories_holder):
@@ -62,7 +62,7 @@ def create_files_for_git(repositories_holder):
         if repository_version is not None:
             try:
                 if repository_version["LatestRelease"]["version"] == version_in_puppet:
-                    print("No new changes came into production!")
+                    print("\nNo new changes came into production!")
                 else:
                     filter_git_commit_data(repository_name, repository_team, repository_version, repository_type)
             except TypeError:
@@ -72,6 +72,7 @@ def create_files_for_git(repositories_holder):
         try:
             create_md_table(repository_name, "git_files")
         except:
+            print("\nFailed to create markdown table!")
             pass
 
 
@@ -150,7 +151,6 @@ def filter_git_commit_data(repository_name, repository_team, repository_version,
                                 "last_two_releases": repository_version}})
         number = 1
 
-
     try:
         latest_release = datetime.strptime(repository_version["LatestRelease"]["date"], "%a, %d %b %Y %H:%M:%S GMT")
         previous_release = datetime.strptime(repository_version["PreviousRelease"]["date"], "%a, %d %b %Y %H:%M:%S GMT")
@@ -209,7 +209,7 @@ def filter_git_commit_data(repository_name, repository_team, repository_version,
     elif repository_type == "no tag" and limit_checker() == 1:
         try:
             oldest_commit = datetime.strptime(last_checked, "%Y-%m-%d %H:%M:%S.%f")
-        except:
+        except ValueError:
             oldest_commit = datetime.strptime(last_checked, "%Y-%m-%d %H:%M:%S")
 
         newest_commit = datetime.utcnow()
@@ -370,25 +370,33 @@ def create_md_table(repository_name, path_to_files):
 
         for key in data:
             commit_number = commit_number_list[-1]
-            try:
-                commit_author = data[key]["commiter_name"]
-                commit_author = re.sub("\u0131", "i", commit_author)  # this is temporary
-                date = data[key]["commit_date"]
-                message = data[key]["commit_message"]
-                message = re.sub("\|", "\|", message)
-                url = data[key]["url"]
+            if int(key) < 2000:
+                try:
+                    commit_author = data[key]["commiter_name"]
+                    commit_author = re.sub("\u0131", "i", commit_author)  # this is temporary
+                    commit_author = re.sub("\x94", "\"", commit_author)
 
-                row = "|" + commit_number + \
-                      "|" + commit_author + \
-                      "|" + message + \
-                      "|" + "[URL](" + url + ")" + \
-                      "|" + date + "\n"
+                    date = data[key]["commit_date"]
 
-                del commit_number_list[-1]
-                for repo in tables.keys():
-                    tables[repo] = tables[repo] + row
-            except KeyError:
-                pass
+                    message = data[key]["commit_message"]
+                    message = re.sub("\|", "\|", message)
+                    message = re.sub("\x94", "\"", message)
+                    # Used for debugging
+                    print("[" + key + "]" + message)
+
+                    url = data[key]["url"]
+
+                    row = "|" + commit_number + \
+                          "|" + commit_author + \
+                          "|" + message + \
+                          "|" + "[URL](" + url + ")" + \
+                          "|" + date + "\n"
+
+                    del commit_number_list[-1]
+                    for repo in tables.keys():
+                        tables[repo] = tables[repo] + row
+                except KeyError:
+                    pass
 
         md_file_name = "{}.md".format(repository_name)
         md_file = open(current_dir + "/{}/".format(path_to_files) + md_file_name, "w")
