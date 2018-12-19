@@ -10,6 +10,9 @@
       ],
       "configuration": {
         "type": "tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -33,6 +36,9 @@
       ],
       "configuration": {
         "type": "tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -56,6 +62,9 @@
       ],
       "configuration": {
         "type": "tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -79,6 +88,9 @@
       ],
       "configuration": {
         "type": "no tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -102,6 +114,9 @@
       ],
       "configuration": {
         "type": "no tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -125,6 +140,9 @@
       ],
       "configuration": {
         "type": "tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -148,6 +166,9 @@
       ],
       "configuration": {
         "type": "tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -171,6 +192,9 @@
       ],
       "configuration": {
         "type": "tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -194,6 +218,9 @@
       ],
       "configuration": {
         "type": "tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -217,6 +244,9 @@
       ],
       "configuration": {
         "type": "no tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -240,6 +270,9 @@
       ],
       "configuration": {
         "type": "tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -263,6 +296,9 @@
       ],
       "configuration": {
         "type": "tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -286,6 +322,9 @@
       ],
       "configuration": {
         "type": "tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -309,6 +348,9 @@
       ],
       "configuration": {
         "type": "tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -355,6 +397,9 @@
       ],
       "configuration": {
         "type": "tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -378,6 +423,9 @@
       ],
       "configuration": {
         "type": "no tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -401,6 +449,9 @@
       ],
       "configuration": {
         "type": "no tag",
+        "files-we-care-about": [
+           " "
+        ],
         "folders-to-ignore": [
           " ",
           " ",
@@ -416,6 +467,23 @@
     }
   },
   "Mercurial": {
+<<<<<<< Updated upstream
+=======
+    "mozilla-build": {
+      "name": "Mozilla-Build",
+      "url": "https://hg.mozilla.org/mozilla-build/",
+      "team": "",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "files-we-care-about": [" "],
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+>>>>>>> Stashed changes
     "mozilla-central": {
       "name": "Mozilla Central",
       "url": "https://hg.mozilla.org/mozilla-central/",
@@ -423,11 +491,156 @@
       "top-contributors": [" ", " "],
       "configuration": {
         "type": " ",
+        "files-we-care-about": [" "],
         "folders-to-ignore": [" ", " ", " "],
         "files-to-ignore": [" ", " ", " "],
         "release-path": " ",
         "push_type": "json-log"
       }
+<<<<<<< Updated upstream
     }
+=======
+    },
+    "try": {
+      "name": "Mozilla Try",
+      "url": "https://hg.mozilla.org/try/",
+      "team": "",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "files-we-care-about": [" "],
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "autoland": {
+      "name": "Mozilla Autoland",
+      "url": "https://hg.mozilla.org/integration/autoland/",
+      "team": "integration",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "files-we-care-about": [" "],
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "inbound": {
+      "name": "Mozilla Inbound",
+      "url": "https://hg.mozilla.org/integration/mozilla-inbound/",
+      "team": "integration",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "files-we-care-about": [" "],
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "comm-esr60": {
+      "name": "comm ESR60",
+      "url": "https://hg.mozilla.org/releases/comm-esr60/",
+      "team": "releases",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "files-we-care-about": [" "],
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "beta": {
+      "name": "Mozilla Beta",
+      "url": "https://hg.mozilla.org/releases/mozilla-beta/",
+      "team": "releases",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "files-we-care-about": [" "],
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "mozilla-esr60": {
+      "name": "Mozilla ESR60",
+      "url": "https://hg.mozilla.org/releases/mozilla-esr60/",
+      "team": "releases",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "files-we-care-about": [" "],
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "mozilla-release": {
+      "name": "Mozilla Release",
+      "url": "https://hg.mozilla.org/releases/mozilla-release/",
+      "team": "releases",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "files-we-care-about": [" "],
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "braindump": {
+      "name": "BrainDump",
+      "url": "https://hg.mozilla.org/build/braindump/",
+      "team": "build",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "files-we-care-about": [" "],
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "ci-configuration": {
+      "name": "CI Configuration",
+      "url": "https://hg.mozilla.org/build/ci-configuration/",
+      "team": "build",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "files-we-care-about": [" "],
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+    },
+    "ci-admin": {
+      "name": "CI Admin",
+      "url": "https://hg.mozilla.org/build/ci-admin/",
+      "team": "build",
+      "top-contributors": [" ", " "],
+      "configuration": {
+        "type": " ",
+        "files-we-care-about": [" "],
+        "folders-to-ignore": [" ", " ", " "],
+        "files-to-ignore": [" ", " ", " "],
+        "release-path": " ",
+        "push_type": "json-log"
+      }
+     }
+>>>>>>> Stashed changes
   }
 }

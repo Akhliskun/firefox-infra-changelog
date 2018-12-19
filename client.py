@@ -52,11 +52,14 @@ def create_files_for_git(repositories_holder):
         repository_team = repositories_holder["Github"][repo]["team"]
         repository_version = get_version(repository_name, repository_team)
         version_in_puppet = 0
+        folders_to_ignore = repositories_holder["Github"][repo]["configuration"]["folders-to-ignore"]
+        files_to_ignore = repositories_holder["Github"][repo]["configuration"]["files-to-ignore"]
         repository_type = repositories_holder["Github"][repo]["configuration"]["type"]
         print("\nWorking on repo: {}".format(repository_name))
         try:
             repository_version_path = repositories["Github"][repo]["configuration"]["version-path"]
             version_in_puppet = get_version_from_build_puppet(repository_version_path, repository_name)
+            files_to_care_for = repositories_holder["Github"][repo]["configuration"]["files-we-care-about"]
         except KeyError:
             pass
         if repository_version is not None:
@@ -64,11 +67,25 @@ def create_files_for_git(repositories_holder):
                 if repository_version["LatestRelease"]["version"] == version_in_puppet:
                     print("\nNo new changes came into production!")
                 else:
-                    filter_git_commit_data(repository_name, repository_team, repository_version, repository_type)
+                    filter_git_commit_data(
+                        repository_name,
+                        repository_team,
+                        repository_version,
+                        folders_to_ignore,
+                        files_to_ignore,
+                        files_to_care_for
+                    )
             except TypeError:
                 pass
         else:
-            filter_git_commit_data(repository_name, repository_team, repository_version, repository_type)
+            filter_git_commit_data(
+                repository_name,
+                repository_team,
+                repository_version,
+                folders_to_ignore,
+                files_to_ignore,
+                files_to_care_for
+            )
         try:
             create_md_table(repository_name, "git_files")
         except:
@@ -122,7 +139,88 @@ def get_version_from_build_puppet(version_path, repo_name):
                     return version_in_puppet
 
 
-def filter_git_commit_data(repository_name, repository_team, repository_version, repository_type):
+def extract_files_from_commit(commit):
+    """
+    Helper Function!
+    This creates a list with all the files that were modified in a commit.
+    :param commit: Takes as a parameter a commit
+    :return: returns a list  with the commit files modified in the commit.
+    """
+    return [commit.files[i].filename for i in range(0, len(commit.files))]
+
+
+def compare_files(first_list, second_list):
+    """
+    Helper Function!
+    Compares two lists that should contain the path + filename of the modified files. The two lists are mutable.
+    :param first_list: First lists.
+    :param second_list:  Second list
+    :return: returns boolean value in case a match is found.
+    """
+    if set(first_list).intersection(second_list):
+        return True
+    else:
+        return False
+
+
+def extract_common_files(first_list, second_list):
+    """
+    Helper Function!
+    Compares two lists that should contain the path + filename of the modified files. The two lists are mutable.
+    :param first_list: First lists.
+    :param second_list:  Second list
+    :return: a list of mutuale files in the input lists.
+    """
+    return set(first_list).intersection(second_list)
+
+
+def compare_folders(first_list, second_list):
+    """
+    Helper Function!
+    Compares two lists that should contain the path of the files.
+    The second_list can accept "path + filename" but the first_list cannot.
+    The two lists are NOT mutable.
+    :param first_list: First lists that should contains paths
+    :param second_list:  Second list that should contain paths + filename.
+    :return: returns boolean value in case a match is found.
+    """
+    for ii in range(0, len(first_list)):
+        for jj in range(0, len(second_list)):
+            if first_list[ii] in second_list[jj]:
+                return True
+            else:
+                return False
+
+
+def extract_common_folders(first_list, second_list):
+    """
+    Helper Function!
+    Compares two lists that should contain the path of the files.
+    The second_list can accept "path + filename" but the first_list cannot.
+    The two lists are NOT mutable.
+    :param first_list: First lists that should contains paths
+    :param second_list:  Second list that should contain paths + filename.
+    :return: returns a list that should contain the common_folders.
+    """
+    common_folders = []
+    for ii in range(0, len(first_list)):
+        for jj in range(0, len(second_list)):
+            if first_list[ii] in second_list[jj]:
+                common_folders = first_list[ii]
+            else:
+                pass
+
+    return common_folders
+
+
+def filter_git_commit_data(repository_name,
+                           repository_team,
+                           repository_version,
+                           repository_type,
+                           folders_to_ignore,
+                           files_to_ignore,
+                           files_to_care_for
+                           ):
     """
     Filters out only the data that we need from a commit
     Substitute the special characters from commit message using 'sub' function from 're' library
@@ -157,6 +255,10 @@ def filter_git_commit_data(repository_name, repository_team, repository_version,
     except TypeError:
         previous_release = lastWeek
         pass
+
+    ignore_list2 = []  # initialise a new list. Everything that did not pass the check will be appended here
+    our_ignore_list = folders_to_ignore + files_to_ignore  # all files and folder we want to ignore
+    our_care_list = files_to_care_for  # list of paths that we care about
 
     if repository_type == "tag" and limit_checker() == 1:
         for commit in git.get_repo(repository_path).get_commits(since=previous_release, until=latest_release):
