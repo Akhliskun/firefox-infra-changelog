@@ -194,6 +194,8 @@ def filter_git_commit_data(repository_name, repository_team, repository_type, fo
     new_commits = {}
     # TYPE = NO-TAG
     if repository_type == "no-tag":
+        new_commits = {"0": {"lastChecked": str(datetime.utcnow())}}
+        number = 0
         for commit in git.get_repo(repository_path).get_commits(since=last_checked):
             each_commit = {}
             if len(folders_to_check) > 0:  # if this is greater than 0 it means we need to compare a list of what files changed to our list of files
@@ -201,13 +203,23 @@ def filter_git_commit_data(repository_name, repository_team, repository_type, fo
                 for entry in commit.files:
                     files_changed.append(entry.filename)
                 if compare_files(files_changed, folders_to_check):
+                    number += 1
                     each_commit.update({int(number): get_commit_details(commit)})
                     new_commits.update(each_commit)
+                    if len(json_content) > 1:
+                        for old_commit in json_content:
+                            new_commits.update({int(number): json_content[old_commit]})
+                            number += 1
             else:                          # else we just take all commits
+                number += 1
                 each_commit.update({int(number): get_commit_details(commit)})
                 new_commits.update(each_commit)
-        if len(new_commits) > 0:
-            json_file = open(current_dir + "/git_files/" + git_json_filename, "a")
+                if len(json_content) > 1:
+                    for old_commit in json_content:
+                        new_commits.update({int(number): json_content[old_commit]})
+                        number += 1
+        # if len(new_commits) > 0:
+            json_file = open(current_dir + "/git_files/" + git_json_filename, "w")
             json.dump(new_commits, json_file, indent=2)
             json_file.close()
             return True
