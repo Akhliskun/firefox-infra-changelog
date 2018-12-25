@@ -187,10 +187,8 @@ def filter_git_commit_data(repository_name, repository_team, repository_type, fo
         number = len(json_content)  # saves the number of dictionaries existing within current json
         try:
             last_checked = datetime.strptime(json_content["0"]["lastChecked"], "%Y-%m-%d %H:%M:%S")
-            print(last_checked)
         except ValueError:
             last_checked = datetime.strptime(json_content["0"]["lastChecked"], "%Y-%m-%d %H:%M:%S.%f")
-            print(last_checked)
     new_commits = {}
     # TYPE = NO-TAG
     if repository_type == "no-tag":
@@ -202,23 +200,20 @@ def filter_git_commit_data(repository_name, repository_team, repository_type, fo
                 files_changed = []
                 for entry in commit.files:
                     files_changed.append(entry.filename)
-                if compare_files(files_changed, folders_to_check):
+                if compare_files(files_changed, folders_to_check):  # checks if any object from list 1 if it's in list 2
                     number += 1
                     each_commit.update({int(number): get_commit_details(commit)})
                     new_commits.update(each_commit)
-                    if len(json_content) > 1:
-                        for old_commit in json_content:
-                            new_commits.update({int(number): json_content[old_commit]})
-                            number += 1
             else:                          # else we just take all commits
                 number += 1
                 each_commit.update({int(number): get_commit_details(commit)})
                 new_commits.update(each_commit)
-                if len(json_content) > 1:
-                    for old_commit in json_content:
-                        new_commits.update({int(number): json_content[old_commit]})
-                        number += 1
-        # if len(new_commits) > 0:
+        if len(json_content) > 1:
+            for old_commit in json_content:
+                if json_content != "lastChecked":
+                    new_commits.update({int(number): json_content[old_commit]})
+                    number += 1
+        if len(new_commits) > 0:
             json_file = open(current_dir + "/git_files/" + git_json_filename, "w")
             json.dump(new_commits, json_file, indent=2)
             json_file.close()
