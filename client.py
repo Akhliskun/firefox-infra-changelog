@@ -210,9 +210,9 @@ def filter_git_commit_data(repository_name, repository_team, repository_type, fo
                 new_commits.update(each_commit)
         if len(json_content) > 1:
             for old_commit in json_content:
-                if json_content != "lastChecked":
-                    new_commits.update({int(number): json_content[old_commit]})
+                if old_commit != "0":
                     number += 1
+                    new_commits.update({int(number): json_content[old_commit]})
         if len(new_commits) > 0:
             json_file = open(current_dir + "/git_files/" + git_json_filename, "w")
             json.dump(new_commits, json_file, indent=2)
