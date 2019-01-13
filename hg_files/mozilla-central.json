@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35355
+    "last_push_id": 35363
   },
   "1": {
     "changeset_number": "35344",
@@ -102,6 +102,53 @@
         "commit_message": "No bug: [taskgraph] Remove unused `channel` for defining taskcluster `gecko.*` routes; r=aki\n\nDifferential Revision: https://phabricator.services.mozilla.com/D16230",
         "files_changed": [
           "taskcluster/taskgraph/transforms/task.py"
+        ]
+      }
+    }
+  },
+  "5": {
+    "changeset_number": "35360",
+    "pusher": "nbeleuzu@mozilla.com",
+    "date_of_push": "2019-01-12 11:39:47",
+    "changeset_commits": {
+      "55": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=0e27ee5b44f8",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1519293 - Add a build docker image based on Debian 9. r=mshal\n\nDifferential Revision: https://phabricator.services.mozilla.com/D16280",
+        "files_changed": [
+          "taskcluster/ci/docker-image/kind.yml",
+          "taskcluster/docker/debian-build/Dockerfile",
+          "taskcluster/docker/debian7-build/Dockerfile"
+        ]
+      },
+      "56": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=a58fad772b6f",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1391408 - Build minidump_stackwalk as a toolchain. r=froydnj\n\nThis produces the same executables (produced for the same platforms) as\nthose currently pulled from tooltool (modulo timestamps, maybe changes\nsince last manifest change, etc.). Unfortunately, as of currently, the\nWindows variant needs to be cross-built with mingw because it doesn't\ncompile without some POSIX APIs that MSVC/Windows SDK don't provide.\n\nOne thing that is left out of this change is whether to be completely\naccurate with the toolchain cache hash (requiring a large list of files\nas resources, and making those built very frequently), whether we'd\nrely on manual updates, or if we should go with completely uncached\ntasks. This can be left for a followup, the tasks not being hooked up\nto be actually used by other tasks yet.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D16302",
+        "files_changed": [
+          "taskcluster/ci/toolchain/linux.yml",
+          "taskcluster/ci/toolchain/macosx.yml",
+          "taskcluster/ci/toolchain/windows.yml",
+          "taskcluster/docker/toolchain-build/Dockerfile",
+          "taskcluster/scripts/misc/build-minidump-stackwalk.sh",
+          "taskcluster/scripts/misc/minidump_stackwalk.sh"
+        ]
+      },
+      "58": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=451d57ca6810",
+        "commiter_name": "Dorel Luca <dluca@mozilla.com>",
+        "commit_message": "Bug 1391408 - Add missing executable bit r=glandium. CLOSED TREE",
+        "files_changed": [
+          "taskcluster/scripts/misc/build-minidump-stackwalk.sh"
+        ]
+      },
+      "83": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=cb35977ae7a4",
+        "commiter_name": "Narcis Beleuzu <nbeleuzu@mozilla.com>",
+        "commit_message": "Merge autoland to mozilla-central. a=merge",
+        "files_changed": [
+          "taskcluster/docker/debian7-build/Dockerfile",
+          "taskcluster/scripts/misc/minidump_stackwalk.sh"
         ]
       }
     }
