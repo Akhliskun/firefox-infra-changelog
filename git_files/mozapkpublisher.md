@@ -1,7 +1,8 @@
-## MOZAPKPUBLISHER COMMIT MARKDOWN TABLE SINCE 2018-12-30 02:57:58.355614
+## MOZAPKPUBLISHER COMMIT MARKDOWN TABLE SINCE 2018-12-30 03:01:00.585453
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|536|mitchhentges|Merge pull request #150 from mitchhentges/release-0.11.0  0.11.0|[URL](https://github.com/mozilla-releng/mozapkpublisher/commit/fab88a8fbccdfb1ab2a41b67c392f0c0ed34b3cb)|2019-01-09 17:18:26
 |535|mitchhentges|Merge pull request #150 from mitchhentges/release-0.11.0  0.11.0|[URL](https://github.com/mozilla-releng/mozapkpublisher/commit/fab88a8fbccdfb1ab2a41b67c392f0c0ed34b3cb)|2019-01-09 17:18:26
 |534|mitchhentges|Merge pull request #150 from mitchhentges/release-0.11.0  0.11.0|[URL](https://github.com/mozilla-releng/mozapkpublisher/commit/fab88a8fbccdfb1ab2a41b67c392f0c0ed34b3cb)|2019-01-09 17:18:26
 |533|mitchhentges|0.11.0|[URL](https://github.com/mozilla-releng/mozapkpublisher/commit/570ef3dbb5e4698d3779272087c8a189154a94a5)|2019-01-08 17:22:14
