@@ -168,15 +168,16 @@ def get_commit_details(commit):
     return author_info
 
 
-def json_writer_git(repository_name, new_commits):
+def json_writer(repository_name, new_commits, folder):
     """
+
     :param repository_name:
     :param new_commits: a dictionary with the new commits
     :return: write the json file with the old and the new commits
     """
     git_json_filename = "{}.json".format(repository_name)
     try:
-        with open(current_dir + "/git_files/" + git_json_filename, "r") as commit_json:
+        with open(current_dir + "/{}_files/".format(folder) + git_json_filename, "r") as commit_json:
             json_content = json.load(commit_json)  # loads the content of existing json into a variable
     except:
         json_content = ""
@@ -188,37 +189,8 @@ def json_writer_git(repository_name, new_commits):
                 new_commits.update({int(number): json_content[old_commit]})
 
     if len(new_commits) > 0:
-        json_file = open(current_dir + "/git_files/" + git_json_filename, "w")
+        json_file = open(current_dir + "/{}_files/".format(folder) + git_json_filename, "w")
         json.dump(new_commits, json_file, indent=2)
-        json_file.close()
-    return True
-
-
-def json_writer_hg(repository_name, new_commits):
-    """
-        :param repository_name:
-        :param new_commits: a dictionary with the new commits
-        :return: write the json file with the old and the new commits
-        """
-    hg_json_filename = "{}.json".format(repository_name)
-    try:
-        with open(current_dir + "/hg_files/" + hg_json_filename, "r") as commit_json:
-            json_content = json.load(commit_json)  # loads the content of existing json into a variable
-    except:
-        json_content = ""
-    # if len(json_content) > 0:
-    number = len(json_content) - 1
-    for new_commit in new_commits:
-        if new_commit == "0":
-            json_content["0"] = new_commits[new_commit]
-        else:
-            if len(new_commits[new_commit].get("changeset_commits")) != 0:
-                number += 1
-                json_content.update({int(number): new_commits[new_commit]})
-
-    if len(new_commits) > 0:
-        json_file = open(current_dir + "/hg_files/" + hg_json_filename, "w")
-        json.dump(json_content, json_file, indent=2)
         json_file.close()
     return True
 
@@ -334,7 +306,7 @@ def filter_git_commit_data(repository_name, repository_team, repository_type, fo
                 each_commit.update({int(number): get_commit_details(commit)})
                 new_commit_dict.update(each_commit)
 
-        json_writer_git(repository_name, new_commit_dict)
+        json_writer(repository_name, new_commit_dict, "git")
         return True
     # TYPE = COMMIT-KEYWORD
     if repository_type == "commit-keyword":
@@ -347,7 +319,7 @@ def filter_git_commit_data(repository_name, repository_team, repository_type, fo
                     number += 1
                     each_commit.update({int(number): get_commit_details(commit)})
                     new_commit_dict.update(each_commit)
-            json_writer_git(repository_name, new_commit_dict)
+            json_writer(repository_name, new_commit_dict, "git")
         return True
     # TYPE = TAG
     if repository_type == "tag" and repository_name == "build-puppet":
@@ -398,7 +370,7 @@ def filter_git_commit_data(repository_name, repository_team, repository_type, fo
                                             number2 += 1
                                             each_commit2.update({int(number2): get_commit_details(commit2)})
                                             new_scriptworker_dict.update(each_commit2)
-                                    json_writer_git(scriptworker_repo, new_scriptworker_dict)
+                                    json_writer(scriptworker_repo, new_scriptworker_dict, "git")
                                 else:
                                     print("No new changes entered production")
                             else:
@@ -419,12 +391,12 @@ def filter_git_commit_data(repository_name, repository_team, repository_type, fo
                                         number2 += 1
                                         each_commit2.update({int(number2): get_commit_details(commit2)})
                                         new_scriptworker_dict.update(each_commit2)
-                                json_writer_git(scriptworker_repo, new_scriptworker_dict)
+                                json_writer(scriptworker_repo, new_scriptworker_dict, "git")
                 if switch:
                     number += 1
                     each_commit.update({int(number): get_commit_details(commit)})
                     new_commit_dict.update(each_commit)
-            json_writer_git(repository_name, new_commit_dict)
+            json_writer(repository_name, new_commit_dict, "git")
     elif repository_type == "tag" and repository_name != "build-puppet":
         version_path = repositories.get("Github").get(repository_name).get("configuration").get("version-path")
         latest_releases = get_version(repository_name, repository_team)
@@ -443,7 +415,7 @@ def filter_git_commit_data(repository_name, repository_team, repository_type, fo
                     number += 1
                     each_commit.update({int(number): get_commit_details(commit)})
                     new_commit_dict.update(each_commit)
-            json_writer_git(repository_name, new_commit_dict)
+            json_writer(repository_name, new_commit_dict, "git")
             return True
 
 
@@ -457,13 +429,11 @@ def create_files_for_hg(repositories_holder):
     """
     for repo in repositories_holder["Mercurial"]:
         repository_name = repo
-        repository_url = repositories_holder.get("Mercurial").get(repo).get("url")
-        folders_to_check = [x for x in repositories_holder.get("Mercurial").get(repo).get("configuration").get("folders-to-check")]
-        filter_hg_commit_data(repository_name, folders_to_check, repository_url)
+        filter_hg_commit_data(repository_name)
         create_hg_md_table(repository_name)
 
 
-def filter_hg_commit_data(repository_name, folders_to_check, repository_url):
+def filter_hg_commit_data(repository_name):
     """
     This function generates data for hg json files
     :param repository_name: name of the repository
@@ -473,16 +443,13 @@ def filter_hg_commit_data(repository_name, folders_to_check, repository_url):
     data = json.loads(requests.get(link).text)
     last_push_id = data.get("lastpushid")
     hg_repo_data = {}
-    number = 0
     print("\nWorking on repo:", repository_name)
     hg_repo_data.update({"0": {"last_push_id": last_push_id}})
     for key in data.get("pushes"):
-        number += 1
         changeset_number = key
         changeset_pusher = data.get("pushes").get(key).get("user")
         date_of_push = data.get("pushes").get(key).get("date")
-        hg_repo_data.update({number: {
-            "changeset_number": changeset_number,
+        hg_repo_data.update({changeset_number: {
             "pusher": changeset_pusher,
             "date_of_push": time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(date_of_push)),
             "changeset_commits": {}
@@ -490,8 +457,6 @@ def filter_hg_commit_data(repository_name, folders_to_check, repository_url):
         counter, counter2, counter3 = 0, 0, 0
         for keys in data.get("pushes").get(key).get("changesets"):
             counter = [x + 1 for x in range(len(data.get("pushes").get(key).get("changesets")))]
-            node = keys.get("node")
-            url = repository_url + "pushloghtml?changeset=" + node[:12]
             author = keys.get("author")
             desc = keys.get("desc")
             files_changed = []
@@ -502,22 +467,13 @@ def filter_hg_commit_data(repository_name, folders_to_check, repository_url):
                 counter3 += 1
             except IndexError:
                 pass
-            if len(folders_to_check) > 0:
-                if compare_files(files_changed, folders_to_check):
-                    hg_repo_data[number]["changeset_commits"].update({
-                        counter2: {
-                              "url": url,
-                              "commiter_name": author,
-                              "commit_message": desc,
-                              "files_changed": files_changed}})
-            else:
-                hg_repo_data[number]["changeset_commits"].update({
-                    counter2: {
-                        "url": url,
-                        "commiter_name": author,
-                        "commit_message": desc,
-                        "files_changed": files_changed}})
-    json_writer_hg(repository_name, hg_repo_data)
+
+            hg_repo_data[key]["changeset_commits"].update({
+                counter2: {
+                      "commiter_name": author,
+                      "commit_message": desc,
+                      "files_changed": files_changed}})
+    json_writer(repository_name, hg_repo_data, "hg")
 
 
 def extract_email(commit_email):
@@ -598,7 +554,6 @@ def create_md_table(repository_name, path_to_files):
     except FileNotFoundError:
         print("Json for {} is empty! Skipping!".format(repository_name))
 
-
 def create_hg_md_table(repository_name):
     """
     Uses 'repository_name' parameter to generate markdown tables for every json file inside path_to_files parameter.
@@ -610,8 +565,8 @@ def create_hg_md_table(repository_name):
     try:
         json_data = open(current_dir + "/hg_files/" + "{}.json".format(repository_name)).read()
         data = json.loads(json_data)
-        base_table = "| Changeset | Date | Commiter | Commit Message | Commit URL | \n" + \
-                     "|:---:|:---:|:----:|:----------------------------------:|:-----:| \n"
+        base_table = "| Changeset | Commiter | Commit Message | \n" + \
+                     "|:---:|:----:|:----------------------------------:| \n"
         tables = {}
         try:
             last_push_id = data.get('0').get("last_push_id")
@@ -620,14 +575,14 @@ def create_hg_md_table(repository_name):
 
         except:
             md_title = ["{} commit markdown table since push id: {}".format(repository_name, last_push_id)]
+        commit_number_list = [key for key in data]
 
         for repo in md_title:
             tables[repo] = base_table
 
         for key in data:
             if key > "0":
-                key = str(len(data) - int(key))
-                changeset_id = data.get(key).get("changeset_number")
+                changeset_id = key
                 date_of_push = data.get(key).get("date_of_push")
                 try:
                     for entry in data.get(key).get("changeset_commits"):
@@ -636,13 +591,10 @@ def create_hg_md_table(repository_name):
                             commit_author = re.sub("\u0131", "i", commit_author)  # this is temporary
                             message = data.get(key).get("changeset_commits").get(entry).get("commit_message")
                             message = re.sub("\n|", "", message)
-                            url = data.get(key).get("changeset_commits").get(entry).get("url")
 
-                            row = "|" + changeset_id + \
-                                  "|" + date_of_push + \
+                            row = "|" + changeset_id + "(" + date_of_push + ")" + \
                                   "|" + commit_author + \
-                                  "|" + message + \
-                                  "|" + url + "\n"
+                                  "|" + message + "\n"
 
                             for repo in tables.keys():
                                 tables[repo] = tables[repo] + row
@@ -829,5 +781,5 @@ if __name__ == "__main__":
     create_files_for_git(repositories)
     create_files_for_hg(repositories)
     clear_file("main_md_table.md")
-    # generate_main_md_table("hg_files") TODO change the code to get the commit infos from hg json files (lines 754-761)
+    generate_main_md_table("hg_files")
     generate_main_md_table("git_files")
