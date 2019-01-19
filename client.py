@@ -3,6 +3,7 @@ import re
 import sys
 import json
 import time
+import click
 import requests
 import subprocess
 from os import listdir
@@ -10,9 +11,9 @@ from github import Github
 from os.path import isfile, join
 from datetime import datetime, timedelta
 from dateutil.parser import parse
-from fic_modules import configuration
 
 
+repoList = []
 lastWeek = datetime.now() - timedelta(days=14)
 lastMonth = datetime.utcnow() - timedelta(days=31)
 current_dir = os.path.dirname(os.path.realpath(__file__))
@@ -45,7 +46,7 @@ def limit_checker():
             print("The requests limit is reset to:" + str(reset_time))
 
 
-def create_files_for_git(repositories_holder):
+def create_files_for_git(repositories_holder, onerepo):
     """
     Main GIT function. Takes every Git repo from a .json file which is populated with repositories and writes all
     the commit data of each repo in a.
@@ -53,19 +54,35 @@ def create_files_for_git(repositories_holder):
     :param: repositories_holder: Expects a .json file that contains a list of repositories
     :return: The end result is a .json and a .md file for every git repository. can be found inside git_files/
     """
-    for repo in repositories_holder["Github"]:
-        repository_name = repo
-        repository_team = repositories_holder.get("Github").get(repo).get("team")
-        repository_type = repositories_holder.get("Github").get(repo).get("configuration").get("type")
-        print("\nWorking on repo: {}".format(repository_name))
-        folders_to_check = [x for x in repositories_holder.get("Github").get(repo).get("configuration").get("folders-to-check")]
-        filter_git_commit_data(repository_name, repository_team, repository_type, folders_to_check)
+    if onerepo:
+        repository_team = repositories.get("Github").get(repositories_holder).get("team")
+        repository_type = repositories.get("Github").get(repositories_holder).get("configuration").get("type")
+        print("\nWorking on repo: {}".format(repositories_holder))
+        folders_to_check = [x for x in
+                            repositories.get("Github").get(repositories_holder).get("configuration").get("folders-to-check")]
+        filter_git_commit_data(repositories_holder, repository_team, repository_type, folders_to_check)
         try:
-            create_md_table(repository_name, "git_files")
+            create_md_table(repositories_holder, "git_files")
             print("MD table generated successfully")
         except:
             pass
-        print("Finished working on {}".format(repository_name))
+        print("Finished working on {}".format(repositories_holder))
+
+    else:
+
+        for repo in repositories_holder["Github"]:
+            repository_name = repo
+            repository_team = repositories_holder.get("Github").get(repo).get("team")
+            repository_type = repositories_holder.get("Github").get(repo).get("configuration").get("type")
+            print("\nWorking on repo: {}".format(repository_name))
+            folders_to_check = [x for x in repositories_holder.get("Github").get(repo).get("configuration").get("folders-to-check")]
+            filter_git_commit_data(repository_name, repository_team, repository_type, folders_to_check)
+            try:
+                create_md_table(repository_name, "git_files")
+                print("MD table generated successfully")
+            except:
+                pass
+            print("Finished working on {}".format(repository_name))
 
 
 def get_version(repo_name, repo_team):
@@ -451,7 +468,7 @@ def filter_git_commit_data(repository_name, repository_team, repository_type, fo
             return True
 
 
-def create_files_for_hg(repositories_holder):
+def create_files_for_hg(repositories_holder, onerepo):
     """
     Main HG function. Takes every Mercurial repo from a .json file which is populated with repositories and writes all
      the commit data of each repo in a.
@@ -459,12 +476,19 @@ def create_files_for_hg(repositories_holder):
     :param: repositories_holder: Expects a .json file that contains a list of repositories
     :return: The end result is a .json and a .md file for every git repository. can be found inside hg_files/
     """
-    for repo in repositories_holder["Mercurial"]:
-        repository_name = repo
-        repository_url = repositories_holder.get("Mercurial").get(repo).get("url")
-        folders_to_check = [x for x in repositories_holder.get("Mercurial").get(repo).get("configuration").get("folders-to-check")]
-        filter_hg_commit_data(repository_name, folders_to_check, repository_url)
-        create_hg_md_table(repository_name)
+    if onerepo:
+        repository_url = repositories.get("Mercurial").get(repositories_holder).get("url")
+        folders_to_check = [x for x in
+                            repositories.get("Mercurial").get(repositories_holder).get("configuration").get("folders-to-check")]
+        filter_hg_commit_data(repositories_holder, folders_to_check, repository_url)
+        create_hg_md_table(repositories_holder)
+    else:
+        for repo in repositories_holder["Mercurial"]:
+            repository_name = repo
+            repository_url = repositories_holder.get("Mercurial").get(repo).get("url")
+            folders_to_check = [x for x in repositories_holder.get("Mercurial").get(repo).get("configuration").get("folders-to-check")]
+            filter_hg_commit_data(repository_name, folders_to_check, repository_url)
+            create_hg_md_table(repository_name)
 
 
 def filter_hg_commit_data(repository_name, folders_to_check, repository_url):
@@ -835,29 +859,72 @@ def push_files_to_git():
     subprocess.call(["git", "push"])
 
 
-if __name__ == "__main__":
-    if "-dev" in sys.argv:
-        if "-help" in sys.argv:
-            configuration.HELP = True
-        if "-hg" in sys.argv:
-            configuration.HG = True
-        if "-git" in sys.argv:
-            configuration.GIT = True
-        if "-l" in sys.argv:
-            configuration.LOG = True
-        if "-r" in sys.argv:
-            runrepos = sys.argv.index("-r") + 1
-            configuration.REPO_CHOICE = list(sys.argv[runrepos])
-    else:
-        TOKEN = os.environ.get("GIT_TOKEN")
-        git = Github(TOKEN)
-        repositories_data = open("./repositories.json").read()
-        repositories = json.loads(repositories_data)
-        create_files_for_git(repositories)
-        create_files_for_hg(repositories)
+def get_keys(name):
+    for key in repositories.get("{}".format(name)):
+        repoList.append(key)
+        if key == "build-puppet":
+            for scripts in repositories.get("Github").get("build-puppet").get("configuration").get("files-to-check"):
+                repoList.append(scripts)
+    return repoList
+
+
+@click.command()
+@click.option('--git', flag_value='git', help='Run script only for GIT repositories')
+@click.option('--hg', flag_value='hg', help='Run script only for HG repositories')
+@click.option('--l', flag_value='l', help='Display log')
+@click.option('--r', flag_value='r', help='Let you choose for which repositories the script will run')
+@click.option('--all', flag_value='all', help='Run script for all available repositories')
+
+def cli(git, hg, l, r, all):
+    if all:
+        create_files_for_git(repositories, onerepo=False)
+        create_files_for_hg(repositories, onerepo=False)
         clear_file("main_md_table.md")
         # generate_main_md_table("hg_files") TODO change the code to get the commit infos from hg json files (lines 754-761)
         generate_main_md_table("git_files")
         push_files_to_git()
+    if git:
+        create_files_for_git(repositories, onerepo=False)
+        generate_main_md_table("git_files")
+        push_files_to_git()
+        click.echo("Script ran in GIT Only mode")
+    if hg:
+        create_files_for_hg(repositories, onerepo=False)
+        # generate_main_md_table("hg_files") TODO change the code to get the commit infos from hg json files (lines 754-761)
+        push_files_to_git()
+        click.echo("Script ran in HG Only mode")
+    if l:
+        a = 0  # Insert logic here
+    if r:
+        get_keys("Github")
+        get_keys("Mercurial")
+        new_list = []
+        while input != "q":
+            print("You have selected : ", new_list)
+            for keys in repoList:
+                print(repoList.index(keys) + 1, keys)
 
+            w = input("Select a repo by typing it's corespunding number, type q when you are done: ")
+            if str(w) == "q":
+                print('Finished')
+                for repository in new_list:
+                    if repository in repositories.get("Github"):
+                        create_files_for_git(repository, onerepo=True)
+                    elif repository in repositories.get("Mercurial"):
+                        create_files_for_hg(repository, onerepo=True)
+
+            new_entry = int(w) - 1
+
+            if new_entry < 0 and new_entry >= len(repoList):
+                print('Not Valid')
+            else:
+                new_list.append(repoList[int(new_entry)])
+                repoList.pop(int(new_entry))
+
+if __name__ == "__main__":
+    TOKEN = os.environ.get("GIT_TOKEN")
+    git = Github(TOKEN)
+    repositories_data = open("./repositories.json").read()
+    repositories = json.loads(repositories_data)
+    cli()
 
