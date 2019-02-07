@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 77561
+    "last_push_id": 77620
   },
   "1": {
     "changeset_number": "35344",
@@ -31578,6 +31578,118 @@
         "files_changed": [
           "taskcluster/ci/toolchain/node.yml",
           "taskcluster/scripts/misc/repack-node.sh"
+        ]
+      }
+    }
+  },
+  "566": {
+    "changeset_number": "77568",
+    "pusher": "shindli@mozilla.com",
+    "date_of_push": "2019-02-06 18:40:39",
+    "changeset_commits": {
+      "2": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=1fef2c79b6de",
+        "commiter_name": "Oana Pop Rus <opoprus@mozilla.com>",
+        "commit_message": "Merge mozilla-central to inbound.  a=merge CLOSED TREE",
+        "files_changed": [
+          "testing/mozharness/configs/unittests/thunderbird_buildbot.py",
+          "testing/mozharness/configs/unittests/thunderbird_extra.py"
+        ]
+      }
+    }
+  },
+  "567": {
+    "changeset_number": "77590",
+    "pusher": "wkocher@mozilla.com",
+    "date_of_push": "2019-02-06 23:06:55",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=8df3511d76e0",
+        "commiter_name": "Wes Kocher <wkocher@mozilla.com>",
+        "commit_message": "Bug 1524912 - Add a 'times' value to add-new-jobs action r=dustin\n\nDifferential Revision: https://phabricator.services.mozilla.com/D18773",
+        "files_changed": [
+          "taskcluster/taskgraph/actions/add_new_jobs.py"
+        ]
+      }
+    }
+  },
+  "568": {
+    "changeset_number": "77595",
+    "pusher": "thunderbird@calypsoblue.org",
+    "date_of_push": "2019-02-06 23:10:16",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=1aadea60432f",
+        "commiter_name": "Rob Lemley <rob@thunderbird.net>",
+        "commit_message": "Bug 1489405 - Followup: Allow for thunderbird as shipping_product. r=tomprince\n\nChanges to the desktop_nightly filter chain selected only tasks with no\nshipping_product attribute set or tasks where it is  set to \"firefox\".\n\nThis led to the decision task optimizer removing a large portion of the tasks\nthat run as part of Thunderbird's nightly builds.\n\nThis update adds \"thunderbird\" to the list of shipping_product's whose tasks\nare kept in the task graph.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D18872",
+        "files_changed": [
+          "taskcluster/taskgraph/target_tasks.py"
+        ]
+      }
+    }
+  },
+  "569": {
+    "changeset_number": "77596",
+    "pusher": "dmitchell@mozilla.com",
+    "date_of_push": "2019-02-06 23:10:55",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=29833e13d654",
+        "commiter_name": "Dustin J. Mitchell <dustin@mozilla.com>",
+        "commit_message": "Bug 1525703 - remove repetitive debugging line r=aki\n\nDifferential Revision: https://phabricator.services.mozilla.com/D18871",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/beetmover_repackage.py"
+        ]
+      }
+    }
+  },
+  "570": {
+    "changeset_number": "77616",
+    "pusher": "dmitchell@mozilla.com",
+    "date_of_push": "2019-02-07 04:00:51",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=1b0547c09b35",
+        "commiter_name": "Dustin J. Mitchell <dustin@mozilla.com>",
+        "commit_message": "Bug 1525421 - parse out just the try syntax from the commit message r=tomprince\n\nThis mirrors what mozilla-taskcluster does in\nhttps://github.com/taskcluster/mozilla-taskcluster/blob/cb3de4c31e418f7dc1d89cffeeb28ad6a9dae610/src/jobs/taskcluster_graph.js#L46-L58\n\nDifferential Revision: https://phabricator.services.mozilla.com/D18748",
+        "files_changed": [
+          "taskcluster/taskgraph/decision.py",
+          "taskcluster/taskgraph/test/test_decision.py",
+          "taskcluster/taskgraph/try_option_syntax.py"
+        ]
+      }
+    }
+  },
+  "571": {
+    "changeset_number": "77618",
+    "pusher": "btara@mozilla.com",
+    "date_of_push": "2019-02-07 04:07:54",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=d09706f38e5e",
+        "commiter_name": "Bogdan Tara <btara@mozilla.com>",
+        "commit_message": "Backed out changeset 1b0547c09b35 (bug 1525421) for geko decision task bustage CLOSED TREE",
+        "files_changed": [
+          "taskcluster/taskgraph/decision.py",
+          "taskcluster/taskgraph/test/test_decision.py",
+          "taskcluster/taskgraph/try_option_syntax.py"
+        ]
+      }
+    }
+  },
+  "572": {
+    "changeset_number": "77619",
+    "pusher": "dmitchell@mozilla.com",
+    "date_of_push": "2019-02-07 04:19:33",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=7d289fe21aec",
+        "commiter_name": "Dustin J. Mitchell <dustin@mozilla.com>",
+        "commit_message": "Bug 1525421 - parse out just the try syntax from the commit message r=tomprince\n\nThis mirrors what mozilla-taskcluster does in\nhttps://github.com/taskcluster/mozilla-taskcluster/blob/cb3de4c31e418f7dc1d89cffeeb28ad6a9dae610/src/jobs/taskcluster_graph.js#L46-L58\n\nDifferential Revision: https://phabricator.services.mozilla.com/D18748",
+        "files_changed": [
+          "taskcluster/taskgraph/decision.py",
+          "taskcluster/taskgraph/test/test_decision.py",
+          "taskcluster/taskgraph/try_option_syntax.py"
         ]
       }
     }

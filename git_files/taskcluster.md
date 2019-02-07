@@ -1,7 +1,11 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-01-23 17:37:34.103933
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-01-24 05:05:24.179199
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|303|djmitche|Merge pull request #188 from djmitche/sort-generate-readmes  Sort README tables of contents|[URL](https://github.com/taskcluster/taskcluster/commit/669ec8cec2e2cf12016cc52fc23d3574584af802)|2019-02-06 22:35:16
+|302|djmitche|Sort README tables of contents|[URL](https://github.com/taskcluster/taskcluster/commit/7298991af4b32de74e899bc4c1dd1f1ef90ac45a)|2019-02-06 22:21:46
+|301|owlishDeveloper|Update web-ui-nginx-site.conf|[URL](https://github.com/taskcluster/taskcluster/commit/7add1810b11a97dd9c090272a93f521feb8ca526)|2019-02-06 22:00:52
+|300|owlishDeveloper|Add configuration file for web-ui (#154)    Add configuration file for web-ui      Turn tools dockerfile into web-ui dockerfile  Turn tools-ui.js into web-ui.js      Add nginx configuration for web-ui. Remove one for tools-ui      Change Ingress config to use web-ui instead of tools      Remove tc-tools from the build config, and add web-ui      Rename variables and things to be about web instead of tools      Remove tools from the terraform, add web      Replace tc-docs with the web-ui's docs section|[URL](https://github.com/taskcluster/taskcluster/commit/76736812e90d5276ffb230505e3204b1012af14a)|2019-02-06 20:32:36
 |299|djmitche|Merge pull request #186 from djmitche/fix-generate-more  only show a diff when generate produces one, and don't use a pager|[URL](https://github.com/taskcluster/taskcluster/commit/ce5777f4e82bf9559f480c98479fd34124f3d1a9)|2019-02-05 22:47:52
 |298|djmitche|only show a diff when generate produces one, and don't use a pager|[URL](https://github.com/taskcluster/taskcluster/commit/ce7cfe7e15b5a131de974626e9052666f88f98f6)|2019-02-05 20:58:45
 |297|djmitche|Merge pull request #185 from taskcluster/link-direct-to-readme  Add link to readme anchor|[URL](https://github.com/taskcluster/taskcluster/commit/577372b7bb5cae7d2406742b1cef2a34e184e92c)|2019-02-05 20:37:48
