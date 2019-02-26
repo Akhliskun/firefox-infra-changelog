@@ -15,16 +15,16 @@ from fic_modules.configuration import (
 from fic_modules.markdown_modules import generate_main_md_table
 
 
-@click.group()
-def cli():
-    """Firefox-Infra-Changelog: tool which build a
-    changelog of commits happening on git or hg that
-    could affect Firefox CI Infra"""
-    pass
+# @click.group()
+# def cli():
+#     """Firefox-Infra-Changelog: tool which build a
+#     changelog of commits happening on git or hg that
+#     could affect Firefox CI Infra"""
+#     pass
 
 
-@cli.command()
-@click.option('--all', flag_value='a',
+@click.command()
+@click.option('--all', flag_value='a', default=True,
               help='Run for all currently available repositories')
 @click.option('--git', is_flag=True, flag_value='git', help='Run only for GIT'
                                                             'repos')
@@ -35,10 +35,7 @@ def cli():
               help='Let you choose for which repositories the script will run')
 def cli(all, git, hg, l, m):
     from fic_modules.configuration import LOGGER
-    """
-    Firefox-Infra-Changelog: tool which build a
-    changelog of commits happening on git or hg that
-    could affect Firefox CI Infra"""
+
     if l:
         logging.getLogger().addHandler(logging.StreamHandler())
     if all:
