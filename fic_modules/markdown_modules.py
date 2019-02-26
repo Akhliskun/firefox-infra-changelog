@@ -105,7 +105,7 @@ def create_git_md_table(repository_name, path_to_files):
 
         md_file.close()
     except FileNotFoundError:
-        LOGGER.info("Json for {} is empty! Skipping!".format(repository_name))
+        LOGGER.info("Json for %s is empty! Skipping!", repository_name)
 
 
 def create_md_table_for_scriptworkers(repository_name):
@@ -145,10 +145,10 @@ def generate_main_md_table(path_to_files, days_to_generate=1):
     # Extract data from json_files and writes to main markdown table.
     if path_to_files == "git_files":
         extract_json_from_git(json_files, path_to_files, days_to_generate)
-        LOGGER.info("GIT {}".format(successfully_generated))
+        LOGGER.info("GIT %s", successfully_generated)
     elif path_to_files == "hg_files":
         extract_json_from_hg(json_files, path_to_files, days_to_generate)
-        LOGGER.info("HG {}".format(successfully_generated))
+        LOGGER.info("HG %s", successfully_generated)
 
     else:
         LOGGER.info("No table was generated!")
@@ -173,8 +173,8 @@ def write_date_header(file_name, datetime_object):
                   " |"
     file.write("\n" + base_table + date_header + "\n")
     file.close()
-    LOGGER.info("Generated date header for file: {} with datestamp {}"
-                .format(file_name, str(datetime.utcnow())))
+    LOGGER.info("Generated date header for file: %s with datestamp %s"
+                , file_name, str(datetime.utcnow()))
 
 
 def create_hg_md_table(repository_name):
@@ -263,7 +263,7 @@ def create_hg_md_table(repository_name):
 
         md_file.close()
     except FileNotFoundError:
-        LOGGER.info("Json for {} is empty! Skipping!".format(repository_name))
+        LOGGER.info("Json for %s is empty! Skipping!", repository_name)
 
 
 def generate_markdown_header(file_name, repository_name, markdown_link,
