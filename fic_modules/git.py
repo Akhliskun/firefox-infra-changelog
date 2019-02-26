@@ -11,7 +11,7 @@ from fic_modules.configuration import (
     GIT,
     REPOSITORIES,
     WORKING_DIR,
-    logger
+    LOGGER
 )
 from fic_modules.helper_functions import (
     remove_chars,
@@ -82,7 +82,7 @@ def create_files_for_git(repositories_holder, onerepo):
             .get(repositories_holder) \
             .get("configuration") \
             .get("type")
-        logger.info("Working on repo: {}".format(repositories_holder))
+        LOGGER.info("Working on repo: {}".format(repositories_holder))
         folders_to_check = [folder for folder in REPOSITORIES
                             .get("Github")
                             .get(repositories_holder)
@@ -97,8 +97,9 @@ def create_files_for_git(repositories_holder, onerepo):
             create_md_table_for_scriptworkers(repositories_holder)
         else:
             create_git_md_table(repositories_holder, "git_files")
-        logger.info("MD table generated successfully for {}".format(repositories_holder))
-        #print("Finished working on {}".format(repositories_holder))
+        LOGGER.info("MD table generated successfully for {}"
+                    .format(repositories_holder))
+
     else:
         for repo in repositories_holder["Github"]:
             repository_name = repo
@@ -111,7 +112,7 @@ def create_files_for_git(repositories_holder, onerepo):
                 .get(repo) \
                 .get("configuration") \
                 .get("type")
-            logger.info("Working on repo: {}".format(repository_name))
+            LOGGER.info("Working on repo: {}".format(repository_name))
             folders_to_check = [folder for folder in repositories_holder
                                 .get("Github")
                                 .get(repo)
@@ -126,8 +127,8 @@ def create_files_for_git(repositories_holder, onerepo):
                 create_md_table_for_scriptworkers(repository_name)
             else:
                 create_git_md_table(repository_name, "git_files")
-            logger.info("MD table generated successfully")
-            logger.info("Finished working on {}".format(repository_name))
+            LOGGER.info("MD table generated successfully")
+            LOGGER.info("Finished working on {}".format(repository_name))
 
 
 def filter_git_tag_bp(repository_name, repository_team, repository_path):
@@ -157,21 +158,18 @@ def filter_git_tag_bp(repository_name, repository_team, repository_path):
     for commit in new_commits:
         each_commit = {}
         switch = False
-        logger.info("Commit number: ", commit_number_tracker)
+        LOGGER.info("Commit number: {} ".format(commit_number_tracker))
         commit_number_tracker += 1
         files_changed_by_commit = [x.filename for x in commit.files]
-        logger.info(files_changed_by_commit)
-        logger.info(len(files_changed_by_commit))
         changed_file_number = 1
         for entry in files_changed_by_commit:
-            logger.info("changed file number: {} ".format(changed_file_number))
-            logger.info(entry)
+            LOGGER.info("changed file number: {} ".format(changed_file_number))
             changed_file_number += 1
             for scriptworkers in pathway:
-                logger.info("checking repo:{} ".format(scriptworkers))
+                LOGGER.info("checking repo:{} ".format(scriptworkers))
                 number2 = 0
                 if entry in pathway[scriptworkers]:
-                    logger.debug(scriptworkers, " needs to be checked.")
+                    LOGGER.debug("{} needs to be checked.".format(scriptworkers))
                     scriptworker_repo = scriptworkers
                     version_path = REPOSITORIES.get("Github") \
                         .get("build-puppet") \
@@ -187,7 +185,7 @@ def filter_git_tag_bp(repository_name, repository_team, repository_path):
                         new_scriptworker_dict = filter_git_scriptworkers(latest_releases, repository_team, scriptworker_repo)
                         json_writer_git(scriptworker_repo, new_scriptworker_dict)
                     else:
-                        logger.info("No new changes entered production")
+                        LOGGER.info("No new changes entered production")
         if switch:
             number += 1
             each_commit.update({int(number): get_commit_details(commit)})
@@ -252,7 +250,7 @@ def filter_git_tag(repository_name, repository_team, repository_path):
     latest_releases = get_version(repository_name, repository_team)
     if get_version_from_json(repository_name) == \
             latest_releases.get("latest_release").get("version"):
-            logger.info("No new changes entered production")
+            LOGGER.info("No new changes entered production")
     else:
         last_commit_date = get_date_from_json(repository_name)
         new_version_commit_date = datetime.strptime(latest_releases
@@ -378,15 +376,13 @@ def last_check(repository_name):
                                                  .get("0")
                                                  .get("lastChecked"),
                                                  "%Y-%m-%d %H:%M:%S")
-                if LOGGER:
-                    print("Repo last updated on:", last_checked)
+                LOGGER.info("Repo last updated on: {}".format(last_checked))
             except ValueError:
                 last_checked = datetime.strptime(json_content
                                                  .get("0")
                                                  .get("lastChecked"),
                                                  "%Y-%m-%d %H:%M:%S.%f")
-                if LOGGER:
-                    print("Repo last updated on:", last_checked)
+                LOGGER.info("Repo last updated on: {}".format(last_checked))
     except IOError:
         last_checked = LAST_MONTH
     return last_checked
@@ -431,7 +427,7 @@ def get_date_from_json(repo_name):
         last_stored_date = datetime.strptime(str(date_format), "%Y-%m-%d %H:%M:%S")
     except FileNotFoundError:
         last_stored_date = datetime.strptime("2019-01-01 01:00:00", "%Y-%m-%d %H:%M:%S")
-    logger.info("last local date was: {} ".format(last_stored_date))
+    LOGGER.info("last local date was: {} ".format(last_stored_date))
     return last_stored_date
 
 
@@ -494,8 +490,6 @@ def filter_git_commit_keyword(repository_name, repository_path):
         files_changed_by_commit = [x.filename for x in commit.files]
         if files_changed_by_commit:
             each_commit = {}
-            if LOGGER:
-                print(commit.commit.message)
             if "deploy" in commit.commit.message:
                 number += 1
                 each_commit.update({int(number): get_commit_details(commit)})
@@ -611,8 +605,7 @@ def extract_json_from_git(json_files, path_to_files, days_to_generate):
                                         review,
                                         commit_date)
             except KeyError:
-                if LOGGER:
-                    print("File ", file, " is empty. \n",
-                          "Please check:",
-                          repository_url,
-                          " for more details.\n")
+                    LOGGER.info("File {}is empty. \n",
+                                "Please check:{}",
+                                " for more details.\n"
+                                .format(file, repository_url))

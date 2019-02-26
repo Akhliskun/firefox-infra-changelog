@@ -34,7 +34,7 @@ def cli():
 @click.option('--m', is_flag=True, flag_value='m',
               help='Let you choose for which repositories the script will run')
 def cli(all, git, hg, l, m):
-    from fic_modules.configuration import logger
+    from fic_modules.configuration import LOGGER
     """
     Firefox-Infra-Changelog: tool which build a
     changelog of commits happening on git or hg that
@@ -42,7 +42,7 @@ def cli(all, git, hg, l, m):
     if l:
         logging.getLogger().addHandler(logging.StreamHandler())
     if all:
-        logger.info("========Logging in ALL mode on {}========".format(datetime
+        LOGGER.info("========Logging in ALL mode on {}========".format(datetime
                                                                        .now()))
         create_files_for_git(REPOSITORIES, onerepo=False)
         create_files_for_hg(REPOSITORIES, onerepo=False)
@@ -50,7 +50,7 @@ def cli(all, git, hg, l, m):
         generate_main_md_table("hg_files", GENERATE_FOR_X_DAYS)
         generate_main_md_table("git_files", GENERATE_FOR_X_DAYS)
     if git:
-        logger.info("========Logging in GIT mode on {}========".format(datetime
+        LOGGER.info("========Logging in GIT mode on {}========".format(datetime
                                                                        .now()))
         create_files_for_git(REPOSITORIES, onerepo=False)
         clear_file("changelog.md", GENERATE_FOR_X_DAYS)
@@ -58,7 +58,7 @@ def cli(all, git, hg, l, m):
         generate_main_md_table("git_files", GENERATE_FOR_X_DAYS)
         click.echo("Script ran in GIT Only mode")
     if hg:
-        logger.info("========Logging in HG mode on {} ========".format(datetime
+        LOGGER.info("========Logging in HG mode on {} ========".format(datetime
                                                                        .now()))
         create_files_for_hg(REPOSITORIES, onerepo=False)
         clear_file("changelog.md", GENERATE_FOR_X_DAYS)
@@ -81,7 +81,7 @@ def cli(all, git, hg, l, m):
                                 "number, "
                                 "type q when you are done: ")
             if str(user_choice) == "q":
-                logger.info('========Logging for {} on {} ========'
+                LOGGER.info('========Logging for {} on {} ========'
                             .format(str(new_list).strip('[]'), datetime
                                     .now()))
                 for repository in new_list:
@@ -100,7 +100,7 @@ def cli(all, git, hg, l, m):
             try:
                 new_entry = int(user_choice) - 1
                 if new_entry < 0 or new_entry >= len(REPO_LIST):
-                    print('Not Valid')
+                    print('Choice not valid!')
                 else:
                     new_list.append(REPO_LIST[int(new_entry)])
                     REPO_LIST.pop(int(new_entry))

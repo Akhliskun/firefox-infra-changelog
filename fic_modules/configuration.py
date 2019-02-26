@@ -27,6 +27,6 @@ logging.basicConfig(level=logging.INFO,
                     datefmt="%H:%M:%S",
                     filename="LOG.log"
                     )
-logger = logging.getLogger(__name__)
+LOGGER = logging.getLogger(__name__)
 
 
