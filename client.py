@@ -16,23 +16,23 @@ from fic_modules.markdown_modules import generate_main_md_table
 
 
 @click.command()
-@click.option('--all', flag_value='a', default=True,
+@click.option('-a', flag_value='all', default=True,
               help='Run for all currently available repositories')
-@click.option('--git', is_flag=True, flag_value='git', help='Run only for GIT'
+@click.option('-g', is_flag=True, flag_value='git', help='Run only for GIT'
                                                             'repos')
-@click.option('--hg', is_flag=True, flag_value='hg', help='Run only for HG'
+@click.option('-hg', is_flag=True, flag_value='hg', help='Run only for HG'
                                                           ' repos')
-@click.option('--l', is_flag=True, flag_value='l', help='Display logger')
-@click.option('--m', is_flag=True, flag_value='m',
+@click.option('-l', is_flag=True, flag_value='logger', help='Display logger')
+@click.option('-m', is_flag=True, flag_value='multiple',
               help='Let you choose for which repositories the script will run')
-def cli(all, git, hg, l, m):
+def cli(a, g, hg, l, m):
     from fic_modules.configuration import LOGGER
     """Firefox-Infra-Changelog: tool which build a
     changelog of commits happening on git or hg that
     could affect Firefox CI Infra"""
     if l:
         logging.getLogger().addHandler(logging.StreamHandler())
-    if all:
+    if a:
         LOGGER.info("======== Logging in ALL mode on %s ========", datetime
                     .now())
         create_files_for_git(REPOSITORIES, onerepo=False)
@@ -40,7 +40,7 @@ def cli(all, git, hg, l, m):
         clear_file("changelog.md", GENERATE_FOR_X_DAYS)
         generate_main_md_table("hg_files", GENERATE_FOR_X_DAYS)
         generate_main_md_table("git_files", GENERATE_FOR_X_DAYS)
-    if git:
+    if g:
         LOGGER.info("======== Logging in GIT mode on %s ========", datetime
                     .now())
         create_files_for_git(REPOSITORIES, onerepo=False)
