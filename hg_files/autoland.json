@@ -36221,21 +36221,6 @@
     }
   },
   "745": {
-    "changeset_number": "80972",
-    "pusher": "mozilla@hocat.ca",
-    "date_of_push": "2019-03-20 17:44:59",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=c12cc38850b7",
-        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
-        "commit_message": "Bug 1535947: [taskgraph] Remove a redundant condition in name_sanity transform; r=aki\n\nIn bug 1501776, the `single_dep` and `multi_dep` schemas were aligned, which made both\nbranch in name_sanity identical. Simplify the code to reflect that.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D24109",
-        "files_changed": [
-          "taskcluster/taskgraph/transforms/name_sanity.py"
-        ]
-      }
-    }
-  },
-  "745": {
     "changeset_number": "81047",
     "pusher": "ncsoregi@mozilla.com",
     "date_of_push": "2019-03-21 12:51:56",
