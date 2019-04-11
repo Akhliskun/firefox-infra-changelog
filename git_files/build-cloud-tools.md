@@ -1,7 +1,9 @@
-## BUILD-CLOUD-TOOLS COMMIT MARKDOWN TABLE SINCE 2019-03-27 13:38:33.007612
+## BUILD-CLOUD-TOOLS COMMIT MARKDOWN TABLE SINCE 2019-03-28 10:25:26.929497
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|6|dividehex|Merge branch 'garbas-shipit-frontend-dns-change'|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/2f2084122aae6f50d2857648c6311cd4ade0bc25)|2019-04-10 19:53:39
+|5|dividehex|Remove old shipit.testing/staging cloudfront aliases|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/1e174b58c66ff028838f21f852028da0c0808678)|2019-04-10 19:53:23
 |4|dividehex|Merge pull request #375 from garbas/product-details-prod terraform: add cname for prod instance of product details|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/f033efed161948ac58fcf8d27dd0916c850da112)|2019-03-20 19:38:02
 |3|garbas|terraform: add cname for stage and test instances of product details (#374)|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/e987befaa7836352a8fc899b295b4b632951f037)|2019-03-12 18:33:52
 |2|dividehex|Merge branch 'La0-buildhub-cert'|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/3962e62c72251ae9fc531bdb5b14ba40243a5b70)|2018-12-04 16:30:17
