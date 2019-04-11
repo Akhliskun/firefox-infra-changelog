@@ -1,9 +1,9 @@
 ## REPOSITORY NAME: MOZILLA-INBOUND
- CURRENT PUSH ID: 112760
+ CURRENT PUSH ID: 112762
 
 | Changeset | Date | Commiter | Commit Message | Commit URL | 
 |:---:|:---:|:----:|:----------------------------------:|:-----:| 
-|112760|2019-04-11 10:25:05|Mike Hommey <mh+mozilla@glandium.org>|[Bug 1541823](https://bugzilla.mozilla.org/show_bug.cgi?id=1541823)  - Derive the fetch docker image from debian9-raw rather than debian9-base. r=dustinThis will make the image smaller, and will make it happen earlier incases its dependencies need to be rebuilt.Differential Revision: https://phabricator.services.mozilla.com/D26082|https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=0d76e1701610
+|112762|2019-04-11 12:57:48|Edwin Gao <egao@mozilla.com>|[Bug 1543521](https://bugzilla.mozilla.org/show_bug.cgi?id=1543521)  - demote windows10-aarch64 related tasks to tier 2 for the time being r=gbrown,jmaherChanges:- make windows10-aarch64 tests tier-2 by defaultDifferential Revision: https://phabricator.services.mozilla.com/D27006|https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=8a6073224e16
 |112758|2019-04-11 07:29:43|Kartikaya Gupta <kgupta@mozilla.com>|[Bug 1543260](https://bugzilla.mozilla.org/show_bug.cgi?id=1543260)  - Make GLES3 in the android emulator conditional on WR. r=gbrownThis disables GLES3 in the android emulator unless WebRender isexplicitly enabled, because for now the half-baked ES3 support in theemulator causes some WebGL tests to fail.Differential Revision: https://phabricator.services.mozilla.com/D26940|https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=9b7b997246cb
 |112758|2019-04-11 07:29:43|Daniel Varga <dvarga@mozilla.com>|Merge mozilla-central to autoland. a=merge on a CLOSED TREE|https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=58239a04c195
 |112758|2019-04-11 07:29:43|Aki Sasaki <asasaki@mozilla.com>|[Bug 1541859](https://bugzilla.mozilla.org/show_bug.cgi?id=1541859)  - add action task to child tasks' dependencies. r=dustinDifferential Revision: https://phabricator.services.mozilla.com/D26209|https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=ce76d73f8eb3

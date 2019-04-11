@@ -1,9 +1,9 @@
 ## REPOSITORY NAME: MOZILLA-CENTRAL
- CURRENT PUSH ID: 35853
+ CURRENT PUSH ID: 35854
 
 | Changeset | Date | Commiter | Commit Message | Commit URL | 
 |:---:|:---:|:----:|:----------------------------------:|:-----:| 
-|35853|2019-04-11 07:22:28|Daniel Varga <dvarga@mozilla.com>|Merge mozilla-central to mozilla-inbound. a=merge on a CLOSED TREE|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=606f85641d0b
+|35854|2019-04-11 12:50:57|Edwin Gao <egao@mozilla.com>|[Bug 1543521](https://bugzilla.mozilla.org/show_bug.cgi?id=1543521)  - demote windows10-aarch64 related tasks to tier 2 for the time being r=gbrown,jmaherChanges:- make windows10-aarch64 tests tier-2 by defaultDifferential Revision: https://phabricator.services.mozilla.com/D27006|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=8a6073224e16
 |35852|2019-04-11 07:19:28|Kartikaya Gupta <kgupta@mozilla.com>|[Bug 1543260](https://bugzilla.mozilla.org/show_bug.cgi?id=1543260)  - Make GLES3 in the android emulator conditional on WR. r=gbrownThis disables GLES3 in the android emulator unless WebRender isexplicitly enabled, because for now the half-baked ES3 support in theemulator causes some WebGL tests to fail.Differential Revision: https://phabricator.services.mozilla.com/D26940|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=9b7b997246cb
 |35852|2019-04-11 07:19:28|Daniel Varga <dvarga@mozilla.com>|Merge mozilla-central to autoland. a=merge on a CLOSED TREE|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=58239a04c195
 |35852|2019-04-11 07:19:28|Aki Sasaki <asasaki@mozilla.com>|[Bug 1541859](https://bugzilla.mozilla.org/show_bug.cgi?id=1541859)  - add action task to child tasks' dependencies. r=dustinDifferential Revision: https://phabricator.services.mozilla.com/D26209|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=ce76d73f8eb3
