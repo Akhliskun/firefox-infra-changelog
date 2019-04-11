@@ -1,10 +1,11 @@
-##  Commits in production - for 3 days, generated on: 2019-04-11 11:54:08 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-11 15:29:14 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=606f85641d0b)|Merge mozilla-central to mozilla-inbound. a=merge on a CLOSED TREE|dvarga@mozilla.com|merge|2019-04-11 07:26:55|
+|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=82d83ff9faca)|[Bug 1543558](https://bugzilla.mozilla.org/show_bug.cgi?id=1543558)  - Increase max-run-time for linux shippable builds; r=jmaher Avoid intermittent timeouts: increase max-run-time to 2.5 hours to account for normal variability in run time. Differential Revision: https://phabricator.services.mozilla.com/D27017|gbrown@mozilla.com|jmaher|2019-04-11 16:20:19|
+|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=c91bf0806ef7)|[Bug 1543033](https://bugzilla.mozilla.org/show_bug.cgi?id=1543033)  Fix pathing for win64_aarch64_info.txt r=mtabara I've refactored the artifact map generation slightly to make the list of platforms more flexible, and also to let us have the previous name for win64_aarch64_info.txt. Differential Revision: https://phabricator.services.mozilla.com/D27049|sfraser@mozilla.com|mtabara|2019-04-11 16:19:42|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=8a6073224e16)|[Bug 1543521](https://bugzilla.mozilla.org/show_bug.cgi?id=1543521)  - demote windows10-aarch64 related tasks to tier 2 for the time being r=gbrown,jmaher Changes: - make windows10-aarch64 tests tier-2 by default Differential Revision: https://phabricator.services.mozilla.com/D27006|egao@mozilla.com|gbrown,jmaher|2019-04-11 03:05:05|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=ce76d73f8eb3)|[Bug 1541859](https://bugzilla.mozilla.org/show_bug.cgi?id=1541859)  - add action task to child tasks' dependencies. r=dustin Differential Revision: https://phabricator.services.mozilla.com/D26209|asasaki@mozilla.com|dustin|2019-04-11 01:10:08|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=127b6975eb0d)|Backed out 4 changesets [Bug 1458385](https://bugzilla.mozilla.org/show_bug.cgi?id=1458385)  for nightly updates fail. a=backout Backed out changeset 09338587b68e [Bug 1458385](https://bugzilla.mozilla.org/show_bug.cgi?id=1458385)  Backed out changeset f7791b680d46 [Bug 1458385](https://bugzilla.mozilla.org/show_bug.cgi?id=1458385)  Backed out changeset cc06a7beb3d1 [Bug 1458385](https://bugzilla.mozilla.org/show_bug.cgi?id=1458385)  Backed out changeset 3b10487587c3 [Bug 1458385](https://bugzilla.mozilla.org/show_bug.cgi?id=1458385) |dvarga@mozilla.com|backout|2019-04-11 01:03:00|
@@ -29,8 +30,6 @@
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=390bf9dcba1a)|[Bug 1532545](https://bugzilla.mozilla.org/show_bug.cgi?id=1532545)  Add support for running page load tests against Fennec r=rwood Differential Revision: https://phabricator.services.mozilla.com/D25723|dhunt@mozilla.com|rwood|2019-04-08 21:33:36|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=d689bb3db16e)|[Bug 1523303](https://bugzilla.mozilla.org/show_bug.cgi?id=1523303)  - [tryselect] Extend test_mozharness_integration.py to include the 'android_emulator_unittest' script, r=gbrown Differential Revision: https://phabricator.services.mozilla.com/D26133|ahalberstadt@mozilla.com|gbrown|2019-04-08 17:36:06|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=b306079acdcb)|[Bug 1541693](https://bugzilla.mozilla.org/show_bug.cgi?id=1541693)  Stop marking releases as started r=mtabara Ship-it v1 is going away soon and we won't need to create new releases in Ship-it v1 in parallel with Ship-it v2. It's time to prep patches to remove this functionality. Differential Revision: https://phabricator.services.mozilla.com/D26044|raliiev@mozilla.com|mtabara|2019-04-08 17:15:33|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=248454418988)|Backed out changeset 7e2aef09165a [Bug 1541147](https://bugzilla.mozilla.org/show_bug.cgi?id=1541147)  on request by Andy|ccoroiu@mozilla.com||2019-04-08 13:25:05|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=7e2aef09165a)|[Bug 1541147](https://bugzilla.mozilla.org/show_bug.cgi?id=1541147)  - [Coverity] Create a try job that performs coverity static-analysis for patches. r=bastien Differential Revision: https://phabricator.services.mozilla.com/D26145|bpostelnicu@mozilla.com|bastien|2019-04-08 13:16:54|
 
 |	mozilla-inbound	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.json)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -110,9 +109,8 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
+|[Link](https://github.com/mozilla-releng/build-puppet/commit/8de84d436309f188a51180c3ef16abd89cc83c30)|Bump scriptworker to 23.0.1 (#449)|JohanLorenzo|N/A|2019-04-11 15:09:20|
 |[Link](https://github.com/mozilla-releng/build-puppet/commit/c6173db2f17c35e81ac63e62735bb9aded5c3fc7)|Update shipitscript to stop handling shipit v1 (#447)|rail|N/A|2019-04-09 14:17:27|
-|[Link](https://github.com/mozilla-releng/build-puppet/commit/d78f3680c1fd6ef0be2d8c5c79993625d49a7a0c)|Merge pull request #445 from srfraser/bug_1542500_beetmover_bump  Bug 1542500 bump beetmover version|srfraser|N/A|2019-04-08 13:51:53|
-|[Link](https://github.com/mozilla-releng/build-puppet/commit/bbb291789b7732de1739c40546b0405555b826fd)|Bug 1542500 bump beetmover version|srfraser|N/A|2019-04-08 13:36:17|
 
 |	OpenCloudConfig	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/OpenCloudConfig.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/OpenCloudConfig.md)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -184,7 +182,7 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
-| |No push in the last 3 days.. [see the history of MD commits](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/scriptworker.md)|FIC - BOT|Self Generated| - |
+|[Link](https://github.com/mozilla-releng/scriptworker/commit/5e035b7862f842d0058efae3c3129aa98ff701c5)|23.0.1|JohanLorenzo|N/A|2019-04-11 14:26:40|
 
 |	shipitscript	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/shipitscript.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/shipitscript.md)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -243,7 +241,6 @@
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
 |[Link](https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=f8735bbb7de9)|[Bug 1514903](https://bugzilla.mozilla.org/show_bug.cgi?id=1514903)  - add dep-iscript to level 1 r=tomprince Differential Revision: https://phabricator.services.mozilla.com/D26385|asasaki@mozilla.com|tomprince|2019-04-08 22:43:15|
 |[Link](https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=ee754847e3c8)|[Bug 1522225](https://bugzilla.mozilla.org/show_bug.cgi?id=1522225)  - part 1: Temporily allow reference-browser to schedule autophone tasks on PRs r=mhentges part 1: Temporily allow reference-browser to schedule autophone tasks on PRs Differential Revision: https://phabricator.services.mozilla.com/D26525|jlorenzo@mozilla.com|mhentges|2019-04-08 17:19:39|
-|[Link](https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=99bb5249719c)|[Bug 1542697](https://bugzilla.mozilla.org/show_bug.cgi?id=1542697)  - Add secret project/relman/coverity to L1, L2 and L3 access. r=jlorenzo Differential Revision: https://phabricator.services.mozilla.com/D26478|jlorenzo@mozilla.com|jlorenzo|2019-04-08 12:18:53|
 
 |	ci-admin	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/ci-admin.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/ci-admin.json)	| 
 |:----------:|:-----------------------:|:--------:| 

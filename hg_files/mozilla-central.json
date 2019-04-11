@@ -13970,29 +13970,6 @@
     }
   },
   "150": {
-    "changeset_number": "35853",
-    "pusher": "dvarga@mozilla.com",
-    "date_of_push": "2019-04-11 07:22:28",
-    "changeset_commits": {
-      "3": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=606f85641d0b",
-        "commiter_name": "Daniel Varga <dvarga@mozilla.com>",
-        "commit_message": "Merge mozilla-central to mozilla-inbound. a=merge on a CLOSED TREE",
-        "files_changed": [
-          "browser/components/shell/test/unit/test_421977.js",
-          "browser/components/shell/test/unit/xpcshell.ini",
-          "taskcluster/scripts/misc/build-mar-tools.sh",
-          "testing/web-platform/meta/css/css-transforms/transform3d-backface-visibility-007.html.ini",
-          "toolkit/system/gnome/nsGConfService.cpp",
-          "toolkit/system/gnome/nsGConfService.h",
-          "tools/update-packaging/app.mozbuild",
-          "tools/update-packaging/moz.configure",
-          "xpcom/system/nsIGConfService.idl"
-        ]
-      }
-    }
-  },
-  "150": {
     "changeset_number": "35854",
     "pusher": "aciure@mozilla.com",
     "date_of_push": "2019-04-11 12:50:57",

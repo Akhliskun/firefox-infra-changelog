@@ -1,7 +1,8 @@
-## BUILD-PUPPET COMMIT MARKDOWN TABLE SINCE 2019-03-28 14:53:08.278542
+## BUILD-PUPPET COMMIT MARKDOWN TABLE SINCE 2019-03-28 18:27:59.575480
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|92|JohanLorenzo|Bump scriptworker to 23.0.1 (#449)|[URL](https://github.com/mozilla-releng/build-puppet/commit/8de84d436309f188a51180c3ef16abd89cc83c30)|2019-04-11 15:09:20
 |91|rail|Update shipitscript to stop handling shipit v1 (#447)|[URL](https://github.com/mozilla-releng/build-puppet/commit/c6173db2f17c35e81ac63e62735bb9aded5c3fc7)|2019-04-09 14:17:27
 |90|srfraser|Merge pull request #445 from srfraser/bug_1542500_beetmover_bump [Bug 1542500](https://bugzilla.mozilla.org/show_bug.cgi?id=1542500)  bump beetmover version|[URL](https://github.com/mozilla-releng/build-puppet/commit/d78f3680c1fd6ef0be2d8c5c79993625d49a7a0c)|2019-04-08 13:51:53
 |89|srfraser|[Bug 1542500](https://bugzilla.mozilla.org/show_bug.cgi?id=1542500)  bump beetmover version|[URL](https://github.com/mozilla-releng/build-puppet/commit/bbb291789b7732de1739c40546b0405555b826fd)|2019-04-08 13:36:17

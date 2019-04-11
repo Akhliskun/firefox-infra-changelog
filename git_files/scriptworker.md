@@ -1,7 +1,8 @@
-## SCRIPTWORKER COMMIT MARKDOWN TABLE SINCE 2019-03-28 14:53:08.278542
+## SCRIPTWORKER COMMIT MARKDOWN TABLE SINCE 2019-03-28 18:27:59.575480
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|52|JohanLorenzo|23.0.1|[URL](https://github.com/mozilla-releng/scriptworker/commit/5e035b7862f842d0058efae3c3129aa98ff701c5)|2019-04-11 14:26:40
 |51|escapewindow|23.0.0|[URL](https://github.com/mozilla-releng/scriptworker/commit/3e7acb70098ce2dabe2f71914568550f037210cd)|2019-03-27 22:59:58
 |50|escapewindow|23.0.0|[URL](https://github.com/mozilla-releng/scriptworker/commit/3e7acb70098ce2dabe2f71914568550f037210cd)|2019-03-27 22:59:58
 |49|escapewindow|23.0.0|[URL](https://github.com/mozilla-releng/scriptworker/commit/3e7acb70098ce2dabe2f71914568550f037210cd)|2019-03-27 22:59:58
