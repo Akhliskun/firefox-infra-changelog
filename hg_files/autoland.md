@@ -1,9 +1,9 @@
 ## REPOSITORY NAME: AUTOLAND
- CURRENT PUSH ID: 83124
+ CURRENT PUSH ID: 83135
 
 | Changeset | Date | Commiter | Commit Message | Commit URL | 
 |:---:|:---:|:----:|:----------------------------------:|:-----:| 
-|83099|2019-04-13 00:58:25|Tom Prince <mozilla@hocat.ca>|No bug: [taskgraph] Remove support for generating non-hook actions; r=dustinNow that release promotion is using a hook, all the code for non-hook actionscan be removed.Differential Revision: https://phabricator.services.mozilla.com/D27204|https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=ac599c14d4a8
+|83132|2019-04-13 15:20:48|Bogdan Tara <btara@mozilla.com>|Merge mozilla-central to mozilla-inbound. a=merge CLOSED TREE|https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=bb72c0829808
 |83094|2019-04-13 00:13:27|Mike Hommey <mh+mozilla@glandium.org>|[Bug 1543915](https://bugzilla.mozilla.org/show_bug.cgi?id=1543915)  - Move installer_url and test_packages_url to EXTRA_MOZHARNESS_CONFIG. r=tomprinceThis allows to stop using task-reference for mozharness_test commands.Differential Revision: https://phabricator.services.mozilla.com/D27236|https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=cbd247c21a3e
 |83080|2019-04-12 21:20:27|Geoff Brown <gbrown@mozilla.com>|[Bug 1544062](https://bugzilla.mozilla.org/show_bug.cgi?id=1544062)  - Run windows/aarch64 xpcshell in 3 chunks; r=egaoReduce chunks from 8 to 3. Each test task has at least a couple of minutesof overhead, so fewer chunks improves overall efficiency. At 3 chunks, eachone still completes reasonably quickly (less than 20 minutes).Differential Revision: https://phabricator.services.mozilla.com/D27339|https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=ce6ffba148da
 |83071|2019-04-12 19:28:02|Geoff Brown <gbrown@mozilla.com>|[Bug 1543993](https://bugzilla.mozilla.org/show_bug.cgi?id=1543993)  - Run remaining Talos ccov tasks only on try; r=jmaherStop running Tss(tp6) and T(bcv) on ccov builds on central -- the remaining 2 casesmissed in the previous bug.Differential Revision: https://phabricator.services.mozilla.com/D27313|https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=5d2e9236aa79

@@ -927,21 +927,6 @@
     }
   },
   "56": {
-    "changeset_number": "120",
-    "pusher": "asasaki@mozilla.com",
-    "date_of_push": "2019-04-08 22:43:15",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=f8735bbb7de9",
-        "commiter_name": "Aki Sasaki <asasaki@mozilla.com>",
-        "commit_message": "bug 1514903 - add dep-iscript to level 1 r=tomprince\n\nDifferential Revision: https://phabricator.services.mozilla.com/D26385",
-        "files_changed": [
-          "grants.yml"
-        ]
-      }
-    }
-  },
-  "56": {
     "changeset_number": "121",
     "pusher": "mozilla@hocat.ca",
     "date_of_push": "2019-04-12 00:52:26",
