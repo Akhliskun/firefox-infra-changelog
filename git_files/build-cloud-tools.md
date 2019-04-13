@@ -1,7 +1,9 @@
-## BUILD-CLOUD-TOOLS COMMIT MARKDOWN TABLE SINCE 2019-03-28 18:27:59.575480
+## BUILD-CLOUD-TOOLS COMMIT MARKDOWN TABLE SINCE 2019-03-30 12:39:16.597299
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|8|dividehex|Merge branch 'La0-eventlistener-dns'|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/2638ee1cffe3247220b09309b31968da45baba36)|2019-04-11 15:37:54
+|7|dividehex|Merge branch 'eventlistener-dns' of github.com:La0/build-cloud-tools into La0-eventlistener-dns|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/f00618266a297cb38c24255beb19e2e2a971ceb4)|2019-04-11 15:31:20
 |6|dividehex|Merge branch 'garbas-shipit-frontend-dns-change'|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/2f2084122aae6f50d2857648c6311cd4ade0bc25)|2019-04-10 19:53:39
 |5|dividehex|Remove old shipit.testing/staging cloudfront aliases|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/1e174b58c66ff028838f21f852028da0c0808678)|2019-04-10 19:53:23
 |4|dividehex|Merge pull request #375 from garbas/product-details-prod terraform: add cname for prod instance of product details|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/f033efed161948ac58fcf8d27dd0916c850da112)|2019-03-20 19:38:02

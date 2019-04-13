@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35854
+    "last_push_id": 35862
   },
   "1": {
     "changeset_number": "35344",
@@ -13986,6 +13986,268 @@
           "taskcluster/ci/test/raptor.yml",
           "taskcluster/ci/test/reftest.yml",
           "taskcluster/ci/test/web-platform.yml",
+          "taskcluster/ci/test/xpcshell.yml"
+        ]
+      }
+    }
+  },
+  "150": {
+    "changeset_number": "35856",
+    "pusher": "csabou@mozilla.com",
+    "date_of_push": "2019-04-12 06:19:48",
+    "changeset_commits": {
+      "28": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=c91bf0806ef7",
+        "commiter_name": "Simon Fraser <sfraser@mozilla.com>",
+        "commit_message": "Bug 1543033 Fix pathing for win64_aarch64_info.txt r=mtabara\n\nI've refactored the artifact map generation slightly to make the list\nof platforms more flexible, and also to let us have the previous name for\nwin64_aarch64_info.txt.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27049",
+        "files_changed": [
+          "taskcluster/taskgraph/manifests/fennec_candidates.yml",
+          "taskcluster/taskgraph/manifests/fennec_candidates_checksums.yml",
+          "taskcluster/taskgraph/manifests/fennec_geckoview.yml",
+          "taskcluster/taskgraph/manifests/fennec_nightly.yml",
+          "taskcluster/taskgraph/manifests/fennec_nightly_checksums.yml",
+          "taskcluster/taskgraph/manifests/firefox_candidates.yml",
+          "taskcluster/taskgraph/manifests/firefox_candidates_checksums.yml",
+          "taskcluster/taskgraph/manifests/firefox_nightly.yml",
+          "taskcluster/taskgraph/manifests/firefox_nightly_checksums.yml",
+          "taskcluster/taskgraph/manifests/firefox_snap.yml",
+          "taskcluster/taskgraph/manifests/release_checksums.yml",
+          "taskcluster/taskgraph/manifests/source_checksums.yml",
+          "taskcluster/taskgraph/manifests/source_files.yml",
+          "taskcluster/taskgraph/util/scriptworker.py"
+        ]
+      },
+      "29": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=82d83ff9faca",
+        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
+        "commit_message": "Bug 1543558 - Increase max-run-time for linux shippable builds; r=jmaher\n\nAvoid intermittent timeouts: increase max-run-time to 2.5 hours to account for\nnormal variability in run time.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27017",
+        "files_changed": [
+          "taskcluster/ci/build/linux.yml"
+        ]
+      },
+      "60": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=1ce8b8034950",
+        "commiter_name": "James Graham <james@hoppipolla.co.uk>",
+        "commit_message": "Bug 1536804 - Add a task for summarising wpt metadata, r=ahal\n\nThis task runs on wpt metadata changes and uploads an artifact\ncontaining the summarised metadata.\n\nDepends on D24178\n\nDepends on D24178\n\nDifferential Revision: https://phabricator.services.mozilla.com/D24179",
+        "files_changed": [
+          "taskcluster/ci/source-test/kind.yml",
+          "taskcluster/ci/source-test/wpt-metadata.yml"
+        ]
+      },
+      "74": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=a498ba7a0992",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "Bug 1534463: give tasks access to `hgmointernal` Taskcluster secret r=tomprince\n\nNow that we have added the necessary scopes to `ci-configuration`,\nwe can add the in-tree scopes to give tasks access to the\n`hgmointernal` config Taskcluster secret.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25001",
+        "files_changed": [
+          "taskcluster/taskgraph/actions/create_interactive.py",
+          "taskcluster/taskgraph/transforms/docker_image.py",
+          "taskcluster/taskgraph/transforms/job/common.py"
+        ]
+      },
+      "75": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=3595f2b4875f",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "Bug 1534463: patch `run-task` to clone from private hgweb mirrors r=tomprince\n\nWith tasks able to access the hgmointernal config from a Taskcluster\nsecret, we can now add functionality to `run-task` to support checking\nout from the private hg service. Here we add add a `resolve_checkout_url`\nfunction which takes the base/head repository URLs and determines\nwhether we should clone from the public or private service, returning\nthe resolved URL. The function pulls down the secret and checks that\nthe region the task is executing in is in the set of supported regions.\nThen we generate a random number and default to the public service if\nthe number is lower than our \"rate\". If all the above conditions are\nmet, we replace `hg.mozilla.org` with the resolved domain name for the\ngiven region.\n\nWe add a call to this function to `collect_vcs_options`, and skip\nresolving the private URL if we aren't performing a checkout from\nwithin `run-task`.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25002",
+        "files_changed": [
+          "taskcluster/scripts/run-task"
+        ]
+      },
+      "79": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=ef120e802c6f",
+        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "Bug 1543747: Don't display exceptions from bouncer when the checks fail; r=sfraser\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27135",
+        "files_changed": [
+          "testing/mozharness/scripts/release/bouncer_check.py"
+        ]
+      },
+      "143": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=d709880ef6dd",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1543595 - Add missing aarch64 target to the rust 1.33 toolchain. r=froydnj\n\nI must have written the rust 1.33 patch before I landed the\nlinux64-aarch64 patches, so when that landed, it lacked the aarch64\ntarget. (it's still there on the rust 1.32 toolchain)\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27035",
+        "files_changed": [
+          "taskcluster/ci/toolchain/rust.yml"
+        ]
+      },
+      "144": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=76d16b72c985",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1543595 - Enable linux64-aarch64 builds. r=froydnj\n\nWhile we don't have an actual need for those builds at the moment, there\nis work in progress to get fuzzing builds for aarch64, and as the\nprevious change showed, the build were busted by other changes since\nthey were put in place. So we might as well enable them, so as to be\naware of bustage when it happens rather than while working on getting\nthe fuzzing builds up.\n\nDepends on D27035\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27036",
+        "files_changed": [
+          "taskcluster/ci/build/linux.yml"
+        ]
+      },
+      "151": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=47660e04a4f9",
+        "commiter_name": "Chris Manchester <cmanchester@mozilla.com>",
+        "commit_message": "Bug 1543469 - Update builders to rustc 1.34. r=glandium\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27184",
+        "files_changed": [
+          "taskcluster/ci/toolchain/misc.yml",
+          "taskcluster/ci/toolchain/rust.yml"
+        ]
+      },
+      "183": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=53309e75d9a0",
+        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
+        "commit_message": "Bug 1543826 - Run Talos ccov tests only on try; r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27175",
+        "files_changed": [
+          "taskcluster/ci/test/talos.yml"
+        ]
+      },
+      "186": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=940684cd1065",
+        "commiter_name": "Cosmin Sabou <csabou@mozilla.com>",
+        "commit_message": "Bug 1543826 - Remove duplication of key \"linux64-ccov/.*\" in mapping to fix yaml failure.",
+        "files_changed": [
+          "taskcluster/ci/test/talos.yml"
+        ]
+      }
+    }
+  },
+  "151": {
+    "changeset_number": "35857",
+    "pusher": "csabou@mozilla.com",
+    "date_of_push": "2019-04-12 06:46:07",
+    "changeset_commits": {
+      "14": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=0d76e1701610",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1541823 - Derive the fetch docker image from debian9-raw rather than debian9-base. r=dustin\n\nThis will make the image smaller, and will make it happen earlier in\ncases its dependencies need to be rebuilt.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D26082\n",
+        "files_changed": [
+          "taskcluster/ci/docker-image/kind.yml",
+          "taskcluster/docker/fetch/Dockerfile"
+        ]
+      }
+    }
+  },
+  "152": {
+    "changeset_number": "35858",
+    "pusher": "shindli@mozilla.com",
+    "date_of_push": "2019-04-12 12:34:00",
+    "changeset_commits": {
+      "27": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=a632dfa60af6",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1543895 - Move test-platform keying of fetches in tests to individual fetch types. r=tomprince\n\nSo, instead of fetches['by-test-platform']['fetch'], we have\nfetches['fetch']['by-test-platform'].\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27227",
+        "files_changed": [
+          "taskcluster/ci/test/raptor-chrome.yml",
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      }
+    }
+  },
+  "153": {
+    "changeset_number": "35859",
+    "pusher": "shindli@mozilla.com",
+    "date_of_push": "2019-04-12 18:46:45",
+    "changeset_commits": {
+      "42": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=7a209bab1bfe",
+        "commiter_name": "Simon Fraser <sfraser@mozilla.com>",
+        "commit_message": "Bug 1543662 Introduce channel verification to partials r=catlee\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27115",
+        "files_changed": [
+          "taskcluster/docker/funsize-update-generator/scripts/funsize.py"
+        ]
+      }
+    }
+  },
+  "154": {
+    "changeset_number": "35861",
+    "pusher": "btara@mozilla.com",
+    "date_of_push": "2019-04-13 00:56:33",
+    "changeset_commits": {
+      "3": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=6800e99ad32a",
+        "commiter_name": "Ionut Goldan <igoldan@mozilla.com>",
+        "commit_message": "Bug 1539437 - Replace Chrome with Chromium mentionings where needed r=sparky,davehunt\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25094",
+        "files_changed": [
+          "taskcluster/ci/config.yml",
+          "taskcluster/ci/fetch/chromium-fetch.yml",
+          "taskcluster/ci/test/kind.yml",
+          "taskcluster/ci/test/raptor-chrome.yml",
+          "taskcluster/ci/test/raptor-chromium.yml",
+          "taskcluster/ci/test/test-platforms.yml",
+          "taskcluster/ci/test/test-sets.yml",
+          "taskcluster/scripts/misc/fetch-chromium.py",
+          "taskcluster/taskgraph/transforms/fetch.py",
+          "testing/mozbase/mozprofile/mozprofile/profile.py",
+          "testing/mozbase/mozprofile/tests/test_profile.py",
+          "testing/mozbase/mozrunner/mozrunner/application.py",
+          "testing/mozbase/mozrunner/mozrunner/runners.py",
+          "testing/mozbase/mozrunner/tests/conftest.py",
+          "testing/mozharness/configs/raptor/android_hw_config.py",
+          "testing/mozharness/configs/raptor/linux_config.py",
+          "testing/mozharness/configs/raptor/mac_config.py",
+          "testing/mozharness/configs/raptor/windows_config.py",
+          "testing/mozharness/configs/raptor/windows_vm_config.py",
+          "testing/mozharness/mozharness/mozilla/testing/raptor.py",
+          "testing/raptor/mach_commands.py",
+          "testing/raptor/raptor/cmdline.py",
+          "testing/raptor/raptor/raptor.py",
+          "testing/raptor/raptor/tests/raptor-assorted-dom.ini",
+          "testing/raptor/raptor/tests/raptor-motionmark-animometer.ini",
+          "testing/raptor/raptor/tests/raptor-motionmark-htmlsuite.ini",
+          "testing/raptor/raptor/tests/raptor-speedometer.ini",
+          "testing/raptor/raptor/tests/raptor-stylebench.ini",
+          "testing/raptor/raptor/tests/raptor-sunspider.ini",
+          "testing/raptor/raptor/tests/raptor-tp6-1.ini",
+          "testing/raptor/raptor/tests/raptor-tp6-10.ini",
+          "testing/raptor/raptor/tests/raptor-tp6-2.ini",
+          "testing/raptor/raptor/tests/raptor-tp6-3.ini",
+          "testing/raptor/raptor/tests/raptor-tp6-4.ini",
+          "testing/raptor/raptor/tests/raptor-tp6-5.ini",
+          "testing/raptor/raptor/tests/raptor-tp6-6.ini",
+          "testing/raptor/raptor/tests/raptor-tp6-7.ini",
+          "testing/raptor/raptor/tests/raptor-tp6-8-404.ini",
+          "testing/raptor/raptor/tests/raptor-tp6-8.ini",
+          "testing/raptor/raptor/tests/raptor-tp6-9.ini",
+          "testing/raptor/raptor/tests/raptor-unity-webgl.ini",
+          "testing/raptor/raptor/tests/raptor-wasm-godot-baseline.ini",
+          "testing/raptor/raptor/tests/raptor-wasm-godot-cranelift.ini",
+          "testing/raptor/raptor/tests/raptor-wasm-godot-ion.ini",
+          "testing/raptor/raptor/tests/raptor-wasm-godot.ini",
+          "testing/raptor/raptor/tests/raptor-wasm-misc-baseline.ini",
+          "testing/raptor/raptor/tests/raptor-wasm-misc-cranelift.ini",
+          "testing/raptor/raptor/tests/raptor-wasm-misc-ion.ini",
+          "testing/raptor/raptor/tests/raptor-wasm-misc.ini",
+          "testing/raptor/raptor/tests/raptor-webaudio.ini",
+          "testing/raptor/test/test_manifest.py",
+          "testing/raptor/test/test_raptor.py"
+        ]
+      },
+      "6": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=60a4738fdc31",
+        "commiter_name": "Johan Lorenzo <jlorenzo@mozilla.com>",
+        "commit_message": "Bug 1520261 - Let ARM64 Fennec ride the trains to Beta r=mhentges\n\nLet ARM64 Fennec ride the trains to Beta\n\nDifferential Revision: https://phabricator.services.mozilla.com/D26736",
+        "files_changed": [
+          "taskcluster/taskgraph/loader/push_apk.py",
+          "taskcluster/taskgraph/transforms/push_apk.py"
+        ]
+      },
+      "17": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=483960ad2be2",
+        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
+        "commit_message": "Bug 1318091 - Add Android 7.0 gtest tasks; r=bc\n\nAdd Android 7.0 gtests, opt and debug, running against the geckoview\nTestRunnerActivity.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27016",
+        "files_changed": [
+          "taskcluster/ci/test/compiled.yml",
+          "taskcluster/ci/test/test-sets.yml",
+          "testing/mozharness/configs/android/android_common.py",
+          "testing/mozharness/scripts/android_emulator_unittest.py",
+          "tools/tryselect/test/test_mozharness_integration.py"
+        ]
+      },
+      "24": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=5d2e9236aa79",
+        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
+        "commit_message": "Bug 1543993 - Run remaining Talos ccov tasks only on try; r=jmaher\n\nStop running Tss(tp6) and T(bcv) on ccov builds on central -- the remaining 2 cases\nmissed in the previous bug.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27313",
+        "files_changed": [
+          "taskcluster/ci/test/talos.yml"
+        ]
+      },
+      "35": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=ce6ffba148da",
+        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
+        "commit_message": "Bug 1544062 - Run windows/aarch64 xpcshell in 3 chunks; r=egao\n\nReduce chunks from 8 to 3. Each test task has at least a couple of minutes\nof overhead, so fewer chunks improves overall efficiency. At 3 chunks, each\none still completes reasonably quickly (less than 20 minutes).\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27339",
+        "files_changed": [
           "taskcluster/ci/test/xpcshell.yml"
         ]
       }

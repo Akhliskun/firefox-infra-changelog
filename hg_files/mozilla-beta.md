@@ -1,9 +1,9 @@
 ## REPOSITORY NAME: MOZILLA-BETA
- CURRENT PUSH ID: 11070
+ CURRENT PUSH ID: 11080
 
 | Changeset | Date | Commiter | Commit Message | Commit URL | 
 |:---:|:---:|:----:|:----------------------------------:|:-----:| 
-|11044|2019-04-09 04:47:53|Rail Aliiev <rail@mozilla.com>|[Bug 1541693](https://bugzilla.mozilla.org/show_bug.cgi?id=1541693)  Stop marking releases as started r=mtabara a=releaseShip-it v1 is going away soon and we won't need to create new releases in Ship-it v1 in parallel with Ship-it v2. It's time to prep patches to remove this functionality.Differential Revision: https://phabricator.services.mozilla.com/D26044|https://hg.mozilla.org/releases/mozilla-beta/pushloghtml?changeset=2a4306fc8442
+|11074|2019-04-12 11:46:38|Simon Fraser <sfraser@mozilla.com>|[Bug 1543033](https://bugzilla.mozilla.org/show_bug.cgi?id=1543033)  Fix pathing for win64_aarch64_info.txt r=mtabara a=releaseI've refactored the artifact map generation slightly to make the listof platforms more flexible, and also to let us have the previous name forwin64_aarch64_info.txt.Differential Revision: https://phabricator.services.mozilla.com/D27049|https://hg.mozilla.org/releases/mozilla-beta/pushloghtml?changeset=5d7fb687b031
 |11043|2019-04-08 22:17:21|Jordan Lund <jlund@mozilla.com>|[Bug 1540262](https://bugzilla.mozilla.org/show_bug.cgi?id=1540262)  - increase UV chunks from 12 to 16, NPOTB DONTBUILD r=tomprince, a=testingDifferential Revision: https://phabricator.services.mozilla.com/D25673|https://hg.mozilla.org/releases/mozilla-beta/pushloghtml?changeset=9bae80c354eb
 |11010|2019-04-05 20:44:22|Simon Fraser <sfraser@mozilla.com>|[Bug 1539905](https://bugzilla.mozilla.org/show_bug.cgi?id=1539905)  Cache yaml loading with copy of memoized values r=mtabara a=release|https://hg.mozilla.org/releases/mozilla-beta/pushloghtml?changeset=864e16abd2f7
 |11009|2019-04-05 19:36:58|Mihai Tabara <mtabara@mozilla.com>|[Bug 1538703](https://bugzilla.mozilla.org/show_bug.cgi?id=1538703)  - remove try config from declarative artifacts world. r=sfraser a=release|https://hg.mozilla.org/releases/mozilla-beta/pushloghtml?changeset=df05571b936f
