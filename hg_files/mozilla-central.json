@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35864
+    "last_push_id": 35866
   },
   "1": {
     "changeset_number": "35344",
@@ -14129,109 +14129,6 @@
     }
   },
   "154": {
-    "changeset_number": "35861",
-    "pusher": "btara@mozilla.com",
-    "date_of_push": "2019-04-13 00:56:33",
-    "changeset_commits": {
-      "3": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=6800e99ad32a",
-        "commiter_name": "Ionut Goldan <igoldan@mozilla.com>",
-        "commit_message": "Bug 1539437 - Replace Chrome with Chromium mentionings where needed r=sparky,davehunt\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25094",
-        "files_changed": [
-          "taskcluster/ci/config.yml",
-          "taskcluster/ci/fetch/chromium-fetch.yml",
-          "taskcluster/ci/test/kind.yml",
-          "taskcluster/ci/test/raptor-chrome.yml",
-          "taskcluster/ci/test/raptor-chromium.yml",
-          "taskcluster/ci/test/test-platforms.yml",
-          "taskcluster/ci/test/test-sets.yml",
-          "taskcluster/scripts/misc/fetch-chromium.py",
-          "taskcluster/taskgraph/transforms/fetch.py",
-          "testing/mozbase/mozprofile/mozprofile/profile.py",
-          "testing/mozbase/mozprofile/tests/test_profile.py",
-          "testing/mozbase/mozrunner/mozrunner/application.py",
-          "testing/mozbase/mozrunner/mozrunner/runners.py",
-          "testing/mozbase/mozrunner/tests/conftest.py",
-          "testing/mozharness/configs/raptor/android_hw_config.py",
-          "testing/mozharness/configs/raptor/linux_config.py",
-          "testing/mozharness/configs/raptor/mac_config.py",
-          "testing/mozharness/configs/raptor/windows_config.py",
-          "testing/mozharness/configs/raptor/windows_vm_config.py",
-          "testing/mozharness/mozharness/mozilla/testing/raptor.py",
-          "testing/raptor/mach_commands.py",
-          "testing/raptor/raptor/cmdline.py",
-          "testing/raptor/raptor/raptor.py",
-          "testing/raptor/raptor/tests/raptor-assorted-dom.ini",
-          "testing/raptor/raptor/tests/raptor-motionmark-animometer.ini",
-          "testing/raptor/raptor/tests/raptor-motionmark-htmlsuite.ini",
-          "testing/raptor/raptor/tests/raptor-speedometer.ini",
-          "testing/raptor/raptor/tests/raptor-stylebench.ini",
-          "testing/raptor/raptor/tests/raptor-sunspider.ini",
-          "testing/raptor/raptor/tests/raptor-tp6-1.ini",
-          "testing/raptor/raptor/tests/raptor-tp6-10.ini",
-          "testing/raptor/raptor/tests/raptor-tp6-2.ini",
-          "testing/raptor/raptor/tests/raptor-tp6-3.ini",
-          "testing/raptor/raptor/tests/raptor-tp6-4.ini",
-          "testing/raptor/raptor/tests/raptor-tp6-5.ini",
-          "testing/raptor/raptor/tests/raptor-tp6-6.ini",
-          "testing/raptor/raptor/tests/raptor-tp6-7.ini",
-          "testing/raptor/raptor/tests/raptor-tp6-8-404.ini",
-          "testing/raptor/raptor/tests/raptor-tp6-8.ini",
-          "testing/raptor/raptor/tests/raptor-tp6-9.ini",
-          "testing/raptor/raptor/tests/raptor-unity-webgl.ini",
-          "testing/raptor/raptor/tests/raptor-wasm-godot-baseline.ini",
-          "testing/raptor/raptor/tests/raptor-wasm-godot-cranelift.ini",
-          "testing/raptor/raptor/tests/raptor-wasm-godot-ion.ini",
-          "testing/raptor/raptor/tests/raptor-wasm-godot.ini",
-          "testing/raptor/raptor/tests/raptor-wasm-misc-baseline.ini",
-          "testing/raptor/raptor/tests/raptor-wasm-misc-cranelift.ini",
-          "testing/raptor/raptor/tests/raptor-wasm-misc-ion.ini",
-          "testing/raptor/raptor/tests/raptor-wasm-misc.ini",
-          "testing/raptor/raptor/tests/raptor-webaudio.ini",
-          "testing/raptor/test/test_manifest.py",
-          "testing/raptor/test/test_raptor.py"
-        ]
-      },
-      "6": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=60a4738fdc31",
-        "commiter_name": "Johan Lorenzo <jlorenzo@mozilla.com>",
-        "commit_message": "Bug 1520261 - Let ARM64 Fennec ride the trains to Beta r=mhentges\n\nLet ARM64 Fennec ride the trains to Beta\n\nDifferential Revision: https://phabricator.services.mozilla.com/D26736",
-        "files_changed": [
-          "taskcluster/taskgraph/loader/push_apk.py",
-          "taskcluster/taskgraph/transforms/push_apk.py"
-        ]
-      },
-      "17": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=483960ad2be2",
-        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
-        "commit_message": "Bug 1318091 - Add Android 7.0 gtest tasks; r=bc\n\nAdd Android 7.0 gtests, opt and debug, running against the geckoview\nTestRunnerActivity.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27016",
-        "files_changed": [
-          "taskcluster/ci/test/compiled.yml",
-          "taskcluster/ci/test/test-sets.yml",
-          "testing/mozharness/configs/android/android_common.py",
-          "testing/mozharness/scripts/android_emulator_unittest.py",
-          "tools/tryselect/test/test_mozharness_integration.py"
-        ]
-      },
-      "24": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=5d2e9236aa79",
-        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
-        "commit_message": "Bug 1543993 - Run remaining Talos ccov tasks only on try; r=jmaher\n\nStop running Tss(tp6) and T(bcv) on ccov builds on central -- the remaining 2 cases\nmissed in the previous bug.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27313",
-        "files_changed": [
-          "taskcluster/ci/test/talos.yml"
-        ]
-      },
-      "35": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=ce6ffba148da",
-        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
-        "commit_message": "Bug 1544062 - Run windows/aarch64 xpcshell in 3 chunks; r=egao\n\nReduce chunks from 8 to 3. Each test task has at least a couple of minutes\nof overhead, so fewer chunks improves overall efficiency. At 3 chunks, each\none still completes reasonably quickly (less than 20 minutes).\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27339",
-        "files_changed": [
-          "taskcluster/ci/test/xpcshell.yml"
-        ]
-      }
-    }
-  },
-  "154": {
     "changeset_number": "35863",
     "pusher": "dluca@mozilla.com",
     "date_of_push": "2019-04-13 12:52:52",
@@ -14250,6 +14147,30 @@
           "testing/web-platform/meta/user-timing/supported-usertiming-types.any.js.ini",
           "testing/web-platform/meta/webrtc/RTCRtpTransceiver-stop.html.ini",
           "toolkit/content/tests/chrome/test_largemenu.xul"
+        ]
+      }
+    }
+  },
+  "154": {
+    "changeset_number": "35865",
+    "pusher": "apavel@mozilla.com",
+    "date_of_push": "2019-04-14 00:44:49",
+    "changeset_commits": {
+      "17": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=cbd247c21a3e",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1543915 - Move installer_url and test_packages_url to EXTRA_MOZHARNESS_CONFIG. r=tomprince\n\nThis allows to stop using task-reference for mozharness_test commands.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27236",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/job/mozharness_test.py"
+        ]
+      },
+      "22": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=ac599c14d4a8",
+        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "No bug: [taskgraph] Remove support for generating non-hook actions; r=dustin\n\nNow that release promotion is using a hook, all the code for non-hook actions\ncan be removed.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27204",
+        "files_changed": [
+          "taskcluster/taskgraph/actions/openh264.py",
+          "taskcluster/taskgraph/actions/registry.py"
         ]
       }
     }
