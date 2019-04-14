@@ -1,10 +1,10 @@
-##  Commits in production - for 3 days, generated on: 2019-04-14 02:16:35 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-14 20:19:06 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=bb72c0829808)|Merge mozilla-central to mozilla-inbound. a=merge CLOSED TREE|ccoroiu@mozilla.com|merge|2019-04-13 15:20:48|
+|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f4c8925d83ed)|[Bug 1543044](https://bugzilla.mozilla.org/show_bug.cgi?id=1543044)  - ensure high_value_tasks has a default value when we fail to get data from treeherder/seta. r=Callek ensure high_value_tasks has a default value when we fail to get data from treeherder/seta. Differential Revision: https://phabricator.services.mozilla.com/D27445|jmaher@mozilla.com|Callek|2019-04-14 20:51:36|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=cbd247c21a3e)|[Bug 1543915](https://bugzilla.mozilla.org/show_bug.cgi?id=1543915)  - Move installer_url and test_packages_url to EXTRA_MOZHARNESS_CONFIG. r=tomprince This allows to stop using task-reference for mozharness_test commands. Differential Revision: https://phabricator.services.mozilla.com/D27236|mh@glandium.org|tomprince|2019-04-13 00:13:27|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=ce6ffba148da)|[Bug 1544062](https://bugzilla.mozilla.org/show_bug.cgi?id=1544062)  - Run windows/aarch64 xpcshell in 3 chunks; r=egao Reduce chunks from 8 to 3. Each test task has at least a couple of minutes of overhead, so fewer chunks improves overall efficiency. At 3 chunks, each one still completes reasonably quickly (less than 20 minutes). Differential Revision: https://phabricator.services.mozilla.com/D27339|gbrown@mozilla.com|egao|2019-04-12 21:20:27|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=5d2e9236aa79)|[Bug 1543993](https://bugzilla.mozilla.org/show_bug.cgi?id=1543993)  - Run remaining Talos ccov tasks only on try; r=jmaher Stop running Tss(tp6) and T(bcv) on ccov builds on central -- the remaining 2 cases missed in the previous bug. Differential Revision: https://phabricator.services.mozilla.com/D27313|gbrown@mozilla.com|jmaher|2019-04-12 19:28:02|
@@ -22,9 +22,6 @@
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=ef120e802c6f)|[Bug 1543747](https://bugzilla.mozilla.org/show_bug.cgi?id=1543747)  Don't display exceptions from bouncer when the checks fail; r=sfraser Differential Revision: https://phabricator.services.mozilla.com/D27135|mozilla@hocat.ca|sfraser|2019-04-11 21:20:20|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=a498ba7a0992)|[Bug 1534463](https://bugzilla.mozilla.org/show_bug.cgi?id=1534463)  give tasks access to `hgmointernal` Taskcluster secret r=tomprince Now that we have added the necessary scopes to `ci-configuration`, we can add the in-tree scopes to give tasks access to the `hgmointernal` config Taskcluster secret. Differential Revision: https://phabricator.services.mozilla.com/D25001|cosheehan@mozilla.com|tomprince|2019-04-11 20:20:53|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=3595f2b4875f)|[Bug 1534463](https://bugzilla.mozilla.org/show_bug.cgi?id=1534463)  patch `run-task` to clone from private hgweb mirrors r=tomprince With tasks able to access the hgmointernal config from a Taskcluster secret, we can now add functionality to `run-task` to support checking out from the private hg service. Here we add add a `resolve_checkout_url` function which takes the base/head repository URLs and determines whether we should clone from the public or private service, returning the resolved URL. The function pulls down the secret and checks that the region the task is executing in is in the set of supported regions. Then we generate a random number and default to the public service if the number is lower than our "rate". If all the above conditions are met, we replace `hg.mozilla.org` with the resolved domain name for the given region. We add a call to this function to `collect_vcs_options`, and skip resolving the private URL if we aren't performing a checkout from within `run-task`. Differential Revision: https://phabricator.services.mozilla.com/D25002|cosheehan@mozilla.com|tomprince|2019-04-11 20:20:53|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=1ce8b8034950)|[Bug 1536804](https://bugzilla.mozilla.org/show_bug.cgi?id=1536804)  - Add a task for summarising wpt metadata, r=ahal This task runs on wpt metadata changes and uploads an artifact containing the summarised metadata. Depends on D24178 Depends on D24178 Differential Revision: https://phabricator.services.mozilla.com/D24179|james@hoppipolla.co.uk|ahal|2019-04-11 19:57:29|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=c91bf0806ef7)|[Bug 1543033](https://bugzilla.mozilla.org/show_bug.cgi?id=1543033)  Fix pathing for win64_aarch64_info.txt r=mtabara I've refactored the artifact map generation slightly to make the list of platforms more flexible, and also to let us have the previous name for win64_aarch64_info.txt. Differential Revision: https://phabricator.services.mozilla.com/D27049|sfraser@mozilla.com|mtabara|2019-04-11 16:19:42|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=8a6073224e16)|[Bug 1543521](https://bugzilla.mozilla.org/show_bug.cgi?id=1543521)  - demote windows10-aarch64 related tasks to tier 2 for the time being r=gbrown,jmaher Changes: - make windows10-aarch64 tests tier-2 by default Differential Revision: https://phabricator.services.mozilla.com/D27006|egao@mozilla.com|gbrown,jmaher|2019-04-11 03:05:05|
 
 |	mozilla-inbound	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.json)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -46,9 +43,6 @@
 |[Link](https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=47660e04a4f9)|[Bug 1543469](https://bugzilla.mozilla.org/show_bug.cgi?id=1543469)  - Update builders to rustc 1.34. r=glandium Differential Revision: https://phabricator.services.mozilla.com/D27184|csabou@mozilla.com|glandium|2019-04-12 06:51:12|
 |[Link](https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=53309e75d9a0)|[Bug 1543826](https://bugzilla.mozilla.org/show_bug.cgi?id=1543826)  - Run Talos ccov tests only on try; r=jmaher Differential Revision: https://phabricator.services.mozilla.com/D27175|csabou@mozilla.com|jmaher|2019-04-12 06:51:12|
 |[Link](https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=940684cd1065)|[Bug 1543826](https://bugzilla.mozilla.org/show_bug.cgi?id=1543826)  - Remove duplication of key "linux64-ccov/.*" in mapping to fix yaml failure.|csabou@mozilla.com||2019-04-12 06:51:12|
-|[Link](https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=9b7b997246cb)|[Bug 1543260](https://bugzilla.mozilla.org/show_bug.cgi?id=1543260)  - Make GLES3 in the android emulator conditional on WR. r=gbrown This disables GLES3 in the android emulator unless WebRender is explicitly enabled, because for now the half-baked ES3 support in the emulator causes some WebGL tests to fail. Differential Revision: https://phabricator.services.mozilla.com/D26940|dvarga@mozilla.com|gbrown|2019-04-11 07:29:43|
-|[Link](https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=58239a04c195)|Merge mozilla-central to autoland. a=merge on a CLOSED TREE|dvarga@mozilla.com|merge|2019-04-11 07:29:43|
-|[Link](https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=ce76d73f8eb3)|[Bug 1541859](https://bugzilla.mozilla.org/show_bug.cgi?id=1541859)  - add action task to child tasks' dependencies. r=dustin Differential Revision: https://phabricator.services.mozilla.com/D26209|dvarga@mozilla.com|dustin|2019-04-11 07:29:43|
 
 |	mozilla-central	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-central.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-central.json)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -71,9 +65,6 @@
 |[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=47660e04a4f9)|[Bug 1543469](https://bugzilla.mozilla.org/show_bug.cgi?id=1543469)  - Update builders to rustc 1.34. r=glandium Differential Revision: https://phabricator.services.mozilla.com/D27184|csabou@mozilla.com|glandium|2019-04-12 06:19:48|
 |[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=53309e75d9a0)|[Bug 1543826](https://bugzilla.mozilla.org/show_bug.cgi?id=1543826)  - Run Talos ccov tests only on try; r=jmaher Differential Revision: https://phabricator.services.mozilla.com/D27175|csabou@mozilla.com|jmaher|2019-04-12 06:19:48|
 |[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=940684cd1065)|[Bug 1543826](https://bugzilla.mozilla.org/show_bug.cgi?id=1543826)  - Remove duplication of key "linux64-ccov/.*" in mapping to fix yaml failure.|csabou@mozilla.com||2019-04-12 06:19:48|
-|[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=9b7b997246cb)|[Bug 1543260](https://bugzilla.mozilla.org/show_bug.cgi?id=1543260)  - Make GLES3 in the android emulator conditional on WR. r=gbrown This disables GLES3 in the android emulator unless WebRender is explicitly enabled, because for now the half-baked ES3 support in the emulator causes some WebGL tests to fail. Differential Revision: https://phabricator.services.mozilla.com/D26940|dvarga@mozilla.com|gbrown|2019-04-11 07:19:28|
-|[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=58239a04c195)|Merge mozilla-central to autoland. a=merge on a CLOSED TREE|dvarga@mozilla.com|merge|2019-04-11 07:19:28|
-|[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=ce76d73f8eb3)|[Bug 1541859](https://bugzilla.mozilla.org/show_bug.cgi?id=1541859)  - add action task to child tasks' dependencies. r=dustin Differential Revision: https://phabricator.services.mozilla.com/D26209|dvarga@mozilla.com|dustin|2019-04-11 07:19:28|
 
 |	mozilla-beta	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-beta.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-beta.json)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -95,9 +86,6 @@
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
 |[Link](https://github.com/mozilla-releng/build-puppet/commit/093a779afb8c7f6abf60b04d54afc9851f7faf9b)|Scheduled weekly dependency update for week 14 (#448)    Update jinja2 from 2.10 to 2.10.1      Update jinja2 from 2.10 to 2.10.1      Update jinja2 from 2.10 to 2.10.1      Update boto3 from 1.9.127 to 1.9.130      Update botocore from 1.12.127 to 1.12.130      Update twisted from 18.9.0 to 19.2.0      Update hyperlink from 18.0.0 to 19.0.0      Update parso from 0.3.4 to 0.4.0      Update pexpect from 4.6.0 to 4.7.0      Update pexpect from 4.6.0 to 4.7.0      Update pexpect from 4.6.0 to 4.7.0      Update pyparsing from 2.3.1 to 2.4.0      Update pytz from 2018.9 to 2019.1      Update setuptools from 40.8.0 to 41.0.0|pyup-bot|N/A|2019-04-12 15:56:57|
-|[Link](https://github.com/mozilla-releng/build-puppet/commit/d5b459efc40e8eaef4382ec0ff90cdf2735c9845)|Merge pull request #450 from escapewindow/sw-23.0.2  bump scriptworker to 23.0.2|escapewindow|N/A|2019-04-11 18:49:12|
-|[Link](https://github.com/mozilla-releng/build-puppet/commit/7ab1cfa24cdf6bb620da949fedb0270cb1f11671)|bump scriptworker to 23.0.2|escapewindow|N/A|2019-04-11 18:29:24|
-|[Link](https://github.com/mozilla-releng/build-puppet/commit/8de84d436309f188a51180c3ef16abd89cc83c30)|Bump scriptworker to 23.0.1 (#449)|JohanLorenzo|N/A|2019-04-11 15:09:20|
 
 |	OpenCloudConfig	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/OpenCloudConfig.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/OpenCloudConfig.md)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -105,7 +93,6 @@
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
 |[Link](https://github.com/mozilla-releng/OpenCloudConfig/commit/b32c096ea39c709a09a99358fc28a713e35060db)|Testing generic-worker 14.1.0 / taskcluster-proxy 5.1.0 on  STAGING   This change does _not_ affect any production workers. Commit made with:      ./gecko-try.sh 14.1.0 5.1.0  See https://github.com/taskcluster/generic-worker/blob/081b7c0200fb915ccc08d0cace49712ebc6e23c3/mozilla-try-scripts/gecko-try.sh  deploy: gecko-1-b-win2012-beta gecko-t-win10-64-beta gecko-t-win10-64-cu gecko-t-win10-64-gpu-b gecko-t-win10-64-hw-b gecko-t-win10-64-ux-b gecko-t-win10-a64-beta gecko-t-win7-32-beta gecko-t-win7-32-cu gecko-t-win7-32-gpu-b|petemoore|N/A|2019-04-12 18:05:46|
-|[Link](https://github.com/mozilla-releng/OpenCloudConfig/commit/8d5b149d65e89f20430fdfcdac01a4236b5dfdac)|Merge pull request #236 from mozilla-releng/revert-234-revert-233-bug1534983  deploy: gecko-1-b-win2012 gecko-2-b-win2012 gecko-3-b-win2012-c4 gecko-3-b-win2012-c5 gecko-3-b-win2012 gecko-t-win10-64-alpha gecko-t-win10-64-gpu-a gecko-t-win10-64-gpu gecko-t-win10-64 gecko-t-win7-32-gpu gecko-t-win7-32 relops-image-builder|petemoore|N/A|2019-04-11 07:45:32|
 
 |	taskcluster	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/taskcluster.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/taskcluster.md)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -118,13 +105,6 @@
 |[Link](https://github.com/taskcluster/taskcluster/commit/d4a0d84a166b2fd9892759379f5d59964fd4879b)|Bug 1534713 - ignore errors draining a broken channel  This adds a new test that simulates the errors detailed in the bug, and then ignores them.  They come from trying to cleanly shut down a connection that has already failed.|djmitche|N/A|2019-04-11 21:45:24|
 |[Link](https://github.com/taskcluster/taskcluster/commit/4c15ab2889762debf145a12fc4aafeb4c118359b)|Merge pull request #545 from djmitche/bug1525444  Bug 1525444 - fix tests that poll for pulse messages|djmitche|N/A|2019-04-11 21:16:59|
 |[Link](https://github.com/taskcluster/taskcluster/commit/26969cd5ca9100bba9a60e5d85880d48b1f21378)|Add heroku specifics for docs (#559)|helfi92|N/A|2019-04-11 20:25:22|
-|[Link](https://github.com/taskcluster/taskcluster/commit/37cd0d30b5f6302d5c0b22554dd20bec2bd35669)|Merge pull request #553 from taskcluster/renovate/superagent-5.x  Update dependency superagent to v5|djmitche|N/A|2019-04-11 18:43:13|
-|[Link](https://github.com/taskcluster/taskcluster/commit/38d668d889b09e1e10258f22eae6bebb3901376d)|Merge pull request #557 from taskcluster/bug-1540838  [Bug 1540838] Make lib-pulse tests actually run|imbstack|N/A|2019-04-11 17:49:13|
-|[Link](https://github.com/taskcluster/taskcluster/commit/d886762334ba3c3bc501c1de007006f5ab88ade2)|Update readme for making load optional|imbstack|N/A|2019-04-11 17:34:48|
-|[Link](https://github.com/taskcluster/taskcluster/commit/82b5c1da9303b2946f0b0c55abae9a5fb80323da)|Update dependency is-absolute-url to v3 (#550)|renovate[bot]|N/A|2019-04-11 17:31:17|
-|[Link](https://github.com/taskcluster/taskcluster/commit/bf615bdbf7b29b2117ec5c992cfafec93fad8b2b)|Update dependency superagent to v5|renovate-bot|N/A|2019-04-11 17:27:26|
-|[Link](https://github.com/taskcluster/taskcluster/commit/b152455b671c0abf86a9a7c24ac082c36c614163)|Merge pull request #541 from djmitche/bug1525030  Bug 1525030 - move all dependencies to the top level|djmitche|N/A|2019-04-11 16:23:28|
-|[Link](https://github.com/taskcluster/taskcluster/commit/4e42432b6cb3750fbbbce80874f4b1330301cda8)|Merge branch 'master' into bug1525030|djmitche|N/A|2019-04-11 15:34:06|
 
 |	addonscript	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/addonscript.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/addonscript.md)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -173,8 +153,7 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
-|[Link](https://github.com/mozilla-releng/scriptworker/commit/972be9c4939bd3435db7092becaac65b3e09e7af)|23.0.2|escapewindow|N/A|2019-04-11 18:23:54|
-|[Link](https://github.com/mozilla-releng/scriptworker/commit/5e035b7862f842d0058efae3c3129aa98ff701c5)|23.0.1|JohanLorenzo|N/A|2019-04-11 14:26:40|
+| |No push in the last 3 days.. [see the history of MD commits](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/scriptworker.md)|FIC - BOT|Self Generated| - |
 
 |	shipitscript	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/shipitscript.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/shipitscript.md)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -223,8 +202,7 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
-|[Link](https://github.com/mozilla-releng/build-cloud-tools/commit/2638ee1cffe3247220b09309b31968da45baba36)|Merge branch 'La0-eventlistener-dns'|dividehex|N/A|2019-04-11 15:37:54|
-|[Link](https://github.com/mozilla-releng/build-cloud-tools/commit/f00618266a297cb38c24255beb19e2e2a971ceb4)|Merge branch 'eventlistener-dns' of github.com:La0/build-cloud-tools into La0-eventlistener-dns|dividehex|N/A|2019-04-11 15:31:20|
+| |No push in the last 3 days.. [see the history of MD commits](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/build-cloud-tools.md)|FIC - BOT|Self Generated| - |
 
 |	ci-configuration	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/ci-configuration.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/ci-configuration.json)	| 
 |:----------:|:-----------------------:|:--------:| 

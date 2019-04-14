@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83143
+    "last_push_id": 83154
   },
   "1": {
     "changeset_number": "35344",
@@ -48048,6 +48048,21 @@
           "testing/web-platform/meta/user-timing/supported-usertiming-types.any.js.ini",
           "testing/web-platform/meta/webrtc/RTCRtpTransceiver-stop.html.ini",
           "toolkit/content/tests/chrome/test_largemenu.xul"
+        ]
+      }
+    }
+  },
+  "881": {
+    "changeset_number": "83153",
+    "pusher": "jmaher@mozilla.com",
+    "date_of_push": "2019-04-14 20:51:36",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f4c8925d83ed",
+        "commiter_name": "Joel Maher <jmaher@mozilla.com>",
+        "commit_message": "Bug 1543044 - ensure high_value_tasks has a default value when we fail to get data from treeherder/seta. r=Callek\n\nensure high_value_tasks has a default value when we fail to get data from treeherder/seta.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27445",
+        "files_changed": [
+          "taskcluster/taskgraph/util/seta.py"
         ]
       }
     }

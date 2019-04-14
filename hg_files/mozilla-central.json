@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35866
+    "last_push_id": 35867
   },
   "1": {
     "changeset_number": "35344",
@@ -14124,29 +14124,6 @@
         "commit_message": "Bug 1543662 Introduce channel verification to partials r=catlee\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27115",
         "files_changed": [
           "taskcluster/docker/funsize-update-generator/scripts/funsize.py"
-        ]
-      }
-    }
-  },
-  "154": {
-    "changeset_number": "35863",
-    "pusher": "dluca@mozilla.com",
-    "date_of_push": "2019-04-13 12:52:52",
-    "changeset_commits": {
-      "10": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=bb72c0829808",
-        "commiter_name": "Bogdan Tara <btara@mozilla.com>",
-        "commit_message": "Merge mozilla-central to mozilla-inbound.  a=merge CLOSED TREE",
-        "files_changed": [
-          "taskcluster/ci/test/raptor-chrome.yml",
-          "testing/web-platform/meta/navigation-timing/supported_navigation_type.window.js.ini",
-          "testing/web-platform/meta/performance-timeline/po-observe-type.any.js.ini",
-          "testing/web-platform/meta/performance-timeline/po-observe.any.js.ini",
-          "testing/web-platform/meta/performance-timeline/supportedEntryTypes.any.js.ini",
-          "testing/web-platform/meta/resource-timing/supported_resource_type.any.js.ini",
-          "testing/web-platform/meta/user-timing/supported-usertiming-types.any.js.ini",
-          "testing/web-platform/meta/webrtc/RTCRtpTransceiver-stop.html.ini",
-          "toolkit/content/tests/chrome/test_largemenu.xul"
         ]
       }
     }
