@@ -1,7 +1,16 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-01 06:01:41.614893
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-01 21:09:25.709226
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|809|helfi92|Merge pull request #579 from helfi92/hotfix-taskid [UI] Fix task ID undefined|[URL](https://github.com/taskcluster/taskcluster/commit/19cae6c62318b9edd2dc6917fdb3039a86996dd0)|2019-04-15 15:12:51
+|808|helfi92|Hot fix: fix task ID undefined|[URL](https://github.com/taskcluster/taskcluster/commit/357589a7eac78221507ad613b8fdb15101f12308)|2019-04-15 15:11:07
+|807|helfi92|Merge pull request #570 from helfi92/task-run-reordering Task Group UX (breadcrumbs, hide metadata)|[URL](https://github.com/taskcluster/taskcluster/commit/45711a4d273c94fa2a341e973c21cf6a338f1eca)|2019-04-15 14:45:24
+|806|helfi92|Add TaskGroup suggestions|[URL](https://github.com/taskcluster/taskcluster/commit/d1e2b33d347d408850d1b4947424014c67bc01fd)|2019-04-15 14:40:38
+|805|helfi92|Fix hashing issue in docs when viewing an entry log (#571)|[URL](https://github.com/taskcluster/taskcluster/commit/177748ff79c1b7c0daf60c075cc9b458e3791b4c)|2019-04-15 14:34:18
+|804|helfi92|Merge pull request #477 from helfi92/task-group-subscription [UI] Task Group - use a subscription model instead of polling|[URL](https://github.com/taskcluster/taskcluster/commit/fd837dfde1cce4e813c054c41091f9c1d57bc519)|2019-04-15 14:30:51
+|803|djmitche|Merge pull request #576 from taskcluster/renovate/xmlbuilder-12.x Update dependency xmlbuilder to v12|[URL](https://github.com/taskcluster/taskcluster/commit/65b4545681af2857b50a79561e12789088fe8eaf)|2019-04-15 14:29:38
+|802|helfi92|[UI] Fix calendar icon positioning on date picker (#568)|[URL](https://github.com/taskcluster/taskcluster/commit/e8184926176eed12f9011571c021be1e74784c30)|2019-04-15 14:14:31
+|801|renovate[bot]|Update dependency graphql-type-json to ^0.3.0 (#574)|[URL](https://github.com/taskcluster/taskcluster/commit/9ca9d115b9e2bfed16c63849944c9d185d34fad5)|2019-04-15 13:56:45
 |800|djmitche|Merge pull request #573 from taskcluster/renovate/cron-parser-2.x Update dependency cron-parser to v2.11.0|[URL](https://github.com/taskcluster/taskcluster/commit/d91ced93f8b6bfb5d62fad41b4d762b6d5132895)|2019-04-15 02:11:47
 |799|renovate-bot|Update dependency cron-parser to v2.11.0|[URL](https://github.com/taskcluster/taskcluster/commit/776b12749e94bce891082e7813b384e6fd09d67e)|2019-04-15 00:41:17
 |798|djmitche|Merge pull request #327 from iFlameing/yml Bug[1446768] Adding new policy in .taskcluster.yml|[URL](https://github.com/taskcluster/taskcluster/commit/13104aabcc4be20d38f9defdb5e8c65434a9c57b)|2019-04-12 18:19:27
