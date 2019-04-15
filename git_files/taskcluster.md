@@ -1,7 +1,9 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-03-31 23:18:02.147734
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-01 06:01:41.614893
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|800|djmitche|Merge pull request #573 from taskcluster/renovate/cron-parser-2.x Update dependency cron-parser to v2.11.0|[URL](https://github.com/taskcluster/taskcluster/commit/d91ced93f8b6bfb5d62fad41b4d762b6d5132895)|2019-04-15 02:11:47
+|799|renovate-bot|Update dependency cron-parser to v2.11.0|[URL](https://github.com/taskcluster/taskcluster/commit/776b12749e94bce891082e7813b384e6fd09d67e)|2019-04-15 00:41:17
 |798|djmitche|Merge pull request #327 from iFlameing/yml Bug[1446768] Adding new policy in .taskcluster.yml|[URL](https://github.com/taskcluster/taskcluster/commit/13104aabcc4be20d38f9defdb5e8c65434a9c57b)|2019-04-12 18:19:27
 |797|djmitche|Merge pull request #563 from djmitche/bug1534713-b [Bug 1534713](https://bugzilla.mozilla.org/show_bug.cgi?id=1534713)  - ignore errors draining a broken channel|[URL](https://github.com/taskcluster/taskcluster/commit/e37dcec7aaa0d53ab14f34ba1b9f3639f19bf8a9)|2019-04-12 17:01:02
 |796|djmitche|(hotfix) README formatting|[URL](https://github.com/taskcluster/taskcluster/commit/74d353f683693c1fae8cfa9cc825433704b0d744)|2019-04-11 22:19:12

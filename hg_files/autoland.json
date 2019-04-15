@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83154
+    "last_push_id": 83159
   },
   "1": {
     "changeset_number": "35344",
@@ -48025,29 +48025,6 @@
         "commit_message": "Bug 1543915 - Move installer_url and test_packages_url to EXTRA_MOZHARNESS_CONFIG. r=tomprince\n\nThis allows to stop using task-reference for mozharness_test commands.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27236",
         "files_changed": [
           "taskcluster/taskgraph/transforms/job/mozharness_test.py"
-        ]
-      }
-    }
-  },
-  "881": {
-    "changeset_number": "83132",
-    "pusher": "ccoroiu@mozilla.com",
-    "date_of_push": "2019-04-13 15:20:48",
-    "changeset_commits": {
-      "10": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=bb72c0829808",
-        "commiter_name": "Bogdan Tara <btara@mozilla.com>",
-        "commit_message": "Merge mozilla-central to mozilla-inbound.  a=merge CLOSED TREE",
-        "files_changed": [
-          "taskcluster/ci/test/raptor-chrome.yml",
-          "testing/web-platform/meta/navigation-timing/supported_navigation_type.window.js.ini",
-          "testing/web-platform/meta/performance-timeline/po-observe-type.any.js.ini",
-          "testing/web-platform/meta/performance-timeline/po-observe.any.js.ini",
-          "testing/web-platform/meta/performance-timeline/supportedEntryTypes.any.js.ini",
-          "testing/web-platform/meta/resource-timing/supported_resource_type.any.js.ini",
-          "testing/web-platform/meta/user-timing/supported-usertiming-types.any.js.ini",
-          "testing/web-platform/meta/webrtc/RTCRtpTransceiver-stop.html.ini",
-          "toolkit/content/tests/chrome/test_largemenu.xul"
         ]
       }
     }
