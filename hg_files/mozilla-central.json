@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35872
+    "last_push_id": 35873
   },
   "1": {
     "changeset_number": "35344",
@@ -14129,21 +14129,6 @@
     }
   },
   "154": {
-    "changeset_number": "35868",
-    "pusher": "nbeleuzu@mozilla.com",
-    "date_of_push": "2019-04-15 00:47:46",
-    "changeset_commits": {
-      "10": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=f4c8925d83ed",
-        "commiter_name": "Joel Maher <jmaher@mozilla.com>",
-        "commit_message": "Bug 1543044 - ensure high_value_tasks has a default value when we fail to get data from treeherder/seta. r=Callek\n\nensure high_value_tasks has a default value when we fail to get data from treeherder/seta.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27445",
-        "files_changed": [
-          "taskcluster/taskgraph/util/seta.py"
-        ]
-      }
-    }
-  },
-  "154": {
     "changeset_number": "35872",
     "pusher": "ncsoregi@mozilla.com",
     "date_of_push": "2019-04-15 18:24:06",
@@ -14166,6 +14151,43 @@
           "mobile/android/geckoview/build.gradle",
           "taskcluster/ci/build/android.yml",
           "taskcluster/taskgraph/transforms/task.py"
+        ]
+      }
+    }
+  },
+  "154": {
+    "changeset_number": "35873",
+    "pusher": "ccoroiu@mozilla.com",
+    "date_of_push": "2019-04-16 00:36:26",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=69d1e80c405d",
+        "commiter_name": "ffxbld <ffxbld@mozilla.com>",
+        "commit_message": "No Bug, taskcluster/docker/funsize-update-generator pipfile-update. r=sfraser\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27483",
+        "files_changed": [
+          "taskcluster/docker/funsize-update-generator/Pipfile.lock"
+        ]
+      },
+      "34": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=fdbd2c02f391",
+        "commiter_name": "Mike Shal <mshal@mozilla.com>",
+        "commit_message": "Bug 1516114 - Enable 3-tier PGO for Linux; r=firefox-build-system-reviewers,Callek,chmanchester\n\nNow that 3-tier PGO uses a debian9 image to generate the profile data\n(bug 1519424), we no longer see the XDG_RUNTIME_DIR failures in the run\ntask. The frequency of those errors was the primary blocker for enabling\n3-tier PGO in the first place. Since we still see those errors\noccasionally in 1-tier PGO, we should switch to the 3-tier model for\nLinux.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27326",
+        "files_changed": [
+          "taskcluster/ci/build/linux.yml",
+          "taskcluster/ci/generate-profile/kind.yml",
+          "taskcluster/ci/instrumented-build/kind.yml"
+        ]
+      },
+      "46": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=b8f49a14c458",
+        "commiter_name": "Andrew Erickson <aerickson@mozilla.com>",
+        "commit_message": "Bug 1474897: switch bitbar workers to g-w r=bc,tomprince\n\nMuch of this was already reviewed in D21473 (my test change where I developed the payload modifications and that pointed tests at my test queue).\n\nThis change keeps the payload changes from D21473, but points at the new 'real' queues we'll be using.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25009",
+        "files_changed": [
+          "taskcluster/ci/config.yml",
+          "taskcluster/taskgraph/transforms/job/mozharness_test.py",
+          "taskcluster/taskgraph/transforms/task.py",
+          "taskcluster/taskgraph/transforms/tests.py",
+          "taskcluster/taskgraph/util/workertypes.py"
         ]
       }
     }
