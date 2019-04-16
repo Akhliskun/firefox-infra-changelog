@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35873
+    "last_push_id": 35875
   },
   "1": {
     "changeset_number": "35344",
@@ -14161,6 +14161,52 @@
           "taskcluster/taskgraph/transforms/task.py",
           "taskcluster/taskgraph/transforms/tests.py",
           "taskcluster/taskgraph/util/workertypes.py"
+        ]
+      }
+    }
+  },
+  "154": {
+    "changeset_number": "35874",
+    "pusher": "ccoroiu@mozilla.com",
+    "date_of_push": "2019-04-16 07:04:58",
+    "changeset_commits": {
+      "6": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=c6c39f570b1f",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1541527 - [ci] Remove unused raptor chrome group symbols, r=rwood\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27504",
+        "files_changed": [
+          "taskcluster/ci/config.yml"
+        ]
+      },
+      "7": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=99e40003ff9a",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1541527 - Remove \"-e10s\" from treeherder group symbols and task labels, r=jmaher,gbrown\n\nSince e10s is the default configuration, we shouldn't explicitly mark things\nwith the \"-e10s\" suffix. Instead we should mark things that *don't* run with\n'e10s. This patch removes '-e10s' from all treeherder group symbols and task\nlabels, adds the \"-1proc\" suffix to tasks that are non-e10s.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25958",
+        "files_changed": [
+          "taskcluster/ci/config.yml",
+          "taskcluster/taskgraph/transforms/tests.py",
+          "testing/mozbase/moztest/moztest/resolve.py",
+          "testing/mozharness/mozharness/mozilla/testing/firefox_ui_tests.py",
+          "testing/mozharness/mozharness/mozilla/testing/talos.py",
+          "testing/mozharness/scripts/android_emulator_unittest.py",
+          "testing/mozharness/scripts/android_hardware_unittest.py",
+          "testing/mozharness/scripts/awsy_script.py",
+          "testing/mozharness/scripts/desktop_unittest.py",
+          "testing/mozharness/scripts/marionette.py",
+          "testing/mozharness/scripts/telemetry/telemetry_client.py",
+          "testing/mozharness/scripts/web_platform_tests.py",
+          "testing/talos/talos.json",
+          "tools/tryselect/test/test_fuzzy.py",
+          "tools/tryselect/try_presets.yml"
+        ]
+      },
+      "45": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=4574b686fdd4",
+        "commiter_name": "Edwin Gao <egao@mozilla.com>",
+        "commit_message": "Bug 1544441 - prevent selecting windows10-aarch64 jobs using old try syntax and fuzzy unless --full is used r=jmaher\n\nChanges:\n- added windows10-aarch64 to the filter for fuzzy, to require `--full` in order to trigger jobs\n- return False for any test tasks that contain windows10-aarch64 to prevent users using old try syntax from overwhelming the limited number of hardware\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27590",
+        "files_changed": [
+          "taskcluster/taskgraph/try_option_syntax.py",
+          "tools/tryselect/selectors/fuzzy.py"
         ]
       }
     }
