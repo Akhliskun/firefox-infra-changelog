@@ -14129,33 +14129,6 @@
     }
   },
   "154": {
-    "changeset_number": "35872",
-    "pusher": "ncsoregi@mozilla.com",
-    "date_of_push": "2019-04-15 18:24:06",
-    "changeset_commits": {
-      "14": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=f0ee3a81b179",
-        "commiter_name": "Mitchell Hentges <mhentges@mozilla.com>",
-        "commit_message": "Bug 1538278 - Adds route for accessing geckoview releases r=tomprince,jlorenzo\n\nAdds route for accessing geckoview releases\n\nDifferential Revision: https://phabricator.services.mozilla.com/D23928",
-        "files_changed": [
-          "mobile/android/geckoview/build.gradle",
-          "taskcluster/ci/build/android.yml",
-          "taskcluster/taskgraph/transforms/task.py"
-        ]
-      },
-      "15": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=98df9bc51da2",
-        "commiter_name": "Bogdan Tara <btara@mozilla.com>",
-        "commit_message": "Backed out changeset f0ee3a81b179 (bug 1538278) for gecko decision task bustage CLOSED TREE",
-        "files_changed": [
-          "mobile/android/geckoview/build.gradle",
-          "taskcluster/ci/build/android.yml",
-          "taskcluster/taskgraph/transforms/task.py"
-        ]
-      }
-    }
-  },
-  "154": {
     "changeset_number": "35873",
     "pusher": "ccoroiu@mozilla.com",
     "date_of_push": "2019-04-16 00:36:26",

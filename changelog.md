@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-15 22:26:49 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-16 02:06:53 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -11,7 +11,6 @@
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=69d1e80c405d)|No Bug, taskcluster/docker/funsize-update-generator pipfile-update. r=sfraser Differential Revision: https://phabricator.services.mozilla.com/D27483|sfraser@mozilla.com|sfraser|2019-04-15 14:25:24|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=98df9bc51da2)|Backed out changeset f0ee3a81b179 [Bug 1538278](https://bugzilla.mozilla.org/show_bug.cgi?id=1538278)  for gecko decision task bustage CLOSED TREE|btara@mozilla.com||2019-04-15 13:35:35|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f0ee3a81b179)|[Bug 1538278](https://bugzilla.mozilla.org/show_bug.cgi?id=1538278)  - Adds route for accessing geckoview releases r=tomprince,jlorenzo Adds route for accessing geckoview releases Differential Revision: https://phabricator.services.mozilla.com/D23928|mhentges@mozilla.com|tomprince,jlorenzo|2019-04-15 13:10:29|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=cbd247c21a3e)|[Bug 1543915](https://bugzilla.mozilla.org/show_bug.cgi?id=1543915)  - Move installer_url and test_packages_url to EXTRA_MOZHARNESS_CONFIG. r=tomprince This allows to stop using task-reference for mozharness_test commands. Differential Revision: https://phabricator.services.mozilla.com/D27236|mh@glandium.org|tomprince|2019-04-13 00:13:27|
 
 |	mozilla-inbound	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.json)	| 
 |:----------:|:-----------------------:|:--------:| 

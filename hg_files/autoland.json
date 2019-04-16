@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83245
+    "last_push_id": 83251
   },
   "1": {
     "changeset_number": "35344",
@@ -48074,23 +48074,6 @@
         "commit_message": "No Bug, taskcluster/docker/funsize-update-generator pipfile-update. r=sfraser\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27483",
         "files_changed": [
           "taskcluster/docker/funsize-update-generator/Pipfile.lock"
-        ]
-      }
-    }
-  },
-  "884": {
-    "changeset_number": "83205",
-    "pusher": "mshal@mozilla.com",
-    "date_of_push": "2019-04-15 20:20:06",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=fdbd2c02f391",
-        "commiter_name": "Mike Shal <mshal@mozilla.com>",
-        "commit_message": "Bug 1516114 - Enable 3-tier PGO for Linux; r=firefox-build-system-reviewers,Callek,chmanchester\n\nNow that 3-tier PGO uses a debian9 image to generate the profile data\n(bug 1519424), we no longer see the XDG_RUNTIME_DIR failures in the run\ntask. The frequency of those errors was the primary blocker for enabling\n3-tier PGO in the first place. Since we still see those errors\noccasionally in 1-tier PGO, we should switch to the 3-tier model for\nLinux.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27326",
-        "files_changed": [
-          "taskcluster/ci/build/linux.yml",
-          "taskcluster/ci/generate-profile/kind.yml",
-          "taskcluster/ci/instrumented-build/kind.yml"
         ]
       }
     }

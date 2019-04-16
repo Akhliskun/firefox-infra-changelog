@@ -1,7 +1,8 @@
-## SIGNTOOL COMMIT MARKDOWN TABLE SINCE 2019-04-02 01:25:43.952760
+## SIGNTOOL COMMIT MARKDOWN TABLE SINCE 2019-04-02 05:05:49.223147
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|34|escapewindow|3.2.1|[URL](https://github.com/mozilla-releng/signtool/commit/62debcab19529af096cb7298c9557e8914cae589)|2018-08-27 17:17:03
 |33|escapewindow|3.2.1|[URL](https://github.com/mozilla-releng/signtool/commit/62debcab19529af096cb7298c9557e8914cae589)|2018-08-27 17:17:03
 |32|escapewindow|3.2.1|[URL](https://github.com/mozilla-releng/signtool/commit/62debcab19529af096cb7298c9557e8914cae589)|2018-08-27 17:17:03
 |31|escapewindow|3.2.1|[URL](https://github.com/mozilla-releng/signtool/commit/62debcab19529af096cb7298c9557e8914cae589)|2018-08-27 17:17:03
