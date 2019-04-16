@@ -1,6 +1,6 @@
 {
   "0": {
-    "lastChecked": "2019-04-16 10:56:15.326816",
+    "lastChecked": "2019-04-16 20:50:18.756827",
     "last_releases": {
       "latest_release": {
         "version": "3.2.1",
@@ -431,6 +431,18 @@
     ]
   },
   "36": {
+    "sha": "62debcab19529af096cb7298c9557e8914cae589",
+    "url": "https://github.com/mozilla-releng/signtool/commit/62debcab19529af096cb7298c9557e8914cae589",
+    "commiter_name": "escapewindow",
+    "commiter_email": null,
+    "commit_message": "3.2.1",
+    "commit_date": "2018-08-27 17:17:03",
+    "files_changed": [
+      "CHANGELOG.md",
+      "setup.py"
+    ]
+  },
+  "37": {
     "sha": "62debcab19529af096cb7298c9557e8914cae589",
     "url": "https://github.com/mozilla-releng/signtool/commit/62debcab19529af096cb7298c9557e8914cae589",
     "commiter_name": "escapewindow",

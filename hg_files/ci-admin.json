@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 60
+    "last_push_id": 62
   },
   "1": {
     "changeset_number": "21",
@@ -575,6 +575,50 @@
           ".taskcluster.yml",
           "taskcluster/ci/config.yml",
           "taskcluster/ci/tests/kind.yml"
+        ]
+      }
+    }
+  },
+  "29": {
+    "changeset_number": "61",
+    "pusher": "dmitchell@mozilla.com",
+    "date_of_push": "2019-04-16 19:09:46",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-admin/pushloghtml?changeset=172c211075a3",
+        "commiter_name": "Dustin J. Mitchell <dustin@mozilla.com>",
+        "commit_message": "Bug 1544581 - upgrade taskcluster client r=tomprince\n\nThis also handles the case where a hookGroup does not exist.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27620",
+        "files_changed": [
+          "ciadmin/apply/__init__.py",
+          "ciadmin/current/hooks.py",
+          "ciadmin/current/roles.py",
+          "ciadmin/generate/in_tree_actions.py",
+          "requirements.txt",
+          "setup.py",
+          "tests/test_util_scopes.py"
+        ]
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/ci/ci-admin/pushloghtml?changeset=b211a777790e",
+        "commiter_name": "Dustin J. Mitchell <dustin@mozilla.com>",
+        "commit_message": "Bug 1544581 - fix failing tests from bug 1526979 r=tomprince\n\nDepends on D27620\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27621",
+        "files_changed": [
+          "tests/test_generate_grants.py"
+        ]
+      }
+    }
+  },
+  "30": {
+    "changeset_number": "62",
+    "pusher": "dmitchell@mozilla.com",
+    "date_of_push": "2019-04-16 19:11:20",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-admin/pushloghtml?changeset=4a5c6ff8d56b",
+        "commiter_name": "Dustin J. Mitchell <dustin@mozilla.com>",
+        "commit_message": "Bug 1544600 - add modifier to remove hook bindings r=tomprince\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27628",
+        "files_changed": [
+          "ciadmin/generate/modify.py"
         ]
       }
     }

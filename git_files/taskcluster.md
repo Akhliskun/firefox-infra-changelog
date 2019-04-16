@@ -1,7 +1,12 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-02 13:55:52.329542
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-02 23:49:53.239379
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|819|helfi92|[UI] Adjust fetchPolicy for list of secrets (#588)|[URL](https://github.com/taskcluster/taskcluster/commit/8b35f93a931ad5e673ad5374700173b22e48930d)|2019-04-16 20:08:15
+|818|helfi92|[UI] Add spacing under spinner (#586)|[URL](https://github.com/taskcluster/taskcluster/commit/ed10f541af2e38ce6df00b9cda3f7c4d87d51197)|2019-04-16 18:58:49
+|817|helfi92|[UI] Hide secret initially (#583)|[URL](https://github.com/taskcluster/taskcluster/commit/0d516ce098cb5376ebd193fd40023ae47e3fdf92)|2019-04-16 18:55:49
+|816|djmitche|Merge pull request #585 from djmitche/bug1544601 [Bug 1544601](https://bugzilla.mozilla.org/show_bug.cgi?id=1544601)  - use correct table name for hooks|[URL](https://github.com/taskcluster/taskcluster/commit/12f0f41ed486d55d2c9deb48443323b43f4295e5)|2019-04-16 17:10:59
+|815|djmitche|[Bug 1544601](https://bugzilla.mozilla.org/show_bug.cgi?id=1544601)  - use correct table name for hooks|[URL](https://github.com/taskcluster/taskcluster/commit/5bee2f02782378d985890f4134a171df95ca4ca8)|2019-04-16 15:57:32
 |814|djmitche|(hotfix) add whitespace|[URL](https://github.com/taskcluster/taskcluster/commit/23546f1b0c297f988d6f12b1bd1aba6722e804d7)|2019-04-15 20:41:52
 |813|djmitche|Merge pull request #572 from iFlameing/policy-docs Add docs for collaborators_quiet policy|[URL](https://github.com/taskcluster/taskcluster/commit/d1c10072b5751bb995a040c3a64fe5944b7dbec1)|2019-04-15 20:41:22
 |812|djmitche|Merge pull request #569 from djmitche/stop-require-promise Stop using the promise dependency|[URL](https://github.com/taskcluster/taskcluster/commit/c5dd4925ce575c5bba40bef3c60a1133d9834de8)|2019-04-15 19:47:46
