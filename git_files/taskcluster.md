@@ -1,7 +1,9 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-02 23:49:53.239379
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-03 04:12:01.152920
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|821|djmitche|Merge pull request #590 from djmitche/queue-force-ssl include a value for FORCE_SSL for queue|[URL](https://github.com/taskcluster/taskcluster/commit/fca44c55c4d249d15eb1a5a1f9bbfb1418792826)|2019-04-16 21:47:35
+|820|djmitche|include a value for FORCE_SSL for queue|[URL](https://github.com/taskcluster/taskcluster/commit/c05a206e4d539ab354a6dd0f5e1016c56dee3a2a)|2019-04-16 21:34:55
 |819|helfi92|[UI] Adjust fetchPolicy for list of secrets (#588)|[URL](https://github.com/taskcluster/taskcluster/commit/8b35f93a931ad5e673ad5374700173b22e48930d)|2019-04-16 20:08:15
 |818|helfi92|[UI] Add spacing under spinner (#586)|[URL](https://github.com/taskcluster/taskcluster/commit/ed10f541af2e38ce6df00b9cda3f7c4d87d51197)|2019-04-16 18:58:49
 |817|helfi92|[UI] Hide secret initially (#583)|[URL](https://github.com/taskcluster/taskcluster/commit/0d516ce098cb5376ebd193fd40023ae47e3fdf92)|2019-04-16 18:55:49

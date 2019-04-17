@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-16 20:51:00 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-17 01:12:58 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -33,7 +33,11 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
-|[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=9463e541aa94)|[Bug 1538278](https://bugzilla.mozilla.org/show_bug.cgi?id=1538278)  - Adds route for accessing geckoview releases r=tomprince,jlorenzo Differential Revision: https://phabricator.services.mozilla.com/D23928|apavel@mozilla.com|tomprince,jlorenzo|2019-04-16 18:43:40|
+|[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=2b3d5e8d716d)|[Bug 1544473](https://bugzilla.mozilla.org/show_bug.cgi?id=1544473)  - remove screen resolution check from osx perf configs. r=rwood remove screen resolution check from os perf configs Differential Revision: https://phabricator.services.mozilla.com/D27687|nerli@mozilla.com|rwood|2019-04-17 01:01:48|
+|[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=638822e29d0d)|[Bug 1541436](https://bugzilla.mozilla.org/show_bug.cgi?id=1541436)  - remove unused file r=kats Differential Revision: https://phabricator.services.mozilla.com/D27697|nerli@mozilla.com|kats|2019-04-17 01:01:48|
+|[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=11ec88883d98)|[Bug 1544521](https://bugzilla.mozilla.org/show_bug.cgi?id=1544521)  - Update the sccache revision used in our automation to the current master. r=nalexander Differential Revision: https://phabricator.services.mozilla.com/D27568|nerli@mozilla.com|nalexander|2019-04-17 01:01:48|
+|[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=8c63b67c8273)|[Bug 1544865](https://bugzilla.mozilla.org/show_bug.cgi?id=1544865)  - Build `dist-server` in the sccache toolchain job where available. r=nalexander Differential Revision: https://phabricator.services.mozilla.com/D27749|nerli@mozilla.com|nalexander|2019-04-17 01:01:48|
+|[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=12a60898fdc1)|Merge autoland to mozilla-central. a=merge|nerli@mozilla.com|merge|2019-04-17 01:01:48|
 
 |	mozilla-beta	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-beta.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-beta.json)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -68,6 +72,8 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
+|[Link](https://github.com/taskcluster/taskcluster/commit/fca44c55c4d249d15eb1a5a1f9bbfb1418792826)|Merge pull request #590 from djmitche/queue-force-ssl  include a value for FORCE_SSL for queue|djmitche|N/A|2019-04-16 21:47:35|
+|[Link](https://github.com/taskcluster/taskcluster/commit/c05a206e4d539ab354a6dd0f5e1016c56dee3a2a)|include a value for FORCE_SSL for queue|djmitche|N/A|2019-04-16 21:34:55|
 |[Link](https://github.com/taskcluster/taskcluster/commit/8b35f93a931ad5e673ad5374700173b22e48930d)|[UI] Adjust fetchPolicy for list of secrets (#588)|helfi92|N/A|2019-04-16 20:08:15|
 |[Link](https://github.com/taskcluster/taskcluster/commit/ed10f541af2e38ce6df00b9cda3f7c4d87d51197)|[UI] Add spacing under spinner (#586)|helfi92|N/A|2019-04-16 18:58:49|
 |[Link](https://github.com/taskcluster/taskcluster/commit/0d516ce098cb5376ebd193fd40023ae47e3fdf92)|[UI] Hide secret initially (#583)|helfi92|N/A|2019-04-16 18:55:49|
