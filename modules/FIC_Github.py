@@ -4,11 +4,13 @@
 import github3
 from modules.FIC_Logger import FICLogger
 from git import Repo
+from modules.FIC_DataVault import FICDataVault
 
 
-class FICGithub(FICLogger):
+class FICGithub(FICLogger, FICDataVault):
     def __init__(self):
         FICLogger.__init__(self)
+        FICDataVault.__init__(self)
         from modules.config import GIT_TOKEN
         import os
         self._token = os.environ.get(GIT_TOKEN)

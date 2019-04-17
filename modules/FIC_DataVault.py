@@ -8,6 +8,8 @@ class FICDataVault:
         # Common Data
         self.uid = int()  # Used to find the object.
         self.repos_container = dict()
+        self.last_checked = None
+        self.repo_name = "bouncerscript"
 
         # Commit Specific Data
         # Common Git and HG values
@@ -20,6 +22,7 @@ class FICDataVault:
         self.commit_message       = None
         self.commit_date          = None
         self.commit_files_changed = None
+        self.local_version        = None
 
         # HG Specific values
         self.changeset_index  = None
