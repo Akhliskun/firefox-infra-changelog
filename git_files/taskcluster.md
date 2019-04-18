@@ -1,7 +1,15 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-03 04:12:01.152920
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-04 10:16:15.461270
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|829|djmitche|Merge pull request #600 from taskcluster/bug1545260 [Bug 1545260](https://bugzilla.mozilla.org/show_bug.cgi?id=1545260)  - run purge-cache in the cluster|[URL](https://github.com/taskcluster/taskcluster/commit/044e6ad54a6ec5b735c50f0429e77aaca44c0db6)|2019-04-17 21:32:44
+|828|djmitche|[Bug 1545260](https://bugzilla.mozilla.org/show_bug.cgi?id=1545260)  - run purge-cache in the cluster|[URL](https://github.com/taskcluster/taskcluster/commit/8c0d585d0f22dd33042dec3e378c68820136d2c5)|2019-04-17 21:23:16
+|827|djmitche|Merge pull request #596 from djmitche/no-playground only serve /playground in development|[URL](https://github.com/taskcluster/taskcluster/commit/f6555d226bb116f5798f38bf12c545347deb8147)|2019-04-17 19:52:26
+|826|djmitche|Merge pull request #599 from djmitche/bug1538169 [Bug 1538169](https://bugzilla.mozilla.org/show_bug.cgi?id=1538169)  - retry yarn operations in a new task on failure|[URL](https://github.com/taskcluster/taskcluster/commit/60efdc2e326bfe7e9a6e946c8d23ce87af032bdc)|2019-04-17 19:47:11
+|825|djmitche|[Bug 1538169](https://bugzilla.mozilla.org/show_bug.cgi?id=1538169)  - retry yarn operations in a new task on failure|[URL](https://github.com/taskcluster/taskcluster/commit/f2a79902808c4400ffa2d6ad732bd2f31dc19cdd)|2019-04-17 19:25:36
+|824|djmitche|only serve /playground in development|[URL](https://github.com/taskcluster/taskcluster/commit/74dfaa344ddfd358c617d686ac624682faa48a75)|2019-04-17 16:07:32
+|823|helfi92|Display proper error message when task group does not exist (#593)|[URL](https://github.com/taskcluster/taskcluster/commit/f283feaacb60b06d47c2a24344e857f9a2c7d217)|2019-04-17 17:39:32
+|822|djmitche|Merge pull request #565 from djmitche/bug1541741 [Bug 1541741](https://bugzilla.mozilla.org/show_bug.cgi?id=1541741)  - log API calls and satisfying scopes in the services themselves|[URL](https://github.com/taskcluster/taskcluster/commit/52ca48290e934eabf8c7c52a1adcd15336d7712d)|2019-04-17 17:27:43
 |821|djmitche|Merge pull request #590 from djmitche/queue-force-ssl include a value for FORCE_SSL for queue|[URL](https://github.com/taskcluster/taskcluster/commit/fca44c55c4d249d15eb1a5a1f9bbfb1418792826)|2019-04-16 21:47:35
 |820|djmitche|include a value for FORCE_SSL for queue|[URL](https://github.com/taskcluster/taskcluster/commit/c05a206e4d539ab354a6dd0f5e1016c56dee3a2a)|2019-04-16 21:34:55
 |819|helfi92|[UI] Adjust fetchPolicy for list of secrets (#588)|[URL](https://github.com/taskcluster/taskcluster/commit/8b35f93a931ad5e673ad5374700173b22e48930d)|2019-04-16 20:08:15

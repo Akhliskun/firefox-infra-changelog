@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35879
+    "last_push_id": 35883
   },
   "1": {
     "changeset_number": "35344",
@@ -14129,23 +14129,6 @@
     }
   },
   "154": {
-    "changeset_number": "35878",
-    "pusher": "apavel@mozilla.com",
-    "date_of_push": "2019-04-16 18:43:40",
-    "changeset_commits": {
-      "20": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=9463e541aa94",
-        "commiter_name": "Mitchell Hentges <mhentges@mozilla.com>",
-        "commit_message": "Bug 1538278 - Adds route for accessing geckoview releases r=tomprince,jlorenzo\n\nDifferential Revision: https://phabricator.services.mozilla.com/D23928",
-        "files_changed": [
-          "mobile/android/geckoview/build.gradle",
-          "taskcluster/ci/build/android.yml",
-          "taskcluster/taskgraph/transforms/task.py"
-        ]
-      }
-    }
-  },
-  "154": {
     "changeset_number": "35879",
     "pusher": "nerli@mozilla.com",
     "date_of_push": "2019-04-17 01:01:48",
@@ -14191,6 +14174,234 @@
         "files_changed": [
           "browser/extensions/fxmonitor/privileged/subscripts/EveryWindow.jsm",
           "taskcluster/docker/desktop1604-test/tester.env"
+        ]
+      }
+    }
+  },
+  "154": {
+    "changeset_number": "35880",
+    "pusher": "cbrindusan@mozilla.com",
+    "date_of_push": "2019-04-17 12:36:19",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=9066ae618a1e",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1544858 - [ci] Add '-e10s' back to task labels to satisfy SETA, r=jmaher CLOSED TREE\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27791",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      },
+      "8": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=acfc18211ade",
+        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "Bug 1450012: [taskgraph] Move rerun action to retrigger.py; r=dustin\n\nIn order to prevent retriggers for release tasks, we will cause the `retrigger`\naction to rerun instead, so move the cdoe togehter.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27205",
+        "files_changed": [
+          "taskcluster/taskgraph/actions/rerun.py",
+          "taskcluster/taskgraph/actions/retrigger.py"
+        ]
+      },
+      "9": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=fe831ef6691f",
+        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "Bug 1450012: [taskgraph] Disable retrigger action for many tasks; r=dustin\n\nMany tasks (release tasks and cached tasks, in particular) should be re-run rather\nthan retriggered. Disable retrigger action for those tasks by default.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27206",
+        "files_changed": [
+          "taskcluster/ci/hazard/kind.yml",
+          "taskcluster/ci/mar-signing-autograph-stage/kind.yml",
+          "taskcluster/ci/source-test/kind.yml",
+          "taskcluster/ci/spidermonkey/kind.yml",
+          "taskcluster/ci/static-analysis-autotest/kind.yml",
+          "taskcluster/ci/test/kind.yml",
+          "taskcluster/ci/valgrind/kind.yml",
+          "taskcluster/ci/webrender/kind.yml",
+          "taskcluster/docs/attributes.rst",
+          "taskcluster/taskgraph/actions/registry.py",
+          "taskcluster/taskgraph/actions/retrigger.py",
+          "taskcluster/taskgraph/transforms/task.py"
+        ]
+      },
+      "10": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=43956eb12043",
+        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "Bug 1450012: [taskgraph] Add an action to retirgger multiple tasks at once; r=dustin\n\nIn Bug 1519599, treeherder switched to using add-new-jobs to retrigger jobs, since\nthere wasn't an action to retrigger multiple jobs. This prevents us from adding logic\nto rerun some jobs instead of retriggering them.\n\nThis adds a new action that takes input like `add-new-jobs`, but that we can add logic\nto handle rerun vs. retrigger in. Additionally, the input it takes is designed\nto make Bug 1521032 easier to implement.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27207",
+        "files_changed": [
+          "taskcluster/taskgraph/actions/retrigger.py"
+        ]
+      },
+      "11": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=c33e7bb2397c",
+        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "Bug 1450012:  [taskgraph] Make `retrigger-multiple` action selectively re-run tasks; r=dustin\n\nMany tasks (release tasks and cached tasks, in particular) should be re-run rather\nthan retriggered. Instead, make the `retrigger-multiple` action re-run them instead.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27208",
+        "files_changed": [
+          "taskcluster/taskgraph/actions/retrigger.py"
+        ]
+      },
+      "22": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=79e6ed0b08d6",
+        "commiter_name": "Brindusan Cristian <cbrindusan@mozilla.com>",
+        "commit_message": "Merge autoland to mozilla-central. a=merge",
+        "files_changed": [
+          "taskcluster/taskgraph/actions/rerun.py",
+          "testing/web-platform/tests/infrastructure/metadata/infrastructure/reftest/reftest_fuzzy.html.ini",
+          "testing/web-platform/tests/infrastructure/reftest/reftest_fuzzy.html"
+        ]
+      }
+    }
+  },
+  "155": {
+    "changeset_number": "35881",
+    "pusher": "cbrindusan@mozilla.com",
+    "date_of_push": "2019-04-17 12:38:58",
+    "changeset_commits": {
+      "3": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=415d4eb9182a",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1544858 - [ci] Add '-e10s' back to task labels to satisfy SETA, r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27791",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      },
+      "4": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=de85946fe255",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Backed out changeset 415d4eb9182a in order to trigger SETA",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      },
+      "5": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=58593f23158c",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1544858 - [ci] Add '-e10s' back to task labels to satisfy SETA, r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27791",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      },
+      "6": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=3d299e7104cd",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Backed out changeset 58593f23158c in order to trigger SETA (hit multiple of 5 last time)",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      },
+      "7": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=549d05befaa0",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1544858 - [ci] Add '-e10s' back to task labels to satisfy SETA, r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27791",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      }
+    }
+  },
+  "156": {
+    "changeset_number": "35882",
+    "pusher": "cbrindusan@mozilla.com",
+    "date_of_push": "2019-04-17 18:54:01",
+    "changeset_commits": {
+      "19": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=9ca0cca3edb0",
+        "commiter_name": "Bob Clary <bclary@bclary.com>",
+        "commit_message": "Bug 1533848 - Implement Android memory test using control server waits, r=rwood.\n\nDepends on D26973\n\nDifferential Revision: https://phabricator.services.mozilla.com/D26974",
+        "files_changed": [
+          "testing/mozharness/mozharness/mozilla/testing/raptor.py",
+          "testing/raptor/mach_commands.py",
+          "testing/raptor/raptor/cmdline.py",
+          "testing/raptor/raptor/control_server.py",
+          "testing/raptor/raptor/memory.py",
+          "testing/raptor/raptor/raptor.py",
+          "testing/raptor/test/test_cmdline.py",
+          "testing/raptor/test/test_raptor.py"
+        ]
+      },
+      "34": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=bcd85ff387fb",
+        "commiter_name": "neha <ns19041997@gmail.com>",
+        "commit_message": "Bug 1539530 - Setting up  Jest tests with Task Cluster r=Honza\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25247",
+        "files_changed": [
+          "devtools/client/netmonitor/package.json",
+          "devtools/client/netmonitor/test/.eslintrc.js",
+          "devtools/client/netmonitor/test/reducers/sort.spec.js",
+          "devtools/client/netmonitor/yarn.lock",
+          "taskcluster/ci/source-test/node.yml"
+        ]
+      },
+      "40": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=a72c4fef3a4a",
+        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "No bug: [try-staging] Use `release-type` to determine whether the build will generate a stub installer; r=Callek\n\nDifferential Revision: https://phabricator.services.mozilla.com/D15766",
+        "files_changed": [
+          "taskcluster/ci/build/windows.yml",
+          "taskcluster/taskgraph/transforms/build.py"
+        ]
+      }
+    }
+  },
+  "157": {
+    "changeset_number": "35883",
+    "pusher": "btara@mozilla.com",
+    "date_of_push": "2019-04-18 00:47:29",
+    "changeset_commits": {
+      "6": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=679d694324d4",
+        "commiter_name": "Rob Thijssen <rthijssen@mozilla.com>",
+        "commit_message": "Bug 1525094 - run linux builds in gcp at tier 3 r=wcosta\n\nthis change adds support for parallel gcp builds for the following linux build configurations:\n\n- linux(32)\n  - opt\n  - debug\n  - shippable\n- linux64\n  - opt\n  - debug\n  - shippable\n\nimplementation notes:\n\n- this patch mostly mirrors the equivalent windows-on-gcp patch at: https://phabricator.services.mozilla.com/D24865\n- gcp builds are triggered with a treeherder tier 3 flag so that they are only displayed in the treeherder ui when the user has a tier 3 flag set.\n- gcp builds use a th build symbol of \"Bg\" to make them easy to differentiate from ec2 builds in the treeherder ui.\n- gcp builds use a perfherder \"gcp\" flag to make them easier to differentiate from ec2 builds in the perfherder ui.\n- gcp builds on linux for all scm levels are built on the only available gcp linux worker type (at the time of this change): gce/gecko-1-b-linux-32\n\nDifferential Revision: https://phabricator.services.mozilla.com/D26490",
+        "files_changed": [
+          "taskcluster/ci/build/linux.yml",
+          "taskcluster/taskgraph/util/workertypes.py"
+        ]
+      },
+      "40": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=e38d7b762244",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1543956 - Use a fixed mozconfig for linux64-aarch64 builds. r=mshal\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27631",
+        "files_changed": [
+          "browser/config/mozconfigs/linux64-aarch64/nightly",
+          "browser/config/mozconfigs/linux64-aarch64/opt",
+          "taskcluster/ci/build/linux.yml"
+        ]
+      },
+      "53": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=cdaa316e08f5",
+        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "Bug 1541089: Fix declarative artifacts on release for shippable builds; r=mtabara\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27753",
+        "files_changed": [
+          "taskcluster/taskgraph/manifests/firefox_candidates.yml",
+          "taskcluster/taskgraph/manifests/firefox_candidates_checksums.yml"
+        ]
+      },
+      "61": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=2975d8e53361",
+        "commiter_name": "Simon Fraser <sfraser@mozilla.com>",
+        "commit_message": "Bug 1543662 Only check mar channel IDs for destination mars r=mtabara\n\nGenerating partials from betas doesn't work if we check the 'from' mar channel IDs, as we don't know what's valid for those.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27866",
+        "files_changed": [
+          "taskcluster/docker/funsize-update-generator/scripts/funsize.py"
+        ]
+      },
+      "64": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=56329e6eb549",
+        "commiter_name": "Florin Strugariu <fstrugariu@mozilla.com>",
+        "commit_message": "Bug 1543996 Add test configurations for reference browser r=davehunt,rwood\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27284",
+        "files_changed": [
+          "taskcluster/ci/test/raptor.yml",
+          "taskcluster/ci/test/test-sets.yml",
+          "testing/raptor/raptor/tests/raptor-tp6m-10.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-2.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-3.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-4.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-5.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-6.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-7.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-8.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-9.ini"
+        ]
+      },
+      "72": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=3a3bd27ee596",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1539446 - [ci] Run talos and raptor on ash, r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27892",
+        "files_changed": [
+          "taskcluster/taskgraph/target_tasks.py"
         ]
       }
     }
