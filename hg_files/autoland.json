@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83478
+    "last_push_id": 83520
   },
   "1": {
     "changeset_number": "35344",
@@ -48583,6 +48583,118 @@
           "memory/gtest/moz.build",
           "netwerk/test/gtest/moz.build",
           "taskcluster/ci/test/test-sets.yml"
+        ]
+      }
+    }
+  },
+  "906": {
+    "changeset_number": "83484",
+    "pusher": "rwood@mozilla.com",
+    "date_of_push": "2019-04-18 18:58:07",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=56716e17c88d",
+        "commiter_name": "Rob Wood <rwood@mozilla.com>",
+        "commit_message": "Bug 1544516 - Add ability to specify intent when launching android app; r=davehunt\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27570",
+        "files_changed": [
+          "testing/mozharness/mozharness/mozilla/testing/raptor.py",
+          "testing/raptor/raptor/cmdline.py",
+          "testing/raptor/raptor/raptor.py",
+          "testing/raptor/test/test_cmdline.py"
+        ]
+      }
+    }
+  },
+  "907": {
+    "changeset_number": "83487",
+    "pusher": "igoldan@mozilla.com",
+    "date_of_push": "2019-04-18 19:00:58",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=a9c6ef836b4a",
+        "commiter_name": "Ionut Goldan <igoldan@mozilla.com>",
+        "commit_message": "Bug 1544742 - Enable chrome CLI app argument r=rwood\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27909",
+        "files_changed": [
+          "testing/mozharness/mozharness/mozilla/testing/raptor.py"
+        ]
+      }
+    }
+  },
+  "908": {
+    "changeset_number": "83493",
+    "pusher": "choller@mozilla.com",
+    "date_of_push": "2019-04-18 19:05:08",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f4de96f2d275",
+        "commiter_name": "Christian Holler <choller@mozilla.com>",
+        "commit_message": "Bug 1544400 - Update fuzzing builds to Clang 8 and use gold. r=froydnj\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27701",
+        "files_changed": [
+          "browser/config/mozconfigs/linux64/asan-fuzzing-ccov",
+          "browser/config/mozconfigs/linux64/nightly-fuzzing-asan",
+          "taskcluster/ci/build/linux.yml",
+          "tools/fuzzing/libfuzzer/FuzzerBuiltins.h",
+          "tools/fuzzing/libfuzzer/FuzzerBuiltinsMsvc.h",
+          "tools/fuzzing/libfuzzer/FuzzerCommand.h",
+          "tools/fuzzing/libfuzzer/FuzzerCorpus.h",
+          "tools/fuzzing/libfuzzer/FuzzerCrossOver.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerDataFlowTrace.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerDataFlowTrace.h",
+          "tools/fuzzing/libfuzzer/FuzzerDefs.h",
+          "tools/fuzzing/libfuzzer/FuzzerDictionary.h",
+          "tools/fuzzing/libfuzzer/FuzzerDriver.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerExtFunctions.def",
+          "tools/fuzzing/libfuzzer/FuzzerExtFunctions.h",
+          "tools/fuzzing/libfuzzer/FuzzerExtFunctionsDlsym.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerExtFunctionsWeak.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerExtFunctionsWindows.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerExtraCounters.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerFlags.def",
+          "tools/fuzzing/libfuzzer/FuzzerFork.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerFork.h",
+          "tools/fuzzing/libfuzzer/FuzzerIO.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerIO.h",
+          "tools/fuzzing/libfuzzer/FuzzerIOPosix.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerIOWindows.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerInterface.h",
+          "tools/fuzzing/libfuzzer/FuzzerInternal.h",
+          "tools/fuzzing/libfuzzer/FuzzerLoop.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerMain.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerMerge.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerMerge.h",
+          "tools/fuzzing/libfuzzer/FuzzerMutate.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerMutate.h",
+          "tools/fuzzing/libfuzzer/FuzzerOptions.h",
+          "tools/fuzzing/libfuzzer/FuzzerRandom.h",
+          "tools/fuzzing/libfuzzer/FuzzerSHA1.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerSHA1.h",
+          "tools/fuzzing/libfuzzer/FuzzerTracePC.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerTracePC.h",
+          "tools/fuzzing/libfuzzer/FuzzerUtil.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerUtil.h",
+          "tools/fuzzing/libfuzzer/FuzzerUtilDarwin.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerUtilFuchsia.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerUtilLinux.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerUtilPosix.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerUtilWindows.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerValueBitMap.h",
+          "tools/fuzzing/libfuzzer/clone_libfuzzer.sh",
+          "tools/fuzzing/libfuzzer/moz.build"
+        ]
+      }
+    }
+  },
+  "909": {
+    "changeset_number": "83497",
+    "pusher": "asasaki@mozilla.com",
+    "date_of_push": "2019-04-18 21:50:46",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=e95b995fc086",
+        "commiter_name": "Aki Sasaki <asasaki@mozilla.com>",
+        "commit_message": "Bug 1545256 - only append action TASK_ID to task deps if taskGroupId doesn't match r=dustin\n\nWe only want to append the action TASK_ID to the task dependencies when the taskGroupId doesn't match, otherwise we hit dup dependency errors.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27994",
+        "files_changed": [
+          "taskcluster/taskgraph/actions/util.py"
         ]
       }
     }

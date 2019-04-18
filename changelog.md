@@ -1,10 +1,13 @@
-##  Commits in production - for 3 days, generated on: 2019-04-18 14:46:53 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-18 20:04:00 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=3aa904e59c1b)|[Bug 1544961](https://bugzilla.mozilla.org/show_bug.cgi?id=1544961)  - disable tests that cause gtest harness to crash on windows10-aarch64 r=jmaher,gbrown Changes: - most tests are skipped using `moz.build` configuration file. - `MultiWriterQueue` had to be skipped with `define` clauses in the test file due to build bustages when its `moz.build` file was used. Differential Revision: https://phabricator.services.mozilla.com/D27944|egao@mozilla.com|jmaher,gbrown|2019-04-18 05:48:58|
+|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=e95b995fc086)|[Bug 1545256](https://bugzilla.mozilla.org/show_bug.cgi?id=1545256)  - only append action TASK_ID to task deps if taskGroupId doesn't match r=dustin We only want to append the action TASK_ID to the task dependencies when the taskGroupId doesn't match, otherwise we hit dup dependency errors. Differential Revision: https://phabricator.services.mozilla.com/D27994|asasaki@mozilla.com|dustin|2019-04-18 21:50:46|
+|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f4de96f2d275)|[Bug 1544400](https://bugzilla.mozilla.org/show_bug.cgi?id=1544400)  - Update fuzzing builds to Clang 8 and use gold. r=froydnj Differential Revision: https://phabricator.services.mozilla.com/D27701|choller@mozilla.com|froydnj|2019-04-18 19:05:08|
+|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=a9c6ef836b4a)|[Bug 1544742](https://bugzilla.mozilla.org/show_bug.cgi?id=1544742)  - Enable chrome CLI app argument r=rwood Differential Revision: https://phabricator.services.mozilla.com/D27909|igoldan@mozilla.com|rwood|2019-04-18 19:00:58|
+|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=56716e17c88d)|[Bug 1544516](https://bugzilla.mozilla.org/show_bug.cgi?id=1544516)  - Add ability to specify intent when launching android app; r=davehunt Differential Revision: https://phabricator.services.mozilla.com/D27570|rwood@mozilla.com|davehunt|2019-04-18 18:58:07|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=0fe8750efcd4)|[Bug 1536568](https://bugzilla.mozilla.org/show_bug.cgi?id=1536568)  - run android builds in gcp at tier 3 r=coop,pmoore this change adds support for parallel gcp builds for the following android build configurations: - android-api-16 - opt - debug - android-x86 - opt - android-x86_64 - opt - debug - android-aarch64 - opt - debug implementation notes: - this patch mostly mirrors the equivalent windows-on-gcp patch at: https://phabricator.services.mozilla.com/D24865 - gcp builds are triggered with a treeherder tier 3 flag so that they are only displayed in the treeherder ui when the user has a tier 3 flag set. - gcp builds use a th build symbol of "Bg" to make them easy to differentiate from ec2 builds in the treeherder ui. - gcp builds use a perfherder "gcp" flag to make them easier to differentiate from ec2 builds in the perfherder ui. Differential Revision: https://phabricator.services.mozilla.com/D26584|ncsoregi@mozilla.com|coop,pmoore|2019-04-18 05:44:48|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=a1127948b460)|[Bug 1536559](https://bugzilla.mozilla.org/show_bug.cgi?id=1536559)  - run macosx64 builds in gcp at tier 3 r=pmoore,wcosta this change adds support for parallel gcp builds for the following macosx build configurations: - macosx64 - debug - opt - shippable/opt implementation notes: - this patch mostly mirrors the equivalent windows-on-gcp patch at: https://phabricator.services.mozilla.com/D24865 - gcp builds are triggered with a treeherder tier 3 flag so that they are only displayed in the treeherder ui when the user has a tier 3 flag set. - gcp builds use a th build symbol of "Bg" to make them easy to differentiate from ec2 builds in the treeherder ui. - gcp builds use a perfherder "gcp" flag to make them easier to differentiate from ec2 builds in the perfherder ui. Differential Revision: https://phabricator.services.mozilla.com/D26594|ncsoregi@mozilla.com|pmoore,wcosta|2019-04-18 05:44:11|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=5c3abbd9c2be)|Backed out changeset cc1afca7bbc6 [Bug 1544044](https://bugzilla.mozilla.org/show_bug.cgi?id=1544044)  as per request. CLOSED TREE|ncsoregi@mozilla.com||2019-04-17 23:57:51|
@@ -133,6 +136,14 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
+|[Link](https://github.com/taskcluster/taskcluster/commit/ae3664035b702705cbd66467228ed21e62a37fdc)|Merge pull request #609 from taskcluster/b2g_cleanup  [Bug 1351012] - remove references to b2g/gaia/flame|ccooper|N/A|2019-04-18 19:09:48|
+|[Link](https://github.com/taskcluster/taskcluster/commit/eedb4f20a2504e5de8d8d42c8e3d0a9e76666cd2)|Bug 1520857- add support in tc-web for displaying information from the lastFire table (#466)|Biboswan|N/A|2019-04-18 18:56:15|
+|[Link](https://github.com/taskcluster/taskcluster/commit/a699f6e55e1e40a72b5eaef9af63fb6188ff00b2)|Fix up generated references|ccooper|N/A|2019-04-18 17:39:27|
+|[Link](https://github.com/taskcluster/taskcluster/commit/820acc3dfd2ad9c3d2fced0596854a44d62befef)|Be consistent using gecko-t-linux-xlarge to replace b2gtest|ccooper|N/A|2019-04-18 17:22:36|
+|[Link](https://github.com/taskcluster/taskcluster/commit/0f4fadc966d1d7e051910e9c5f940bd0c5ef0725)|Bug 1351012 - remove references to b2g/gaia/flame|ccooper|N/A|2019-04-18 17:14:42|
+|[Link](https://github.com/taskcluster/taskcluster/commit/696781b81e1e78ad6de99415a63af9facb934ea8)|docs: add iFlameing as a contributor (#607)    docs: update README.md      docs: update .all-contributorsrc|allcontributors[bot]|N/A|2019-04-18 17:13:47|
+|[Link](https://github.com/taskcluster/taskcluster/commit/253099a5542a6564c80212e1c8a958ad636ab1c9)|Merge pull request #589 from djmitche/bug1544807  Bug 1544807 - improve handling of huge error messages|djmitche|N/A|2019-04-18 15:32:57|
+|[Link](https://github.com/taskcluster/taskcluster/commit/b4388e24672e6d3d0f6c91d75e12549be9fdf560)|Fix: Sign in dialog not hiding after "cancel" click (#603)|helfi92|N/A|2019-04-18 14:48:23|
 |[Link](https://github.com/taskcluster/taskcluster/commit/b053c8c524704ce02b496339bb1ebb3861f9b583)|[UI] Support v7 schemas (#602)|helfi92|N/A|2019-04-18 13:30:03|
 |[Link](https://github.com/taskcluster/taskcluster/commit/f9da69ef675826fe5081ea3dc6e46f6a91183579)|Fix task action dialog not showing (#595)|helfi92|N/A|2019-04-18 12:22:50|
 |[Link](https://github.com/taskcluster/taskcluster/commit/0ea9165582cae7015c2cc000a256d9417145dfeb)|[UI] Unify order of delete buttons (#591)    moved delete button above save button in SpeedDial      adding tooltipopen prop to AwsProvisioner SpeedDial|arshadkazmi42|N/A|2019-04-18 12:09:41|
@@ -153,10 +164,6 @@
 |[Link](https://github.com/taskcluster/taskcluster/commit/5bee2f02782378d985890f4134a171df95ca4ca8)|Bug 1544601 - use correct table name for hooks|djmitche|N/A|2019-04-16 15:57:32|
 |[Link](https://github.com/taskcluster/taskcluster/commit/23546f1b0c297f988d6f12b1bd1aba6722e804d7)|(hotfix) add whitespace|djmitche|N/A|2019-04-15 20:41:52|
 |[Link](https://github.com/taskcluster/taskcluster/commit/d1c10072b5751bb995a040c3a64fe5944b7dbec1)|Merge pull request #572 from iFlameing/policy-docs  Add docs for collaborators_quiet policy|djmitche|N/A|2019-04-15 20:41:22|
-|[Link](https://github.com/taskcluster/taskcluster/commit/c5dd4925ce575c5bba40bef3c60a1133d9834de8)|Merge pull request #569 from djmitche/stop-require-promise  Stop using the promise dependency|djmitche|N/A|2019-04-15 19:47:46|
-|[Link](https://github.com/taskcluster/taskcluster/commit/0fb17720a305bc5d4fe1e0463088a310f36645fb)|latest build|djmitche|N/A|2019-04-15 19:43:50|
-|[Link](https://github.com/taskcluster/taskcluster/commit/19cae6c62318b9edd2dc6917fdb3039a86996dd0)|Merge pull request #579 from helfi92/hotfix-taskid  [UI] Fix task ID undefined|helfi92|N/A|2019-04-15 15:12:51|
-|[Link](https://github.com/taskcluster/taskcluster/commit/357589a7eac78221507ad613b8fdb15101f12308)|Hot fix: fix task ID undefined|helfi92|N/A|2019-04-15 15:11:07|
 
 |	addonscript	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/addonscript.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/addonscript.md)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -247,7 +254,7 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
-|[Link](https://github.com/mozilla/release-services/commit/5d438f48891ad19ae5da4ecf833484227beeccce)|treestatus/api: adding statuspage sync (#2041)|garbas|N/A|2019-04-15 19:04:20|
+| |No push in the last 3 days.. [see the history of MD commits](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/services.md)|FIC - BOT|Self Generated| - |
 
 |	build-cloud-tools	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/build-cloud-tools.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/build-cloud-tools.md)	| 
 |:----------:|:-----------------------:|:--------:| 
