@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-18 11:13:20 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-18 14:46:53 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -39,9 +39,6 @@
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=c6c39f570b1f)|[Bug 1541527](https://bugzilla.mozilla.org/show_bug.cgi?id=1541527)  - [ci] Remove unused raptor chrome group symbols, r=rwood Differential Revision: https://phabricator.services.mozilla.com/D27504|ahalberstadt@mozilla.com|rwood|2019-04-15 21:42:07|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=99e40003ff9a)|[Bug 1541527](https://bugzilla.mozilla.org/show_bug.cgi?id=1541527)  - Remove "-e10s" from treeherder group symbols and task labels, r=jmaher,gbrown Since e10s is the default configuration, we shouldn't explicitly mark things with the "-e10s" suffix. Instead we should mark things that *don't* run with 'e10s. This patch removes '-e10s' from all treeherder group symbols and task labels, adds the "-1proc" suffix to tasks that are non-e10s. Differential Revision: https://phabricator.services.mozilla.com/D25958|ahalberstadt@mozilla.com|jmaher,gbrown|2019-04-15 21:42:07|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=b8f49a14c458)|[Bug 1474897](https://bugzilla.mozilla.org/show_bug.cgi?id=1474897)  switch bitbar workers to g-w r=bc,tomprince Much of this was already reviewed in D21473 (my test change where I developed the payload modifications and that pointed tests at my test queue). This change keeps the payload changes from D21473, but points at the new 'real' queues we'll be using. Differential Revision: https://phabricator.services.mozilla.com/D25009|bclary@mozilla.com|bc,tomprince|2019-04-15 21:37:05|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=69d1e80c405d)|No Bug, taskcluster/docker/funsize-update-generator pipfile-update. r=sfraser Differential Revision: https://phabricator.services.mozilla.com/D27483|sfraser@mozilla.com|sfraser|2019-04-15 14:25:24|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=98df9bc51da2)|Backed out changeset f0ee3a81b179 [Bug 1538278](https://bugzilla.mozilla.org/show_bug.cgi?id=1538278)  for gecko decision task bustage CLOSED TREE|btara@mozilla.com||2019-04-15 13:35:35|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f0ee3a81b179)|[Bug 1538278](https://bugzilla.mozilla.org/show_bug.cgi?id=1538278)  - Adds route for accessing geckoview releases r=tomprince,jlorenzo Adds route for accessing geckoview releases Differential Revision: https://phabricator.services.mozilla.com/D23928|mhentges@mozilla.com|tomprince,jlorenzo|2019-04-15 13:10:29|
 
 |	mozilla-inbound	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.json)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -106,7 +103,7 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
-|[Link](https://hg.mozilla.org/releases/mozilla-beta/pushloghtml?changeset=2eec72aa8607)|[Bug 1520261](https://bugzilla.mozilla.org/show_bug.cgi?id=1520261)  - Let ARM64 Fennec ride the trains to Beta r=mhentges a=release Let ARM64 Fennec ride the trains to Beta Differential Revision: https://phabricator.services.mozilla.com/D26736|jlorenzo@mozilla.com|mhentges|2019-04-15 11:29:13|
+| |No push in the last 3 days.. [see the history of MD commits](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-beta.md)|FIC - BOT|Self Generated| - |
 
 |	mozilla-release	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-release.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-release.json)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -136,6 +133,9 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
+|[Link](https://github.com/taskcluster/taskcluster/commit/b053c8c524704ce02b496339bb1ebb3861f9b583)|[UI] Support v7 schemas (#602)|helfi92|N/A|2019-04-18 13:30:03|
+|[Link](https://github.com/taskcluster/taskcluster/commit/f9da69ef675826fe5081ea3dc6e46f6a91183579)|Fix task action dialog not showing (#595)|helfi92|N/A|2019-04-18 12:22:50|
+|[Link](https://github.com/taskcluster/taskcluster/commit/0ea9165582cae7015c2cc000a256d9417145dfeb)|[UI] Unify order of delete buttons (#591)    moved delete button above save button in SpeedDial      adding tooltipopen prop to AwsProvisioner SpeedDial|arshadkazmi42|N/A|2019-04-18 12:09:41|
 |[Link](https://github.com/taskcluster/taskcluster/commit/044e6ad54a6ec5b735c50f0429e77aaca44c0db6)|Merge pull request #600 from taskcluster/bug1545260  Bug 1545260 - run purge-cache in the cluster|djmitche|N/A|2019-04-17 21:32:44|
 |[Link](https://github.com/taskcluster/taskcluster/commit/8c0d585d0f22dd33042dec3e378c68820136d2c5)|Bug 1545260 - run purge-cache in the cluster|djmitche|N/A|2019-04-17 21:23:16|
 |[Link](https://github.com/taskcluster/taskcluster/commit/f6555d226bb116f5798f38bf12c545347deb8147)|Merge pull request #596 from djmitche/no-playground  only serve /playground in development|djmitche|N/A|2019-04-17 19:52:26|
@@ -157,13 +157,6 @@
 |[Link](https://github.com/taskcluster/taskcluster/commit/0fb17720a305bc5d4fe1e0463088a310f36645fb)|latest build|djmitche|N/A|2019-04-15 19:43:50|
 |[Link](https://github.com/taskcluster/taskcluster/commit/19cae6c62318b9edd2dc6917fdb3039a86996dd0)|Merge pull request #579 from helfi92/hotfix-taskid  [UI] Fix task ID undefined|helfi92|N/A|2019-04-15 15:12:51|
 |[Link](https://github.com/taskcluster/taskcluster/commit/357589a7eac78221507ad613b8fdb15101f12308)|Hot fix: fix task ID undefined|helfi92|N/A|2019-04-15 15:11:07|
-|[Link](https://github.com/taskcluster/taskcluster/commit/45711a4d273c94fa2a341e973c21cf6a338f1eca)|Merge pull request #570 from helfi92/task-run-reordering  Task Group UX (breadcrumbs, hide metadata)|helfi92|N/A|2019-04-15 14:45:24|
-|[Link](https://github.com/taskcluster/taskcluster/commit/d1e2b33d347d408850d1b4947424014c67bc01fd)|Add TaskGroup suggestions|helfi92|N/A|2019-04-15 14:40:38|
-|[Link](https://github.com/taskcluster/taskcluster/commit/177748ff79c1b7c0daf60c075cc9b458e3791b4c)|Fix hashing issue in docs when viewing an entry log (#571)|helfi92|N/A|2019-04-15 14:34:18|
-|[Link](https://github.com/taskcluster/taskcluster/commit/fd837dfde1cce4e813c054c41091f9c1d57bc519)|Merge pull request #477 from helfi92/task-group-subscription  [UI] Task Group - use a subscription model instead of polling|helfi92|N/A|2019-04-15 14:30:51|
-|[Link](https://github.com/taskcluster/taskcluster/commit/65b4545681af2857b50a79561e12789088fe8eaf)|Merge pull request #576 from taskcluster/renovate/xmlbuilder-12.x  Update dependency xmlbuilder to v12|djmitche|N/A|2019-04-15 14:29:38|
-|[Link](https://github.com/taskcluster/taskcluster/commit/e8184926176eed12f9011571c021be1e74784c30)|[UI] Fix calendar icon positioning on date picker (#568)|helfi92|N/A|2019-04-15 14:14:31|
-|[Link](https://github.com/taskcluster/taskcluster/commit/9ca9d115b9e2bfed16c63849944c9d185d34fad5)|Update dependency graphql-type-json to ^0.3.0 (#574)|renovate[bot]|N/A|2019-04-15 13:56:45|
 
 |	addonscript	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/addonscript.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/addonscript.md)	| 
 |:----------:|:-----------------------:|:--------:| 

@@ -1,7 +1,10 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-04 14:12:19.861434
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-04 17:45:37.644475
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|832|helfi92|[UI] Support v7 schemas (#602)|[URL](https://github.com/taskcluster/taskcluster/commit/b053c8c524704ce02b496339bb1ebb3861f9b583)|2019-04-18 13:30:03
+|831|helfi92|Fix task action dialog not showing (#595)|[URL](https://github.com/taskcluster/taskcluster/commit/f9da69ef675826fe5081ea3dc6e46f6a91183579)|2019-04-18 12:22:50
+|830|arshadkazmi42|[UI] Unify order of delete buttons (#591) moved delete button above save button in SpeedDial adding tooltipopen prop to AwsProvisioner SpeedDial|[URL](https://github.com/taskcluster/taskcluster/commit/0ea9165582cae7015c2cc000a256d9417145dfeb)|2019-04-18 12:09:41
 |829|djmitche|Merge pull request #600 from taskcluster/bug1545260 [Bug 1545260](https://bugzilla.mozilla.org/show_bug.cgi?id=1545260)  - run purge-cache in the cluster|[URL](https://github.com/taskcluster/taskcluster/commit/044e6ad54a6ec5b735c50f0429e77aaca44c0db6)|2019-04-17 21:32:44
 |828|djmitche|[Bug 1545260](https://bugzilla.mozilla.org/show_bug.cgi?id=1545260)  - run purge-cache in the cluster|[URL](https://github.com/taskcluster/taskcluster/commit/8c0d585d0f22dd33042dec3e378c68820136d2c5)|2019-04-17 21:23:16
 |827|djmitche|Merge pull request #596 from djmitche/no-playground only serve /playground in development|[URL](https://github.com/taskcluster/taskcluster/commit/f6555d226bb116f5798f38bf12c545347deb8147)|2019-04-17 19:52:26
