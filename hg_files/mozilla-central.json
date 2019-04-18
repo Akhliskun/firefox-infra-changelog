@@ -14129,56 +14129,6 @@
     }
   },
   "154": {
-    "changeset_number": "35879",
-    "pusher": "nerli@mozilla.com",
-    "date_of_push": "2019-04-17 01:01:48",
-    "changeset_commits": {
-      "15": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=2b3d5e8d716d",
-        "commiter_name": "Joel Maher <jmaher@mozilla.com>",
-        "commit_message": "Bug 1544473 - remove screen resolution check from osx perf configs. r=rwood\n\nremove screen resolution check from os perf configs\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27687",
-        "files_changed": [
-          "testing/mozharness/configs/raptor/mac_config.py",
-          "testing/mozharness/configs/talos/mac_config.py"
-        ]
-      },
-      "17": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=638822e29d0d",
-        "commiter_name": "Dustin J. Mitchell <dustin@mozilla.com>",
-        "commit_message": "Bug 1541436 - remove unused file r=kats\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27697",
-        "files_changed": [
-          "taskcluster/docker/desktop1604-test/tester.env"
-        ]
-      },
-      "51": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=11ec88883d98",
-        "commiter_name": "Chris Manchester <cmanchester@mozilla.com>",
-        "commit_message": "Bug 1544521 - Update the sccache revision used in our automation to the current master. r=nalexander\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27568",
-        "files_changed": [
-          "taskcluster/ci/toolchain/sccache.yml",
-          "taskcluster/scripts/misc/build-sccache.sh"
-        ]
-      },
-      "57": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=8c63b67c8273",
-        "commiter_name": "Chris Manchester <cmanchester@mozilla.com>",
-        "commit_message": "Bug 1544865 - Build `dist-server` in the sccache toolchain job where available. r=nalexander\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27749",
-        "files_changed": [
-          "taskcluster/scripts/misc/build-sccache.sh"
-        ]
-      },
-      "61": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=12a60898fdc1",
-        "commiter_name": "Noemi Erli <nerli@mozilla.com>",
-        "commit_message": "Merge autoland to mozilla-central. a=merge",
-        "files_changed": [
-          "browser/extensions/fxmonitor/privileged/subscripts/EveryWindow.jsm",
-          "taskcluster/docker/desktop1604-test/tester.env"
-        ]
-      }
-    }
-  },
-  "154": {
     "changeset_number": "35880",
     "pusher": "cbrindusan@mozilla.com",
     "date_of_push": "2019-04-17 12:36:19",

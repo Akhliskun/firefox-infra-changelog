@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-18 07:17:25 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-18 11:13:20 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -123,7 +123,6 @@
 |[Link](https://github.com/mozilla-releng/build-puppet/commit/20efa53ec39b3c670ea4f8f4f79c814afcf2ff5e)|Merge pull request #454 from mozilla-releng/pyup-scheduled-update-2019-04-17  Scheduled weekly dependency update for week 15|mutterroland|N/A|2019-04-18 03:08:37|
 |[Link](https://github.com/mozilla-releng/build-puppet/commit/64d8930524d207285ce6066304fe2cdec30c7b0b)|Update networkx from 2.2 to 2.3|pyup-bot|N/A|2019-04-17 13:05:21|
 |[Link](https://github.com/mozilla-releng/build-puppet/commit/8464d1579b9ec10dba6b253340854d6ef7b1f764)|Update botocore from 1.12.130 to 1.12.131|pyup-bot|N/A|2019-04-17 13:05:20|
-|[Link](https://github.com/mozilla-releng/build-puppet/commit/fa8adf4b90272790e46c34faf891b00a81876c91)|Bump {mozapkpublisher,pushapkscript} to {2.0.1,1.0.1} (#451)|JohanLorenzo|N/A|2019-04-15 08:30:17|
 
 |	OpenCloudConfig	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/OpenCloudConfig.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/OpenCloudConfig.md)	| 
 |:----------:|:-----------------------:|:--------:| 
