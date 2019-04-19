@@ -1,7 +1,13 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-05 06:41:33.570974
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-05 21:18:48.839263
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|849|djmitche|Merge pull request #612 from arshadkazmi42/payload-signature-api Add payload in Signature in API Docs|[URL](https://github.com/taskcluster/taskcluster/commit/ca334e50e438d8944ad9daa5d278fb8cb7a71033)|2019-04-19 17:53:53
+|848|arshadkazmi42|Change to copy object as value|[URL](https://github.com/taskcluster/taskcluster/commit/2e60f161431344f8a823c01c935878b9dfbaf2de)|2019-04-19 17:30:02
+|847|arshadkazmi42|Check payload in parameters before pushing|[URL](https://github.com/taskcluster/taskcluster/commit/13318aedf0c28743aae9e5a4c1acc6a373438b2e)|2019-04-19 17:22:18
+|846|djmitche|Merge pull request #611 from djmitche/bug1544608 [Bug 1544608](https://bugzilla.mozilla.org/show_bug.cgi?id=1544608)  - better handling for errors binding queues|[URL](https://github.com/taskcluster/taskcluster/commit/eb700c3b613c5c33663ab38b421e9651245f487d)|2019-04-19 16:18:36
+|845|djmitche|[Bug 1544608](https://bugzilla.mozilla.org/show_bug.cgi?id=1544608)  - tc-hooks - handle errors binding queues better|[URL](https://github.com/taskcluster/taskcluster/commit/9dd7bcbfe796b4dce03ff29a9d1e3ee53bb351b9)|2019-04-19 02:57:22
+|844|arshadkazmi42|adds payload in signature api docs|[URL](https://github.com/taskcluster/taskcluster/commit/df22ff9e3e4e25203a3c8a853ec0a8a6151c3c8f)|2019-04-19 10:17:30
 |843|djmitche|Merge pull request #582 from djmitche/bug1528384 [Bug 1528384](https://bugzilla.mozilla.org/show_bug.cgi?id=1528384)  - improvements to polling|[URL](https://github.com/taskcluster/taskcluster/commit/3e917f96fc9a464fd9bb28a06d638227b1506f35)|2019-04-18 21:58:37
 |842|djmitche|[Bug 1528384](https://bugzilla.mozilla.org/show_bug.cgi?id=1528384)  - fix polling to show all errors when it fails|[URL](https://github.com/taskcluster/taskcluster/commit/7bc3fef6551716587a40efb88315544e97c6e303)|2019-04-16 15:10:56
 |841|djmitche|Merge pull request #606 from Biboswan/hooks/firedBy Change firedBy to enum|[URL](https://github.com/taskcluster/taskcluster/commit/042238ad17bc3b316f6656e762c419c08d84e31a)|2019-04-18 20:33:48

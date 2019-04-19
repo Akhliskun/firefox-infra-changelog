@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35886
+    "last_push_id": 35889
   },
   "1": {
     "changeset_number": "35344",
@@ -14288,75 +14288,6 @@
     }
   },
   "157": {
-    "changeset_number": "35883",
-    "pusher": "btara@mozilla.com",
-    "date_of_push": "2019-04-18 00:47:29",
-    "changeset_commits": {
-      "6": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=679d694324d4",
-        "commiter_name": "Rob Thijssen <rthijssen@mozilla.com>",
-        "commit_message": "Bug 1525094 - run linux builds in gcp at tier 3 r=wcosta\n\nthis change adds support for parallel gcp builds for the following linux build configurations:\n\n- linux(32)\n  - opt\n  - debug\n  - shippable\n- linux64\n  - opt\n  - debug\n  - shippable\n\nimplementation notes:\n\n- this patch mostly mirrors the equivalent windows-on-gcp patch at: https://phabricator.services.mozilla.com/D24865\n- gcp builds are triggered with a treeherder tier 3 flag so that they are only displayed in the treeherder ui when the user has a tier 3 flag set.\n- gcp builds use a th build symbol of \"Bg\" to make them easy to differentiate from ec2 builds in the treeherder ui.\n- gcp builds use a perfherder \"gcp\" flag to make them easier to differentiate from ec2 builds in the perfherder ui.\n- gcp builds on linux for all scm levels are built on the only available gcp linux worker type (at the time of this change): gce/gecko-1-b-linux-32\n\nDifferential Revision: https://phabricator.services.mozilla.com/D26490",
-        "files_changed": [
-          "taskcluster/ci/build/linux.yml",
-          "taskcluster/taskgraph/util/workertypes.py"
-        ]
-      },
-      "40": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=e38d7b762244",
-        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
-        "commit_message": "Bug 1543956 - Use a fixed mozconfig for linux64-aarch64 builds. r=mshal\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27631",
-        "files_changed": [
-          "browser/config/mozconfigs/linux64-aarch64/nightly",
-          "browser/config/mozconfigs/linux64-aarch64/opt",
-          "taskcluster/ci/build/linux.yml"
-        ]
-      },
-      "53": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=cdaa316e08f5",
-        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
-        "commit_message": "Bug 1541089: Fix declarative artifacts on release for shippable builds; r=mtabara\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27753",
-        "files_changed": [
-          "taskcluster/taskgraph/manifests/firefox_candidates.yml",
-          "taskcluster/taskgraph/manifests/firefox_candidates_checksums.yml"
-        ]
-      },
-      "61": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=2975d8e53361",
-        "commiter_name": "Simon Fraser <sfraser@mozilla.com>",
-        "commit_message": "Bug 1543662 Only check mar channel IDs for destination mars r=mtabara\n\nGenerating partials from betas doesn't work if we check the 'from' mar channel IDs, as we don't know what's valid for those.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27866",
-        "files_changed": [
-          "taskcluster/docker/funsize-update-generator/scripts/funsize.py"
-        ]
-      },
-      "64": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=56329e6eb549",
-        "commiter_name": "Florin Strugariu <fstrugariu@mozilla.com>",
-        "commit_message": "Bug 1543996 Add test configurations for reference browser r=davehunt,rwood\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27284",
-        "files_changed": [
-          "taskcluster/ci/test/raptor.yml",
-          "taskcluster/ci/test/test-sets.yml",
-          "testing/raptor/raptor/tests/raptor-tp6m-10.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-2.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-3.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-4.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-5.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-6.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-7.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-8.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-9.ini"
-        ]
-      },
-      "72": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=3a3bd27ee596",
-        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
-        "commit_message": "Bug 1539446 - [ci] Run talos and raptor on ash, r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27892",
-        "files_changed": [
-          "taskcluster/taskgraph/target_tasks.py"
-        ]
-      }
-    }
-  },
-  "157": {
     "changeset_number": "35884",
     "pusher": "apavel@mozilla.com",
     "date_of_push": "2019-04-19 00:35:00",
@@ -14539,6 +14470,103 @@
           "testing/mozharness/mozharness/base/script.py",
           "testing/raptor/raptor/output.py",
           "testing/raptor/raptor/raptor.py"
+        ]
+      }
+    }
+  },
+  "158": {
+    "changeset_number": "35888",
+    "pusher": "aiakab@mozilla.com",
+    "date_of_push": "2019-04-19 12:47:45",
+    "changeset_commits": {
+      "50": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=9f70dad286ff",
+        "commiter_name": "Bob Clary <bclary@bclary.com>",
+        "commit_message": "Bug 1545451 - Disable sy-tp6 on code coverage builds, r=jmaher.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28076",
+        "files_changed": [
+          "taskcluster/ci/test/awsy.yml"
+        ]
+      },
+      "63": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=1acac8b55cf7",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1532747 - Create try-only raptor tp6m-1 fenix task, r=rwood\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27948",
+        "files_changed": [
+          "taskcluster/ci/config.yml",
+          "taskcluster/ci/test/raptor.yml",
+          "taskcluster/ci/test/test-sets.yml",
+          "taskcluster/taskgraph/transforms/tests.py",
+          "testing/raptor/raptor/tests/raptor-tp6m-1.ini",
+          "testing/raptor/test/test_manifest.py"
+        ]
+      },
+      "67": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=614d913a1657",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1539932 - [ci] Handle serviceworker/socketprocess test variants more generically, r=jmaher\n\nWe are starting to spin off more and more \"variants\" of test suites. These are\nusually just duplicates of our pre-existing tasks, except with an additional\npref set.\n\nCurrently there are two variants (serviceworker-e10s and socketprocess-e10s),\nbut a third will be added soon (fission). This change ensures we handle these\ntypes of requests in a consistent and well defined manner. It also splits tasks\nin a loop, so we don't accidentally risk combinatorial explosion.\n\nVariants should typically be reserved for very large changes that will impact\nthe entire codebase (think e10s).\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28061",
+        "files_changed": [
+          "taskcluster/ci/test/mochitest.yml",
+          "taskcluster/ci/test/reftest.yml",
+          "taskcluster/ci/test/web-platform.yml",
+          "taskcluster/ci/test/xpcshell.yml",
+          "taskcluster/docs/attributes.rst",
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      },
+      "83": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=050964a5e03e",
+        "commiter_name": "Rob Wood <rwood@mozilla.com>",
+        "commit_message": "Bug 1545175 - Raptor test definitions and taskcluster configs for cold page-load tests on Fenix; r=Bebe,jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27964",
+        "files_changed": [
+          "taskcluster/ci/test/raptor.yml",
+          "taskcluster/ci/test/test-sets.yml",
+          "testing/raptor/raptor/raptor.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-1.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-10.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-11.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-12.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-13.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-14.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-2.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-3.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-4.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-5.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-6.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-7.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-8.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-9.ini"
+        ]
+      },
+      "92": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=d23c0160234d",
+        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
+        "commit_message": "Bug 1544113 - Adjust the treeherder 'tier' of some tier 3 tasks; r=jmaher\n\nPromote T(f) to tier 1.\nPromote MnM to tier 2.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28141",
+        "files_changed": [
+          "taskcluster/ci/test/marionette.yml",
+          "taskcluster/ci/test/talos.yml"
+        ]
+      }
+    }
+  },
+  "159": {
+    "changeset_number": "35889",
+    "pusher": "csabou@mozilla.com",
+    "date_of_push": "2019-04-19 19:34:07",
+    "changeset_commits": {
+      "11": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=2cc5bbbfe082",
+        "commiter_name": "alexandru.ionescu <alexandru.ionescu@softvision.ro>",
+        "commit_message": "Bug 1544758 Perma tier 2 [taskcluster:error] exit status 1 r=Bebe,jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28184",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      },
+      "14": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=0b1de782bd32",
+        "commiter_name": "Noemi Erli <nerli@mozilla.com>",
+        "commit_message": "Backed out changeset 2cc5bbbfe082 (bug 1544758) for Android 1proc failures",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/tests.py"
         ]
       }
     }

@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83558
+    "last_push_id": 83619
   },
   "1": {
     "changeset_number": "35344",
@@ -48664,21 +48664,6 @@
     }
   },
   "909": {
-    "changeset_number": "83497",
-    "pusher": "asasaki@mozilla.com",
-    "date_of_push": "2019-04-18 21:50:46",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=e95b995fc086",
-        "commiter_name": "Aki Sasaki <asasaki@mozilla.com>",
-        "commit_message": "Bug 1545256 - only append action TASK_ID to task deps if taskGroupId doesn't match r=dustin\n\nWe only want to append the action TASK_ID to the task dependencies when the taskGroupId doesn't match, otherwise we hit dup dependency errors.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27994",
-        "files_changed": [
-          "taskcluster/taskgraph/actions/util.py"
-        ]
-      }
-    }
-  },
-  "909": {
     "changeset_number": "83527",
     "pusher": "bclary@mozilla.com",
     "date_of_push": "2019-04-18 23:08:27",
@@ -48785,6 +48770,67 @@
           "testing/raptor/raptor/tests/raptor-tp6m-cold-7.ini",
           "testing/raptor/raptor/tests/raptor-tp6m-cold-8.ini",
           "testing/raptor/raptor/tests/raptor-tp6m-cold-9.ini"
+        ]
+      }
+    }
+  },
+  "913": {
+    "changeset_number": "83561",
+    "pusher": "gbrown@mozilla.com",
+    "date_of_push": "2019-04-19 07:07:28",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=d23c0160234d",
+        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
+        "commit_message": "Bug 1544113 - Adjust the treeherder 'tier' of some tier 3 tasks; r=jmaher\n\nPromote T(f) to tier 1.\nPromote MnM to tier 2.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28141",
+        "files_changed": [
+          "taskcluster/ci/test/marionette.yml",
+          "taskcluster/ci/test/talos.yml"
+        ]
+      }
+    }
+  },
+  "914": {
+    "changeset_number": "83588",
+    "pusher": "fstrugariu@mozilla.com",
+    "date_of_push": "2019-04-19 12:38:09",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=2cc5bbbfe082",
+        "commiter_name": "alexandru.ionescu <alexandru.ionescu@softvision.ro>",
+        "commit_message": "Bug 1544758 Perma tier 2 [taskcluster:error] exit status 1 r=Bebe,jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28184",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      }
+    }
+  },
+  "915": {
+    "changeset_number": "83591",
+    "pusher": "nerli@mozilla.com",
+    "date_of_push": "2019-04-19 13:55:26",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=0b1de782bd32",
+        "commiter_name": "Noemi Erli <nerli@mozilla.com>",
+        "commit_message": "Backed out changeset 2cc5bbbfe082 (bug 1544758) for Android 1proc failures",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      }
+    }
+  },
+  "916": {
+    "changeset_number": "83595",
+    "pusher": "bclary@mozilla.com",
+    "date_of_push": "2019-04-19 15:44:11",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=4a10eafaa8ad",
+        "commiter_name": "Bob Clary <bclary@bclary.com>",
+        "commit_message": "Bug 1544044 - turn off duplicated raptor jobs on android, r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28166",
+        "files_changed": [
+          "taskcluster/ci/test/raptor.yml"
         ]
       }
     }

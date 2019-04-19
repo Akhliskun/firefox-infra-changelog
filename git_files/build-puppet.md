@@ -1,7 +1,8 @@
-## BUILD-PUPPET COMMIT MARKDOWN TABLE SINCE 2019-04-05 06:41:33.570974
+## BUILD-PUPPET COMMIT MARKDOWN TABLE SINCE 2019-04-05 21:18:48.839263
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|100|MihaiTabara|Merge pull request #455 from MihaiTabara/appservices Add appservices support. Bump scriptworker 23.0.2|[URL](https://github.com/mozilla-releng/build-puppet/commit/e659387382dadd23de6c01c7e033ec2e3e639516)|2019-04-19 11:01:33
 |99|mutterroland|Merge pull request #454 from mozilla-releng/pyup-scheduled-update-2019-04-17 Scheduled weekly dependency update for week 15|[URL](https://github.com/mozilla-releng/build-puppet/commit/20efa53ec39b3c670ea4f8f4f79c814afcf2ff5e)|2019-04-18 03:08:37
 |98|pyup-bot|Update networkx from 2.2 to 2.3|[URL](https://github.com/mozilla-releng/build-puppet/commit/64d8930524d207285ce6066304fe2cdec30c7b0b)|2019-04-17 13:05:21
 |97|pyup-bot|Update botocore from 1.12.130 to 1.12.131|[URL](https://github.com/mozilla-releng/build-puppet/commit/8464d1579b9ec10dba6b253340854d6ef7b1f764)|2019-04-17 13:05:20

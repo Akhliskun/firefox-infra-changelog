@@ -1,9 +1,9 @@
 ## REPOSITORY NAME: MOZILLA-BETA
- CURRENT PUSH ID: 11111
+ CURRENT PUSH ID: 11116
 
 | Changeset | Date | Commiter | Commit Message | Commit URL | 
 |:---:|:---:|:----:|:----------------------------------:|:-----:| 
-|11085|2019-04-15 11:29:13|Johan Lorenzo <jlorenzo@mozilla.com>|[Bug 1520261](https://bugzilla.mozilla.org/show_bug.cgi?id=1520261)  - Let ARM64 Fennec ride the trains to Beta r=mhentges a=releaseLet ARM64 Fennec ride the trains to BetaDifferential Revision: https://phabricator.services.mozilla.com/D26736|https://hg.mozilla.org/releases/mozilla-beta/pushloghtml?changeset=2eec72aa8607
+|11112|2019-04-19 13:06:02|Olivier Tilloy <olivier@tilloy.net>|[Bug 1436457](https://bugzilla.mozilla.org/show_bug.cgi?id=1436457)  - Add a group policy file to disable app updates, as those are handled by snapd. r=jlorenzo,mkaply a=releaseDifferential Revision: https://phabricator.services.mozilla.com/D26281|https://hg.mozilla.org/releases/mozilla-beta/pushloghtml?changeset=9772de93a464
 |11043|2019-04-08 22:17:21|Jordan Lund <jlund@mozilla.com>|[Bug 1540262](https://bugzilla.mozilla.org/show_bug.cgi?id=1540262)  - increase UV chunks from 12 to 16, NPOTB DONTBUILD r=tomprince, a=testingDifferential Revision: https://phabricator.services.mozilla.com/D25673|https://hg.mozilla.org/releases/mozilla-beta/pushloghtml?changeset=9bae80c354eb
 |11010|2019-04-05 20:44:22|Simon Fraser <sfraser@mozilla.com>|[Bug 1539905](https://bugzilla.mozilla.org/show_bug.cgi?id=1539905)  Cache yaml loading with copy of memoized values r=mtabara a=release|https://hg.mozilla.org/releases/mozilla-beta/pushloghtml?changeset=864e16abd2f7
 |11009|2019-04-05 19:36:58|Mihai Tabara <mtabara@mozilla.com>|[Bug 1538703](https://bugzilla.mozilla.org/show_bug.cgi?id=1538703)  - remove try config from declarative artifacts world. r=sfraser a=release|https://hg.mozilla.org/releases/mozilla-beta/pushloghtml?changeset=df05571b936f

@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 122
+    "last_push_id": 123
   },
   "1": {
     "changeset_number": "31",
@@ -937,6 +937,22 @@
         "commit_message": "Bug 1527818: Allow mozilla-central and try to access coverity secrents; r=andi\n\nDifferential Revision: https://phabricator.services.mozilla.com/D26764",
         "files_changed": [
           "grants.yml"
+        ]
+      }
+    }
+  },
+  "56": {
+    "changeset_number": "123",
+    "pusher": "jlorenzo@mozilla.com",
+    "date_of_push": "2019-04-19 12:07:37",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=0c84b2dde013",
+        "commiter_name": "Johan Lorenzo <jlorenzo@mozilla.com>",
+        "commit_message": "Bug 1545730 - Allow Fenix to dep-sign APKs on master-push and PRs r=mtabara\n\nAllow Fenix to dep-sign APKs on master-push and PRs\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28181",
+        "files_changed": [
+          "grants.yml",
+          "projects.yml"
         ]
       }
     }
