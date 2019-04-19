@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35883
+    "last_push_id": 35886
   },
   "1": {
     "changeset_number": "35344",
@@ -14352,6 +14352,193 @@
         "commit_message": "Bug 1539446 - [ci] Run talos and raptor on ash, r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27892",
         "files_changed": [
           "taskcluster/taskgraph/target_tasks.py"
+        ]
+      }
+    }
+  },
+  "157": {
+    "changeset_number": "35884",
+    "pusher": "apavel@mozilla.com",
+    "date_of_push": "2019-04-19 00:35:00",
+    "changeset_commits": {
+      "25": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=effa55bd84bb",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1544816 - [ci] Enable e10s by default for mochitest-a11y, r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27921",
+        "files_changed": [
+          "taskcluster/ci/test/mochitest.yml"
+        ]
+      },
+      "26": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=2f12958d4e8c",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1544816 - [ci] Enable e10s for mochitest-chrome tasks, r=jmaher\n\nDepends on D27921\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27922",
+        "files_changed": [
+          "taskcluster/ci/test/mochitest.yml"
+        ]
+      },
+      "27": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=57be7e417b63",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1544816 - [ci] Enable e10s for xpcshell tasks, r=jmaher\n\nDepends on D27922\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27923",
+        "files_changed": [
+          "taskcluster/ci/config.yml",
+          "taskcluster/ci/test/xpcshell.yml"
+        ]
+      },
+      "28": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=cc1afca7bbc6",
+        "commiter_name": "Bob Clary <bclary@bclary.com>",
+        "commit_message": "Bug 1544044 - turn off duplicated raptor jobs on android, r=jmaher.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27933",
+        "files_changed": [
+          "taskcluster/ci/test/test-platforms.yml"
+        ]
+      },
+      "35": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=5c3abbd9c2be",
+        "commiter_name": "Csoregi Natalia <ncsoregi@mozilla.com>",
+        "commit_message": "Backed out changeset cc1afca7bbc6 (bug 1544044) as per request. CLOSED TREE",
+        "files_changed": [
+          "taskcluster/ci/test/test-platforms.yml"
+        ]
+      },
+      "79": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=a1127948b460",
+        "commiter_name": "Rob Thijssen <rthijssen@mozilla.com>",
+        "commit_message": "Bug 1536559 - run macosx64 builds in gcp at tier 3 r=pmoore,wcosta\n\nthis change adds support for parallel gcp builds for the following macosx build configurations:\n\n- macosx64\n  - debug\n  - opt\n  - shippable/opt\n\nimplementation notes:\n\n- this patch mostly mirrors the equivalent windows-on-gcp patch at: https://phabricator.services.mozilla.com/D24865\n- gcp builds are triggered with a treeherder tier 3 flag so that they are only displayed in the treeherder ui when the user has a tier 3 flag set.\n- gcp builds use a th build symbol of \"Bg\" to make them easy to differentiate from ec2 builds in the treeherder ui.\n- gcp builds use a perfherder \"gcp\" flag to make them easier to differentiate from ec2 builds in the perfherder ui.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D26594",
+        "files_changed": [
+          "taskcluster/ci/build/macosx.yml"
+        ]
+      },
+      "80": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=0fe8750efcd4",
+        "commiter_name": "Rob Thijssen <rthijssen@mozilla.com>",
+        "commit_message": "Bug 1536568 - run android builds in gcp at tier 3 r=coop,pmoore\n\nthis change adds support for parallel gcp builds for the following android build configurations:\n\n- android-api-16\n  - opt\n  - debug\n- android-x86\n  - opt\n- android-x86_64\n  - opt\n  - debug\n- android-aarch64\n  - opt\n  - debug\n\nimplementation notes:\n\n- this patch mostly mirrors the equivalent windows-on-gcp patch at: https://phabricator.services.mozilla.com/D24865\n- gcp builds are triggered with a treeherder tier 3 flag so that they are only displayed in the treeherder ui when the user has a tier 3 flag set.\n- gcp builds use a th build symbol of \"Bg\" to make them easy to differentiate from ec2 builds in the treeherder ui.\n- gcp builds use a perfherder \"gcp\" flag to make them easier to differentiate from ec2 builds in the perfherder ui.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D26584",
+        "files_changed": [
+          "taskcluster/ci/build/android.yml"
+        ]
+      },
+      "88": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=3aa904e59c1b",
+        "commiter_name": "Edwin Gao <egao@mozilla.com>",
+        "commit_message": "Bug 1544961 - disable tests that cause gtest harness to crash on windows10-aarch64 r=jmaher,gbrown\n\nChanges:\n- most tests are skipped using `moz.build` configuration file.\n- `MultiWriterQueue` had to be skipped with `define` clauses in the test file due to build bustages when its `moz.build` file was used.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27944",
+        "files_changed": [
+          "dom/media/doctor/gtest/TestMultiWriterQueue.cpp",
+          "gfx/tests/gtest/moz.build",
+          "image/test/gtest/moz.build",
+          "intl/gtest/moz.build",
+          "memory/gtest/moz.build",
+          "netwerk/test/gtest/moz.build",
+          "taskcluster/ci/test/test-sets.yml"
+        ]
+      },
+      "101": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=56716e17c88d",
+        "commiter_name": "Rob Wood <rwood@mozilla.com>",
+        "commit_message": "Bug 1544516 - Add ability to specify intent when launching android app; r=davehunt\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27570",
+        "files_changed": [
+          "testing/mozharness/mozharness/mozilla/testing/raptor.py",
+          "testing/raptor/raptor/cmdline.py",
+          "testing/raptor/raptor/raptor.py",
+          "testing/raptor/test/test_cmdline.py"
+        ]
+      },
+      "111": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=a9c6ef836b4a",
+        "commiter_name": "Ionut Goldan <igoldan@mozilla.com>",
+        "commit_message": "Bug 1544742 - Enable chrome CLI app argument r=rwood\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27909",
+        "files_changed": [
+          "testing/mozharness/mozharness/mozilla/testing/raptor.py"
+        ]
+      },
+      "121": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=f4de96f2d275",
+        "commiter_name": "Christian Holler <choller@mozilla.com>",
+        "commit_message": "Bug 1544400 - Update fuzzing builds to Clang 8 and use gold. r=froydnj\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27701",
+        "files_changed": [
+          "browser/config/mozconfigs/linux64/asan-fuzzing-ccov",
+          "browser/config/mozconfigs/linux64/nightly-fuzzing-asan",
+          "taskcluster/ci/build/linux.yml",
+          "tools/fuzzing/libfuzzer/FuzzerBuiltins.h",
+          "tools/fuzzing/libfuzzer/FuzzerBuiltinsMsvc.h",
+          "tools/fuzzing/libfuzzer/FuzzerCommand.h",
+          "tools/fuzzing/libfuzzer/FuzzerCorpus.h",
+          "tools/fuzzing/libfuzzer/FuzzerCrossOver.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerDataFlowTrace.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerDataFlowTrace.h",
+          "tools/fuzzing/libfuzzer/FuzzerDefs.h",
+          "tools/fuzzing/libfuzzer/FuzzerDictionary.h",
+          "tools/fuzzing/libfuzzer/FuzzerDriver.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerExtFunctions.def",
+          "tools/fuzzing/libfuzzer/FuzzerExtFunctions.h",
+          "tools/fuzzing/libfuzzer/FuzzerExtFunctionsDlsym.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerExtFunctionsWeak.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerExtFunctionsWindows.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerExtraCounters.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerFlags.def",
+          "tools/fuzzing/libfuzzer/FuzzerFork.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerFork.h",
+          "tools/fuzzing/libfuzzer/FuzzerIO.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerIO.h",
+          "tools/fuzzing/libfuzzer/FuzzerIOPosix.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerIOWindows.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerInterface.h",
+          "tools/fuzzing/libfuzzer/FuzzerInternal.h",
+          "tools/fuzzing/libfuzzer/FuzzerLoop.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerMain.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerMerge.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerMerge.h",
+          "tools/fuzzing/libfuzzer/FuzzerMutate.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerMutate.h",
+          "tools/fuzzing/libfuzzer/FuzzerOptions.h",
+          "tools/fuzzing/libfuzzer/FuzzerRandom.h",
+          "tools/fuzzing/libfuzzer/FuzzerSHA1.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerSHA1.h",
+          "tools/fuzzing/libfuzzer/FuzzerTracePC.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerTracePC.h",
+          "tools/fuzzing/libfuzzer/FuzzerUtil.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerUtil.h",
+          "tools/fuzzing/libfuzzer/FuzzerUtilDarwin.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerUtilFuchsia.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerUtilLinux.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerUtilPosix.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerUtilWindows.cpp",
+          "tools/fuzzing/libfuzzer/FuzzerValueBitMap.h",
+          "tools/fuzzing/libfuzzer/clone_libfuzzer.sh",
+          "tools/fuzzing/libfuzzer/moz.build"
+        ]
+      },
+      "128": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=e95b995fc086",
+        "commiter_name": "Aki Sasaki <asasaki@mozilla.com>",
+        "commit_message": "Bug 1545256 - only append action TASK_ID to task deps if taskGroupId doesn't match r=dustin\n\nWe only want to append the action TASK_ID to the task dependencies when the taskGroupId doesn't match, otherwise we hit dup dependency errors.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27994",
+        "files_changed": [
+          "taskcluster/taskgraph/actions/util.py"
+        ]
+      }
+    }
+  },
+  "158": {
+    "changeset_number": "35885",
+    "pusher": "apavel@mozilla.com",
+    "date_of_push": "2019-04-19 00:36:48",
+    "changeset_commits": {
+      "3": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=6ad35d665d4b",
+        "commiter_name": "Henrik Skupin <mail@hskupin.info>",
+        "commit_message": "Bug 1506928 - [mozharness] Handle KeyboardInterrupt in ScriptMixin. r=gbrown\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25749",
+        "files_changed": [
+          "testing/mozharness/mozharness/base/script.py"
+        ]
+      },
+      "13": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=f478c61c1bc9",
+        "commiter_name": "Brindusan Cristian <cbrindusan@mozilla.com>",
+        "commit_message": "Backed out 6 changesets (bug 1506928) for android tp6m-1 raptor 'max time exceeded' failures.\n\nBacked out changeset 98c7524647ae (bug 1506928)\nBacked out changeset 097b31242a5a (bug 1506928)\nBacked out changeset 120d7d8970e5 (bug 1506928)\nBacked out changeset 9ca5edb93d09 (bug 1506928)\nBacked out changeset ab985d0cbffd (bug 1506928)\nBacked out changeset 6ad35d665d4b (bug 1506928)",
+        "files_changed": [
+          "testing/mozharness/mozharness/base/script.py",
+          "testing/raptor/raptor/output.py",
+          "testing/raptor/raptor/raptor.py"
         ]
       }
     }

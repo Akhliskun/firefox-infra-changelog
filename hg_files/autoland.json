@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83520
+    "last_push_id": 83558
   },
   "1": {
     "changeset_number": "35344",
@@ -48567,27 +48567,6 @@
     }
   },
   "906": {
-    "changeset_number": "83476",
-    "pusher": "egao@mozilla.com",
-    "date_of_push": "2019-04-18 05:48:58",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=3aa904e59c1b",
-        "commiter_name": "Edwin Gao <egao@mozilla.com>",
-        "commit_message": "Bug 1544961 - disable tests that cause gtest harness to crash on windows10-aarch64 r=jmaher,gbrown\n\nChanges:\n- most tests are skipped using `moz.build` configuration file.\n- `MultiWriterQueue` had to be skipped with `define` clauses in the test file due to build bustages when its `moz.build` file was used.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27944",
-        "files_changed": [
-          "dom/media/doctor/gtest/TestMultiWriterQueue.cpp",
-          "gfx/tests/gtest/moz.build",
-          "image/test/gtest/moz.build",
-          "intl/gtest/moz.build",
-          "memory/gtest/moz.build",
-          "netwerk/test/gtest/moz.build",
-          "taskcluster/ci/test/test-sets.yml"
-        ]
-      }
-    }
-  },
-  "906": {
     "changeset_number": "83484",
     "pusher": "rwood@mozilla.com",
     "date_of_push": "2019-04-18 18:58:07",
@@ -48695,6 +48674,117 @@
         "commit_message": "Bug 1545256 - only append action TASK_ID to task deps if taskGroupId doesn't match r=dustin\n\nWe only want to append the action TASK_ID to the task dependencies when the taskGroupId doesn't match, otherwise we hit dup dependency errors.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27994",
         "files_changed": [
           "taskcluster/taskgraph/actions/util.py"
+        ]
+      }
+    }
+  },
+  "909": {
+    "changeset_number": "83527",
+    "pusher": "bclary@mozilla.com",
+    "date_of_push": "2019-04-18 23:08:27",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=9f70dad286ff",
+        "commiter_name": "Bob Clary <bclary@bclary.com>",
+        "commit_message": "Bug 1545451 - Disable sy-tp6 on code coverage builds, r=jmaher.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28076",
+        "files_changed": [
+          "taskcluster/ci/test/awsy.yml"
+        ]
+      }
+    }
+  },
+  "910": {
+    "changeset_number": "83534",
+    "pusher": "apavel@mozilla.com",
+    "date_of_push": "2019-04-19 00:49:06",
+    "changeset_commits": {
+      "3": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=6ad35d665d4b",
+        "commiter_name": "Henrik Skupin <mail@hskupin.info>",
+        "commit_message": "Bug 1506928 - [mozharness] Handle KeyboardInterrupt in ScriptMixin. r=gbrown\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25749",
+        "files_changed": [
+          "testing/mozharness/mozharness/base/script.py"
+        ]
+      },
+      "13": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f478c61c1bc9",
+        "commiter_name": "Brindusan Cristian <cbrindusan@mozilla.com>",
+        "commit_message": "Backed out 6 changesets (bug 1506928) for android tp6m-1 raptor 'max time exceeded' failures.\n\nBacked out changeset 98c7524647ae (bug 1506928)\nBacked out changeset 097b31242a5a (bug 1506928)\nBacked out changeset 120d7d8970e5 (bug 1506928)\nBacked out changeset 9ca5edb93d09 (bug 1506928)\nBacked out changeset ab985d0cbffd (bug 1506928)\nBacked out changeset 6ad35d665d4b (bug 1506928)",
+        "files_changed": [
+          "testing/mozharness/mozharness/base/script.py",
+          "testing/raptor/raptor/output.py",
+          "testing/raptor/raptor/raptor.py"
+        ]
+      }
+    }
+  },
+  "911": {
+    "changeset_number": "83539",
+    "pusher": "ahalberstadt@mozilla.com",
+    "date_of_push": "2019-04-19 02:59:35",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=1acac8b55cf7",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1532747 - Create try-only raptor tp6m-1 fenix task, r=rwood\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27948",
+        "files_changed": [
+          "taskcluster/ci/config.yml",
+          "taskcluster/ci/test/raptor.yml",
+          "taskcluster/ci/test/test-sets.yml",
+          "taskcluster/taskgraph/transforms/tests.py",
+          "testing/raptor/raptor/tests/raptor-tp6m-1.ini",
+          "testing/raptor/test/test_manifest.py"
+        ]
+      }
+    }
+  },
+  "912": {
+    "changeset_number": "83543",
+    "pusher": "ahalberstadt@mozilla.com",
+    "date_of_push": "2019-04-19 03:02:51",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=614d913a1657",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1539932 - [ci] Handle serviceworker/socketprocess test variants more generically, r=jmaher\n\nWe are starting to spin off more and more \"variants\" of test suites. These are\nusually just duplicates of our pre-existing tasks, except with an additional\npref set.\n\nCurrently there are two variants (serviceworker-e10s and socketprocess-e10s),\nbut a third will be added soon (fission). This change ensures we handle these\ntypes of requests in a consistent and well defined manner. It also splits tasks\nin a loop, so we don't accidentally risk combinatorial explosion.\n\nVariants should typically be reserved for very large changes that will impact\nthe entire codebase (think e10s).\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28061",
+        "files_changed": [
+          "taskcluster/ci/test/mochitest.yml",
+          "taskcluster/ci/test/reftest.yml",
+          "taskcluster/ci/test/web-platform.yml",
+          "taskcluster/ci/test/xpcshell.yml",
+          "taskcluster/docs/attributes.rst",
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      }
+    }
+  },
+  "913": {
+    "changeset_number": "83555",
+    "pusher": "rwood@mozilla.com",
+    "date_of_push": "2019-04-19 03:12:59",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=050964a5e03e",
+        "commiter_name": "Rob Wood <rwood@mozilla.com>",
+        "commit_message": "Bug 1545175 - Raptor test definitions and taskcluster configs for cold page-load tests on Fenix; r=Bebe,jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27964",
+        "files_changed": [
+          "taskcluster/ci/test/raptor.yml",
+          "taskcluster/ci/test/test-sets.yml",
+          "testing/raptor/raptor/raptor.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-1.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-10.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-11.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-12.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-13.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-14.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-2.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-3.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-4.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-5.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-6.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-7.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-8.ini",
+          "testing/raptor/raptor/tests/raptor-tp6m-cold-9.ini"
         ]
       }
     }

@@ -1,7 +1,10 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-04 23:02:54.684153
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-05 06:41:33.570974
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|843|djmitche|Merge pull request #582 from djmitche/bug1528384 [Bug 1528384](https://bugzilla.mozilla.org/show_bug.cgi?id=1528384)  - improvements to polling|[URL](https://github.com/taskcluster/taskcluster/commit/3e917f96fc9a464fd9bb28a06d638227b1506f35)|2019-04-18 21:58:37
+|842|djmitche|[Bug 1528384](https://bugzilla.mozilla.org/show_bug.cgi?id=1528384)  - fix polling to show all errors when it fails|[URL](https://github.com/taskcluster/taskcluster/commit/7bc3fef6551716587a40efb88315544e97c6e303)|2019-04-16 15:10:56
+|841|djmitche|Merge pull request #606 from Biboswan/hooks/firedBy Change firedBy to enum|[URL](https://github.com/taskcluster/taskcluster/commit/042238ad17bc3b316f6656e762c419c08d84e31a)|2019-04-18 20:33:48
 |840|ccooper|Merge pull request #609 from taskcluster/b2g_cleanup [Bug 1351012](https://bugzilla.mozilla.org/show_bug.cgi?id=1351012)  - remove references to b2g/gaia/flame|[URL](https://github.com/taskcluster/taskcluster/commit/ae3664035b702705cbd66467228ed21e62a37fdc)|2019-04-18 19:09:48
 |839|Biboswan|[Bug 1520857](https://bugzilla.mozilla.org/show_bug.cgi?id=1520857)  add support in tc-web for displaying information from the lastFire table (#466)|[URL](https://github.com/taskcluster/taskcluster/commit/eedb4f20a2504e5de8d8d42c8e3d0a9e76666cd2)|2019-04-18 18:56:15
 |838|ccooper|Fix up generated references|[URL](https://github.com/taskcluster/taskcluster/commit/a699f6e55e1e40a72b5eaef9af63fb6188ff00b2)|2019-04-18 17:39:27

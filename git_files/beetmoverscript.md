@@ -1,7 +1,8 @@
-## BEETMOVERSCRIPT COMMIT MARKDOWN TABLE SINCE 2019-04-04 23:02:54.684153
+## BEETMOVERSCRIPT COMMIT MARKDOWN TABLE SINCE 2019-04-05 06:41:33.570974
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|30|MihaiTabara|8.4.5|[URL](https://github.com/mozilla-releng/beetmoverscript/commit/5ce8ddc2ad41bb949e2ed8e92bbd425d4bcf2dfa)|2019-04-18 21:54:26
 |29|MihaiTabara|8.4.3|[URL](https://github.com/mozilla-releng/beetmoverscript/commit/1c1373595fa27fb83cdad6babaf4503c432a5f60)|2019-04-05 16:14:17
 |28|tomprince|8.4.2|[URL](https://github.com/mozilla-releng/beetmoverscript/commit/53718065794084f41d339e1cefc3d90c3e7b3f9a)|2019-03-11 20:36:02
 |27|MihaiTabara|8.4.1|[URL](https://github.com/mozilla-releng/beetmoverscript/commit/b26a8dcb800dcf85c7a6c6583ba88307822f1c7e)|2019-02-04 22:07:07
