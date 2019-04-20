@@ -1,7 +1,8 @@
-## SCRIPTWORKER COMMIT MARKDOWN TABLE SINCE 2019-04-06 07:13:36.978959
+## SCRIPTWORKER COMMIT MARKDOWN TABLE SINCE 2019-04-06 22:35:32.671661
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|57|escapewindow|23.0.2|[URL](https://github.com/mozilla-releng/scriptworker/commit/972be9c4939bd3435db7092becaac65b3e09e7af)|2019-04-11 18:23:54
 |56|escapewindow|23.0.2|[URL](https://github.com/mozilla-releng/scriptworker/commit/972be9c4939bd3435db7092becaac65b3e09e7af)|2019-04-11 18:23:54
 |55|escapewindow|23.0.2|[URL](https://github.com/mozilla-releng/scriptworker/commit/972be9c4939bd3435db7092becaac65b3e09e7af)|2019-04-11 18:23:54
 |54|escapewindow|23.0.2|[URL](https://github.com/mozilla-releng/scriptworker/commit/972be9c4939bd3435db7092becaac65b3e09e7af)|2019-04-11 18:23:54

@@ -1,7 +1,10 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-06 07:13:36.978959
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-06 22:35:32.671661
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|854|djmitche|Merge pull request #616 from djmitche/no-production-assume Stop requiring assume() in production code|[URL](https://github.com/taskcluster/taskcluster/commit/fee4711e3933c5a89dde64e484729683a4412707)|2019-04-20 14:24:35
+|853|djmitche|Stop requiring assume() in production code|[URL](https://github.com/taskcluster/taskcluster/commit/5fbeba6668de6d3a1ac5347f5ec13d01c60b2b28)|2019-04-08 22:17:24
+|852|djmitche|Merge pull request #615 from djmitche/bug1545265 [Bug 1545265](https://bugzilla.mozilla.org/show_bug.cgi?id=1545265)  - remove mention of pulse from purge-cache documentation|[URL](https://github.com/taskcluster/taskcluster/commit/5e4580068da24e36892fb958af722f7b3eafa7b3)|2019-04-20 13:59:50
 |851|djmitche|Merge pull request #597 from djmitche/bug1541741-b [Bug 1541741](https://bugzilla.mozilla.org/show_bug.cgi?id=1541741)  - handle API methods that are sometimes public|[URL](https://github.com/taskcluster/taskcluster/commit/07bd0c82a1092a9cbdaed218da08cd7e3e7a00c5)|2019-04-19 19:59:25
 |850|djmitche|Merge pull request #614 from djmitche/bug1544608-b [Bug 1544608](https://bugzilla.mozilla.org/show_bug.cgi?id=1544608)  - really, don't kill connection on channel errors|[URL](https://github.com/taskcluster/taskcluster/commit/b47846d24da725244b8196c3fe3c19a7c911b032)|2019-04-19 19:16:58
 |849|djmitche|Merge pull request #612 from arshadkazmi42/payload-signature-api Add payload in Signature in API Docs|[URL](https://github.com/taskcluster/taskcluster/commit/ca334e50e438d8944ad9daa5d278fb8cb7a71033)|2019-04-19 17:53:53
