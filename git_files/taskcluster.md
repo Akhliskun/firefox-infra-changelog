@@ -1,7 +1,9 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-05 21:18:48.839263
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-06 03:41:55.731443
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|851|djmitche|Merge pull request #597 from djmitche/bug1541741-b [Bug 1541741](https://bugzilla.mozilla.org/show_bug.cgi?id=1541741)  - handle API methods that are sometimes public|[URL](https://github.com/taskcluster/taskcluster/commit/07bd0c82a1092a9cbdaed218da08cd7e3e7a00c5)|2019-04-19 19:59:25
+|850|djmitche|Merge pull request #614 from djmitche/bug1544608-b [Bug 1544608](https://bugzilla.mozilla.org/show_bug.cgi?id=1544608)  - really, don't kill connection on channel errors|[URL](https://github.com/taskcluster/taskcluster/commit/b47846d24da725244b8196c3fe3c19a7c911b032)|2019-04-19 19:16:58
 |849|djmitche|Merge pull request #612 from arshadkazmi42/payload-signature-api Add payload in Signature in API Docs|[URL](https://github.com/taskcluster/taskcluster/commit/ca334e50e438d8944ad9daa5d278fb8cb7a71033)|2019-04-19 17:53:53
 |848|arshadkazmi42|Change to copy object as value|[URL](https://github.com/taskcluster/taskcluster/commit/2e60f161431344f8a823c01c935878b9dfbaf2de)|2019-04-19 17:30:02
 |847|arshadkazmi42|Check payload in parameters before pushing|[URL](https://github.com/taskcluster/taskcluster/commit/13318aedf0c28743aae9e5a4c1acc6a373438b2e)|2019-04-19 17:22:18

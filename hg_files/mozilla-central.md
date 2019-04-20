@@ -1,10 +1,9 @@
 ## REPOSITORY NAME: MOZILLA-CENTRAL
- CURRENT PUSH ID: 35889
+ CURRENT PUSH ID: 35890
 
 | Changeset | Date | Commiter | Commit Message | Commit URL | 
 |:---:|:---:|:----:|:----------------------------------:|:-----:| 
-|35889|2019-04-19 19:34:07|alexandru.ionescu <alexandru.ionescu@softvision.ro>|[Bug 1544758](https://bugzilla.mozilla.org/show_bug.cgi?id=1544758)  Perma tier 2 [taskcluster:error] exit status 1 r=Bebe,jmaherDifferential Revision: https://phabricator.services.mozilla.com/D28184|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=2cc5bbbfe082
-|35889|2019-04-19 19:34:07|Noemi Erli <nerli@mozilla.com>|Backed out changeset 2cc5bbbfe082 [Bug 1544758](https://bugzilla.mozilla.org/show_bug.cgi?id=1544758)  for Android 1proc failures|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=0b1de782bd32
+|35890|2019-04-20 00:44:39|Bob Clary <bclary@bclary.com>|[Bug 1544044](https://bugzilla.mozilla.org/show_bug.cgi?id=1544044)  - turn off duplicated raptor jobs on android, r=jmaherDifferential Revision: https://phabricator.services.mozilla.com/D28166|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=4a10eafaa8ad
 |35888|2019-04-19 12:47:45|Bob Clary <bclary@bclary.com>|[Bug 1545451](https://bugzilla.mozilla.org/show_bug.cgi?id=1545451)  - Disable sy-tp6 on code coverage builds, r=jmaher.Differential Revision: https://phabricator.services.mozilla.com/D28076|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=9f70dad286ff
 |35888|2019-04-19 12:47:45|Andrew Halberstadt <ahalberstadt@mozilla.com>|[Bug 1532747](https://bugzilla.mozilla.org/show_bug.cgi?id=1532747)  - Create try-only raptor tp6m-1 fenix task, r=rwoodDifferential Revision: https://phabricator.services.mozilla.com/D27948|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=1acac8b55cf7
 |35888|2019-04-19 12:47:45|Andrew Halberstadt <ahalberstadt@mozilla.com>|[Bug 1539932](https://bugzilla.mozilla.org/show_bug.cgi?id=1539932)  - [ci] Handle serviceworker/socketprocess test variants more generically, r=jmaherWe are starting to spin off more and more "variants" of test suites. These areusually just duplicates of our pre-existing tasks, except with an additionalpref set.Currently there are two variants (serviceworker-e10s and socketprocess-e10s),but a third will be added soon (fission). This change ensures we h.. [continue reading](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=614d913a1657)|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=614d913a1657

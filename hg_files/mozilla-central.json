@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35889
+    "last_push_id": 35890
   },
   "1": {
     "changeset_number": "35344",
@@ -14450,31 +14450,6 @@
     }
   },
   "158": {
-    "changeset_number": "35885",
-    "pusher": "apavel@mozilla.com",
-    "date_of_push": "2019-04-19 00:36:48",
-    "changeset_commits": {
-      "3": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=6ad35d665d4b",
-        "commiter_name": "Henrik Skupin <mail@hskupin.info>",
-        "commit_message": "Bug 1506928 - [mozharness] Handle KeyboardInterrupt in ScriptMixin. r=gbrown\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25749",
-        "files_changed": [
-          "testing/mozharness/mozharness/base/script.py"
-        ]
-      },
-      "13": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=f478c61c1bc9",
-        "commiter_name": "Brindusan Cristian <cbrindusan@mozilla.com>",
-        "commit_message": "Backed out 6 changesets (bug 1506928) for android tp6m-1 raptor 'max time exceeded' failures.\n\nBacked out changeset 98c7524647ae (bug 1506928)\nBacked out changeset 097b31242a5a (bug 1506928)\nBacked out changeset 120d7d8970e5 (bug 1506928)\nBacked out changeset 9ca5edb93d09 (bug 1506928)\nBacked out changeset ab985d0cbffd (bug 1506928)\nBacked out changeset 6ad35d665d4b (bug 1506928)",
-        "files_changed": [
-          "testing/mozharness/mozharness/base/script.py",
-          "testing/raptor/raptor/output.py",
-          "testing/raptor/raptor/raptor.py"
-        ]
-      }
-    }
-  },
-  "158": {
     "changeset_number": "35888",
     "pusher": "aiakab@mozilla.com",
     "date_of_push": "2019-04-19 12:47:45",
@@ -14567,6 +14542,21 @@
         "commit_message": "Backed out changeset 2cc5bbbfe082 (bug 1544758) for Android 1proc failures",
         "files_changed": [
           "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      }
+    }
+  },
+  "159": {
+    "changeset_number": "35890",
+    "pusher": "dluca@mozilla.com",
+    "date_of_push": "2019-04-20 00:44:39",
+    "changeset_commits": {
+      "6": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=4a10eafaa8ad",
+        "commiter_name": "Bob Clary <bclary@bclary.com>",
+        "commit_message": "Bug 1544044 - turn off duplicated raptor jobs on android, r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28166",
+        "files_changed": [
+          "taskcluster/ci/test/raptor.yml"
         ]
       }
     }

@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83619
+    "last_push_id": 83640
   },
   "1": {
     "changeset_number": "35344",
@@ -48739,37 +48739,6 @@
           "taskcluster/ci/test/xpcshell.yml",
           "taskcluster/docs/attributes.rst",
           "taskcluster/taskgraph/transforms/tests.py"
-        ]
-      }
-    }
-  },
-  "913": {
-    "changeset_number": "83555",
-    "pusher": "rwood@mozilla.com",
-    "date_of_push": "2019-04-19 03:12:59",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=050964a5e03e",
-        "commiter_name": "Rob Wood <rwood@mozilla.com>",
-        "commit_message": "Bug 1545175 - Raptor test definitions and taskcluster configs for cold page-load tests on Fenix; r=Bebe,jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27964",
-        "files_changed": [
-          "taskcluster/ci/test/raptor.yml",
-          "taskcluster/ci/test/test-sets.yml",
-          "testing/raptor/raptor/raptor.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-1.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-10.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-11.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-12.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-13.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-14.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-2.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-3.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-4.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-5.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-6.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-7.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-8.ini",
-          "testing/raptor/raptor/tests/raptor-tp6m-cold-9.ini"
         ]
       }
     }
