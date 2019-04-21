@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-21 13:45:33 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-21 17:45:25 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -100,12 +100,6 @@
 |[Link](https://github.com/taskcluster/taskcluster/commit/042238ad17bc3b316f6656e762c419c08d84e31a)|Merge pull request #606 from Biboswan/hooks/firedBy  Change firedBy to enum|djmitche|N/A|2019-04-18 20:33:48|
 |[Link](https://github.com/taskcluster/taskcluster/commit/ae3664035b702705cbd66467228ed21e62a37fdc)|Merge pull request #609 from taskcluster/b2g_cleanup  [Bug 1351012] - remove references to b2g/gaia/flame|ccooper|N/A|2019-04-18 19:09:48|
 |[Link](https://github.com/taskcluster/taskcluster/commit/eedb4f20a2504e5de8d8d42c8e3d0a9e76666cd2)|Bug 1520857- add support in tc-web for displaying information from the lastFire table (#466)|Biboswan|N/A|2019-04-18 18:56:15|
-|[Link](https://github.com/taskcluster/taskcluster/commit/a699f6e55e1e40a72b5eaef9af63fb6188ff00b2)|Fix up generated references|ccooper|N/A|2019-04-18 17:39:27|
-|[Link](https://github.com/taskcluster/taskcluster/commit/820acc3dfd2ad9c3d2fced0596854a44d62befef)|Be consistent using gecko-t-linux-xlarge to replace b2gtest|ccooper|N/A|2019-04-18 17:22:36|
-|[Link](https://github.com/taskcluster/taskcluster/commit/0f4fadc966d1d7e051910e9c5f940bd0c5ef0725)|Bug 1351012 - remove references to b2g/gaia/flame|ccooper|N/A|2019-04-18 17:14:42|
-|[Link](https://github.com/taskcluster/taskcluster/commit/696781b81e1e78ad6de99415a63af9facb934ea8)|docs: add iFlameing as a contributor (#607)    docs: update README.md      docs: update .all-contributorsrc|allcontributors[bot]|N/A|2019-04-18 17:13:47|
-|[Link](https://github.com/taskcluster/taskcluster/commit/253099a5542a6564c80212e1c8a958ad636ab1c9)|Merge pull request #589 from djmitche/bug1544807  Bug 1544807 - improve handling of huge error messages|djmitche|N/A|2019-04-18 15:32:57|
-|[Link](https://github.com/taskcluster/taskcluster/commit/b4388e24672e6d3d0f6c91d75e12549be9fdf560)|Fix: Sign in dialog not hiding after "cancel" click (#603)|helfi92|N/A|2019-04-18 14:48:23|
 
 |	addonscript	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/addonscript.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/addonscript.md)	| 
 |:----------:|:-----------------------:|:--------:| 
