@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-21 17:45:25 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-21 21:13:57 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -13,9 +13,6 @@
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=6ad35d665d4b)|[Bug 1506928](https://bugzilla.mozilla.org/show_bug.cgi?id=1506928)  - [mozharness] Handle KeyboardInterrupt in ScriptMixin. r=gbrown Differential Revision: https://phabricator.services.mozilla.com/D25749|apavel@mozilla.com|gbrown|2019-04-19 00:49:06|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f478c61c1bc9)|Backed out 6 changesets [Bug 1506928](https://bugzilla.mozilla.org/show_bug.cgi?id=1506928)  for android tp6m-1 raptor 'max time exceeded' failures. Backed out changeset 98c7524647ae [Bug 1506928](https://bugzilla.mozilla.org/show_bug.cgi?id=1506928)  Backed out changeset 097b31242a5a [Bug 1506928](https://bugzilla.mozilla.org/show_bug.cgi?id=1506928)  Backed out changeset 120d7d8970e5 [Bug 1506928](https://bugzilla.mozilla.org/show_bug.cgi?id=1506928)  Backed out changeset 9ca5edb93d09 [Bug 1506928](https://bugzilla.mozilla.org/show_bug.cgi?id=1506928)  Backed out changeset ab985d0cbffd [Bug 1506928](https://bugzilla.mozilla.org/show_bug.cgi?id=1506928)  Backed out changeset 6ad35d665d4b [Bug 1506928](https://bugzilla.mozilla.org/show_bug.cgi?id=1506928) |apavel@mozilla.com||2019-04-19 00:49:06|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=9f70dad286ff)|[Bug 1545451](https://bugzilla.mozilla.org/show_bug.cgi?id=1545451)  - Disable sy-tp6 on code coverage builds, r=jmaher. Differential Revision: https://phabricator.services.mozilla.com/D28076|bclary@mozilla.com|jmaher.|2019-04-18 23:08:27|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f4de96f2d275)|[Bug 1544400](https://bugzilla.mozilla.org/show_bug.cgi?id=1544400)  - Update fuzzing builds to Clang 8 and use gold. r=froydnj Differential Revision: https://phabricator.services.mozilla.com/D27701|choller@mozilla.com|froydnj|2019-04-18 19:05:08|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=a9c6ef836b4a)|[Bug 1544742](https://bugzilla.mozilla.org/show_bug.cgi?id=1544742)  - Enable chrome CLI app argument r=rwood Differential Revision: https://phabricator.services.mozilla.com/D27909|igoldan@mozilla.com|rwood|2019-04-18 19:00:58|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=56716e17c88d)|[Bug 1544516](https://bugzilla.mozilla.org/show_bug.cgi?id=1544516)  - Add ability to specify intent when launching android app; r=davehunt Differential Revision: https://phabricator.services.mozilla.com/D27570|rwood@mozilla.com|davehunt|2019-04-18 18:58:07|
 
 |	mozilla-inbound	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.json)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -86,6 +83,7 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
+|[Link](https://github.com/taskcluster/taskcluster/commit/298acb9efa4acfcf2654c43c5afdcd8c246df642)|[UI] Remove toggle effect from title on sidebar (#620)    [UI] Remove toggle effect from title on sidebar      Add requested changes|helfi92|N/A|2019-04-21 19:41:07|
 |[Link](https://github.com/taskcluster/taskcluster/commit/fee4711e3933c5a89dde64e484729683a4412707)|Merge pull request #616 from djmitche/no-production-assume  Stop requiring assume() in production code|djmitche|N/A|2019-04-20 14:24:35|
 |[Link](https://github.com/taskcluster/taskcluster/commit/5e4580068da24e36892fb958af722f7b3eafa7b3)|Merge pull request #615 from djmitche/bug1545265  Bug 1545265 - remove mention of pulse from purge-cache documentation|djmitche|N/A|2019-04-20 13:59:50|
 |[Link](https://github.com/taskcluster/taskcluster/commit/07bd0c82a1092a9cbdaed218da08cd7e3e7a00c5)|Merge pull request #597 from djmitche/bug1541741-b  Bug 1541741 - handle API methods that are sometimes public|djmitche|N/A|2019-04-19 19:59:25|
@@ -97,9 +95,6 @@
 |[Link](https://github.com/taskcluster/taskcluster/commit/9dd7bcbfe796b4dce03ff29a9d1e3ee53bb351b9)|Bug 1544608 - tc-hooks - handle errors binding queues better|djmitche|N/A|2019-04-19 02:57:22|
 |[Link](https://github.com/taskcluster/taskcluster/commit/df22ff9e3e4e25203a3c8a853ec0a8a6151c3c8f)|adds payload in signature api docs|arshadkazmi42|N/A|2019-04-19 10:17:30|
 |[Link](https://github.com/taskcluster/taskcluster/commit/3e917f96fc9a464fd9bb28a06d638227b1506f35)|Merge pull request #582 from djmitche/bug1528384  Bug 1528384 - improvements to polling|djmitche|N/A|2019-04-18 21:58:37|
-|[Link](https://github.com/taskcluster/taskcluster/commit/042238ad17bc3b316f6656e762c419c08d84e31a)|Merge pull request #606 from Biboswan/hooks/firedBy  Change firedBy to enum|djmitche|N/A|2019-04-18 20:33:48|
-|[Link](https://github.com/taskcluster/taskcluster/commit/ae3664035b702705cbd66467228ed21e62a37fdc)|Merge pull request #609 from taskcluster/b2g_cleanup  [Bug 1351012] - remove references to b2g/gaia/flame|ccooper|N/A|2019-04-18 19:09:48|
-|[Link](https://github.com/taskcluster/taskcluster/commit/eedb4f20a2504e5de8d8d42c8e3d0a9e76666cd2)|Bug 1520857- add support in tc-web for displaying information from the lastFire table (#466)|Biboswan|N/A|2019-04-18 18:56:15|
 
 |	addonscript	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/addonscript.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/addonscript.md)	| 
 |:----------:|:-----------------------:|:--------:| 

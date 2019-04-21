@@ -1,7 +1,8 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-07 20:44:26.743257
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-08 00:12:58.122709
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|855|helfi92|[UI] Remove toggle effect from title on sidebar (#620) [UI] Remove toggle effect from title on sidebar Add requested changes|[URL](https://github.com/taskcluster/taskcluster/commit/298acb9efa4acfcf2654c43c5afdcd8c246df642)|2019-04-21 19:41:07
 |854|djmitche|Merge pull request #616 from djmitche/no-production-assume Stop requiring assume() in production code|[URL](https://github.com/taskcluster/taskcluster/commit/fee4711e3933c5a89dde64e484729683a4412707)|2019-04-20 14:24:35
 |853|djmitche|Stop requiring assume() in production code|[URL](https://github.com/taskcluster/taskcluster/commit/5fbeba6668de6d3a1ac5347f5ec13d01c60b2b28)|2019-04-08 22:17:24
 |852|djmitche|Merge pull request #615 from djmitche/bug1545265 [Bug 1545265](https://bugzilla.mozilla.org/show_bug.cgi?id=1545265)  - remove mention of pulse from purge-cache documentation|[URL](https://github.com/taskcluster/taskcluster/commit/5e4580068da24e36892fb958af722f7b3eafa7b3)|2019-04-20 13:59:50
