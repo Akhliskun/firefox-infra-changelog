@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-22 03:56:31 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-22 07:32:48 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -7,7 +7,6 @@
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=4a10eafaa8ad)|[Bug 1544044](https://bugzilla.mozilla.org/show_bug.cgi?id=1544044)  - turn off duplicated raptor jobs on android, r=jmaher Differential Revision: https://phabricator.services.mozilla.com/D28166|bclary@mozilla.com|jmaher|2019-04-19 15:44:11|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=0b1de782bd32)|Backed out changeset 2cc5bbbfe082 [Bug 1544758](https://bugzilla.mozilla.org/show_bug.cgi?id=1544758)  for Android 1proc failures|nerli@mozilla.com||2019-04-19 13:55:26|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=2cc5bbbfe082)|[Bug 1544758](https://bugzilla.mozilla.org/show_bug.cgi?id=1544758)  Perma tier 2 [taskcluster:error] exit status 1 r=Bebe,jmaher Differential Revision: https://phabricator.services.mozilla.com/D28184|fstrugariu@mozilla.com|Bebe,jmaher|2019-04-19 12:38:09|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=d23c0160234d)|[Bug 1544113](https://bugzilla.mozilla.org/show_bug.cgi?id=1544113)  - Adjust the treeherder 'tier' of some tier 3 tasks; r=jmaher Promote T(f) to tier 1. Promote MnM to tier 2. Differential Revision: https://phabricator.services.mozilla.com/D28141|gbrown@mozilla.com|jmaher|2019-04-19 07:07:28|
 
 |	mozilla-inbound	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.json)	| 
 |:----------:|:-----------------------:|:--------:| 
