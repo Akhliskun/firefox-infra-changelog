@@ -19,6 +19,9 @@
 * funsize - https://github.com/mozilla-releng/funsize
 * signtool - https://github.com/mozilla-releng/signtool
 * Tooltool - https://github.com/mozilla/build-tooltool
+* Relops-Image-Builder - https://github.com/mozilla-platform-ops/relops-image-builder
+* Relops-Hardware-Controller - https://github.com/mozilla-platform-ops/relops-hardware-controller
+* Ronin-Puppet - https://github.com/mozilla-platform-ops/ronin_puppet
 ## Repositories that are under a maybe (need a sanity check):
 * shipitapi - https://github.com/mozilla-releng/shipitapi
 * ami-builder - https://github.com/mozilla-releng/ami-builder
