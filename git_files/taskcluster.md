@@ -1,7 +1,26 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-08 10:31:42.214922
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-09 07:15:19.510959
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|874|imbstack|Worker Manager (#580) Worker Manager|[URL](https://github.com/taskcluster/taskcluster/commit/fceee803b90809036399139f98a720e851d0e71d)|2019-04-22 22:37:17
+|873|imbstack|Fix remaining review comments|[URL](https://github.com/taskcluster/taskcluster/commit/38b385d9de55e9520e1e11e283eb32ddd23ad6f2)|2019-04-22 20:53:37
+|872|imbstack|Finish up most outstanding TODOs that won't be followed up in the next PR|[URL](https://github.com/taskcluster/taskcluster/commit/0fab3068782d651f60e632fb5652283a1af3cdb5)|2019-04-22 20:20:40
+|871|imbstack|Add azure mocking|[URL](https://github.com/taskcluster/taskcluster/commit/59624281a8898e547a7fb148f51631d0ea3b304f)|2019-04-15 23:40:38
+|870|imbstack|Run generate for WIP worker-manager changes|[URL](https://github.com/taskcluster/taskcluster/commit/3cec28a66c63d783ffe52a3f7475e1b912eb8752)|2019-04-15 23:23:18
+|869|imbstack|Undo change to monitor|[URL](https://github.com/taskcluster/taskcluster/commit/1a3a63b6b399f5b74ec2f3ea7d18bbcf4c77155e)|2019-04-15 23:21:56
+|868|imbstack|Add first real bits of google provider|[URL](https://github.com/taskcluster/taskcluster/commit/17ac15a051fd64c59f67d2d24fed6fd940b9d005)|2019-04-15 23:08:09
+|867|imbstack|Add structure of Google provider|[URL](https://github.com/taskcluster/taskcluster/commit/c1c386c5c26c4a12edef685416e35d591530f57c)|2019-04-14 20:48:34
+|866|imbstack|Add prepare and cleanup to provisioning loop|[URL](https://github.com/taskcluster/taskcluster/commit/5d46eb8cf83f349b00f772fd9c2322f1b06fca7f)|2019-04-13 01:04:22
+|865|imbstack|Prohibit using unknown providers|[URL](https://github.com/taskcluster/taskcluster/commit/8b14e4ba5f38d7909e4929164d976b3af94cf54e)|2019-04-13 00:47:26
+|864|imbstack|Get rid of template rendering|[URL](https://github.com/taskcluster/taskcluster/commit/f50d179e2fa2f612df47614c944c305ba29f1377)|2019-04-13 00:31:52
+|863|imbstack|Add in a basic prpvisioning loop|[URL](https://github.com/taskcluster/taskcluster/commit/e82464b3e5a17ec65701feda006cd09e376d10f6)|2019-04-13 00:05:23
+|862|imbstack|Simplify worker-manager before starting to build back up|[URL](https://github.com/taskcluster/taskcluster/commit/627620891ff3520cfa97c2bf51d259bbbf4eb348)|2019-04-09 00:42:46
+|861|helfi92|Nit: Sorting (#626)|[URL](https://github.com/taskcluster/taskcluster/commit/6bdb9f4bb99ce86c025316562bc41c6cb12197ca)|2019-04-22 15:43:58
+|860|helfi92|Merge pull request #624 from helfi92/unused-dep [UI] Remove unused dependency|[URL](https://github.com/taskcluster/taskcluster/commit/4fdd2516ea863b78778f00e02f3176852c6070d6)|2019-04-22 12:51:17
+|859|helfi92|Rename variant title to h6|[URL](https://github.com/taskcluster/taskcluster/commit/2c6ce455c180215850929de4ae1e9f77768a1aea)|2019-04-22 12:35:34
+|858|helfi92|Remove unused dependency|[URL](https://github.com/taskcluster/taskcluster/commit/544e21d605d782804679e03528b55e81fe618a37)|2019-04-22 12:35:20
+|857|allcontributors[bot]|docs: add arshadkazmi42 as a contributor (#623) docs: update README.md docs: update .all-contributorsrc|[URL](https://github.com/taskcluster/taskcluster/commit/47e624812b715d30fdee85f046df1b440ef05992)|2019-04-22 12:22:01
+|856|arshadkazmi42|[UI] Add top margin to headers in documentation (#613)|[URL](https://github.com/taskcluster/taskcluster/commit/e1455538c5662c8f5a836e39f330b1c9cc1c3fbe)|2019-04-22 11:56:09
 |855|helfi92|[UI] Remove toggle effect from title on sidebar (#620) [UI] Remove toggle effect from title on sidebar Add requested changes|[URL](https://github.com/taskcluster/taskcluster/commit/298acb9efa4acfcf2654c43c5afdcd8c246df642)|2019-04-21 19:41:07
 |854|djmitche|Merge pull request #616 from djmitche/no-production-assume Stop requiring assume() in production code|[URL](https://github.com/taskcluster/taskcluster/commit/fee4711e3933c5a89dde64e484729683a4412707)|2019-04-20 14:24:35
 |853|djmitche|Stop requiring assume() in production code|[URL](https://github.com/taskcluster/taskcluster/commit/5fbeba6668de6d3a1ac5347f5ec13d01c60b2b28)|2019-04-08 22:17:24

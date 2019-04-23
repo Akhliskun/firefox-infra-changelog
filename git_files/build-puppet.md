@@ -1,7 +1,9 @@
-## BUILD-PUPPET COMMIT MARKDOWN TABLE SINCE 2019-04-08 10:31:42.214922
+## BUILD-PUPPET COMMIT MARKDOWN TABLE SINCE 2019-04-09 07:15:19.510959
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|102|mitchhentges|Merge pull request #456 from mitchhentges/focus-publish-nightly-fix Updates mozapkpublisher to 2.0.2|[URL](https://github.com/mozilla-releng/build-puppet/commit/5d412b5e4bd50973ae15ee4fb135ff7a72967eb2)|2019-04-22 15:16:24
+|101|mitchhentges|Updates mozapkpublisher to 2.0.2|[URL](https://github.com/mozilla-releng/build-puppet/commit/b5fd83b0e375d0f23bd1192d4293f9b45ed8c31c)|2019-04-22 14:56:37
 |100|MihaiTabara|Merge pull request #455 from MihaiTabara/appservices Add appservices support. Bump scriptworker 23.0.2|[URL](https://github.com/mozilla-releng/build-puppet/commit/e659387382dadd23de6c01c7e033ec2e3e639516)|2019-04-19 11:01:33
 |99|mutterroland|Merge pull request #454 from mozilla-releng/pyup-scheduled-update-2019-04-17 Scheduled weekly dependency update for week 15|[URL](https://github.com/mozilla-releng/build-puppet/commit/20efa53ec39b3c670ea4f8f4f79c814afcf2ff5e)|2019-04-18 03:08:37
 |98|pyup-bot|Update networkx from 2.2 to 2.3|[URL](https://github.com/mozilla-releng/build-puppet/commit/64d8930524d207285ce6066304fe2cdec30c7b0b)|2019-04-17 13:05:21
