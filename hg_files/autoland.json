@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83742
+    "last_push_id": 83749
   },
   "1": {
     "changeset_number": "35344",
@@ -48785,21 +48785,6 @@
         "commit_message": "Backed out changeset 2cc5bbbfe082 (bug 1544758) for Android 1proc failures",
         "files_changed": [
           "taskcluster/taskgraph/transforms/tests.py"
-        ]
-      }
-    }
-  },
-  "916": {
-    "changeset_number": "83595",
-    "pusher": "bclary@mozilla.com",
-    "date_of_push": "2019-04-19 15:44:11",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=4a10eafaa8ad",
-        "commiter_name": "Bob Clary <bclary@bclary.com>",
-        "commit_message": "Bug 1544044 - turn off duplicated raptor jobs on android, r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28166",
-        "files_changed": [
-          "taskcluster/ci/test/raptor.yml"
         ]
       }
     }

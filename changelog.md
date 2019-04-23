@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-23 04:16:46 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-23 07:31:43 UTC.
 |	OpenCloudConfig	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/OpenCloudConfig.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/OpenCloudConfig.md)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -219,4 +219,5 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
+|[Link](https://github.com/mozilla-releng/mozapkpublisher/commit/49254cd61a4536206651424179a39e846d61d8b1)|2.0.2|mitchhentges|N/A|2019-04-22 14:36:01|
 |[Link](https://github.com/mozilla-releng/mozapkpublisher/commit/49254cd61a4536206651424179a39e846d61d8b1)|2.0.2|mitchhentges|N/A|2019-04-22 14:36:01|

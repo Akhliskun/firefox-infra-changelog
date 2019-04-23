@@ -14524,21 +14524,6 @@
     }
   },
   "159": {
-    "changeset_number": "35890",
-    "pusher": "dluca@mozilla.com",
-    "date_of_push": "2019-04-20 00:44:39",
-    "changeset_commits": {
-      "6": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=4a10eafaa8ad",
-        "commiter_name": "Bob Clary <bclary@bclary.com>",
-        "commit_message": "Bug 1544044 - turn off duplicated raptor jobs on android, r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28166",
-        "files_changed": [
-          "taskcluster/ci/test/raptor.yml"
-        ]
-      }
-    }
-  },
-  "159": {
     "changeset_number": "35901",
     "pusher": "shindli@mozilla.com",
     "date_of_push": "2019-04-22 18:47:10",
