@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35904
+    "last_push_id": 35905
   },
   "1": {
     "changeset_number": "35344",
@@ -15509,6 +15509,30 @@
         "commit_message": "No Bug, taskcluster/docker/funsize-update-generator pipfile-update. r=bhearsum\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28323",
         "files_changed": [
           "taskcluster/docker/funsize-update-generator/Pipfile.lock"
+        ]
+      }
+    }
+  },
+  "160": {
+    "changeset_number": "35905",
+    "pusher": "dvarga@mozilla.com",
+    "date_of_push": "2019-04-23 12:53:27",
+    "changeset_commits": {
+      "24": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=643d7793369e",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1546100 - [tryselect] Fix tools/tryselect/test/test_fuzzy.py, r=jmaher\n\nThis was regressed by bug 1544816 but the test never ran on the push that regressed.\nThis patch also updates the 'files-changed' for the tryselect task.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28386",
+        "files_changed": [
+          "taskcluster/ci/source-test/python.yml",
+          "tools/tryselect/test/test_fuzzy.py"
+        ]
+      },
+      "25": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=8cef878e7aa6",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1546100 - Turn off e10s for mochitest-a11y/chrome in task configuration (Backs out effa55bd84bb and 2f12958d4e8c), r=jmaher\n\nTurns out these suites were hardcoded to be non-e10s in the mochitest harness.\nSo while it looked like they were working with e10s in treeherder, they were\nactually still running with it disabled.\n\nTurning e10s on causes both suites to permafail due to timeouts.\n\nDepends on D28386\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28387",
+        "files_changed": [
+          "taskcluster/ci/test/mochitest.yml"
         ]
       }
     }

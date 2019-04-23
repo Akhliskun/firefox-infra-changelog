@@ -1,7 +1,9 @@
-## BUILD-CLOUD-TOOLS COMMIT MARKDOWN TABLE SINCE 2019-04-09 10:30:36.103492
+## BUILD-CLOUD-TOOLS COMMIT MARKDOWN TABLE SINCE 2019-04-09 14:48:55.853113
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|10|garbas|Merge pull request #379 from garbas/releng-frontend-cloudops terraform: move static pages to cloudops managed S3 buckets|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/88d853fd79dd41b11f957d8ba571ba39eee6149a)|2019-04-23 11:16:50
+|9|garbas|terraform: point to cloudfront instances under cloudops account|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/a65be299b354707fdc2f0253b178c152d4a2e200)|2019-04-23 11:10:28
 |8|dividehex|Merge branch 'La0-eventlistener-dns'|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/2638ee1cffe3247220b09309b31968da45baba36)|2019-04-11 15:37:54
 |7|dividehex|Merge branch 'eventlistener-dns' of github.com:La0/build-cloud-tools into La0-eventlistener-dns|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/f00618266a297cb38c24255beb19e2e2a971ceb4)|2019-04-11 15:31:20
 |6|dividehex|Merge branch 'garbas-shipit-frontend-dns-change'|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/2f2084122aae6f50d2857648c6311cd4ade0bc25)|2019-04-10 19:53:39

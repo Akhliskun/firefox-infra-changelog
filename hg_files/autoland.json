@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83749
+    "last_push_id": 83770
   },
   "1": {
     "changeset_number": "35344",
@@ -49820,6 +49820,39 @@
         "commit_message": "Bug 1546100 - Turn off e10s for mochitest-a11y/chrome in task configuration (Backs out effa55bd84bb and 2f12958d4e8c), r=jmaher\n\nTurns out these suites were hardcoded to be non-e10s in the mochitest harness.\nSo while it looked like they were working with e10s in treeherder, they were\nactually still running with it disabled.\n\nTurning e10s on causes both suites to permafail due to timeouts.\n\nDepends on D28386\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28387",
         "files_changed": [
           "taskcluster/ci/test/mochitest.yml"
+        ]
+      }
+    }
+  },
+  "921": {
+    "changeset_number": "83761",
+    "pusher": "jlorenzo@mozilla.com",
+    "date_of_push": "2019-04-23 12:08:25",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=80a5deca7438",
+        "commiter_name": "Johan Lorenzo <jlorenzo@mozilla.com>",
+        "commit_message": "Bug 1427849 - Digitally sign geckodriver binaries on Windows and Linux r=aki\n\nDigitally sign geckodriver binaries on Windows and Linux\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28185",
+        "files_changed": [
+          "taskcluster/ci/geckodriver-repack/kind.yml",
+          "taskcluster/ci/geckodriver-signing/kind.yml",
+          "taskcluster/docs/kinds.rst",
+          "taskcluster/taskgraph/transforms/geckodriver_signing.py"
+        ]
+      }
+    }
+  },
+  "922": {
+    "changeset_number": "83769",
+    "pusher": "archaeopteryx@coole-files.de",
+    "date_of_push": "2019-04-23 14:30:09",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=3b274cabedb6",
+        "commiter_name": "Sebastian Hengst <archaeopteryx@coole-files.de>",
+        "commit_message": "Bug 1535484 - Switch node devtools and debugger tasks to tier 3 until they provide structured failure output. a=tasks-without-failure-summary DONTBUILD",
+        "files_changed": [
+          "taskcluster/ci/source-test/node.yml"
         ]
       }
     }
