@@ -1,7 +1,10 @@
-## BUILD-CLOUD-TOOLS COMMIT MARKDOWN TABLE SINCE 2019-04-09 14:48:55.853113
+## BUILD-CLOUD-TOOLS COMMIT MARKDOWN TABLE SINCE 2019-04-09 22:12:15.767034
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|13|garbas|terraform: Fix releng stuff (#382) Revert "Revert "terraform: move static pages to cloudops managed S3 buckets" (#380)" This reverts commit b73e56f18956ce705d70741a20181eec552ba211. already exists|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/e08a2a542121bf3ffda8aa2b1a552a673f4f34a1)|2019-04-23 17:13:45
+|12|dividehex|Add root . to moztools hosted zone name (#381)|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/55518a745b7076ea407cc96d860594363777dbbe)|2019-04-23 15:40:34
+|11|rail|Revert "terraform: move static pages to cloudops managed S3 buckets" (#380)|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/b73e56f18956ce705d70741a20181eec552ba211)|2019-04-23 15:08:25
 |10|garbas|Merge pull request #379 from garbas/releng-frontend-cloudops terraform: move static pages to cloudops managed S3 buckets|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/88d853fd79dd41b11f957d8ba571ba39eee6149a)|2019-04-23 11:16:50
 |9|garbas|terraform: point to cloudfront instances under cloudops account|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/a65be299b354707fdc2f0253b178c152d4a2e200)|2019-04-23 11:10:28
 |8|dividehex|Merge branch 'La0-eventlistener-dns'|[URL](https://github.com/mozilla-releng/build-cloud-tools/commit/2638ee1cffe3247220b09309b31968da45baba36)|2019-04-11 15:37:54

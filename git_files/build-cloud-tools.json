@@ -1,8 +1,41 @@
 {
   "0": {
-    "lastChecked": "2019-04-23 11:48:57.391359"
+    "lastChecked": "2019-04-23 19:12:17.434442"
   },
   "1": {
+    "sha": "e08a2a542121bf3ffda8aa2b1a552a673f4f34a1",
+    "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/e08a2a542121bf3ffda8aa2b1a552a673f4f34a1",
+    "commiter_name": "garbas",
+    "commiter_email": null,
+    "commit_message": "terraform: Fix releng stuff (#382)    Revert \"Revert \"terraform: move static pages to cloudops managed S3 buckets\" (#380)\"    This reverts commit b73e56f18956ce705d70741a20181eec552ba211.      already exists",
+    "commit_date": "2019-04-23 17:13:45",
+    "files_changed": [
+      "terraform/base/route53.tf"
+    ]
+  },
+  "2": {
+    "sha": "55518a745b7076ea407cc96d860594363777dbbe",
+    "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/55518a745b7076ea407cc96d860594363777dbbe",
+    "commiter_name": "dividehex",
+    "commiter_email": "rail@mozilla.com",
+    "commit_message": "Add root . to moztools hosted zone name (#381)",
+    "commit_date": "2019-04-23 15:40:34",
+    "files_changed": [
+      "terraform/base/route53.tf"
+    ]
+  },
+  "3": {
+    "sha": "b73e56f18956ce705d70741a20181eec552ba211",
+    "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/b73e56f18956ce705d70741a20181eec552ba211",
+    "commiter_name": "rail",
+    "commiter_email": null,
+    "commit_message": "Revert \"terraform: move static pages to cloudops managed S3 buckets\" (#380)",
+    "commit_date": "2019-04-23 15:08:25",
+    "files_changed": [
+      "terraform/base/route53.tf"
+    ]
+  },
+  "4": {
     "sha": "88d853fd79dd41b11f957d8ba571ba39eee6149a",
     "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/88d853fd79dd41b11f957d8ba571ba39eee6149a",
     "commiter_name": "garbas",
@@ -13,7 +46,7 @@
       "terraform/base/route53.tf"
     ]
   },
-  "2": {
+  "5": {
     "sha": "a65be299b354707fdc2f0253b178c152d4a2e200",
     "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/a65be299b354707fdc2f0253b178c152d4a2e200",
     "commiter_name": "garbas",
@@ -24,7 +57,7 @@
       "terraform/base/route53.tf"
     ]
   },
-  "3": {
+  "6": {
     "sha": "2638ee1cffe3247220b09309b31968da45baba36",
     "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/2638ee1cffe3247220b09309b31968da45baba36",
     "commiter_name": "dividehex",
@@ -35,7 +68,7 @@
       "terraform/base/route53.tf"
     ]
   },
-  "4": {
+  "7": {
     "sha": "f00618266a297cb38c24255beb19e2e2a971ceb4",
     "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/f00618266a297cb38c24255beb19e2e2a971ceb4",
     "commiter_name": "dividehex",
@@ -46,7 +79,7 @@
       "terraform/base/route53.tf"
     ]
   },
-  "5": {
+  "8": {
     "sha": "2f2084122aae6f50d2857648c6311cd4ade0bc25",
     "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/2f2084122aae6f50d2857648c6311cd4ade0bc25",
     "commiter_name": "dividehex",
@@ -57,7 +90,7 @@
       "terraform/base/route53.tf"
     ]
   },
-  "6": {
+  "9": {
     "sha": "1e174b58c66ff028838f21f852028da0c0808678",
     "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/1e174b58c66ff028838f21f852028da0c0808678",
     "commiter_name": "dividehex",
@@ -68,7 +101,7 @@
       "terraform/base/route53.tf"
     ]
   },
-  "7": {
+  "10": {
     "sha": "f033efed161948ac58fcf8d27dd0916c850da112",
     "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/f033efed161948ac58fcf8d27dd0916c850da112",
     "commiter_name": "dividehex",
@@ -79,7 +112,7 @@
       "terraform/base/route53.tf"
     ]
   },
-  "8": {
+  "11": {
     "sha": "e987befaa7836352a8fc899b295b4b632951f037",
     "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/e987befaa7836352a8fc899b295b4b632951f037",
     "commiter_name": "garbas",
@@ -90,7 +123,7 @@
       "terraform/base/route53.tf"
     ]
   },
-  "9": {
+  "12": {
     "sha": "3962e62c72251ae9fc531bdb5b14ba40243a5b70",
     "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/3962e62c72251ae9fc531bdb5b14ba40243a5b70",
     "commiter_name": "dividehex",
@@ -101,7 +134,7 @@
       "terraform/base/route53.tf"
     ]
   },
-  "10": {
+  "13": {
     "sha": "7fe44bf80d48b949c4d65c7642e3e4b69780af84",
     "url": "https://github.com/mozilla-releng/build-cloud-tools/commit/7fe44bf80d48b949c4d65c7642e3e4b69780af84",
     "commiter_name": "La0",

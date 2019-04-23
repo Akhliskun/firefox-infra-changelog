@@ -1,7 +1,11 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-09 14:48:55.853113
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-09 22:12:15.767034
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|878|djmitche|update docker image|[URL](https://github.com/taskcluster/taskcluster/commit/a6344990b57912a1da8bc2c4c65f15deda356bac)|2019-04-23 18:09:04
+|877|helfi92|Merge pull request #625 from helfi92/workers-not-displaying [Bug 1545857](https://bugzilla.mozilla.org/show_bug.cgi?id=1545857)  - Workers not displaying|[URL](https://github.com/taskcluster/taskcluster/commit/e420e0b648b4ce81e5a9ef3e88d37ce59f09fa8d)|2019-04-23 17:29:21
+|876|djmitche|Merge pull request #617 from djmitche/bug1526705 [Bug 1526705](https://bugzilla.mozilla.org/show_bug.cgi?id=1526705)  - await workerinfo updates|[URL](https://github.com/taskcluster/taskcluster/commit/9350f9d8ff7d69920bf50f3fcf4f092d07593b13)|2019-04-23 17:18:16
+|875|helfi92|Add fetchPolicy network-only to task view (#628)|[URL](https://github.com/taskcluster/taskcluster/commit/eca9d6b6c5f60c3042d915c362b90811570260d5)|2019-04-23 15:29:53
 |874|imbstack|Worker Manager (#580) Worker Manager|[URL](https://github.com/taskcluster/taskcluster/commit/fceee803b90809036399139f98a720e851d0e71d)|2019-04-22 22:37:17
 |873|imbstack|Fix remaining review comments|[URL](https://github.com/taskcluster/taskcluster/commit/38b385d9de55e9520e1e11e283eb32ddd23ad6f2)|2019-04-22 20:53:37
 |872|imbstack|Finish up most outstanding TODOs that won't be followed up in the next PR|[URL](https://github.com/taskcluster/taskcluster/commit/0fab3068782d651f60e632fb5652283a1af3cdb5)|2019-04-22 20:20:40

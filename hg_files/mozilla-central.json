@@ -15499,21 +15499,6 @@
     }
   },
   "160": {
-    "changeset_number": "35903",
-    "pusher": "opoprus@mozilla.com",
-    "date_of_push": "2019-04-23 00:46:44",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=8d1a81e59d2c",
-        "commiter_name": "ffxbld <ffxbld@mozilla.com>",
-        "commit_message": "No Bug, taskcluster/docker/funsize-update-generator pipfile-update. r=bhearsum\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28323",
-        "files_changed": [
-          "taskcluster/docker/funsize-update-generator/Pipfile.lock"
-        ]
-      }
-    }
-  },
-  "160": {
     "changeset_number": "35905",
     "pusher": "dvarga@mozilla.com",
     "date_of_push": "2019-04-23 12:53:27",

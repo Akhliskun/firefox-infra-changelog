@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83770
+    "last_push_id": 83819
   },
   "1": {
     "changeset_number": "35344",
@@ -49801,30 +49801,6 @@
     }
   },
   "921": {
-    "changeset_number": "83715",
-    "pusher": "ahalberstadt@mozilla.com",
-    "date_of_push": "2019-04-22 23:00:54",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=643d7793369e",
-        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
-        "commit_message": "Bug 1546100 - [tryselect] Fix tools/tryselect/test/test_fuzzy.py, r=jmaher\n\nThis was regressed by bug 1544816 but the test never ran on the push that regressed.\nThis patch also updates the 'files-changed' for the tryselect task.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28386",
-        "files_changed": [
-          "taskcluster/ci/source-test/python.yml",
-          "tools/tryselect/test/test_fuzzy.py"
-        ]
-      },
-      "2": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=8cef878e7aa6",
-        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
-        "commit_message": "Bug 1546100 - Turn off e10s for mochitest-a11y/chrome in task configuration (Backs out effa55bd84bb and 2f12958d4e8c), r=jmaher\n\nTurns out these suites were hardcoded to be non-e10s in the mochitest harness.\nSo while it looked like they were working with e10s in treeherder, they were\nactually still running with it disabled.\n\nTurning e10s on causes both suites to permafail due to timeouts.\n\nDepends on D28386\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28387",
-        "files_changed": [
-          "taskcluster/ci/test/mochitest.yml"
-        ]
-      }
-    }
-  },
-  "921": {
     "changeset_number": "83761",
     "pusher": "jlorenzo@mozilla.com",
     "date_of_push": "2019-04-23 12:08:25",
@@ -49853,6 +49829,119 @@
         "commit_message": "Bug 1535484 - Switch node devtools and debugger tasks to tier 3 until they provide structured failure output. a=tasks-without-failure-summary DONTBUILD",
         "files_changed": [
           "taskcluster/ci/source-test/node.yml"
+        ]
+      }
+    }
+  },
+  "922": {
+    "changeset_number": "83784",
+    "pusher": "ahalberstadt@mozilla.com",
+    "date_of_push": "2019-04-23 16:49:04",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=00c2b2449639",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1523303 - [taskgraph] Define suite \"categories\" rather than flavours task configs, r=gbrown\n\nCurrently we have the concept of a \"suite\" and a \"flavour\" in our task\nconfiguration.  Typically, the \"suite\" refers to the high-level test harness\nlike \"mochitest\" or \"reftest\", whereas the flavour is more specific, e.g\n\"browser-chrome-instrumentation\" or \"crashtest\". However the line between suite\nand flavour is not applied with any semblance of consistency which results in\ninconsistent naming throughout the tree.\n\nThis patch gets rid of the concept of \"flavours\" entirely (at least when it\ncomes to task configuration). A suite is a type of test run, for example:\n\n    - mochitest-plain\n    - mochitest-devtools-chrome\n    - mochitest-browser-chrome-instrumentation\n    - jsreftest\n    - reftest\n    - firefox-ui-functional-remote\n    etc\n\nThere is no confusion here between suites and flavours because flavours don't\nexist. However, there are a couple of places where we *do* need to know what\n\"test harness\" is used to run a suite. These cases are:\n\n    1. For SCHEDULES moz.build rules\n    2. For the desktop_unittest.py mozharness script which takes arguments like\n       --mochitest-suite=browser (this is not a compelling use of this information\n       and should be refactored to work more like the android_emulator_unittest.py\n       script)\n\nSo to get this information, this patch introduces a new concept of a \"category\"\nwhich is the overall \"test harness\" that runs the suite. For many suites, the\n\"category\" is identical to the suite name. Unlike flavours, \"categories\" have\nno bearing on how we call or refer to the suite.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27554",
+        "files_changed": [
+          "taskcluster/ci/test/compiled.yml",
+          "taskcluster/ci/test/firefox-ui.yml",
+          "taskcluster/ci/test/misc.yml",
+          "taskcluster/ci/test/mochitest.yml",
+          "taskcluster/ci/test/reftest.yml",
+          "taskcluster/ci/test/web-platform.yml",
+          "taskcluster/ci/test/xpcshell.yml",
+          "taskcluster/docs/attributes.rst",
+          "taskcluster/taskgraph/transforms/tests.py",
+          "tools/tryselect/selectors/chooser/app.py",
+          "tools/tryselect/test/test_chooser.py"
+        ]
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=60c512bab3e9",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1523303 - Align mozharness suite names with the ones in 'moztest.resolve', r=gbrown\n\nThis officially makes 'moztest.resolve' the source of truth when it comes to\nsuite names. It aligns that file with the names used in both the\ndesktop_unittest and android_emulator_unittest scripts.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27555",
+        "files_changed": [
+          "taskcluster/ci/test/mochitest.yml",
+          "taskcluster/taskgraph/target_tasks.py",
+          "testing/mach_commands.py",
+          "testing/mozbase/moztest/moztest/resolve.py",
+          "testing/mozbase/moztest/tests/test_resolve.py",
+          "testing/mozharness/configs/android/android_common.py",
+          "testing/mozharness/configs/unittests/linux_unittest.py",
+          "testing/mozharness/configs/unittests/mac_unittest.py",
+          "testing/mozharness/configs/unittests/win_unittest.py",
+          "testing/mozharness/mozharness/mozilla/testing/errors.py",
+          "testing/mozharness/mozharness/mozilla/testing/per_test_base.py",
+          "testing/mozharness/mozharness/mozilla/testing/testbase.py",
+          "testing/mozharness/scripts/android_emulator_unittest.py",
+          "testing/mozharness/scripts/android_hardware_unittest.py",
+          "tools/tryselect/tasks.py",
+          "tools/tryselect/test/test_mozharness_integration.py",
+          "tools/tryselect/test/test_tasks.py"
+        ]
+      }
+    }
+  },
+  "923": {
+    "changeset_number": "83787",
+    "pusher": "gbrown@mozilla.com",
+    "date_of_push": "2019-04-23 16:59:45",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=c9e17214f445",
+        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
+        "commit_message": "Bug 1501558 - Move Android cppunit tests to 7.0 x86_64; r=jmaher\n\nRun cppunit on Android 7.0 instead of Android 4.3.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28297",
+        "files_changed": [
+          "taskcluster/ci/test/test-sets.yml"
+        ]
+      }
+    }
+  },
+  "924": {
+    "changeset_number": "83791",
+    "pusher": "sdonner@mozilla.com",
+    "date_of_push": "2019-04-23 17:48:02",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=176055665c32",
+        "commiter_name": "Stephen Donner <stephen.donner@gmail.com>",
+        "commit_message": "Bug 1544360: run talos-damp only on try, due to crashes.  r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28437",
+        "files_changed": [
+          "taskcluster/ci/test/talos.yml",
+          "taskcluster/ci/test/test-platforms.yml"
+        ]
+      }
+    }
+  },
+  "925": {
+    "changeset_number": "83798",
+    "pusher": "sdonner@mozilla.com",
+    "date_of_push": "2019-04-23 18:49:59",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=6356a349f12f",
+        "commiter_name": "Stephen Donner <stephen.donner@gmail.com>",
+        "commit_message": "Bug 1531876. Only run talos-perf-reftest-singletons via try, on windows10-aarch64. r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28500",
+        "files_changed": [
+          "taskcluster/ci/test/talos.yml"
+        ]
+      }
+    }
+  },
+  "926": {
+    "changeset_number": "83819",
+    "pusher": "bhearsum@mozilla.com",
+    "date_of_push": "2019-04-23 21:47:16",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=2b9ff41f9e37",
+        "commiter_name": "Ben Hearsum <bhearsum@mozilla.com>",
+        "commit_message": "Bug 1546113 - switch to GCP balrog instance for staging releases r=rail\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28370",
+        "files_changed": [
+          "taskcluster/ci/release-secondary-update-verify-config/kind.yml",
+          "taskcluster/ci/release-update-verify-config/kind.yml",
+          "testing/mozharness/configs/releases/dev_updates_firefox_devedition.py",
+          "testing/mozharness/configs/releases/dev_updates_firefox_release_birch.py"
         ]
       }
     }
