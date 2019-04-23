@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 3458
+    "last_push_id": 3462
   },
   "1": {
     "changeset_number": "3358",
@@ -2215,6 +2215,88 @@
         "commit_message": "testing: run template sync test against Mercurial 4.9.1\n\n4.9.1 is the version we have on the server, and therefore\nthe version we should run this test against. I've also added\na comment saying this number should always match our current\nserver version.",
         "files_changed": [
           "hgserver/tests/test-template-sync.t"
+        ]
+      }
+    }
+  },
+  "84": {
+    "changeset_number": "3459",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-23 22:26:29",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=675b07956340",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "terraform: remove `hgmointernal.com` Route53 private hosted zone\n\nWe switched to a public hosted zone instead, so the private\nzone is no longer needed.",
+        "files_changed": [
+          "terraform/main.tf"
+        ]
+      }
+    }
+  },
+  "85": {
+    "changeset_number": "3460",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-23 22:28:01",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=fae277edab13",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/monitoring-agent: move `hgweb` specific components behind a variable (Bug 1545434) r=smacleod\n\nThis way we can deploy our Telegraf config to hgssh,\nand monitor host-specific things (such as aggregator\nlag on hgssh, consumer lag on hgweb, etc).\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28150",
+        "files_changed": [
+          "ansible/deploy-hgweb.yml",
+          "ansible/deploy-mirrors.yml",
+          "ansible/roles/monitoring-agent/templates/hgweb.conf.j2",
+          "ansible/roles/monitoring-agent/templates/telegraf.conf.j2"
+        ]
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=7853f082ab09",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "vcsreplicator: add `--telegraf` flag to aggregator lag check (Bug 1545434) r=smacleod\n\nThis commit adds a `--telegraf` flag to the aggregator lag check\nscript running on hgssh. When the script is run with this flag,\nthe output will be formatted as JSON, consumable by Telegraf's\n`exec` plugin. With this flag added, we will be able to send\naggregator lag data to InfluxDB for monitoring/alerting purposes.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28151",
+        "files_changed": [
+          "pylib/vcsreplicator/tests/test-check-aggregator-lag.t",
+          "pylib/vcsreplicator/vcsreplicator/nagios.py"
+        ]
+      },
+      "3": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=8644eae3410c",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/monitoring-agent: add `hgssh` specific plugins to Telegraf config (Bug 1545434) r=smacleod\n\nThis commit adds a `hgssh` specific set of configuration options\nto the Telegraf configuration file. At the moment we track the\nlag of the \"aggregator\" replication daemons, and the presence\nof processes for those daemons. We also apply the `monitoring-agent`\nrole in the hgssh deploy playbook and set `hgssh` as the hosttype.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28152",
+        "files_changed": [
+          "ansible/deploy-hgssh.yml",
+          "ansible/roles/monitoring-agent/templates/hgssh.conf.j2",
+          "ansible/roles/monitoring-agent/templates/telegraf.conf.j2"
+        ]
+      }
+    }
+  },
+  "86": {
+    "changeset_number": "3461",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-23 22:38:14",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=a9512159265c",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "terraform: allow MDC1 hosts to send traffic to InfluxDB test instance (Bug 1545434)\n\nForgot to add these new hosts to the security group rule.",
+        "files_changed": [
+          "terraform/modules/aws-vpc/main.tf"
+        ]
+      }
+    }
+  },
+  "87": {
+    "changeset_number": "3462",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-23 23:22:41",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=bdc17e270d0b",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/monitoring-agent: use `elif` instead of `else` in Jinja2 template\n\nAlso use double quotes to indicate a string.",
+        "files_changed": [
+          "ansible/roles/monitoring-agent/templates/telegraf.conf.j2"
         ]
       }
     }
