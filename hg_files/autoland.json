@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83842
+    "last_push_id": 83848
   },
   "1": {
     "changeset_number": "35344",
@@ -49914,24 +49914,6 @@
     }
   },
   "926": {
-    "changeset_number": "83819",
-    "pusher": "bhearsum@mozilla.com",
-    "date_of_push": "2019-04-23 21:47:16",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=2b9ff41f9e37",
-        "commiter_name": "Ben Hearsum <bhearsum@mozilla.com>",
-        "commit_message": "Bug 1546113 - switch to GCP balrog instance for staging releases r=rail\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28370",
-        "files_changed": [
-          "taskcluster/ci/release-secondary-update-verify-config/kind.yml",
-          "taskcluster/ci/release-update-verify-config/kind.yml",
-          "testing/mozharness/configs/releases/dev_updates_firefox_devedition.py",
-          "testing/mozharness/configs/releases/dev_updates_firefox_release_birch.py"
-        ]
-      }
-    }
-  },
-  "926": {
     "changeset_number": "83832",
     "pusher": "james@hoppipolla.co.uk",
     "date_of_push": "2019-04-24 00:12:40",
@@ -50906,6 +50888,21 @@
           "testing/web-platform/meta/worklets/audio-worklet-import.https.html.ini",
           "testing/web-platform/tests/tools/wptrunner/wptrunner/browsers/fennec.py",
           "testing/web-platform/tests/tools/wptrunner/wptrunner/executors/executormarionette.py"
+        ]
+      }
+    }
+  },
+  "928": {
+    "changeset_number": "83845",
+    "pusher": "mh@glandium.org",
+    "date_of_push": "2019-04-24 02:01:20",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=2d7e3754d966",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1545343 - Run mozharness tests with the intended command line on Windows. r=tomprince\n\nBug 1474897 changed things such that Windows builds ended up in the\nlinux/macosx branch. That still works somehow, but ends up breaking when\nwrapping with run-task. This change restores the originally intended\ncommand line.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28017",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/job/mozharness_test.py"
         ]
       }
     }

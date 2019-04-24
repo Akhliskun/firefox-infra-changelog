@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-23 22:47:41 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-24 00:27:23 UTC.
 |	OpenCloudConfig	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/OpenCloudConfig.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/OpenCloudConfig.md)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -11,7 +11,7 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=7133f3098dc5)|Backed out 4 changesets [Bug 1501562](https://bugzilla.mozilla.org/show_bug.cgi?id=1501562)  for failing allowed-to-play.html on a CLOSED TREE Backed out changeset c666c0a0d042 [Bug 1501562](https://bugzilla.mozilla.org/show_bug.cgi?id=1501562)  Backed out changeset 7010f2e26969 [Bug 1501562](https://bugzilla.mozilla.org/show_bug.cgi?id=1501562)  Backed out changeset 8045a87e5ce6 [Bug 1501562](https://bugzilla.mozilla.org/show_bug.cgi?id=1501562)  Backed out changeset f5d44a3e3a7a [Bug 1501562](https://bugzilla.mozilla.org/show_bug.cgi?id=1501562) |apavel@mozilla.com||2019-04-24 01:33:51|
+|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=2d7e3754d966)|[Bug 1545343](https://bugzilla.mozilla.org/show_bug.cgi?id=1545343)  - Run mozharness tests with the intended command line on Windows. r=tomprince [Bug 1474897](https://bugzilla.mozilla.org/show_bug.cgi?id=1474897)  changed things such that Windows builds ended up in the linux/macosx branch. That still works somehow, but ends up breaking when wrapping with run-task. This change restores the originally intended command line. Differential Revision: https://phabricator.services.mozilla.com/D28017|mh@glandium.org|tomprince|2019-04-24 02:01:20|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f04be3819486)|[Bug 1543872](https://bugzilla.mozilla.org/show_bug.cgi?id=1543872)  [taskgraph] Simplify the calculated path to the root of mozilla-central; r=dustin On windows, the generated path will be close to the path length limits, which causes `mach try` to fail. Differential Revision: https://phabricator.services.mozilla.com/D28554|mozilla@hocat.ca|dustin|2019-04-24 00:31:24|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f5d44a3e3a7a)|[Bug 1501562](https://bugzilla.mozilla.org/show_bug.cgi?id=1501562)  - Run wpt against geckoview r=jgraham This patch leaves wpt running against fennec on androidx86 as tier2, adds wpt to run against geckoview testactivity on android x86_64 as tier3, and adds enough metadata to run_info_extras to help differentiate the two in expectation files. Fennec is "os == android and not e10s", while geckoview is "os == android and e10s". Differential Revision: https://phabricator.services.mozilla.com/D27182|james@hoppipolla.co.uk|jgraham|2019-04-24 00:12:40|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=6356a349f12f)|[Bug 1531876](https://bugzilla.mozilla.org/show_bug.cgi?id=1531876)  Only run talos-perf-reftest-singletons via try, on windows10-aarch64. r=jmaher Differential Revision: https://phabricator.services.mozilla.com/D28500|sdonner@mozilla.com|jmaher|2019-04-23 18:49:59|
@@ -252,6 +252,7 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
+|[Link](https://github.com/mozilla-releng/mozapkpublisher/commit/49254cd61a4536206651424179a39e846d61d8b1)|2.0.2|mitchhentges|N/A|2019-04-22 14:36:01|
 |[Link](https://github.com/mozilla-releng/mozapkpublisher/commit/49254cd61a4536206651424179a39e846d61d8b1)|2.0.2|mitchhentges|N/A|2019-04-22 14:36:01|
 |[Link](https://github.com/mozilla-releng/mozapkpublisher/commit/49254cd61a4536206651424179a39e846d61d8b1)|2.0.2|mitchhentges|N/A|2019-04-22 14:36:01|
 |[Link](https://github.com/mozilla-releng/mozapkpublisher/commit/49254cd61a4536206651424179a39e846d61d8b1)|2.0.2|mitchhentges|N/A|2019-04-22 14:36:01|

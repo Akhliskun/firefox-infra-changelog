@@ -2205,21 +2205,6 @@
     }
   },
   "84": {
-    "changeset_number": "3457",
-    "pusher": "cosheehan@mozilla.com",
-    "date_of_push": "2019-04-19 00:42:16",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=7a33c0d1d60b",
-        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
-        "commit_message": "testing: run template sync test against Mercurial 4.9.1\n\n4.9.1 is the version we have on the server, and therefore\nthe version we should run this test against. I've also added\na comment saying this number should always match our current\nserver version.",
-        "files_changed": [
-          "hgserver/tests/test-template-sync.t"
-        ]
-      }
-    }
-  },
-  "84": {
     "changeset_number": "3459",
     "pusher": "cosheehan@mozilla.com",
     "date_of_push": "2019-04-23 22:26:29",
