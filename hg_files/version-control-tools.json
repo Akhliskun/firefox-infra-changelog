@@ -2272,21 +2272,6 @@
     }
   },
   "87": {
-    "changeset_number": "3462",
-    "pusher": "cosheehan@mozilla.com",
-    "date_of_push": "2019-04-23 23:22:41",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=bdc17e270d0b",
-        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
-        "commit_message": "ansible/monitoring-agent: use `elif` instead of `else` in Jinja2 template\n\nAlso use double quotes to indicate a string.",
-        "files_changed": [
-          "ansible/roles/monitoring-agent/templates/telegraf.conf.j2"
-        ]
-      }
-    }
-  },
-  "87": {
     "changeset_number": "3463",
     "pusher": "cosheehan@mozilla.com",
     "date_of_push": "2019-04-24 18:04:18",

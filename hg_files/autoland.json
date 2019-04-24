@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83932
+    "last_push_id": 83964
   },
   "1": {
     "changeset_number": "35344",
@@ -49946,21 +49946,6 @@
     }
   },
   "928": {
-    "changeset_number": "83845",
-    "pusher": "mh@glandium.org",
-    "date_of_push": "2019-04-24 02:01:20",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=2d7e3754d966",
-        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
-        "commit_message": "Bug 1545343 - Run mozharness tests with the intended command line on Windows. r=tomprince\n\nBug 1474897 changed things such that Windows builds ended up in the\nlinux/macosx branch. That still works somehow, but ends up breaking when\nwrapping with run-task. This change restores the originally intended\ncommand line.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28017",
-        "files_changed": [
-          "taskcluster/taskgraph/transforms/job/mozharness_test.py"
-        ]
-      }
-    }
-  },
-  "928": {
     "changeset_number": "83854",
     "pusher": "wkocher@mozilla.com",
     "date_of_push": "2019-04-24 05:40:26",
@@ -50095,6 +50080,83 @@
         "commiter_name": "Edwin Gao <egao@mozilla.com>",
         "commit_message": "Bug 1546532 - enable mochitest-a11y for windows10-aarch64 r=jmaher,gbrown\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28579",
         "files_changed": [
+          "taskcluster/ci/test/test-sets.yml"
+        ]
+      }
+    }
+  },
+  "936": {
+    "changeset_number": "83938",
+    "pusher": "egao@mozilla.com",
+    "date_of_push": "2019-04-24 21:26:40",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=7e4f89f8eafe",
+        "commiter_name": "Edwin Gao <egao@mozilla.com>",
+        "commit_message": "Bug 1546728 - enable cppunittest for windows10-aarch64 r=gbrown\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28700",
+        "files_changed": [
+          "taskcluster/ci/test/test-sets.yml"
+        ]
+      }
+    }
+  },
+  "937": {
+    "changeset_number": "83949",
+    "pusher": "hskupin@mozilla.com",
+    "date_of_push": "2019-04-24 22:43:28",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=6f64c339a2a8",
+        "commiter_name": "Henrik Skupin <mail@hskupin.info>",
+        "commit_message": "Bug 1506928 - [mozharness] Handle KeyboardInterrupt in ScriptMixin. r=gbrown\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25749",
+        "files_changed": [
+          "testing/mozharness/mozharness/base/script.py"
+        ]
+      }
+    }
+  },
+  "938": {
+    "changeset_number": "83953",
+    "pusher": "ahalberstadt@mozilla.com",
+    "date_of_push": "2019-04-24 22:45:59",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=8e4422d0040f",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1546373 - [ci] Update fenix try tasks to new index, r=rwood\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28716",
+        "files_changed": [
+          "taskcluster/ci/test/raptor.yml"
+        ]
+      }
+    }
+  },
+  "939": {
+    "changeset_number": "83960",
+    "pusher": "bhearsum@mozilla.com",
+    "date_of_push": "2019-04-24 23:44:54",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=62218e6b1c11",
+        "commiter_name": "Ben Hearsum <bhearsum@mozilla.com>",
+        "commit_message": "Bug 1546113 - Update public balrog api endpoint for stage r=Callek\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28711",
+        "files_changed": [
+          "taskcluster/taskgraph/util/partials.py"
+        ]
+      }
+    }
+  },
+  "940": {
+    "changeset_number": "83964",
+    "pusher": "egao@mozilla.com",
+    "date_of_push": "2019-04-25 00:41:49",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=dc42ae4e7a3a",
+        "commiter_name": "Edwin Gao <egao@mozilla.com>",
+        "commit_message": "Bug 1546732 - enable jittest for windows10-aarch64 r=gbrown\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28704",
+        "files_changed": [
+          "js/src/jit-test/tests/ion/lexical-check-3.js",
+          "js/src/jit-test/tests/self-test/assertRecoveredOnBailout-1.js",
           "taskcluster/ci/test/test-sets.yml"
         ]
       }
