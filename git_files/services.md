@@ -1,7 +1,8 @@
-## SERVICES COMMIT MARKDOWN TABLE SINCE 2019-04-10 03:26:22.285786
+## SERVICES COMMIT MARKDOWN TABLE SINCE 2019-04-10 20:32:43.138693
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|16|garbas|setup: move relengapi projects to cloudops (#2042)|[URL](https://github.com/mozilla/release-services/commit/2ee636bbc0a93bd713996cb38b424982b9776ca9)|2019-04-24 09:19:36
 |15|garbas|treestatus/api: adding statuspage sync (#2041)|[URL](https://github.com/mozilla/release-services/commit/5d438f48891ad19ae5da4ecf833484227beeccce)|2019-04-15 19:04:20
 |14|garbas|setup: update nixpkgs (#2016)|[URL](https://github.com/mozilla/release-services/commit/b5e79a12e11ad2c625bd7cce2330c0c9c37f09f4)|2019-04-04 10:58:36
 |13|garbas|treestatus/api: Dependencies update. (#2003)|[URL](https://github.com/mozilla/release-services/commit/34cd93d06230f2ed0ac32fb5fd69f66c211c13c0)|2019-04-01 10:15:28

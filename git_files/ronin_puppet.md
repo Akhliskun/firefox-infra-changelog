@@ -1,7 +1,8 @@
-## RONIN_PUPPET COMMIT MARKDOWN TABLE SINCE 2019-04-10 03:26:22.285786
+## RONIN_PUPPET COMMIT MARKDOWN TABLE SINCE 2019-04-10 20:32:43.138693
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|62|markcor|correct geckotwin1064ht script download (#20) GW and automation from bootstrap do not hardcode bootstrap file name type correction specify r1k mod dir in install command remove tc github lookup correction Point puppet install to r10kdir in maintain system addressing requested changes Update tooltool.py source replace markcor with mozilla-platform-o.. [continue reading](https://github.com/mozilla-platform-ops/ronin_puppet/commit/4ffab51e3d723e7d9b4e53fe6add776dc0d512c4)|[URL](https://github.com/mozilla-platform-ops/ronin_puppet/commit/4ffab51e3d723e7d9b4e53fe6add776dc0d512c4)|2019-04-24 13:18:52
 |61|dividehex|Merge pull request #19 from dividehex/macos_provisioner_script Macos provisioner script|[URL](https://github.com/mozilla-platform-ops/ronin_puppet/commit/579a667566cf18c21db9c997e9c524140fc1a757)|2019-04-19 16:58:23
 |60|markcor|Windows Generic-worker support and automation. (#17) GW and automation from bootstrap do not hardcode bootstrap file name type correction specify r1k mod dir in install command remove tc github lookup correction Point puppet install to r10kdir in maintain system addressing requested changes Update tooltool.py source replace markcor with mozilla-plat.. [continue reading](https://github.com/mozilla-platform-ops/ronin_puppet/commit/05613302d3e7ff62754d8d343b02ffa7fd9042bb)|[URL](https://github.com/mozilla-platform-ops/ronin_puppet/commit/05613302d3e7ff62754d8d343b02ffa7fd9042bb)|2019-04-19 16:49:41
 |59|dividehex|missing equals and too many quotes|[URL](https://github.com/mozilla-platform-ops/ronin_puppet/commit/a38f28d829c34ad3b155e4d95fe97f2f63835453)|2019-04-17 18:28:27

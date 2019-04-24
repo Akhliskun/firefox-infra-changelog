@@ -1,8 +1,22 @@
 {
   "0": {
-    "lastChecked": "2019-04-24 00:26:24.643451"
+    "lastChecked": "2019-04-24 17:32:47.624827"
   },
   "1": {
+    "sha": "2ee636bbc0a93bd713996cb38b424982b9776ca9",
+    "url": "https://github.com/mozilla/release-services/commit/2ee636bbc0a93bd713996cb38b424982b9776ca9",
+    "commiter_name": "garbas",
+    "commiter_email": null,
+    "commit_message": "setup: move relengapi projects to cloudops (#2042)",
+    "commit_date": "2019-04-24 09:19:36",
+    "files_changed": [
+      "lib/please_cli/please_cli/config.py",
+      "src/mapper/api/settings.py",
+      "src/tooltool/api/settings.py",
+      "src/treestatus/api/settings.py"
+    ]
+  },
+  "2": {
     "sha": "5d438f48891ad19ae5da4ecf833484227beeccce",
     "url": "https://github.com/mozilla/release-services/commit/5d438f48891ad19ae5da4ecf833484227beeccce",
     "commiter_name": "garbas",
@@ -18,7 +32,7 @@
       "src/treestatus/api/treestatus_api/api.py"
     ]
   },
-  "2": {
+  "3": {
     "sha": "b5e79a12e11ad2c625bd7cce2330c0c9c37f09f4",
     "url": "https://github.com/mozilla/release-services/commit/b5e79a12e11ad2c625bd7cce2330c0c9c37f09f4",
     "commiter_name": "garbas",
@@ -66,7 +80,7 @@
       "src/uplift/bot/requirements.nix"
     ]
   },
-  "3": {
+  "4": {
     "sha": "34cd93d06230f2ed0ac32fb5fd69f66c211c13c0",
     "url": "https://github.com/mozilla/release-services/commit/34cd93d06230f2ed0ac32fb5fd69f66c211c13c0",
     "commiter_name": "garbas",
@@ -79,7 +93,7 @@
       "src/treestatus/api/treestatus_api/__init__.py"
     ]
   },
-  "4": {
+  "5": {
     "sha": "c6d9fa98407a93dab13b673efee1f15535efcd44",
     "url": "https://github.com/mozilla/release-services/commit/c6d9fa98407a93dab13b673efee1f15535efcd44",
     "commiter_name": "garbas",
@@ -92,7 +106,7 @@
       "src/tokens/api/tokens_api/__init__.py"
     ]
   },
-  "5": {
+  "6": {
     "sha": "d49bb705d66ec34b73c8c336b0afc81c82500664",
     "url": "https://github.com/mozilla/release-services/commit/d49bb705d66ec34b73c8c336b0afc81c82500664",
     "commiter_name": "garbas",
@@ -104,7 +118,7 @@
       "src/tooltool/api/requirements_frozen.txt"
     ]
   },
-  "6": {
+  "7": {
     "sha": "150ab5fe0a50276651391b97e1ef227c1ab61f66",
     "url": "https://github.com/mozilla/release-services/commit/150ab5fe0a50276651391b97e1ef227c1ab61f66",
     "commiter_name": "garbas",
@@ -116,7 +130,7 @@
       "src/tooltool/api/tooltool_api/__init__.py"
     ]
   },
-  "7": {
+  "8": {
     "sha": "688dd403d87226a42ac26b9fbec5e7111e198c00",
     "url": "https://github.com/mozilla/release-services/commit/688dd403d87226a42ac26b9fbec5e7111e198c00",
     "commiter_name": "garbas",
@@ -140,7 +154,7 @@
       "src/uplift/backend/uplift_backend/api.py"
     ]
   },
-  "8": {
+  "9": {
     "sha": "c7ef9d9adb87f924545efd60a51e823a7f1a2743",
     "url": "https://github.com/mozilla/release-services/commit/c7ef9d9adb87f924545efd60a51e823a7f1a2743",
     "commiter_name": "garbas",
@@ -168,7 +182,7 @@
       "src/tooltool/api/settings.py"
     ]
   },
-  "9": {
+  "10": {
     "sha": "334bfb59a9cb55a92022f600bee1e4ed41dc485f",
     "url": "https://github.com/mozilla/release-services/commit/334bfb59a9cb55a92022f600bee1e4ed41dc485f",
     "commiter_name": "rail",
@@ -179,7 +193,7 @@
       "src/tooltool/api/tooltool_api/cli.py"
     ]
   },
-  "10": {
+  "11": {
     "sha": "60bc6fbdf7dcee8afa20d3e5ae7193a1d0e95873",
     "url": "https://github.com/mozilla/release-services/commit/60bc6fbdf7dcee8afa20d3e5ae7193a1d0e95873",
     "commiter_name": "garbas",
@@ -203,7 +217,7 @@
       "src/uplift/bot/default.nix"
     ]
   },
-  "11": {
+  "12": {
     "sha": "ccf864e32ddf8b462450082d1859b2bb5d93d1d7",
     "url": "https://github.com/mozilla/release-services/commit/ccf864e32ddf8b462450082d1859b2bb5d93d1d7",
     "commiter_name": "garbas",
@@ -214,7 +228,7 @@
       "src/tooltool/api/default.nix"
     ]
   },
-  "12": {
+  "13": {
     "sha": "a9194956d6dc1be57503a3dff3aa3255e242dd61",
     "url": "https://github.com/mozilla/release-services/commit/a9194956d6dc1be57503a3dff3aa3255e242dd61",
     "commiter_name": "garbas",
@@ -240,7 +254,7 @@
       "src/uplift/bot/default.nix"
     ]
   },
-  "13": {
+  "14": {
     "sha": "981d853ccfa054bac79247bca4e5aedc81d1ab14",
     "url": "https://github.com/mozilla/release-services/commit/981d853ccfa054bac79247bca4e5aedc81d1ab14",
     "commiter_name": "garbas",
@@ -259,7 +273,7 @@
       "src/tooltool/api/tooltool_api/cli.py"
     ]
   },
-  "14": {
+  "15": {
     "sha": "4687eb1f889e07c84249cd2bf6bc888fd803b528",
     "url": "https://github.com/mozilla/release-services/commit/4687eb1f889e07c84249cd2bf6bc888fd803b528",
     "commiter_name": "garbas",
@@ -311,7 +325,7 @@
       "src/uplift/bot/requirements_frozen.txt"
     ]
   },
-  "15": {
+  "16": {
     "sha": "9a1f48c56dd6e007a0131147a19c4a883a0f8a45",
     "url": "https://github.com/mozilla/release-services/commit/9a1f48c56dd6e007a0131147a19c4a883a0f8a45",
     "commiter_name": "garbas",

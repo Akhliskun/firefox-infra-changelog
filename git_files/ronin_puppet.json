@@ -1,8 +1,19 @@
 {
   "0": {
-    "lastChecked": "2019-04-24 00:26:41.458232"
+    "lastChecked": "2019-04-24 17:33:16.554622"
   },
   "1": {
+    "sha": "4ffab51e3d723e7d9b4e53fe6add776dc0d512c4",
+    "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/4ffab51e3d723e7d9b4e53fe6add776dc0d512c4",
+    "commiter_name": "markcor",
+    "commiter_email": null,
+    "commit_message": " correct geckotwin1064ht script download  (#20)    GW and automation from bootstrap      do not hardcode bootstrap file name      type correction      specify r1k mod dir in install command      remove tc github lookup      correction      Point puppet install to r10kdir in maintain system      addressing requested changes      Update tooltool.py source      replace markcor with mozilla-platform-ops in ps scripts      correct geckotwin1064ht script download",
+    "commit_date": "2019-04-24 13:18:52",
+    "files_changed": [
+      "provisioners/windows/geckotwin1064ht-bootstrap.ps1"
+    ]
+  },
+  "2": {
     "sha": "579a667566cf18c21db9c997e9c524140fc1a757",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/579a667566cf18c21db9c997e9c524140fc1a757",
     "commiter_name": "dividehex",
@@ -14,7 +25,7 @@
       "provisioners/macos/bootstrap_mojave.sh"
     ]
   },
-  "2": {
+  "3": {
     "sha": "05613302d3e7ff62754d8d343b02ffa7fd9042bb",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/05613302d3e7ff62754d8d343b02ffa7fd9042bb",
     "commiter_name": "markcor",
@@ -65,7 +76,7 @@
       "provisioners/windows/geckotwin1064hw-bootstrap.ps1"
     ]
   },
-  "3": {
+  "4": {
     "sha": "a38f28d829c34ad3b155e4d95fe97f2f63835453",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/a38f28d829c34ad3b155e4d95fe97f2f63835453",
     "commiter_name": "dividehex",
@@ -76,7 +87,7 @@
       "provisioners/macos/bootstrap_mojave.sh"
     ]
   },
-  "4": {
+  "5": {
     "sha": "a03008261cc7a6e81da358c95adba1b37aac26b5",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/a03008261cc7a6e81da358c95adba1b37aac26b5",
     "commiter_name": "dividehex",
@@ -87,7 +98,7 @@
       "modules/puppet/templates/puppet-darwin-run-puppet.sh.erb"
     ]
   },
-  "5": {
+  "6": {
     "sha": "4db1191fc2a0a6bbf5419f7db64661d615425f63",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/4db1191fc2a0a6bbf5419f7db64661d615425f63",
     "commiter_name": "dividehex",
@@ -98,7 +109,7 @@
       "provisioners/macos/bootstrap_mojave.sh"
     ]
   },
-  "6": {
+  "7": {
     "sha": "5a2bd738b844c372bb691edef994b1ca62c57288",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/5a2bd738b844c372bb691edef994b1ca62c57288",
     "commiter_name": "dividehex",
@@ -119,7 +130,7 @@
       "modules/users/manifests/single_user.pp"
     ]
   },
-  "7": {
+  "8": {
     "sha": "39794e7e7b20efce8583aa63b8411cd813239a40",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/39794e7e7b20efce8583aa63b8411cd813239a40",
     "commiter_name": "dividehex",
@@ -130,7 +141,7 @@
       "modules/puppet/manifests/atboot.pp"
     ]
   },
-  "8": {
+  "9": {
     "sha": "81366a8fac034226ba6f889ba442ee2bf94b1d1a",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/81366a8fac034226ba6f889ba442ee2bf94b1d1a",
     "commiter_name": "dividehex",
@@ -141,7 +152,7 @@
       "modules/roles_profiles/manifests/profiles/gecko_t_osx_1014_generic_worker.pp"
     ]
   },
-  "9": {
+  "10": {
     "sha": "4e342988e88ebf1dbbccb9158e75922b31e49067",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/4e342988e88ebf1dbbccb9158e75922b31e49067",
     "commiter_name": "dividehex",
@@ -154,7 +165,7 @@
       "modules/puppet/templates/puppet-darwin-run-puppet.sh.erb"
     ]
   },
-  "10": {
+  "11": {
     "sha": "f3ed75a9c190e03ac36b9576ee7dbc69607e2804",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/f3ed75a9c190e03ac36b9576ee7dbc69607e2804",
     "commiter_name": "dividehex",
@@ -165,7 +176,7 @@
       "modules/puppet/templates/puppet-darwin-run-puppet.sh.erb"
     ]
   },
-  "11": {
+  "12": {
     "sha": "e032991b22a4b79e2561d609beea2f41630e7dbc",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/e032991b22a4b79e2561d609beea2f41630e7dbc",
     "commiter_name": "dividehex",
@@ -176,7 +187,7 @@
       "modules/puppet/templates/puppet-darwin-run-puppet.sh.erb"
     ]
   },
-  "12": {
+  "13": {
     "sha": "48983e17a838a6d033209e12ffb4a3997f42e166",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/48983e17a838a6d033209e12ffb4a3997f42e166",
     "commiter_name": "dividehex",
@@ -187,7 +198,7 @@
       "modules/puppet/templates/puppet-darwin-run-puppet.sh.erb"
     ]
   },
-  "13": {
+  "14": {
     "sha": "48ea887d631cb3f161adf16b33cb6f3a03ddcb52",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/48ea887d631cb3f161adf16b33cb6f3a03ddcb52",
     "commiter_name": "dividehex",
@@ -198,7 +209,7 @@
       "modules/puppet/templates/puppet-darwin-run-puppet.sh.erb"
     ]
   },
-  "14": {
+  "15": {
     "sha": "131b8b7e90411ed3a463f5e670d65d4c7f289e54",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/131b8b7e90411ed3a463f5e670d65d4c7f289e54",
     "commiter_name": "dividehex",
@@ -213,7 +224,7 @@
       "modules/puppet/templates/puppet-darwin-run-puppet.sh.erb"
     ]
   },
-  "15": {
+  "16": {
     "sha": "29638dab3ad0d05da30553c84bdc3b71510f5625",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/29638dab3ad0d05da30553c84bdc3b71510f5625",
     "commiter_name": "dividehex",
@@ -229,7 +240,7 @@
       "modules/users/manifests/single_user.pp"
     ]
   },
-  "16": {
+  "17": {
     "sha": "e240088837c00eb3210d28554cc60d11243393b6",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/e240088837c00eb3210d28554cc60d11243393b6",
     "commiter_name": "dividehex",
@@ -240,7 +251,7 @@
       "modules/macos_utils/manifests/clean_appstate.pp"
     ]
   },
-  "17": {
+  "18": {
     "sha": "71979d90e44019453a15b8cc8f034305e483e52b",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/71979d90e44019453a15b8cc8f034305e483e52b",
     "commiter_name": "dividehex",
@@ -252,7 +263,7 @@
       "provisioners/macos/bootstrap_mojave.sh"
     ]
   },
-  "18": {
+  "19": {
     "sha": "f2f80ac2456d00c8f8520d8b68aab160a184130c",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/f2f80ac2456d00c8f8520d8b68aab160a184130c",
     "commiter_name": "dividehex",
@@ -263,7 +274,7 @@
       "provisioners/macos/bootstrap_mojave.sh"
     ]
   },
-  "19": {
+  "20": {
     "sha": "db6367dfaec69703398d22cd840ae346ec252702",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/db6367dfaec69703398d22cd840ae346ec252702",
     "commiter_name": "dividehex",
@@ -274,7 +285,7 @@
       "modules/macos_utils/manifests/clean_appstate.pp"
     ]
   },
-  "20": {
+  "21": {
     "sha": "d4b09f1e8f1858437741f0cfbe9bac29abca1429",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/d4b09f1e8f1858437741f0cfbe9bac29abca1429",
     "commiter_name": "dividehex",
@@ -332,7 +343,7 @@
       "modules/users/files/home_dirs/cltbld/.vimrc"
     ]
   },
-  "21": {
+  "22": {
     "sha": "e2753544780641205908336f9c71438f94c2b9bf",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/e2753544780641205908336f9c71438f94c2b9bf",
     "commiter_name": "dividehex",
@@ -343,7 +354,7 @@
       "modules/roles_profiles/manifests/profiles/gecko_t_osx_1014_generic_worker.pp"
     ]
   },
-  "22": {
+  "23": {
     "sha": "4b7fa706a275c01abff378cd792bd72cca726339",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/4b7fa706a275c01abff378cd792bd72cca726339",
     "commiter_name": "dividehex",
@@ -354,7 +365,7 @@
       "modules/macos_utils/manifests/clean_appstate.pp"
     ]
   },
-  "23": {
+  "24": {
     "sha": "4d1bc04306960f7d924c4e29db19110dac5d2a1f",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/4d1bc04306960f7d924c4e29db19110dac5d2a1f",
     "commiter_name": "dividehex",
@@ -367,7 +378,7 @@
       "modules/roles_profiles/manifests/roles/gecko_t_osx_1014.pp"
     ]
   },
-  "24": {
+  "25": {
     "sha": "9ba3da4734767fc03654a1ae28cf334921e8b69c",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/9ba3da4734767fc03654a1ae28cf334921e8b69c",
     "commiter_name": "dividehex",
@@ -378,7 +389,7 @@
       "modules/roles_profiles/manifests/profiles/cltbld_user.pp"
     ]
   },
-  "25": {
+  "26": {
     "sha": "152924729b906bb22c463080c5b55991b9b31bd2",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/152924729b906bb22c463080c5b55991b9b31bd2",
     "commiter_name": "dividehex",
@@ -393,7 +404,7 @@
       "modules/sudo/templates/sudoers-base.erb"
     ]
   },
-  "26": {
+  "27": {
     "sha": "a23da14d245086e7117fb1af307cff25cecbac95",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/a23da14d245086e7117fb1af307cff25cecbac95",
     "commiter_name": "dividehex",
@@ -406,7 +417,7 @@
       "modules/python2/templates/user-pip-conf.erb"
     ]
   },
-  "27": {
+  "28": {
     "sha": "742fca88dd7ed1fed411c8027f70f74db7a723a2",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/742fca88dd7ed1fed411c8027f70f74db7a723a2",
     "commiter_name": "dividehex",
@@ -417,7 +428,7 @@
       "modules/mercurial/manifests/system_hgrc.pp"
     ]
   },
-  "28": {
+  "29": {
     "sha": "e48627a2c5b5c915ed345d74d9f14fc0e0887b10",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/e48627a2c5b5c915ed345d74d9f14fc0e0887b10",
     "commiter_name": "dividehex",
@@ -430,7 +441,7 @@
       "modules/roles_profiles/manifests/profiles/homebrew.pp"
     ]
   },
-  "29": {
+  "30": {
     "sha": "1c06f22a05c5a514faf794ad0afa6aac4e5c56a1",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/1c06f22a05c5a514faf794ad0afa6aac4e5c56a1",
     "commiter_name": "dividehex",
@@ -446,7 +457,7 @@
       "modules/roles_profiles/manifests/profiles/cltbld_user.pp"
     ]
   },
-  "30": {
+  "31": {
     "sha": "6d9bfc5f966fc7249be2c993b22f2548b00e87df",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/6d9bfc5f966fc7249be2c993b22f2548b00e87df",
     "commiter_name": "dividehex",
@@ -458,7 +469,7 @@
       "modules/roles_profiles/manifests/roles/gecko_t_osx_1014.pp"
     ]
   },
-  "31": {
+  "32": {
     "sha": "21856b4531693247dedef5d2bfc859cb50169672",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/21856b4531693247dedef5d2bfc859cb50169672",
     "commiter_name": "dividehex",
@@ -469,7 +480,7 @@
       "manifests/site.pp"
     ]
   },
-  "32": {
+  "33": {
     "sha": "ddf0b15ba05e9b3d1a9a428526cb09a12eefd4f3",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/ddf0b15ba05e9b3d1a9a428526cb09a12eefd4f3",
     "commiter_name": "dividehex",
@@ -480,7 +491,7 @@
       "Vagrantfile"
     ]
   },
-  "33": {
+  "34": {
     "sha": "e479c79a62ff4bbf0c124829bb08cc77ae32a49f",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/e479c79a62ff4bbf0c124829bb08cc77ae32a49f",
     "commiter_name": "dividehex",
@@ -493,7 +504,7 @@
       "modules/users/files/home_dirs/cltbld/.vimrc"
     ]
   },
-  "34": {
+  "35": {
     "sha": "5c2f4884f17874c4c0e19cac46f98d4e44b39c64",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/5c2f4884f17874c4c0e19cac46f98d4e44b39c64",
     "commiter_name": "dividehex",
@@ -517,7 +528,7 @@
       "modules/roles_profiles/manifests/profiles/cltbld_user.pp"
     ]
   },
-  "35": {
+  "36": {
     "sha": "0b7ba5f952a262dd39075c159967a01749f8600e",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/0b7ba5f952a262dd39075c159967a01749f8600e",
     "commiter_name": "dividehex",
@@ -530,7 +541,7 @@
       "modules/roles_profiles/manifests/profiles/gui.pp"
     ]
   },
-  "36": {
+  "37": {
     "sha": "04cd95295521447f68c5e1db058174909df59147",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/04cd95295521447f68c5e1db058174909df59147",
     "commiter_name": "dividehex",
@@ -544,7 +555,7 @@
       "modules/roles_profiles/manifests/roles/gecko_t_osx_1014.pp"
     ]
   },
-  "37": {
+  "38": {
     "sha": "fb677d0ca3523e9b47d30d57221d87ac1bd68dbc",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/fb677d0ca3523e9b47d30d57221d87ac1bd68dbc",
     "commiter_name": "dividehex",
@@ -555,7 +566,7 @@
       "modules/macos_utils/manifests/autologin_user.pp"
     ]
   },
-  "38": {
+  "39": {
     "sha": "86c2e8bba373b66d8b8ff935fbd1ae3e1887b808",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/86c2e8bba373b66d8b8ff935fbd1ae3e1887b808",
     "commiter_name": "dividehex",
@@ -568,7 +579,7 @@
       "modules/macos_utils/manifests/disable_bluetooth_setup.pp"
     ]
   },
-  "39": {
+  "40": {
     "sha": "cbf4189c734a1e94a06232746cf1beb652ce1979",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/cbf4189c734a1e94a06232746cf1beb652ce1979",
     "commiter_name": "dividehex",
@@ -581,7 +592,7 @@
       "modules/roles_profiles/manifests/profiles/disable_services.pp"
     ]
   },
-  "40": {
+  "41": {
     "sha": "13f73d7697bf9a089284364be66ae70fd9af0303",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/13f73d7697bf9a089284364be66ae70fd9af0303",
     "commiter_name": "dividehex",
@@ -593,7 +604,7 @@
       "modules/roles_profiles/manifests/profiles/relops_users.pp"
     ]
   },
-  "41": {
+  "42": {
     "sha": "f96acdffc89682b88f5b41bc01d927896502b66f",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/f96acdffc89682b88f5b41bc01d927896502b66f",
     "commiter_name": "dividehex",
@@ -604,7 +615,7 @@
       "modules/users/manifests/all_users.pp"
     ]
   },
-  "42": {
+  "43": {
     "sha": "635075bbd53f908e99d965e6fa4225387ea94056",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/635075bbd53f908e99d965e6fa4225387ea94056",
     "commiter_name": "dividehex",
@@ -615,7 +626,7 @@
       "modules/users/manifests/all_users.pp"
     ]
   },
-  "43": {
+  "44": {
     "sha": "45ac2b8a4239624d793aa59e5af64cf794d1835e",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/45ac2b8a4239624d793aa59e5af64cf794d1835e",
     "commiter_name": "dividehex",
@@ -626,7 +637,7 @@
       "CODE_OF_CONDUCT.md"
     ]
   },
-  "44": {
+  "45": {
     "sha": "a428ea031ba9fef6512b02f0a3a0f735af2ee1e1",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/a428ea031ba9fef6512b02f0a3a0f735af2ee1e1",
     "commiter_name": "dividehex",
@@ -661,7 +672,7 @@
       "provisioners/macos/bootstrap_mojave.sh"
     ]
   },
-  "45": {
+  "46": {
     "sha": "c74d258b0760037088b38ae779d10a090b3e026d",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/c74d258b0760037088b38ae779d10a090b3e026d",
     "commiter_name": "Mozilla-GitHub-Standards",
@@ -672,7 +683,7 @@
       "CODE_OF_CONDUCT.md"
     ]
   },
-  "46": {
+  "47": {
     "sha": "d8333cba57adca89d14e31b7454097318d54b4a1",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/d8333cba57adca89d14e31b7454097318d54b4a1",
     "commiter_name": "dividehex",
@@ -683,7 +694,7 @@
       "modules/generic_worker/templates/proxy-httpd.conf.erb"
     ]
   },
-  "47": {
+  "48": {
     "sha": "318201e5df98c4488d29c7ec67d06859c7092c81",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/318201e5df98c4488d29c7ec67d06859c7092c81",
     "commiter_name": "dividehex",
@@ -694,7 +705,7 @@
       "modules/roles_profiles/manifests/profiles/gecko_t_osx_1014_generic_worker.pp"
     ]
   },
-  "48": {
+  "49": {
     "sha": "9141f63dd5b303c7f20498a52e22be2c016ea3ef",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/9141f63dd5b303c7f20498a52e22be2c016ea3ef",
     "commiter_name": "dividehex",
@@ -706,7 +717,7 @@
       "modules/roles_profiles/manifests/profiles/gecko_t_osx_1014_generic_worker.pp"
     ]
   },
-  "49": {
+  "50": {
     "sha": "784208aac34be4da135b1dffb43bc24c4b9102fc",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/784208aac34be4da135b1dffb43bc24c4b9102fc",
     "commiter_name": "dividehex",
@@ -717,7 +728,7 @@
       "modules/roles_profiles/manifests/profiles/disable_services.pp"
     ]
   },
-  "50": {
+  "51": {
     "sha": "17e3af3ce8e7cc2f8ae37230c59ed06b9aef4576",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/17e3af3ce8e7cc2f8ae37230c59ed06b9aef4576",
     "commiter_name": "dividehex",
@@ -728,7 +739,7 @@
       "modules/roles_profiles/manifests/profiles/suppress_dialog_boxes.pp"
     ]
   },
-  "51": {
+  "52": {
     "sha": "3a1a82bef5ad6a63db0b93d7f42907752954629d",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/3a1a82bef5ad6a63db0b93d7f42907752954629d",
     "commiter_name": "dividehex",
@@ -739,7 +750,7 @@
       "modules/roles_profiles/manifests/profiles/gecko_t_osx_1014_generic_worker.pp"
     ]
   },
-  "52": {
+  "53": {
     "sha": "4f4cd1c8aa949c4e1c9134221fc6286a00ec0413",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/4f4cd1c8aa949c4e1c9134221fc6286a00ec0413",
     "commiter_name": "dividehex",
@@ -750,7 +761,7 @@
       "modules/roles_profiles/manifests/roles/gecko_t_osx_1014.pp"
     ]
   },
-  "53": {
+  "54": {
     "sha": "e3d0c7da3f9e45339fe6e419cf8e201a0c76ad3b",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/e3d0c7da3f9e45339fe6e419cf8e201a0c76ad3b",
     "commiter_name": "dividehex",
@@ -762,7 +773,7 @@
       "modules/roles_profiles/manifests/profiles/disable_services.pp"
     ]
   },
-  "54": {
+  "55": {
     "sha": "0bc9d158da7c3b57ae741b23b403069f5f268a75",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/0bc9d158da7c3b57ae741b23b403069f5f268a75",
     "commiter_name": "dividehex",
@@ -775,7 +786,7 @@
       "modules/roles_profiles/manifests/profiles/disable_services.pp"
     ]
   },
-  "55": {
+  "56": {
     "sha": "751cf4c5ac14e1122943b8ed3f70845b37d8a97f",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/751cf4c5ac14e1122943b8ed3f70845b37d8a97f",
     "commiter_name": "dividehex",
@@ -788,7 +799,7 @@
       "modules/roles_profiles/manifests/profiles/software_updates.pp"
     ]
   },
-  "56": {
+  "57": {
     "sha": "dd6dbbfc3fc09734bbbe9077825a728821931524",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/dd6dbbfc3fc09734bbbe9077825a728821931524",
     "commiter_name": "dividehex",
@@ -799,7 +810,7 @@
       "modules/roles_profiles/manifests/profiles/gecko_t_osx_1014_generic_worker.pp"
     ]
   },
-  "57": {
+  "58": {
     "sha": "67b47e80b947122740437d42add5f1906866f0c4",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/67b47e80b947122740437d42add5f1906866f0c4",
     "commiter_name": "dividehex",
@@ -812,7 +823,7 @@
       "modules/roles_profiles/manifests/profiles/power_management.pp"
     ]
   },
-  "58": {
+  "59": {
     "sha": "06973046f9ac242f76b31d9956266d1766b3117d",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/06973046f9ac242f76b31d9956266d1766b3117d",
     "commiter_name": "dividehex",
@@ -823,7 +834,7 @@
       "provisioners/macos/bootstrap_mojave.sh"
     ]
   },
-  "59": {
+  "60": {
     "sha": "7f3991e04ade7050c5d91b5b9a64619dd522ebe7",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/7f3991e04ade7050c5d91b5b9a64619dd522ebe7",
     "commiter_name": "dividehex",
@@ -834,7 +845,7 @@
       "provisioners/macos/bootstrap_mojave.sh"
     ]
   },
-  "60": {
+  "61": {
     "sha": "1746647a6e0bf08a36d96cd9dd2a1fbbedf66726",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/1746647a6e0bf08a36d96cd9dd2a1fbbedf66726",
     "commiter_name": "dividehex",
@@ -846,7 +857,7 @@
       "modules/roles_profiles/manifests/roles/gecko_t_osx_1014.pp"
     ]
   },
-  "61": {
+  "62": {
     "sha": "5b08fcc950557080495cf84f6a2973d951246f3e",
     "url": "https://github.com/mozilla-platform-ops/ronin_puppet/commit/5b08fcc950557080495cf84f6a2973d951246f3e",
     "commiter_name": "dividehex",

@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 3462
+    "last_push_id": 3463
   },
   "1": {
     "changeset_number": "3358",
@@ -2282,6 +2282,21 @@
         "commit_message": "ansible/monitoring-agent: use `elif` instead of `else` in Jinja2 template\n\nAlso use double quotes to indicate a string.",
         "files_changed": [
           "ansible/roles/monitoring-agent/templates/telegraf.conf.j2"
+        ]
+      }
+    }
+  },
+  "87": {
+    "changeset_number": "3463",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-24 18:04:18",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=210ad037e038",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/monitoring-agent: only modify httpd access log permissions when `hosttype` is \"hgweb\"\n\nhgssh doesn't install Apache, so there's no log to modify.",
+        "files_changed": [
+          "ansible/roles/monitoring-agent/tasks/main.yml"
         ]
       }
     }

@@ -1,7 +1,9 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-10 03:26:22.285786
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-10 20:32:43.138693
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|880|djmitche|Merge pull request #630 from djmitche/no-fake-client Support web-server without pulse directly|[URL](https://github.com/taskcluster/taskcluster/commit/a0628650dc81fc39fffb72a44536eb7d8d4a7b5d)|2019-04-24 14:26:24
+|879|djmitche|Support web-server without pulse directly The old incarnation used tc-lib-pulse's FakeClient, which was intended only for testing and is no longer exposed by that library.|[URL](https://github.com/taskcluster/taskcluster/commit/03c53af187c06b3c94f7521f510eb48114243be3)|2019-04-24 13:54:06
 |878|djmitche|update docker image|[URL](https://github.com/taskcluster/taskcluster/commit/a6344990b57912a1da8bc2c4c65f15deda356bac)|2019-04-23 18:09:04
 |877|helfi92|Merge pull request #625 from helfi92/workers-not-displaying [Bug 1545857](https://bugzilla.mozilla.org/show_bug.cgi?id=1545857)  - Workers not displaying|[URL](https://github.com/taskcluster/taskcluster/commit/e420e0b648b4ce81e5a9ef3e88d37ce59f09fa8d)|2019-04-23 17:29:21
 |876|djmitche|Merge pull request #617 from djmitche/bug1526705 [Bug 1526705](https://bugzilla.mozilla.org/show_bug.cgi?id=1526705)  - await workerinfo updates|[URL](https://github.com/taskcluster/taskcluster/commit/9350f9d8ff7d69920bf50f3fcf4f092d07593b13)|2019-04-23 17:18:16
