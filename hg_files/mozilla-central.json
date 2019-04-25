@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35911
+    "last_push_id": 35914
   },
   "1": {
     "changeset_number": "35344",
@@ -17590,6 +17590,87 @@
           "testing/web-platform/tests/tools/ci/run_tc.py",
           "testing/web-platform/tests/tools/ci/start.sh",
           "testing/web-platform/tests/tools/docker/start.sh"
+        ]
+      }
+    }
+  },
+  "162": {
+    "changeset_number": "35912",
+    "pusher": "btara@mozilla.com",
+    "date_of_push": "2019-04-25 12:46:25",
+    "changeset_commits": {
+      "2": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=7e4f89f8eafe",
+        "commiter_name": "Edwin Gao <egao@mozilla.com>",
+        "commit_message": "Bug 1546728 - enable cppunittest for windows10-aarch64 r=gbrown\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28700",
+        "files_changed": [
+          "taskcluster/ci/test/test-sets.yml"
+        ]
+      },
+      "18": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=6f64c339a2a8",
+        "commiter_name": "Henrik Skupin <mail@hskupin.info>",
+        "commit_message": "Bug 1506928 - [mozharness] Handle KeyboardInterrupt in ScriptMixin. r=gbrown\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25749",
+        "files_changed": [
+          "testing/mozharness/mozharness/base/script.py"
+        ]
+      },
+      "27": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=8e4422d0040f",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1546373 - [ci] Update fenix try tasks to new index, r=rwood\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28716",
+        "files_changed": [
+          "taskcluster/ci/test/raptor.yml"
+        ]
+      },
+      "34": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=62218e6b1c11",
+        "commiter_name": "Ben Hearsum <bhearsum@mozilla.com>",
+        "commit_message": "Bug 1546113 - Update public balrog api endpoint for stage r=Callek\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28711",
+        "files_changed": [
+          "taskcluster/taskgraph/util/partials.py"
+        ]
+      },
+      "38": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=dc42ae4e7a3a",
+        "commiter_name": "Edwin Gao <egao@mozilla.com>",
+        "commit_message": "Bug 1546732 - enable jittest for windows10-aarch64 r=gbrown\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28704",
+        "files_changed": [
+          "js/src/jit-test/tests/ion/lexical-check-3.js",
+          "js/src/jit-test/tests/self-test/assertRecoveredOnBailout-1.js",
+          "taskcluster/ci/test/test-sets.yml"
+        ]
+      },
+      "56": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=1fae6818d4e4",
+        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
+        "commit_message": "Bug 1492695 - Fix android-hw jittest suite name to avoid timeouts; r=bc\n\nI still haven't managed to verify this on try, but it seems like the best\nexplanation for the timeouts.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28762",
+        "files_changed": [
+          "testing/mozharness/configs/android/android_common.py"
+        ]
+      },
+      "59": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=006af3739e10",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1546845 - Remove separate win64-aarch64 rust toolchain. r=nalexander\n\nIt was necessary when it was a different version than win64-rust, but\nthat's not the case anymore.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28761",
+        "files_changed": [
+          "taskcluster/ci/build/windows.yml",
+          "taskcluster/ci/toolchain/rust.yml"
+        ]
+      }
+    }
+  },
+  "163": {
+    "changeset_number": "35914",
+    "pusher": "rgurzau@mozilla.com",
+    "date_of_push": "2019-04-25 19:20:57",
+    "changeset_commits": {
+      "16": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=4243e8a01b2e",
+        "commiter_name": "James Graham <james@hoppipolla.co.uk>",
+        "commit_message": "Bug 1546858 - Force the wpt manifest job to rebuild the manifest, r=Aryx\n\nIf we use the downloaded manifest then any bug that leads to an error in the manifest\nmay be propogated forward. Instead force the manifest to be built from scratch in CI.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28809",
+        "files_changed": [
+          "taskcluster/ci/source-test/wpt-manifest.yml"
         ]
       }
     }

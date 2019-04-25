@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 83981
+    "last_push_id": 84068
   },
   "1": {
     "changeset_number": "35344",
@@ -50131,23 +50131,6 @@
     }
   },
   "940": {
-    "changeset_number": "83964",
-    "pusher": "egao@mozilla.com",
-    "date_of_push": "2019-04-25 00:41:49",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=dc42ae4e7a3a",
-        "commiter_name": "Edwin Gao <egao@mozilla.com>",
-        "commit_message": "Bug 1546732 - enable jittest for windows10-aarch64 r=gbrown\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28704",
-        "files_changed": [
-          "js/src/jit-test/tests/ion/lexical-check-3.js",
-          "js/src/jit-test/tests/self-test/assertRecoveredOnBailout-1.js",
-          "taskcluster/ci/test/test-sets.yml"
-        ]
-      }
-    }
-  },
-  "940": {
     "changeset_number": "83966",
     "pusher": "cbrindusan@mozilla.com",
     "date_of_push": "2019-04-25 01:44:41",
@@ -51223,6 +51206,84 @@
         "files_changed": [
           "taskcluster/ci/build/windows.yml",
           "taskcluster/ci/toolchain/rust.yml"
+        ]
+      }
+    }
+  },
+  "942": {
+    "changeset_number": "84016",
+    "pusher": "gbrown@mozilla.com",
+    "date_of_push": "2019-04-25 15:35:01",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=18ba664cbccf",
+        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
+        "commit_message": "Bug 1546452 - Run fewer headless mochitests; r=jmaher\n\n- stop mochitest-headless on windows10\n - stop mochitest-headless on linux64/debug\n - make mochitest-headless tier-2\n - make mochitest-headless run on m-c/try\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28715",
+        "files_changed": [
+          "taskcluster/ci/test/mochitest.yml",
+          "taskcluster/ci/test/test-platforms.yml"
+        ]
+      }
+    }
+  },
+  "943": {
+    "changeset_number": "84037",
+    "pusher": "mozilla@hocat.ca",
+    "date_of_push": "2019-04-25 19:05:37",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=8218cc92ee8d",
+        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "No bug: Handle unicode output from docker builds; r=dustin\n\nThis is not strictly required in mozilla-central, as `mach` sets\nthe encoding of the output to UTF-8.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28861",
+        "files_changed": [
+          "taskcluster/taskgraph/util/docker.py"
+        ]
+      }
+    }
+  },
+  "944": {
+    "changeset_number": "84041",
+    "pusher": "rgurzau@mozilla.com",
+    "date_of_push": "2019-04-25 19:31:07",
+    "changeset_commits": {
+      "16": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=4243e8a01b2e",
+        "commiter_name": "James Graham <james@hoppipolla.co.uk>",
+        "commit_message": "Bug 1546858 - Force the wpt manifest job to rebuild the manifest, r=Aryx\n\nIf we use the downloaded manifest then any bug that leads to an error in the manifest\nmay be propogated forward. Instead force the manifest to be built from scratch in CI.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28809",
+        "files_changed": [
+          "taskcluster/ci/source-test/wpt-manifest.yml"
+        ]
+      }
+    }
+  },
+  "945": {
+    "changeset_number": "84059",
+    "pusher": "sdonner@mozilla.com",
+    "date_of_push": "2019-04-25 23:39:08",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=716e89455efe",
+        "commiter_name": "Stephen Donner <stephen.donner@gmail.com>",
+        "commit_message": "Bug 1547044.  Properly set windows10-aarch64 tests to tier 2. r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28887",
+        "files_changed": [
+          "taskcluster/ci/test/talos.yml"
+        ]
+      }
+    }
+  },
+  "946": {
+    "changeset_number": "84061",
+    "pusher": "jmaher@mozilla.com",
+    "date_of_push": "2019-04-25 23:40:22",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f534de537db5",
+        "commiter_name": "Joel Maher <jmaher@mozilla.com>",
+        "commit_message": "Bug 1546610 - reduce marionette-headless to run on linux64/shippable as tier2 only. r=whimboo\n\nreduce marionette-headless to run on linux64/shippable as tier2 only\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28838",
+        "files_changed": [
+          "taskcluster/ci/test/marionette.yml",
+          "taskcluster/ci/test/test-platforms.yml",
+          "taskcluster/ci/test/test-sets.yml"
         ]
       }
     }

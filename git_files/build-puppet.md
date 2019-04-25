@@ -1,7 +1,8 @@
-## BUILD-PUPPET COMMIT MARKDOWN TABLE SINCE 2019-04-11 06:04:38.132737
+## BUILD-PUPPET COMMIT MARKDOWN TABLE SINCE 2019-04-12 00:59:12.194532
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|104|mutterroland|Merge pull request #460 from mozilla-releng/pyup-scheduled-update-2019-04-24 Scheduled weekly dependency update for week 16|[URL](https://github.com/mozilla-releng/build-puppet/commit/8df8e9b8abde8ccd815c1d97ffb0dab8a1dce917)|2019-04-25 14:42:33
 |103|mozbhearsum|Bump balrogclient version to pick up fix (#461)|[URL](https://github.com/mozilla-releng/build-puppet/commit/5c456b7db776ce6e9725f428aea893c5f6c3386a)|2019-04-24 14:43:17
 |102|mitchhentges|Merge pull request #456 from mitchhentges/focus-publish-nightly-fix Updates mozapkpublisher to 2.0.2|[URL](https://github.com/mozilla-releng/build-puppet/commit/5d412b5e4bd50973ae15ee4fb135ff7a72967eb2)|2019-04-22 15:16:24
 |101|mitchhentges|Updates mozapkpublisher to 2.0.2|[URL](https://github.com/mozilla-releng/build-puppet/commit/b5fd83b0e375d0f23bd1192d4293f9b45ed8c31c)|2019-04-22 14:56:37

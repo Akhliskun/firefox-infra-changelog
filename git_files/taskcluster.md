@@ -1,7 +1,11 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-11 06:04:38.132737
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-12 00:59:12.194532
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|889|helfi92|Merge pull request #634 from helfi92/docs-404-links Fix: Links in documentation|[URL](https://github.com/taskcluster/taskcluster/commit/74ffd9583ce7b4be2b1c83869380cba45d9fb2ae)|2019-04-25 17:52:03
+|888|djmitche|Merge pull request #618 from OjaswinM/change-denylist-scope [Bug 1542212](https://bugzilla.mozilla.org/show_bug.cgi?id=1542212)  Change denylist scope and rename list()|[URL](https://github.com/taskcluster/taskcluster/commit/37428e673a2e9c2e6172dcd2e1fc840ac380495d)|2019-04-25 15:30:55
+|887|helfi92|Add links to taskcluster worker implementation|[URL](https://github.com/taskcluster/taskcluster/commit/fb9116f05b49fb85aa6bc667b42eb2f88a57f189)|2019-04-25 13:34:28
+|886|helfi92|Fix: Links in documentation|[URL](https://github.com/taskcluster/taskcluster/commit/3a8cba73511dc8a57db5fae6f7336c26f074b879)|2019-04-25 13:07:42
 |885|owlishDeveloper|Merge pull request #566 from owlishDeveloper/bug1542905 Add main view (with some mock data)|[URL](https://github.com/taskcluster/taskcluster/commit/c59f7634c77c18a7f057f02b493360b7ecd0485d)|2019-04-24 21:45:14
 |884|owlishDeveloper|Merge pull request #633 from owlishDeveloper/bug1546804 Add note on continuation token to best practices|[URL](https://github.com/taskcluster/taskcluster/commit/f6aefc88ce840228bc4698a86695ca3a641ad950)|2019-04-24 21:42:10
 |883|owlishDeveloper|Add onHeaderClick to the spread operation to make sure it's not passed down to Table|[URL](https://github.com/taskcluster/taskcluster/commit/e8bfb32a1a2fa21d57ae86bb7f3ad30eaf082470)|2019-04-24 21:30:36
