@@ -258,7 +258,7 @@
         " ",
         " "
       ],
-      "order": 1,
+      "order": 3,
       "configuration": {
         "folders-to-check": [
           "testing/mozharness",
@@ -292,7 +292,7 @@
         " ",
         " "
       ],
-      "order": 3,
+      "order": 1,
       "configuration": {
         "folders-to-check": [
           "testing/mozharness",
