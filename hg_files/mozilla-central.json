@@ -16472,23 +16472,6 @@
     }
   },
   "161": {
-    "changeset_number": "35909",
-    "pusher": "nerli@mozilla.com",
-    "date_of_push": "2019-04-24 12:53:59",
-    "changeset_commits": {
-      "5": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=36aad514bc3b",
-        "commiter_name": "Wes Kocher <wkocher@mozilla.com>",
-        "commit_message": "Bug 1501562 - Run wpt against geckoview r=jgraham\n\nThis patch leaves wpt running against fennec on androidx86 as tier2, adds wpt to run against geckoview testactivity on android x86_64 as tier3, and adds enough metadata to run_info_extras to help differentiate the two in expectation files. Fennec is \"os == android and not e10s\", while geckoview is \"os == android and e10s\".\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27182",
-        "files_changed": [
-          "taskcluster/ci/test/test-sets.yml",
-          "taskcluster/ci/test/web-platform.yml",
-          "testing/web-platform/tests/tools/wptrunner/wptrunner/browsers/fennec.py"
-        ]
-      }
-    }
-  },
-  "161": {
     "changeset_number": "35910",
     "pusher": "cbrindusan@mozilla.com",
     "date_of_push": "2019-04-25 00:51:39",
