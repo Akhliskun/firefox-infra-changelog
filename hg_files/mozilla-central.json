@@ -16612,21 +16612,6 @@
     }
   },
   "163": {
-    "changeset_number": "35914",
-    "pusher": "rgurzau@mozilla.com",
-    "date_of_push": "2019-04-25 19:20:57",
-    "changeset_commits": {
-      "16": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=4243e8a01b2e",
-        "commiter_name": "James Graham <james@hoppipolla.co.uk>",
-        "commit_message": "Bug 1546858 - Force the wpt manifest job to rebuild the manifest, r=Aryx\n\nIf we use the downloaded manifest then any bug that leads to an error in the manifest\nmay be propogated forward. Instead force the manifest to be built from scratch in CI.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28809",
-        "files_changed": [
-          "taskcluster/ci/source-test/wpt-manifest.yml"
-        ]
-      }
-    }
-  },
-  "163": {
     "changeset_number": "35915",
     "pusher": "opoprus@mozilla.com",
     "date_of_push": "2019-04-26 01:08:17",

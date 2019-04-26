@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 84088
+    "last_push_id": 84098
   },
   "1": {
     "changeset_number": "35344",
@@ -51251,23 +51251,6 @@
         "commit_message": "Bug 1547044.  Properly set windows10-aarch64 tests to tier 2. r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28887",
         "files_changed": [
           "taskcluster/ci/test/talos.yml"
-        ]
-      }
-    }
-  },
-  "946": {
-    "changeset_number": "84061",
-    "pusher": "jmaher@mozilla.com",
-    "date_of_push": "2019-04-25 23:40:22",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=f534de537db5",
-        "commiter_name": "Joel Maher <jmaher@mozilla.com>",
-        "commit_message": "Bug 1546610 - reduce marionette-headless to run on linux64/shippable as tier2 only. r=whimboo\n\nreduce marionette-headless to run on linux64/shippable as tier2 only\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28838",
-        "files_changed": [
-          "taskcluster/ci/test/marionette.yml",
-          "taskcluster/ci/test/test-platforms.yml",
-          "taskcluster/ci/test/test-sets.yml"
         ]
       }
     }
