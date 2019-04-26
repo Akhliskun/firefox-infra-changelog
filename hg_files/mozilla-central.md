@@ -1,9 +1,10 @@
 ## REPOSITORY NAME: MOZILLA-CENTRAL
- CURRENT PUSH ID: 35914
+ CURRENT PUSH ID: 35915
 
 | Changeset | Date | Commiter | Commit Message | Commit URL | 
 |:---:|:---:|:----:|:----------------------------------:|:-----:| 
-|35914|2019-04-25 19:20:57|James Graham <james@hoppipolla.co.uk>|[Bug 1546858](https://bugzilla.mozilla.org/show_bug.cgi?id=1546858)  - Force the wpt manifest job to rebuild the manifest, r=AryxIf we use the downloaded manifest then any bug that leads to an error in the manifestmay be propogated forward. Instead force the manifest to be built from scratch in CI.Differential Revision: https://phabricator.services.mozilla.com/D28809|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=4243e8a01b2e
+|35915|2019-04-26 01:08:17|Geoff Brown <gbrown@mozilla.com>|[Bug 1546452](https://bugzilla.mozilla.org/show_bug.cgi?id=1546452)  - Run fewer headless mochitests; r=jmaher- stop mochitest-headless on windows10 - stop mochitest-headless on linux64/debug - make mochitest-headless tier-2 - make mochitest-headless run on m-c/tryDifferential Revision: https://phabricator.services.mozilla.com/D28715|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=18ba664cbccf
+|35915|2019-04-26 01:08:17|Tom Prince <mozilla@hocat.ca>|No bug: Handle unicode output from docker builds; r=dustinThis is not strictly required in mozilla-central, as `mach` setsthe encoding of the output to UTF-8.Differential Revision: https://phabricator.services.mozilla.com/D28861|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=8218cc92ee8d
 |35912|2019-04-25 12:46:25|Edwin Gao <egao@mozilla.com>|[Bug 1546728](https://bugzilla.mozilla.org/show_bug.cgi?id=1546728)  - enable cppunittest for windows10-aarch64 r=gbrownDifferential Revision: https://phabricator.services.mozilla.com/D28700|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=7e4f89f8eafe
 |35912|2019-04-25 12:46:25|Henrik Skupin <mail@hskupin.info>|[Bug 1506928](https://bugzilla.mozilla.org/show_bug.cgi?id=1506928)  - [mozharness] Handle KeyboardInterrupt in ScriptMixin. r=gbrownDifferential Revision: https://phabricator.services.mozilla.com/D25749|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=6f64c339a2a8
 |35912|2019-04-25 12:46:25|Andrew Halberstadt <ahalberstadt@mozilla.com>|[Bug 1546373](https://bugzilla.mozilla.org/show_bug.cgi?id=1546373)  - [ci] Update fenix try tasks to new index, r=rwoodDifferential Revision: https://phabricator.services.mozilla.com/D28716|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=8e4422d0040f

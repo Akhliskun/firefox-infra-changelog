@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 84068
+    "last_push_id": 84088
   },
   "1": {
     "changeset_number": "35344",
@@ -51195,22 +51195,6 @@
     }
   },
   "942": {
-    "changeset_number": "83980",
-    "pusher": "mh@glandium.org",
-    "date_of_push": "2019-04-25 05:21:45",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=006af3739e10",
-        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
-        "commit_message": "Bug 1546845 - Remove separate win64-aarch64 rust toolchain. r=nalexander\n\nIt was necessary when it was a different version than win64-rust, but\nthat's not the case anymore.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28761",
-        "files_changed": [
-          "taskcluster/ci/build/windows.yml",
-          "taskcluster/ci/toolchain/rust.yml"
-        ]
-      }
-    }
-  },
-  "942": {
     "changeset_number": "84016",
     "pusher": "gbrown@mozilla.com",
     "date_of_push": "2019-04-25 15:35:01",
@@ -51284,6 +51268,49 @@
           "taskcluster/ci/test/marionette.yml",
           "taskcluster/ci/test/test-platforms.yml",
           "taskcluster/ci/test/test-sets.yml"
+        ]
+      }
+    }
+  },
+  "946": {
+    "changeset_number": "84070",
+    "pusher": "gbrown@mozilla.com",
+    "date_of_push": "2019-04-26 02:01:34",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=9879ab660a34",
+        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
+        "commit_message": "Bug 1250737 - Update android mozharness 'chunked' handling, for jittest; r=bc\n\nIt turns out there are several places where the change to suite 'jittest-chunked'\ncauses problem. I am abandoning that approach.\nDesktop uses this trick, and this returns android '-chunked' handling to a state\nsimilar to what it was before I started messing around!\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28897",
+        "files_changed": [
+          "testing/mozharness/configs/android/android_common.py",
+          "testing/mozharness/scripts/android_emulator_unittest.py",
+          "testing/mozharness/scripts/android_hardware_unittest.py",
+          "tools/tryselect/test/test_mozharness_integration.py"
+        ]
+      }
+    }
+  },
+  "947": {
+    "changeset_number": "84080",
+    "pusher": "nfroyd@mozilla.com",
+    "date_of_push": "2019-04-26 02:27:16",
+    "changeset_commits": {
+      "2": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=27527aa56004",
+        "commiter_name": "Nathan Froyd <froydnj@mozilla.com>",
+        "commit_message": "Bug 1540082 - add a `toolchain-arm64-build` docker image; r=nalexander\n\nWe need this image for building clang on machines with arm64\nsysroots.  (Note that this image *is* a linux x86-64 image, just with\nsome arm64 cross-compilation packages available.)\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28404",
+        "files_changed": [
+          "taskcluster/ci/docker-image/kind.yml"
+        ]
+      },
+      "4": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=6cbad9f5b259",
+        "commiter_name": "Nathan Froyd <froydnj@mozilla.com>",
+        "commit_message": "Bug 1540082 - add an aarch64-cross clang build; r=nalexander\n\nAnalogously to the existing `linux64-clang-8-android-cross` build, this\nbuild is a linux x86-64 build with runtime library support for aarch64.\n\nDepends on D28405\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28406",
+        "files_changed": [
+          "build/build-clang/clang-8-linux64-aarch64-cross.json",
+          "taskcluster/ci/toolchain/clang.yml",
+          "taskcluster/scripts/misc/build-clang-8-linux-aarch64-cross.sh"
         ]
       }
     }
