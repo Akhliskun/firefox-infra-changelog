@@ -3,26 +3,32 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 import github3
 from modules.FIC_Logger import FICLogger
+from modules.FIC_FileHandler import FICFileHandler
 from modules.config import GIT_TOKEN
 from git import Repo
 import os
+import json
 
 
-class FICGithub(FICLogger):
-    def __init__(self):
+class FICGithub(FICFileHandler, FICLogger):
+
+    def __init__(self, team_name, repo_name):
         FICLogger.__init__(self)
+        FICFileHandler.__init__(self)
+        self.team_name = team_name
+        self.repo_name = repo_name
         self.token_counter = 0
         self._get_os_var()
         self._token = os.environ.get(GIT_TOKEN[self.token_counter])
         self._gh = self._auth()
-        self.repo_data = None
+        self.repo_data = self.read_repo()
         self.repo = Repo("..")
 
     def _auth(self):
         return github3.login(token=self._token)
 
-    def read_repo(self, team_name, repo_name):
-        return self._init_github(self._gh, team_name, repo_name)
+    def read_repo(self):
+        return self._init_github(self._gh, self.team_name, self.repo_name)
 
     def _init_github(self, *args):
         self.repo_data = github3.GitHub.repository(args[0], args[1], args[2])
@@ -114,3 +120,15 @@ class FICGithub(FICLogger):
     def revert_modified_files(self):
         from modules.config import CHANGELOG_JSON_PATH, CHANGELOG_MD_PATH, CHANGELOG_REPO_PATH
         return self.repo.git.checkout([CHANGELOG_JSON_PATH, CHANGELOG_MD_PATH, CHANGELOG_REPO_PATH])
+
+    def get_repo_url(self):
+        return self.repo_data.svn_url
+
+    def repo_type(self):
+        return json.load(self.load(None, "repositories.json")).get("Github").get(self.repo_name).get("configuration").get("type")
+
+
+# for testing
+a = FICGithub('mozilla-releng', 'OpenCloudConfig')
+print(a.get_repo_url())
+print(a.repo_type())
