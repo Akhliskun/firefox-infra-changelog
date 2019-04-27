@@ -1,7 +1,10 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-12 12:17:44.653123
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-13 14:43:11.342618
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|892|projectyang|[UI] Improve favicons (#601) add new accessible favicons remove shadow new logoRunning svg redesign icons with mask adjust cutoff point and green checkmark adjust logoCompleted new logo favicons adjust T width in logos replace non favicon logo.png|[URL](https://github.com/taskcluster/taskcluster/commit/118fbb5f3cad5fb8924af27437d25fac9e17f328)|2019-04-26 12:41:45
+|891|djmitche|Merge pull request #638 from djmitche/bug1547000 [Bug 1547000](https://bugzilla.mozilla.org/show_bug.cgi?id=1547000)  - don't show diffs for generated files|[URL](https://github.com/taskcluster/taskcluster/commit/453e8f8e48532778b8f45afa9d7c1dd3f513f7a8)|2019-04-26 12:35:33
+|890|djmitche|[Bug 1547000](https://bugzilla.mozilla.org/show_bug.cgi?id=1547000)  - don't show diffs for generated files Note that these files are still shown in a PR, just without the line-by-line diff -- much like `yarn.lock` is already. Note, too, that this does not cover files which are edited by yarn generate, such as `package.json` or the READMEs. Diffs in those files will appear in PRs as expected.|[URL](https://github.com/taskcluster/taskcluster/commit/b4f7b84e80c43efc02fc79d5bc10889cadf2b07f)|2019-04-26 12:28:00
 |889|helfi92|Merge pull request #634 from helfi92/docs-404-links Fix: Links in documentation|[URL](https://github.com/taskcluster/taskcluster/commit/74ffd9583ce7b4be2b1c83869380cba45d9fb2ae)|2019-04-25 17:52:03
 |888|djmitche|Merge pull request #618 from OjaswinM/change-denylist-scope [Bug 1542212](https://bugzilla.mozilla.org/show_bug.cgi?id=1542212)  Change denylist scope and rename list()|[URL](https://github.com/taskcluster/taskcluster/commit/37428e673a2e9c2e6172dcd2e1fc840ac380495d)|2019-04-25 15:30:55
 |887|helfi92|Add links to taskcluster worker implementation|[URL](https://github.com/taskcluster/taskcluster/commit/fb9116f05b49fb85aa6bc667b42eb2f88a57f189)|2019-04-25 13:34:28

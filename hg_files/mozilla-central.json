@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35915
+    "last_push_id": 35922
   },
   "1": {
     "changeset_number": "35344",
@@ -16631,6 +16631,95 @@
         "commit_message": "No bug: Handle unicode output from docker builds; r=dustin\n\nThis is not strictly required in mozilla-central, as `mach` sets\nthe encoding of the output to UTF-8.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28861",
         "files_changed": [
           "taskcluster/taskgraph/util/docker.py"
+        ]
+      }
+    }
+  },
+  "163": {
+    "changeset_number": "35916",
+    "pusher": "rmaries@mozilla.com",
+    "date_of_push": "2019-04-26 12:46:15",
+    "changeset_commits": {
+      "8": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=716e89455efe",
+        "commiter_name": "Stephen Donner <stephen.donner@gmail.com>",
+        "commit_message": "Bug 1547044.  Properly set windows10-aarch64 tests to tier 2. r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28887",
+        "files_changed": [
+          "taskcluster/ci/test/talos.yml"
+        ]
+      },
+      "10": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=f534de537db5",
+        "commiter_name": "Joel Maher <jmaher@mozilla.com>",
+        "commit_message": "Bug 1546610 - reduce marionette-headless to run on linux64/shippable as tier2 only. r=whimboo\n\nreduce marionette-headless to run on linux64/shippable as tier2 only\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28838",
+        "files_changed": [
+          "taskcluster/ci/test/marionette.yml",
+          "taskcluster/ci/test/test-platforms.yml",
+          "taskcluster/ci/test/test-sets.yml"
+        ]
+      },
+      "29": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=9879ab660a34",
+        "commiter_name": "Geoff Brown <gbrown@mozilla.com>",
+        "commit_message": "Bug 1250737 - Update android mozharness 'chunked' handling, for jittest; r=bc\n\nIt turns out there are several places where the change to suite 'jittest-chunked'\ncauses problem. I am abandoning that approach.\nDesktop uses this trick, and this returns android '-chunked' handling to a state\nsimilar to what it was before I started messing around!\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28897",
+        "files_changed": [
+          "testing/mozharness/configs/android/android_common.py",
+          "testing/mozharness/scripts/android_emulator_unittest.py",
+          "testing/mozharness/scripts/android_hardware_unittest.py",
+          "tools/tryselect/test/test_mozharness_integration.py"
+        ]
+      },
+      "47": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=27527aa56004",
+        "commiter_name": "Nathan Froyd <froydnj@mozilla.com>",
+        "commit_message": "Bug 1540082 - add a `toolchain-arm64-build` docker image; r=nalexander\n\nWe need this image for building clang on machines with arm64\nsysroots.  (Note that this image *is* a linux x86-64 image, just with\nsome arm64 cross-compilation packages available.)\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28404",
+        "files_changed": [
+          "taskcluster/ci/docker-image/kind.yml"
+        ]
+      },
+      "49": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=6cbad9f5b259",
+        "commiter_name": "Nathan Froyd <froydnj@mozilla.com>",
+        "commit_message": "Bug 1540082 - add an aarch64-cross clang build; r=nalexander\n\nAnalogously to the existing `linux64-clang-8-android-cross` build, this\nbuild is a linux x86-64 build with runtime library support for aarch64.\n\nDepends on D28405\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28406",
+        "files_changed": [
+          "build/build-clang/clang-8-linux64-aarch64-cross.json",
+          "taskcluster/ci/toolchain/clang.yml",
+          "taskcluster/scripts/misc/build-clang-8-linux-aarch64-cross.sh"
+        ]
+      }
+    }
+  },
+  "164": {
+    "changeset_number": "35920",
+    "pusher": "aiakab@mozilla.com",
+    "date_of_push": "2019-04-27 01:02:33",
+    "changeset_commits": {
+      "60": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=c8d4031fcf80",
+        "commiter_name": "Stephen Donner <stephen.donner@gmail.com>",
+        "commit_message": "Bug 1547272 - ensure windows10-aarch64 is set to tier 2 for talos-bcv. r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29003",
+        "files_changed": [
+          "taskcluster/ci/test/talos.yml"
+        ]
+      }
+    }
+  },
+  "165": {
+    "changeset_number": "35921",
+    "pusher": "nbeleuzu@mozilla.com",
+    "date_of_push": "2019-04-27 12:45:52",
+    "changeset_commits": {
+      "33": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=ce1c928fb0cd",
+        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
+        "commit_message": "Bug 1546100 - [mochitest] Error out when running 'a11y' or 'chrome' with e10s, r=jmaher\n\nPreviously we would silently change the value of \"e10s\" from False to True.\nThis can cause confusion and lead people to falsely think mochitest-chrome/a11y\nwork with e10s (they do not).\n\nNow we explicitly error out in this case. This might be slightly less\nconvenient for the developer (e.g they might need to re-run the command), but\nthe downside of needing to rerun a test command is less than the risk of\nmisunderstanding what is being tested.\n\nNote: when running |mach test| or |mach mochitest| on a directory that contains\nboth chrome/a11y and another suite, we'll still do the right thing and\nimplicitly set \"e10s=False\".\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28538",
+        "files_changed": [
+          "testing/mochitest/mochitest_options.py",
+          "testing/mochitest/runtests.py",
+          "testing/mozbase/moztest/moztest/resolve.py",
+          "testing/mozharness/configs/unittests/linux_unittest.py",
+          "testing/mozharness/configs/unittests/mac_unittest.py",
+          "testing/mozharness/configs/unittests/win_unittest.py"
         ]
       }
     }

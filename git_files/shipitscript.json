@@ -1,11 +1,11 @@
 {
   "0": {
-    "lastChecked": "2019-04-09 13:10:29.349016",
+    "lastChecked": "2019-04-27 11:43:21.997256",
     "last_releases": {
       "latest_release": {
-        "version": "4.0.0",
-        "sha": "27320bf4b32170e6c43eae355cd1c4d03751deb8",
-        "date": "2019-04-09 02:00:34",
+        "version": "4.1.0",
+        "sha": "a5ebbd80fdc9062c667fe3f92b88c63d4f6a1d27",
+        "date": "2019-04-26 14:11:00",
         "author": "rail"
       }
     }

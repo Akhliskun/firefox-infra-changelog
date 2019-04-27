@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 3463
+    "last_push_id": 3465
   },
   "1": {
     "changeset_number": "3358",
@@ -2282,6 +2282,37 @@
         "commit_message": "ansible/monitoring-agent: only modify httpd access log permissions when `hosttype` is \"hgweb\"\n\nhgssh doesn't install Apache, so there's no log to modify.",
         "files_changed": [
           "ansible/roles/monitoring-agent/tasks/main.yml"
+        ]
+      }
+    }
+  },
+  "87": {
+    "changeset_number": "3464",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-26 18:21:03",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=0ec322c77f23",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hgserver: add `sparserevlog` capability to `test-obsolescence-server.t` (Bug 1547276)",
+        "files_changed": [
+          "hgserver/tests/test-obsolescence-server.t"
+        ]
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=58286127f121",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hgserver: add `sparserevlog` bundle requirement to `test-clonebundles.t` (Bug 1547276)\n\nNew bundles under 4.9.1 include the `sparserevlog` requirement.\nSince none of the repos on hgmo are in the `sparserevlog` format\nyet, this is just extra test output we need to add. It doesn't\naffect behaviour in any way.",
+        "files_changed": [
+          "hgserver/tests/test-clonebundles.t"
+        ]
+      },
+      "3": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=e8a3e082d629",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hgserver: add `reposetup` timing output to `test-push-basic.t` blackbox logs (Bug 1547276)\n\nMercurial 4.9.1 now includes repo setup timing information in\nblackbox logs, which we have yet to add to the tests.",
+        "files_changed": [
+          "hgserver/tests/test-push-basic.t"
         ]
       }
     }
