@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 84216
+    "last_push_id": 84228
   },
   "1": {
     "changeset_number": "35344",
@@ -51274,31 +51274,6 @@
     }
   },
   "947": {
-    "changeset_number": "84080",
-    "pusher": "nfroyd@mozilla.com",
-    "date_of_push": "2019-04-26 02:27:16",
-    "changeset_commits": {
-      "2": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=27527aa56004",
-        "commiter_name": "Nathan Froyd <froydnj@mozilla.com>",
-        "commit_message": "Bug 1540082 - add a `toolchain-arm64-build` docker image; r=nalexander\n\nWe need this image for building clang on machines with arm64\nsysroots.  (Note that this image *is* a linux x86-64 image, just with\nsome arm64 cross-compilation packages available.)\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28404",
-        "files_changed": [
-          "taskcluster/ci/docker-image/kind.yml"
-        ]
-      },
-      "4": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=6cbad9f5b259",
-        "commiter_name": "Nathan Froyd <froydnj@mozilla.com>",
-        "commit_message": "Bug 1540082 - add an aarch64-cross clang build; r=nalexander\n\nAnalogously to the existing `linux64-clang-8-android-cross` build, this\nbuild is a linux x86-64 build with runtime library support for aarch64.\n\nDepends on D28405\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28406",
-        "files_changed": [
-          "build/build-clang/clang-8-linux64-aarch64-cross.json",
-          "taskcluster/ci/toolchain/clang.yml",
-          "taskcluster/scripts/misc/build-clang-8-linux-aarch64-cross.sh"
-        ]
-      }
-    }
-  },
-  "947": {
     "changeset_number": "84151",
     "pusher": "sdonner@mozilla.com",
     "date_of_push": "2019-04-26 19:31:21",
@@ -51329,6 +51304,78 @@
           "testing/mozharness/configs/unittests/linux_unittest.py",
           "testing/mozharness/configs/unittests/mac_unittest.py",
           "testing/mozharness/configs/unittests/win_unittest.py"
+        ]
+      }
+    }
+  },
+  "948": {
+    "changeset_number": "84224",
+    "pusher": "mh@glandium.org",
+    "date_of_push": "2019-04-28 02:35:20",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=4c994bf99569",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1544986 - Fall back more gracefully when TASKCLUSTER_WORKER_GROUP is not set. r=tomprince\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27841",
+        "files_changed": [
+          "taskcluster/scripts/run-task"
+        ]
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=ebe9a3ca4b17",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1545344 - Don't change current directory when executing a command via run-task. r=tomprince\n\nCurrently, all things running via run-task don't really care that the\ncurrent directory is set to /. However, on generic-worker, many things\nassume the current directory is the task directory, which varies by\ntask, and wrapping them with run-task fails because it resets the\ncurrent directory.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28018",
+        "files_changed": [
+          "taskcluster/scripts/run-task"
+        ]
+      },
+      "3": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=a584e4e9473f",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1545368 - Support fetches in run-task on generic-worker. r=tomprince\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28048",
+        "files_changed": [
+          "taskcluster/scripts/run-task",
+          "taskcluster/taskgraph/transforms/job/run_task.py"
+        ]
+      },
+      "5": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=8c3a37a0a53e",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1546870 - Package win*-rust toolchains as .tar.xz. r=froydnj\n\nThis uniformizes the artifact name across platforms. We may want to do\nthe same for other toolchains, but it bears the question whether xz is\nreliably available on users' Windows machines, while it doesn't matter\nfor rust, since mach bootstrap pulls it with rustup rather than from\nautomation, contrary to other toolchains.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28780",
+        "files_changed": [
+          "taskcluster/ci/toolchain/rust.yml",
+          "taskcluster/scripts/misc/repack_rust.py"
+        ]
+      }
+    }
+  },
+  "949": {
+    "changeset_number": "84227",
+    "pusher": "btara@mozilla.com",
+    "date_of_push": "2019-04-28 03:34:16",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=28e4375e491e",
+        "commiter_name": "Bogdan Tara <btara@mozilla.com>",
+        "commit_message": "Backed out changeset 8218cc92ee8d for docker images builds failures CLOSED TREE",
+        "files_changed": [
+          "taskcluster/taskgraph/util/docker.py"
+        ]
+      }
+    }
+  },
+  "950": {
+    "changeset_number": "84228",
+    "pusher": "egao@mozilla.com",
+    "date_of_push": "2019-04-28 06:22:33",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=2ce05675c447",
+        "commiter_name": "Edwin Gao <egao@mozilla.com>",
+        "commit_message": "Bug 1545810 - disable tests in testing/web-platform/meta/media-source/ on windows10-aarch64 that cause task to abort r=jmaher\n\nChanges:\n- disable wholesale the `media-source` subsuite within web-platform-test\n\nAttempts were made to isolate the tests that cause the test harness to lock up with a permission issue on `Ahem.ttf` however the attempts were unsuccessful in isolating the tests to a manageable set. It appears the solution is to simply stop running `media-source` tests on windows10-aarch64 as that seems to have solved the problem in a previous try run.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28778",
+        "files_changed": [
+          "taskcluster/ci/test/test-sets.yml",
+          "testing/web-platform/meta/media-source/__dir__.ini"
         ]
       }
     }

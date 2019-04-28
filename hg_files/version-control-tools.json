@@ -2272,21 +2272,6 @@
     }
   },
   "87": {
-    "changeset_number": "3463",
-    "pusher": "cosheehan@mozilla.com",
-    "date_of_push": "2019-04-24 18:04:18",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=210ad037e038",
-        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
-        "commit_message": "ansible/monitoring-agent: only modify httpd access log permissions when `hosttype` is \"hgweb\"\n\nhgssh doesn't install Apache, so there's no log to modify.",
-        "files_changed": [
-          "ansible/roles/monitoring-agent/tasks/main.yml"
-        ]
-      }
-    }
-  },
-  "87": {
     "changeset_number": "3464",
     "pusher": "cosheehan@mozilla.com",
     "date_of_push": "2019-04-26 18:21:03",

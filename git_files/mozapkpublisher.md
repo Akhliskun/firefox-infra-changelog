@@ -1,7 +1,8 @@
-## MOZAPKPUBLISHER COMMIT MARKDOWN TABLE SINCE 2019-04-13 14:43:11.342618
+## MOZAPKPUBLISHER COMMIT MARKDOWN TABLE SINCE 2019-04-14 08:39:49.400268
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|685|mitchhentges|2.0.2|[URL](https://github.com/mozilla-releng/mozapkpublisher/commit/49254cd61a4536206651424179a39e846d61d8b1)|2019-04-22 14:36:01
 |684|mitchhentges|2.0.2|[URL](https://github.com/mozilla-releng/mozapkpublisher/commit/49254cd61a4536206651424179a39e846d61d8b1)|2019-04-22 14:36:01
 |683|mitchhentges|2.0.2|[URL](https://github.com/mozilla-releng/mozapkpublisher/commit/49254cd61a4536206651424179a39e846d61d8b1)|2019-04-22 14:36:01
 |682|mitchhentges|2.0.2|[URL](https://github.com/mozilla-releng/mozapkpublisher/commit/49254cd61a4536206651424179a39e846d61d8b1)|2019-04-22 14:36:01
