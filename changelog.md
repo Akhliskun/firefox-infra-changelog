@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-28 14:01:12 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-28 16:44:51 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -15,7 +15,6 @@
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=716e89455efe)|[Bug 1547044](https://bugzilla.mozilla.org/show_bug.cgi?id=1547044)  Properly set windows10-aarch64 tests to tier 2. r=jmaher Differential Revision: https://phabricator.services.mozilla.com/D28887|sdonner@mozilla.com|jmaher|2019-04-25 23:39:08|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=4243e8a01b2e)|[Bug 1546858](https://bugzilla.mozilla.org/show_bug.cgi?id=1546858)  - Force the wpt manifest job to rebuild the manifest, r=Aryx If we use the downloaded manifest then any bug that leads to an error in the manifest may be propogated forward. Instead force the manifest to be built from scratch in CI. Differential Revision: https://phabricator.services.mozilla.com/D28809|rgurzau@mozilla.com|Aryx|2019-04-25 19:31:07|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=8218cc92ee8d)|No bug: Handle unicode output from docker builds; r=dustin This is not strictly required in mozilla-central, as `mach` sets the encoding of the output to UTF-8. Differential Revision: https://phabricator.services.mozilla.com/D28861|mozilla@hocat.ca|dustin|2019-04-25 19:05:37|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=18ba664cbccf)|[Bug 1546452](https://bugzilla.mozilla.org/show_bug.cgi?id=1546452)  - Run fewer headless mochitests; r=jmaher - stop mochitest-headless on windows10 - stop mochitest-headless on linux64/debug - make mochitest-headless tier-2 - make mochitest-headless run on m-c/try Differential Revision: https://phabricator.services.mozilla.com/D28715|gbrown@mozilla.com|jmaher|2019-04-25 15:35:01|
 
 |	mozilla-inbound	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.json)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -116,7 +115,7 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
-|[Link](https://github.com/mozilla-releng/build-puppet/commit/8df8e9b8abde8ccd815c1d97ffb0dab8a1dce917)|Merge pull request #460 from mozilla-releng/pyup-scheduled-update-2019-04-24  Scheduled weekly dependency update for week 16|mutterroland|N/A|2019-04-25 14:42:33|
+| |No push in the last 3 days.. [see the history of MD commits](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/build-puppet.md)|FIC - BOT|Self Generated| - |
 
 |	taskcluster	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/taskcluster.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/taskcluster.md)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -127,7 +126,6 @@
 |[Link](https://github.com/taskcluster/taskcluster/commit/453e8f8e48532778b8f45afa9d7c1dd3f513f7a8)|Merge pull request #638 from djmitche/bug1547000  Bug 1547000 - don't show diffs for generated files|djmitche|N/A|2019-04-26 12:35:33|
 |[Link](https://github.com/taskcluster/taskcluster/commit/b4f7b84e80c43efc02fc79d5bc10889cadf2b07f)|Bug 1547000 - don't show diffs for generated files  Note that these files are still shown in a PR, just without the line-by-line diff -- much like `yarn.lock` is already.  Note, too, that this does not cover files which are  edited  by yarn generate, such as `package.json` or the READMEs.  Diffs in those files will appear in PRs as expected.|djmitche|N/A|2019-04-26 12:28:00|
 |[Link](https://github.com/taskcluster/taskcluster/commit/74ffd9583ce7b4be2b1c83869380cba45d9fb2ae)|Merge pull request #634 from helfi92/docs-404-links  Fix: Links in documentation|helfi92|N/A|2019-04-25 17:52:03|
-|[Link](https://github.com/taskcluster/taskcluster/commit/37428e673a2e9c2e6172dcd2e1fc840ac380495d)|Merge pull request #618 from OjaswinM/change-denylist-scope  [Bug 1542212] Change denylist scope and rename list()|djmitche|N/A|2019-04-25 15:30:55|
 
 |	beetmoverscript	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/beetmoverscript.json)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/beetmoverscript.md)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -155,6 +153,7 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
+|[Link](https://github.com/mozilla-releng/pushapkscript/commit/87f2148a487bbc8df53a970006faeb437bbb815d)|1.0.2|mitchhentges|N/A|2019-04-26 14:57:52|
 |[Link](https://github.com/mozilla-releng/pushapkscript/commit/87f2148a487bbc8df53a970006faeb437bbb815d)|1.0.2|mitchhentges|N/A|2019-04-26 14:57:52|
 |[Link](https://github.com/mozilla-releng/pushapkscript/commit/87f2148a487bbc8df53a970006faeb437bbb815d)|1.0.2|mitchhentges|N/A|2019-04-26 14:57:52|
 |[Link](https://github.com/mozilla-releng/pushapkscript/commit/87f2148a487bbc8df53a970006faeb437bbb815d)|1.0.2|mitchhentges|N/A|2019-04-26 14:57:52|
