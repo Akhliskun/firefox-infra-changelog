@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35924
+    "last_push_id": 35926
   },
   "1": {
     "changeset_number": "35344",
@@ -16696,6 +16696,64 @@
           "testing/mozharness/configs/unittests/linux_unittest.py",
           "testing/mozharness/configs/unittests/mac_unittest.py",
           "testing/mozharness/configs/unittests/win_unittest.py"
+        ]
+      }
+    }
+  },
+  "165": {
+    "changeset_number": "35925",
+    "pusher": "dluca@mozilla.com",
+    "date_of_push": "2019-04-28 12:38:09",
+    "changeset_commits": {
+      "13": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=4c994bf99569",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1544986 - Fall back more gracefully when TASKCLUSTER_WORKER_GROUP is not set. r=tomprince\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27841",
+        "files_changed": [
+          "taskcluster/scripts/run-task"
+        ]
+      },
+      "14": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=ebe9a3ca4b17",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1545344 - Don't change current directory when executing a command via run-task. r=tomprince\n\nCurrently, all things running via run-task don't really care that the\ncurrent directory is set to /. However, on generic-worker, many things\nassume the current directory is the task directory, which varies by\ntask, and wrapping them with run-task fails because it resets the\ncurrent directory.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28018",
+        "files_changed": [
+          "taskcluster/scripts/run-task"
+        ]
+      },
+      "15": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=a584e4e9473f",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1545368 - Support fetches in run-task on generic-worker. r=tomprince\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28048",
+        "files_changed": [
+          "taskcluster/scripts/run-task",
+          "taskcluster/taskgraph/transforms/job/run_task.py"
+        ]
+      },
+      "17": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=8c3a37a0a53e",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1546870 - Package win*-rust toolchains as .tar.xz. r=froydnj\n\nThis uniformizes the artifact name across platforms. We may want to do\nthe same for other toolchains, but it bears the question whether xz is\nreliably available on users' Windows machines, while it doesn't matter\nfor rust, since mach bootstrap pulls it with rustup rather than from\nautomation, contrary to other toolchains.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28780",
+        "files_changed": [
+          "taskcluster/ci/toolchain/rust.yml",
+          "taskcluster/scripts/misc/repack_rust.py"
+        ]
+      },
+      "29": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=28e4375e491e",
+        "commiter_name": "Bogdan Tara <btara@mozilla.com>",
+        "commit_message": "Backed out changeset 8218cc92ee8d for docker images builds failures CLOSED TREE",
+        "files_changed": [
+          "taskcluster/taskgraph/util/docker.py"
+        ]
+      },
+      "30": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=2ce05675c447",
+        "commiter_name": "Edwin Gao <egao@mozilla.com>",
+        "commit_message": "Bug 1545810 - disable tests in testing/web-platform/meta/media-source/ on windows10-aarch64 that cause task to abort r=jmaher\n\nChanges:\n- disable wholesale the `media-source` subsuite within web-platform-test\n\nAttempts were made to isolate the tests that cause the test harness to lock up with a permission issue on `Ahem.ttf` however the attempts were unsuccessful in isolating the tests to a manageable set. It appears the solution is to simply stop running `media-source` tests on windows10-aarch64 as that seems to have solved the problem in a previous try run.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28778",
+        "files_changed": [
+          "taskcluster/ci/test/test-sets.yml",
+          "testing/web-platform/meta/media-source/__dir__.ini"
         ]
       }
     }

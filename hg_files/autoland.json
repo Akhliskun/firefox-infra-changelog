@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 84228
+    "last_push_id": 84232
   },
   "1": {
     "changeset_number": "35344",
@@ -51284,26 +51284,6 @@
         "commit_message": "Bug 1547272 - ensure windows10-aarch64 is set to tier 2 for talos-bcv. r=jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29003",
         "files_changed": [
           "taskcluster/ci/test/talos.yml"
-        ]
-      }
-    }
-  },
-  "948": {
-    "changeset_number": "84173",
-    "pusher": "ahalberstadt@mozilla.com",
-    "date_of_push": "2019-04-26 21:41:09",
-    "changeset_commits": {
-      "2": {
-        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=ce1c928fb0cd",
-        "commiter_name": "Andrew Halberstadt <ahalberstadt@mozilla.com>",
-        "commit_message": "Bug 1546100 - [mochitest] Error out when running 'a11y' or 'chrome' with e10s, r=jmaher\n\nPreviously we would silently change the value of \"e10s\" from False to True.\nThis can cause confusion and lead people to falsely think mochitest-chrome/a11y\nwork with e10s (they do not).\n\nNow we explicitly error out in this case. This might be slightly less\nconvenient for the developer (e.g they might need to re-run the command), but\nthe downside of needing to rerun a test command is less than the risk of\nmisunderstanding what is being tested.\n\nNote: when running |mach test| or |mach mochitest| on a directory that contains\nboth chrome/a11y and another suite, we'll still do the right thing and\nimplicitly set \"e10s=False\".\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28538",
-        "files_changed": [
-          "testing/mochitest/mochitest_options.py",
-          "testing/mochitest/runtests.py",
-          "testing/mozbase/moztest/moztest/resolve.py",
-          "testing/mozharness/configs/unittests/linux_unittest.py",
-          "testing/mozharness/configs/unittests/mac_unittest.py",
-          "testing/mozharness/configs/unittests/win_unittest.py"
         ]
       }
     }
