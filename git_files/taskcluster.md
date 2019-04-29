@@ -1,7 +1,14 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-15 20:44:41.616287
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-16 00:37:24.999435
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|904|imbstack|Merge pull request #650 from djmitche/bug1547589 [Bug 1547589](https://bugzilla.mozilla.org/show_bug.cgi?id=1547589)  - denylisting fixes|[URL](https://github.com/taskcluster/taskcluster/commit/04ecaf98b0ad5006a7cb7fcb08a86e7e2a57d82d)|2019-04-29 21:33:51
+|903|djmitche|Merge pull request #652 from djmitche/dep-list-punct Omit needless punctuation in error message|[URL](https://github.com/taskcluster/taskcluster/commit/1213f33bcddc9933dbf604afaf39a57cc8ca04f0)|2019-04-29 21:33:06
+|902|djmitche|Omit needless punctuation in error message This had me briefly wondering if something had stuck a `,` into a taskId (which wouldn't be too hard with Python's treatment of `foo,` as a tuple)|[URL](https://github.com/taskcluster/taskcluster/commit/efd48784232ce34728558e7733305a1099af7fa4)|2019-04-29 20:49:02
+|901|djmitche|Merge pull request #649 from djmitche/bug1547733 [Bug 1547733](https://bugzilla.mozilla.org/show_bug.cgi?id=1547733)  - actually set 'trust proxy'|[URL](https://github.com/taskcluster/taskcluster/commit/326e072427779e6f2e10af9747e5718a0488b560)|2019-04-29 18:18:41
+|900|djmitche|[Bug 1547589](https://bugzilla.mozilla.org/show_bug.cgi?id=1547589)  - also deny notifications at the Notifier level Note that here we just drop the notification (with a log message) since often it will be a result of a pulse message, etc. Thus we get nice errors from the API methods, and quietly filter out other notification strategies.|[URL](https://github.com/taskcluster/taskcluster/commit/13c8fcb4eb2f34e909e57a38a6a1c53bf12cd2bf)|2019-04-29 17:02:05
+|899|djmitche|[Bug 1547589](https://bugzilla.mozilla.org/show_bug.cgi?id=1547589)  - add Denier to filter denied addresses This also fixes up the test_api.js tests so that they can fail..|[URL](https://github.com/taskcluster/taskcluster/commit/3862b8a7c5da11c876fbfc0362f6b2897ac6b261)|2019-04-29 16:49:30
+|898|imbstack|[Bug 1519730](https://bugzilla.mozilla.org/show_bug.cgi?id=1519730)  Replace sqs with pulse (#619) [Bug 1519730](https://bugzilla.mozilla.org/show_bug.cgi?id=1519730)  Replace sqs with pulse|[URL](https://github.com/taskcluster/taskcluster/commit/d001032248a9e78dae921f06ec0eb3786b2a47a2)|2019-04-29 18:11:25
 |897|helfi92|[UI] Remove unused dependencies (#648)|[URL](https://github.com/taskcluster/taskcluster/commit/eaf924bb2d7a27bd5f6fbc6c928a1ebd11e6a922)|2019-04-29 13:42:15
 |896|djmitche|Merge pull request #642 from djmitche/bug1544942 [Bug 1544942](https://bugzilla.mozilla.org/show_bug.cgi?id=1544942)  - replace signatureValidated logs with apiMethod|[URL](https://github.com/taskcluster/taskcluster/commit/a22bfed96fd93770f4b020d5141cbe22efde17ba)|2019-04-29 13:35:26
 |895|Biboswan|[UI] Fix ambiguity in headers in lasstfire table (#644)|[URL](https://github.com/taskcluster/taskcluster/commit/a8089746ec276acfcf8bda5eac15192e95c47191)|2019-04-29 13:14:19

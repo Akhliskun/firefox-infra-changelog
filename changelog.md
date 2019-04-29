@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-29 17:45:52 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-29 21:38:31 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -10,7 +10,6 @@
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=ebe9a3ca4b17)|[Bug 1545344](https://bugzilla.mozilla.org/show_bug.cgi?id=1545344)  - Don't change current directory when executing a command via run-task. r=tomprince Currently, all things running via run-task don't really care that the current directory is set to /. However, on generic-worker, many things assume the current directory is the task directory, which varies by task, and wrapping them with run-task fails because it resets the current directory. Differential Revision: https://phabricator.services.mozilla.com/D28018|mh@glandium.org|tomprince|2019-04-28 02:35:20|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=a584e4e9473f)|[Bug 1545368](https://bugzilla.mozilla.org/show_bug.cgi?id=1545368)  - Support fetches in run-task on generic-worker. r=tomprince Differential Revision: https://phabricator.services.mozilla.com/D28048|mh@glandium.org|tomprince|2019-04-28 02:35:20|
 |[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=8c3a37a0a53e)|[Bug 1546870](https://bugzilla.mozilla.org/show_bug.cgi?id=1546870)  - Package win*-rust toolchains as .tar.xz. r=froydnj This uniformizes the artifact name across platforms. We may want to do the same for other toolchains, but it bears the question whether xz is reliably available on users' Windows machines, while it doesn't matter for rust, since mach bootstrap pulls it with rustup rather than from automation, contrary to other toolchains. Differential Revision: https://phabricator.services.mozilla.com/D28780|mh@glandium.org|froydnj|2019-04-28 02:35:20|
-|[Link](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=c8d4031fcf80)|[Bug 1547272](https://bugzilla.mozilla.org/show_bug.cgi?id=1547272)  - ensure windows10-aarch64 is set to tier 2 for talos-bcv. r=jmaher Differential Revision: https://phabricator.services.mozilla.com/D29003|sdonner@mozilla.com|jmaher|2019-04-26 19:31:21|
 
 |	mozilla-inbound	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-inbound.json)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -98,6 +97,13 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
+|[Link](https://github.com/taskcluster/taskcluster/commit/04ecaf98b0ad5006a7cb7fcb08a86e7e2a57d82d)|Merge pull request #650 from djmitche/bug1547589  Bug 1547589 - denylisting fixes|imbstack|N/A|2019-04-29 21:33:51|
+|[Link](https://github.com/taskcluster/taskcluster/commit/1213f33bcddc9933dbf604afaf39a57cc8ca04f0)|Merge pull request #652 from djmitche/dep-list-punct  Omit needless punctuation in error message|djmitche|N/A|2019-04-29 21:33:06|
+|[Link](https://github.com/taskcluster/taskcluster/commit/efd48784232ce34728558e7733305a1099af7fa4)|Omit needless punctuation in error message  This had me briefly wondering if something had stuck a `,` into a taskId (which wouldn't be too hard with Python's treatment of `foo,` as a tuple)|djmitche|N/A|2019-04-29 20:49:02|
+|[Link](https://github.com/taskcluster/taskcluster/commit/326e072427779e6f2e10af9747e5718a0488b560)|Merge pull request #649 from djmitche/bug1547733  Bug 1547733 - actually set 'trust proxy'|djmitche|N/A|2019-04-29 18:18:41|
+|[Link](https://github.com/taskcluster/taskcluster/commit/13c8fcb4eb2f34e909e57a38a6a1c53bf12cd2bf)|Bug 1547589 - also deny notifications at the Notifier level  Note that here we just drop the notification (with a log message) since often it will be a result of a pulse message, etc.  Thus we get nice errors from the API methods, and quietly filter out other notification strategies.|djmitche|N/A|2019-04-29 17:02:05|
+|[Link](https://github.com/taskcluster/taskcluster/commit/3862b8a7c5da11c876fbfc0362f6b2897ac6b261)|Bug 1547589 - add Denier to filter denied addresses  This also fixes up the test_api.js tests so that they can fail..|djmitche|N/A|2019-04-29 16:49:30|
+|[Link](https://github.com/taskcluster/taskcluster/commit/d001032248a9e78dae921f06ec0eb3786b2a47a2)|[Bug 1519730] Replace sqs with pulse (#619)   [Bug 1519730] Replace sqs with pulse|imbstack|N/A|2019-04-29 18:11:25|
 |[Link](https://github.com/taskcluster/taskcluster/commit/eaf924bb2d7a27bd5f6fbc6c928a1ebd11e6a922)|[UI] Remove unused dependencies (#648)|helfi92|N/A|2019-04-29 13:42:15|
 |[Link](https://github.com/taskcluster/taskcluster/commit/a22bfed96fd93770f4b020d5141cbe22efde17ba)|Merge pull request #642 from djmitche/bug1544942  Bug 1544942 - replace signatureValidated logs with apiMethod|djmitche|N/A|2019-04-29 13:35:26|
 |[Link](https://github.com/taskcluster/taskcluster/commit/a8089746ec276acfcf8bda5eac15192e95c47191)|[UI] Fix ambiguity in headers in lasstfire table (#644)|Biboswan|N/A|2019-04-29 13:14:19|
