@@ -8,6 +8,7 @@ from modules.config import GIT_TOKEN
 from git import Repo
 import os
 import json
+from modules.FIC_DataVault import FICDataVault
 
 
 class FICGithub(FICFileHandler, FICLogger):
@@ -15,6 +16,7 @@ class FICGithub(FICFileHandler, FICLogger):
     def __init__(self, team_name, repo_name):
         FICLogger.__init__(self)
         FICFileHandler.__init__(self)
+        FICDataVault.__init__(self)
         self.team_name = team_name
         self.repo_name = repo_name
         self.token_counter = 0
@@ -127,8 +129,28 @@ class FICGithub(FICFileHandler, FICLogger):
     def repo_type(self):
         return json.load(self.load(None, "repositories.json")).get("Github").get(self.repo_name).get("configuration").get("type")
 
+    def extract_commit_data(self):
+        for commit in self.repo_data.commits():
+            self.commit_message = commit.message
+            self.commit_date = commit.commit.author.get("date")
+            self.commit_sha = commit.sha
+            self.commit_author = commit.commit.author.get("name")
+            self.commit_author_email = commit.commit.author.get("email")
+            # self.commit_files_changed =
+            self.commit_url = commit.url
+            # following lines are for testing purposes only
+            print(self.commit_author_email)
+            print(self.commit_url)
+            print(self.commit_date)
+            print(self.commit_message)
+            print(self.commit_author)
+            print(self.commit_sha)
+            print("\n")
 
-# for testing
+
+# # for testing
 a = FICGithub('mozilla-releng', 'OpenCloudConfig')
 print(a.get_repo_url())
-print(a.repo_type())
+print(a.repo_type(), "\n")
+
+a.extract_commit_data()
