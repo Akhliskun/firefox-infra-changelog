@@ -11,7 +11,7 @@ import json
 from modules.FIC_DataVault import FICDataVault
 
 
-class FICGithub(FICFileHandler, FICLogger):
+class FICGithub(FICFileHandler, FICLogger, FICDataVault):
 
     def __init__(self, team_name, repo_name):
         FICLogger.__init__(self)
@@ -136,7 +136,7 @@ class FICGithub(FICFileHandler, FICLogger):
             self.commit_sha = commit.sha
             self.commit_author = commit.commit.author.get("name")
             self.commit_author_email = commit.commit.author.get("email")
-            # self.commit_files_changed =
+            # self.commit_files_changed = can not find this data in the returned shortcommit
             self.commit_url = commit.url
             # following lines are for testing purposes only
             print(self.commit_author_email)
