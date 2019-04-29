@@ -250,7 +250,7 @@ class FICFileHandler(FICLogger, FICDataVault):
                                  .format(self.construct_path(new_path, new_file)))
 
     def last_checked(self, repo_name):
-        return json.load(self.load(CHANGELOG_REPO_PATH, repo_name.lower() + ".json")).get("0").get("last_release").get("date")
+        return json.load(self.load(CHANGELOG_REPO_PATH, repo_name.lower() + ".json")).get("0").get("last_checked")
 
     def local_version(self, repo_name):
         return json.load(self.load(CHANGELOG_REPO_PATH, repo_name.lower() + ".json")).get("0").get("last_release").get("version")
