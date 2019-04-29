@@ -1,7 +1,8 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-14 19:43:52.128134
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-15 08:49:49.661395
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|893|djmitche|Merge pull request #641 from djmitche/bug1542405 [Bug 1542405](https://bugzilla.mozilla.org/show_bug.cgi?id=1542405)  - update tc-github handler tests to use new fake pulse support|[URL](https://github.com/taskcluster/taskcluster/commit/18434828e8ea28b34d29f2af19d0236fa2d7b386)|2019-04-28 18:19:37
 |892|projectyang|[UI] Improve favicons (#601) add new accessible favicons remove shadow new logoRunning svg redesign icons with mask adjust cutoff point and green checkmark adjust logoCompleted new logo favicons adjust T width in logos replace non favicon logo.png|[URL](https://github.com/taskcluster/taskcluster/commit/118fbb5f3cad5fb8924af27437d25fac9e17f328)|2019-04-26 12:41:45
 |891|djmitche|Merge pull request #638 from djmitche/bug1547000 [Bug 1547000](https://bugzilla.mozilla.org/show_bug.cgi?id=1547000)  - don't show diffs for generated files|[URL](https://github.com/taskcluster/taskcluster/commit/453e8f8e48532778b8f45afa9d7c1dd3f513f7a8)|2019-04-26 12:35:33
 |890|djmitche|[Bug 1547000](https://bugzilla.mozilla.org/show_bug.cgi?id=1547000)  - don't show diffs for generated files Note that these files are still shown in a PR, just without the line-by-line diff -- much like `yarn.lock` is already. Note, too, that this does not cover files which are edited by yarn generate, such as `package.json` or the READMEs. Diffs in those files will appear in PRs as expected.|[URL](https://github.com/taskcluster/taskcluster/commit/b4f7b84e80c43efc02fc79d5bc10889cadf2b07f)|2019-04-26 12:28:00

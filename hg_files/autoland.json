@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 84233
+    "last_push_id": 84239
   },
   "1": {
     "changeset_number": "35344",
@@ -51356,6 +51356,21 @@
         "files_changed": [
           "taskcluster/ci/test/test-sets.yml",
           "testing/web-platform/meta/media-source/__dir__.ini"
+        ]
+      }
+    }
+  },
+  "950": {
+    "changeset_number": "84234",
+    "pusher": "jdemooij@mozilla.com",
+    "date_of_push": "2019-04-28 21:16:49",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=dfadeda46370",
+        "commiter_name": "Jan de Mooij <jdemooij@mozilla.com>",
+        "commit_message": "Bug 1545500 - Add Win32 SM(p) jobs back for 32-bit jit-test coverage. r=sfink,jmaher\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28830",
+        "files_changed": [
+          "taskcluster/ci/spidermonkey/windows.yml"
         ]
       }
     }
