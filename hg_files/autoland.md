@@ -1,9 +1,9 @@
 ## REPOSITORY NAME: AUTOLAND
- CURRENT PUSH ID: 84239
+ CURRENT PUSH ID: 84271
 
 | Changeset | Date | Commiter | Commit Message | Commit URL | 
 |:---:|:---:|:----:|:----------------------------------:|:-----:| 
-|84234|2019-04-28 21:16:49|Jan de Mooij <jdemooij@mozilla.com>|[Bug 1545500](https://bugzilla.mozilla.org/show_bug.cgi?id=1545500)  - Add Win32 SM(p) jobs back for 32-bit jit-test coverage. r=sfink,jmaherDifferential Revision: https://phabricator.services.mozilla.com/D28830|https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=dfadeda46370
+|84249|2019-04-29 14:11:16|ffxbld <ffxbld@mozilla.com>|No Bug, taskcluster/docker/funsize-update-generator pipfile-update. r=sfraserDifferential Revision: https://phabricator.services.mozilla.com/D29170|https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=8484074f6e62
 |84227|2019-04-28 03:34:16|Bogdan Tara <btara@mozilla.com>|Backed out changeset 8218cc92ee8d for docker images builds failures CLOSED TREE|https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=28e4375e491e
 |84224|2019-04-28 02:35:20|Mike Hommey <mh+mozilla@glandium.org>|[Bug 1544986](https://bugzilla.mozilla.org/show_bug.cgi?id=1544986)  - Fall back more gracefully when TASKCLUSTER_WORKER_GROUP is not set. r=tomprinceDifferential Revision: https://phabricator.services.mozilla.com/D27841|https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=4c994bf99569
 |84224|2019-04-28 02:35:20|Mike Hommey <mh+mozilla@glandium.org>|[Bug 1545344](https://bugzilla.mozilla.org/show_bug.cgi?id=1545344)  - Don't change current directory when executing a command via run-task. r=tomprinceCurrently, all things running via run-task don't really care that thecurrent directory is set to /. However, on generic-worker, many thingsassume the current directory is the task directory, which varies bytask, and wrapping them with run-task fails because it resets thecurrent directory.Differential Rev.. [continue reading](https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=ebe9a3ca4b17)|https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=ebe9a3ca4b17

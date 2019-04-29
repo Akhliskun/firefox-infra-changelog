@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 3465
+    "last_push_id": 3467
   },
   "1": {
     "changeset_number": "3358",
@@ -2298,6 +2298,56 @@
         "commit_message": "hgserver: add `reposetup` timing output to `test-push-basic.t` blackbox logs (Bug 1547276)\n\nMercurial 4.9.1 now includes repo setup timing information in\nblackbox logs, which we have yet to add to the tests.",
         "files_changed": [
           "hgserver/tests/test-push-basic.t"
+        ]
+      }
+    }
+  },
+  "87": {
+    "changeset_number": "3466",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-29 16:50:05",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=51905dc214c4",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hgtemplates: do not pass `node` through `short` template filter anywhere (Bug 1539324) r=glob\n\nTreeherder has removed support for using 12 character revision\nSHAs, due to the performance hit taken by being unable to fully\nindex a 12 character SHA (since the 40 character SHA is the\ncanonical version). This commit performs a global replace of\n`{node|short}` with `{node}` for the `gitweb_mozilla` theme.\n\nThe existing form takes the `node` template keyword and passes\nit through the `short` template filter, producing the 12-character\nSHA. Removing the `short` filter will cause the full 40-char\nSHA to be displayed instead.\n\nLike all other templating changes, we add a patchfile to\n`hgtemplates/.patches` that encompasses all the changes made by\nthis commit. Running `hgserver/tests/test-template-sync.t`\nverified that the changes are successfully tracked under version\ncontrol.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29033",
+        "files_changed": [
+          "hgext/hgmo/tests/test-backouts.t",
+          "hgext/hgmo/tests/test-reviewers.t",
+          "hgserver/tests/test-template-sync.t",
+          "hgtemplates/.patches/series",
+          "hgtemplates/.patches/shortnode.patch",
+          "hgtemplates/gitweb_mozilla/changelogentry.tmpl",
+          "hgtemplates/gitweb_mozilla/changeset.tmpl",
+          "hgtemplates/gitweb_mozilla/fileannotate.tmpl",
+          "hgtemplates/gitweb_mozilla/filecomparison.tmpl",
+          "hgtemplates/gitweb_mozilla/filediff.tmpl",
+          "hgtemplates/gitweb_mozilla/filerevision.tmpl",
+          "hgtemplates/gitweb_mozilla/graphentry.tmpl",
+          "hgtemplates/gitweb_mozilla/map"
+        ]
+      }
+    }
+  },
+  "88": {
+    "changeset_number": "3467",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-29 18:44:11",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=ae489559efe1",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozhg: use renamed keyword argument when running under Mercurial >= 5.0 (Bug 1546508) r=glob\n\nUnder Mercurial 5.0, the `copied` keyword argument passed\nto `context.memfilectx` has been renamed to `copysource`.\nThis commit adds a conditional to use the correct argument\nname when running under the new version.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29212",
+        "files_changed": [
+          "pylib/mozhg/mozhg/rewrite.py"
+        ]
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=db9bc20ab995",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "push-to-try: mark as compatible with Mercurial 5.0 (Bug 1546508) r=glob\n\nWith `mozhg` now compatible with the 5.0 release candidate,\n`push-to-try` tests pass under the new version.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29213",
+        "files_changed": [
+          "hgext/push-to-try/__init__.py"
         ]
       }
     }
