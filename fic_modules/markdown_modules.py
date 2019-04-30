@@ -34,7 +34,7 @@ def create_git_md_table(repository_name, path_to_files):
         json_data = open(
             "{}/"
             .format(path_to_files) + "{}.json"
-            .format(repository_name))\
+            .format(repository_name.lower()))\
             .read()
         data = json.loads(json_data)
         base_table = "| Commit Number | Commiter | Commit " \
@@ -92,7 +92,7 @@ def create_git_md_table(repository_name, path_to_files):
             except TypeError:
                 pass
 
-        md_file_name = "{}.md".format(repository_name)
+        md_file_name = "{}.md".format(repository_name.lower())
         md_file = open("{}/".format(path_to_files) +
                        md_file_name, "w")
 
