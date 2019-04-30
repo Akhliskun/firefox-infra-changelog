@@ -24,7 +24,7 @@ from fic_modules.configuration import (
     REPOSITORIES,
     LOGGER
 )
-from fic_modules.markdown_modules import generate_main_md_table
+from fic_modules.markdown_modules import generate_changelog_markdown
 
 
 def run_all(logger, days):
@@ -46,7 +46,7 @@ def run_all(logger, days):
     json.dump(changelog_data, data_file, indent=2)
     data_file.close()
     clear_file("changelog.md", int(days))
-    generate_main_md_table(REPOSITORIES, "complete", int(days))
+    generate_changelog_markdown(REPOSITORIES, "complete", int(days))
 
 
 def update_all(logger, days):
@@ -73,7 +73,7 @@ def update_all(logger, days):
     json.dump(changelog_data, data_file, indent=2)
     data_file.close()
     clear_file("changelog.md", int(days))
-    generate_main_md_table(REPOSITORIES, "complete", int(days))
+    generate_changelog_markdown(REPOSITORIES, "complete", int(days))
     update_fic_files.git_add()
     update_fic_files.git_commit()
     update_fic_files.git_push()
@@ -92,7 +92,7 @@ def run_git(logger, days):
     repo_name = "Github"
     write_to_changelog_json(git_data, repo_name)
     clear_file("changelog.md", int(days))
-    generate_main_md_table(REPOSITORIES, "Git", int(days))
+    generate_changelog_markdown(REPOSITORIES, "Git", int(days))
     click.echo("Script ran in GIT Only mode")
 
 
@@ -109,7 +109,7 @@ def run_hg(logger, days):
     repo_name = "Hg"
     write_to_changelog_json(hg_data, repo_name)
     clear_file("changelog.md", int(days))
-    generate_main_md_table(REPOSITORIES, "Hg", int(days))
+    generate_changelog_markdown(REPOSITORIES, "Hg", int(days))
     click.echo("Script ran in HG Only mode")
 
 
@@ -138,11 +138,11 @@ def run_multiple(logger, days):
             for repository in new_list:
                 if repository in REPOSITORIES.get("Github"):
                     create_files_for_git(repository, onerepo=True)
-                    generate_main_md_table(REPOSITORIES, "complete", int(days))
+                    generate_changelog_markdown(REPOSITORIES, "complete", int(days))
                 elif repository in REPOSITORIES.get("Mercurial"):
                     create_files_for_hg(repository, onerepo=True)
                     clear_file("changelog.md", int(days))
-                    generate_main_md_table(REPOSITORIES, "complete", int(days))
+                    generate_changelog_markdown(REPOSITORIES, "complete", int(days))
         try:
             new_entry = int(user_choice) - 1
             if new_entry < 0 or new_entry >= len(REPO_LIST):
@@ -235,4 +235,4 @@ if __name__ == "__main__":
     try:
         cli()
     except GithubException as error_code:
-        FICExceptions(error_code.status).handle_exception()
+        FICExceptions(error_code.status).handle_git_exception()
