@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-30 00:32:23 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-30 03:32:02 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -17,7 +17,6 @@
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
 |[Link](https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=8484074f6e62)|No Bug, taskcluster/docker/funsize-update-generator pipfile-update. r=sfraser Differential Revision: https://phabricator.services.mozilla.com/D29170|csabou@mozilla.com|sfraser|2019-04-29 19:05:37|
-|[Link](https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=c8d4031fcf80)|[Bug 1547272](https://bugzilla.mozilla.org/show_bug.cgi?id=1547272)  - ensure windows10-aarch64 is set to tier 2 for talos-bcv. r=jmaher Differential Revision: https://phabricator.services.mozilla.com/D29003|aiakab@mozilla.com|jmaher|2019-04-27 01:08:15|
 
 |	mozilla-central	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-central.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-central.json)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -25,7 +24,6 @@
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
 |[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=8484074f6e62)|No Bug, taskcluster/docker/funsize-update-generator pipfile-update. r=sfraser Differential Revision: https://phabricator.services.mozilla.com/D29170|csabou@mozilla.com|sfraser|2019-04-29 18:59:55|
-|[Link](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=c8d4031fcf80)|[Bug 1547272](https://bugzilla.mozilla.org/show_bug.cgi?id=1547272)  - ensure windows10-aarch64 is set to tier 2 for talos-bcv. r=jmaher Differential Revision: https://phabricator.services.mozilla.com/D29003|aiakab@mozilla.com|jmaher|2019-04-27 01:02:33|
 
 |	mozilla-beta	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-beta.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-beta.json)	| 
 |:----------:|:-----------------------:|:--------:| 
