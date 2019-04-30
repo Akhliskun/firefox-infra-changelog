@@ -178,8 +178,8 @@ def run_days(logger, days):
 @click.option('-p', '--push', is_flag=True, help='Automatically push the updated'
                                                    'data to github.')
 @click.help_option('-h', '--help')
-def cli(complete=False, git=False, mercurial=False, logger=False, manual=False,
-        days=False, update=False):
+def cli(all=False, git=False, mercurial=False, logger=False, repo=False,
+        days=False, push=False):
     """
     Main function of the script that handles how the script runs
     :param update: push the new changes to Github
@@ -211,15 +211,15 @@ def cli(complete=False, git=False, mercurial=False, logger=False, manual=False,
         run_days(LOGGER, days)
     if logger:
         logging.getLogger().addHandler(logging.StreamHandler())
-    if complete:
+    if all:
         run_all(LOGGER, days)
     if git:
         run_git(LOGGER, days)
     if mercurial:
         run_hg(LOGGER, days)
-    if manual:
+    if repo:
         run_multiple(LOGGER, days)
-    if update:
+    if push:
         update_all(LOGGER, days)
 
 
