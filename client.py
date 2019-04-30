@@ -168,14 +168,14 @@ def run_days(logger, days):
               help='Run only for HG repos')
 @click.option('-l', '--logger', is_flag=True, flag_value='logger',
               help='Display logger')
-@click.option('-m', '--manual', is_flag=True, flag_value='manual',
+@click.option('-r', '--repo', is_flag=True, flag_value='repo',
               help='Let you choose for which repositories the script will run')
-@click.option('-c', '--complete', is_flag=True, flag_value='complete',
+@click.option('-a', '--all', is_flag=True, flag_value='all',
               help='Run for all currently available repositories')
 @click.option('-d', '--days', default=3, help='Let user decide for how many '
                                               'days changelog.md will '
                                               'be generated')
-@click.option('-u', '--update', is_flag=True, help='Automatically push the updated'
+@click.option('-p', '--push', is_flag=True, help='Automatically push the updated'
                                                    'data to github.')
 @click.help_option('-h', '--help')
 def cli(complete=False, git=False, mercurial=False, logger=False, manual=False,
