@@ -1,4 +1,4 @@
-##  Commits in production - for 3 days, generated on: 2019-04-29 21:38:31 UTC.
+##  Commits in production - for 3 days, generated on: 2019-04-30 00:32:23 UTC.
 |	autoland	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/autoland.json)	| 
 |:----------:|:-----------------------:|:--------:| 
  
@@ -69,7 +69,7 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
-| |No push in the last 3 days.. [see the history of MD commits](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/git_files/ronin_puppet.md)|FIC - BOT|Self Generated| - |
+|[Link](https://github.com/mozilla-platform-ops/ronin_puppet/commit/715fb0fc675aebe79556b20af6293ff1ccc124b4)|add bitbar_devicepool module (#22)|aerickson|N/A|2019-04-29 22:31:09|
 
 |	mozilla-release	|	[MarkDown](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-release.md)	|	[Json](https://github.com/mozilla-releng/firefox-infra-changelog/blob/master/hg_files/mozilla-release.json)	| 
 |:----------:|:-----------------------:|:--------:| 
@@ -97,6 +97,8 @@
  
 | Link | Last commit | Author | Reviewer | Deploy time | 
 |:----------:|:-----------:|:------:|:--------:|:-----------:| 
+|[Link](https://github.com/taskcluster/taskcluster/commit/7b7fd0629376fabf45e47501b17d03385e9d27b5)|Merge pull request #653 from djmitche/best-practices-monorepo  Add document describing development practices|djmitche|N/A|2019-04-29 23:11:00|
+|[Link](https://github.com/taskcluster/taskcluster/commit/1a404938a43a7682898486d9ab49e2dc9f77b0b2)|Add document describing development practices|djmitche|N/A|2019-04-29 22:51:19|
 |[Link](https://github.com/taskcluster/taskcluster/commit/04ecaf98b0ad5006a7cb7fcb08a86e7e2a57d82d)|Merge pull request #650 from djmitche/bug1547589  Bug 1547589 - denylisting fixes|imbstack|N/A|2019-04-29 21:33:51|
 |[Link](https://github.com/taskcluster/taskcluster/commit/1213f33bcddc9933dbf604afaf39a57cc8ca04f0)|Merge pull request #652 from djmitche/dep-list-punct  Omit needless punctuation in error message|djmitche|N/A|2019-04-29 21:33:06|
 |[Link](https://github.com/taskcluster/taskcluster/commit/efd48784232ce34728558e7733305a1099af7fa4)|Omit needless punctuation in error message  This had me briefly wondering if something had stuck a `,` into a taskId (which wouldn't be too hard with Python's treatment of `foo,` as a tuple)|djmitche|N/A|2019-04-29 20:49:02|

@@ -1,7 +1,9 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-16 00:37:24.999435
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-16 03:31:22.489759
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|906|djmitche|Merge pull request #653 from djmitche/best-practices-monorepo Add document describing development practices|[URL](https://github.com/taskcluster/taskcluster/commit/7b7fd0629376fabf45e47501b17d03385e9d27b5)|2019-04-29 23:11:00
+|905|djmitche|Add document describing development practices|[URL](https://github.com/taskcluster/taskcluster/commit/1a404938a43a7682898486d9ab49e2dc9f77b0b2)|2019-04-29 22:51:19
 |904|imbstack|Merge pull request #650 from djmitche/bug1547589 [Bug 1547589](https://bugzilla.mozilla.org/show_bug.cgi?id=1547589)  - denylisting fixes|[URL](https://github.com/taskcluster/taskcluster/commit/04ecaf98b0ad5006a7cb7fcb08a86e7e2a57d82d)|2019-04-29 21:33:51
 |903|djmitche|Merge pull request #652 from djmitche/dep-list-punct Omit needless punctuation in error message|[URL](https://github.com/taskcluster/taskcluster/commit/1213f33bcddc9933dbf604afaf39a57cc8ca04f0)|2019-04-29 21:33:06
 |902|djmitche|Omit needless punctuation in error message This had me briefly wondering if something had stuck a `,` into a taskId (which wouldn't be too hard with Python's treatment of `foo,` as a tuple)|[URL](https://github.com/taskcluster/taskcluster/commit/efd48784232ce34728558e7733305a1099af7fa4)|2019-04-29 20:49:02
