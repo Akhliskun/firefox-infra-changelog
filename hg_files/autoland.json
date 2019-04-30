@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 84335
+    "last_push_id": 84407
   },
   "1": {
     "changeset_number": "35344",
@@ -51355,6 +51355,80 @@
         "commit_message": "No Bug, taskcluster/docker/funsize-update-generator pipfile-update. r=sfraser\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29170",
         "files_changed": [
           "taskcluster/docker/funsize-update-generator/Pipfile.lock"
+        ]
+      }
+    }
+  },
+  "950": {
+    "changeset_number": "84340",
+    "pusher": "rgarbas@mozilla.com",
+    "date_of_push": "2019-04-30 09:57:50",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=626ad97710e3",
+        "commiter_name": "Rok Garbas <rok@garbas.si>",
+        "commit_message": "Bug 1533330 - Update tooltool.py with optional support of taskcluster auth tokens r=rail\n\nWith this change tooltool.py also supports taskcluster credentials to be passed\n(in json format) to --authentication-file option. RelengAPI tokens are still\nworking with this patch, just additional authentication is added.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D27881",
+        "files_changed": [
+          "python/mozbuild/mozbuild/action/tooltool.py",
+          "testing/mozharness/external_tools/tooltool.py"
+        ]
+      }
+    }
+  },
+  "951": {
+    "changeset_number": "84367",
+    "pusher": "jlorenzo@mozilla.com",
+    "date_of_push": "2019-04-30 16:59:17",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=486f55e81c57",
+        "commiter_name": "Johan Lorenzo <jlorenzo@mozilla.com>",
+        "commit_message": "Bug 1546320 - Create mozconfigs for Fennec beta builds r=RyanVM\n\nCreate mozconfigs for Fennec beta builds.\nThis also prevents mergeday scripts from modifying nightly mozconfigs on beta\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29350",
+        "files_changed": [
+          "mobile/android/config/mozconfigs/android-aarch64/beta",
+          "mobile/android/config/mozconfigs/android-aarch64/debug-beta",
+          "mobile/android/config/mozconfigs/android-api-16/beta",
+          "mobile/android/config/mozconfigs/android-api-16/debug-beta",
+          "mobile/android/config/mozconfigs/android-x86/beta",
+          "mobile/android/config/mozconfigs/android-x86/debug-beta",
+          "mobile/android/config/mozconfigs/android-x86_64/beta",
+          "mobile/android/config/mozconfigs/android-x86_64/debug-beta",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_aarch64_beta.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_aarch64_beta_debug.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_api_16_beta.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_api_16_beta_debug.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_x86_64_beta.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_x86_64_beta_debug.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_x86_beta.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_x86_beta_debug.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_x86_debug.py",
+          "testing/mozharness/configs/merge_day/central_to_beta.py",
+          "testing/mozharness/mozharness/mozilla/building/buildbase.py"
+        ]
+      }
+    }
+  },
+  "952": {
+    "changeset_number": "84397",
+    "pusher": "mshal@mozilla.com",
+    "date_of_push": "2019-04-30 19:32:09",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=b7aa4980e921",
+        "commiter_name": "Mike Shal <mshal@mozilla.com>",
+        "commit_message": "Bug 1547395 - Allow specific tasks in the use-pgo field; r=tomprince\n\nSome groups of tasks need to share the same profile data. For example,\nAndroid PGO builds and Android Nightly builds both use the\ngenerate-profile-android-api-16/pgo task for profile data. Previously\nthis was done with a text substitution, but this is a bit hacky and\ndoesn't easily scale with different build types.\n\nAllowing use_pgo to be a string means we can just directly point to the\ngenerate-profile task that contains the profile data to be used in a PGO\nbuild.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29247",
+        "files_changed": [
+          "taskcluster/ci/build/android.yml",
+          "taskcluster/taskgraph/transforms/build.py"
+        ]
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=2de8fcb8a341",
+        "commiter_name": "Mike Shal <mshal@mozilla.com>",
+        "commit_message": "Bug 1547395 - Use 3-tier PGO for linux64-devedition builds; r=chmanchester\n\nDepends on D29247\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29248",
+        "files_changed": [
+          "browser/config/mozconfigs/linux64/devedition",
+          "taskcluster/ci/build/linux.yml"
         ]
       }
     }

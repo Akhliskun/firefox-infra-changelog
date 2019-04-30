@@ -1,7 +1,15 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-16 06:31:03.526541
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-16 21:05:12.909225
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|914|imbstack|Merge pull request #656 from taskcluster/fix-notify-irc Fix notify irc|[URL](https://github.com/taskcluster/taskcluster/commit/406583d316a34dcc86f90bf8bc196e82a6a6f923)|2019-04-30 16:34:32
+|913|helfi92|Merge pull request #655 from helfi92/resetting-store-issues [UI] Rely on key and fetchPolicy instead of resetStore|[URL](https://github.com/taskcluster/taskcluster/commit/8234b74b6c114a0a2b355312c006795e88ef4c51)|2019-04-30 15:32:01
+|912|owlishDeveloper|Merge pull request #632 from owlishDeveloper/bug1546789 Add `list worker types` endpoint to worker manager|[URL](https://github.com/taskcluster/taskcluster/commit/ece6b75a7051e28e936aa8454d54137861e27ac1)|2019-04-30 15:29:57
+|911|helfi92|Add note re:fetchPolicy|[URL](https://github.com/taskcluster/taskcluster/commit/22c7f5e038de9613beac113a91de5397d868520c)|2019-04-30 14:51:34
+|910|helfi92|Merge pull request #295 from taskcluster/renovate/neutrino-monorepo Update neutrino monorepo to v9.0.0-rc.0|[URL](https://github.com/taskcluster/taskcluster/commit/72c579887f756edab92c73062bb3e6cb7b733a6b)|2019-04-30 15:09:21
+|909|helfi92|Rely on `key` and `fetchPolicy` instead of `resetStore` `resetStore` causes the store to be cleared and all active queries to be refetched. The only problem is that for many of our views, we depend on `fetchMore` to fetch the full list. Refetching active queries will only fetch the first query. To fix this issue, we should rely on the key prop and the networkPolicy property to refetch active que.. [continue reading](https://github.com/taskcluster/taskcluster/commit/5f391e8fa40860737f58b83004dbb7a6b8c78ffc)|[URL](https://github.com/taskcluster/taskcluster/commit/5f391e8fa40860737f58b83004dbb7a6b8c78ffc)|2019-04-29 23:21:19
+|908|helfi92|Add required changes for migrating neutrino to 9.0.0-rc.0|[URL](https://github.com/taskcluster/taskcluster/commit/acf20cff6fc7fcee14912ba554a707001d425e42)|2019-02-25 13:55:09
+|907|renovate-bot|Update neutrino monorepo to v9.0.0-rc.0|[URL](https://github.com/taskcluster/taskcluster/commit/308b9cd38f9908a0f3eee2dcaf1bdc59c377246b)|2019-02-25 01:58:58
 |906|djmitche|Merge pull request #653 from djmitche/best-practices-monorepo Add document describing development practices|[URL](https://github.com/taskcluster/taskcluster/commit/7b7fd0629376fabf45e47501b17d03385e9d27b5)|2019-04-29 23:11:00
 |905|djmitche|Add document describing development practices|[URL](https://github.com/taskcluster/taskcluster/commit/1a404938a43a7682898486d9ab49e2dc9f77b0b2)|2019-04-29 22:51:19
 |904|imbstack|Merge pull request #650 from djmitche/bug1547589 [Bug 1547589](https://bugzilla.mozilla.org/show_bug.cgi?id=1547589)  - denylisting fixes|[URL](https://github.com/taskcluster/taskcluster/commit/04ecaf98b0ad5006a7cb7fcb08a86e7e2a57d82d)|2019-04-29 21:33:51

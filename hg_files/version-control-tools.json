@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 3467
+    "last_push_id": 3473
   },
   "1": {
     "changeset_number": "3358",
@@ -2317,6 +2317,107 @@
         "commit_message": "push-to-try: mark as compatible with Mercurial 5.0 (Bug 1546508) r=glob\n\nWith `mozhg` now compatible with the 5.0 release candidate,\n`push-to-try` tests pass under the new version.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29213",
         "files_changed": [
           "hgext/push-to-try/__init__.py"
+        ]
+      }
+    }
+  },
+  "88": {
+    "changeset_number": "3468",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-30 18:00:40",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=41e63de62c96",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hgtemplates: pass `node` through `short` template filter for `data-node` HTML tag (Bug 1547870) r=glob\n\nNot passing the node through `short` causes a `querySelector`\ncall in `mercurial.js` to return nothing. This call is responsible\nfor applying left padding to the element, to allow the graph\nto display without the changeset information on top.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29362",
+        "files_changed": [
+          "hgtemplates/.patches/shortnode.patch",
+          "hgtemplates/gitweb_mozilla/graphentry.tmpl"
+        ]
+      }
+    }
+  },
+  "89": {
+    "changeset_number": "3469",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-30 18:03:56",
+    "changeset_commits": {
+      "3": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=baa4bb1271e8",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/monitoring-agent: add encrypted InfluxDB credentials (Bug 1543989) r=lars\n\nThis commit adds a set of default Ansible variables in the\n`monitoring-agent` role, for sending data to Mozilla's\nproduction InfluxDB instance.\n\nSince `sops` doesn't yet know how to parse TOML, we store\nthe secrets as YAML Ansible defaults.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28363",
+        "files_changed": [
+          ".sops.yaml",
+          "ansible/roles/monitoring-agent/defaults/main.yml"
+        ]
+      },
+      "4": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=32df72677efb",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/monitoring-agent: send monitoring data to production InfluxDB instance (Bug 1543989) r=lars\n\nThis commit tells Telegraf to send data to the production InfluxDB\ninstance. At the moment we will send data to both the test instance\nand the production instance, to verify all the data is correctly\nsent.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D28364",
+        "files_changed": [
+          "ansible/roles/monitoring-agent/templates/telegraf.conf.j2"
+        ]
+      }
+    }
+  },
+  "90": {
+    "changeset_number": "3470",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-30 18:53:54",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=88247fb4308a",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "robustcheckout: remove arguments passed to `matchmod.always` in modern Mercurial (Bug 1546507) r=glob\n\nThe arguments passed to `matchmod.always` are unused under the\nhood, so they've been removed in Mercurial 5.0 and onward.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29271",
+        "files_changed": [
+          "hgext/robustcheckout/__init__.py"
+        ]
+      }
+    }
+  },
+  "91": {
+    "changeset_number": "3471",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-30 19:09:51",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=d7b0532a4e6a",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/monitoring-agent: fix production InfluxDB credentials (Bug 1543989)\n\nThe production URL for Mozilla's InfluxDB instance was\nincorrect, as well as the database name being enclosed\nby too many quotes.\n\nThe `influxdb_skip_database_creation` variable is also\nadded as `True` (valid in Python) instead of `true`\n(valid JSON/TOML), so we add a `to_json` filter to\nthat variable.",
+        "files_changed": [
+          "ansible/roles/monitoring-agent/defaults/main.yml",
+          "ansible/roles/monitoring-agent/templates/telegraf.conf.j2"
+        ]
+      }
+    }
+  },
+  "92": {
+    "changeset_number": "3472",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-30 19:25:39",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=f13310e10021",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/monitoring-agent: remove quotes around boolean variable (Bug 1543989)\n\nThis causes the variable to be a string instead of a bool.",
+        "files_changed": [
+          "ansible/roles/monitoring-agent/templates/telegraf.conf.j2"
+        ]
+      }
+    }
+  },
+  "93": {
+    "changeset_number": "3473",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-30 20:39:20",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=2a93b060dd7e",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/monitoring-agent: remove retention policy from database name (Bug 1543989)\n\nWe only need the database name in this field.",
+        "files_changed": [
+          "ansible/roles/monitoring-agent/defaults/main.yml"
         ]
       }
     }

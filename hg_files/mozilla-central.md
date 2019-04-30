@@ -1,9 +1,9 @@
 ## REPOSITORY NAME: MOZILLA-CENTRAL
- CURRENT PUSH ID: 35934
+ CURRENT PUSH ID: 35943
 
 | Changeset | Date | Commiter | Commit Message | Commit URL | 
 |:---:|:---:|:----:|:----------------------------------:|:-----:| 
-|35932|2019-04-29 18:59:55|ffxbld <ffxbld@mozilla.com>|No Bug, taskcluster/docker/funsize-update-generator pipfile-update. r=sfraserDifferential Revision: https://phabricator.services.mozilla.com/D29170|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=8484074f6e62
+|35941|2019-04-30 14:32:04|Rok Garbas <rok@garbas.si>|[Bug 1533330](https://bugzilla.mozilla.org/show_bug.cgi?id=1533330)  - Update tooltool.py with optional support of taskcluster auth tokens r=railWith this change tooltool.py also supports taskcluster credentials to be passed(in json format) to --authentication-file option. RelengAPI tokens are stillworking with this patch, just additional authentication is added.Differential Revision: https://phabricator.services.mozilla.com/D27881|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=626ad97710e3
 |35920|2019-04-27 01:02:33|Stephen Donner <stephen.donner@gmail.com>|[Bug 1547272](https://bugzilla.mozilla.org/show_bug.cgi?id=1547272)  - ensure windows10-aarch64 is set to tier 2 for talos-bcv. r=jmaherDifferential Revision: https://phabricator.services.mozilla.com/D29003|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=c8d4031fcf80
 |35916|2019-04-26 12:46:15|Stephen Donner <stephen.donner@gmail.com>|[Bug 1547044](https://bugzilla.mozilla.org/show_bug.cgi?id=1547044)  Properly set windows10-aarch64 tests to tier 2. r=jmaherDifferential Revision: https://phabricator.services.mozilla.com/D28887|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=716e89455efe
 |35916|2019-04-26 12:46:15|Joel Maher <jmaher@mozilla.com>|[Bug 1546610](https://bugzilla.mozilla.org/show_bug.cgi?id=1546610)  - reduce marionette-headless to run on linux64/shippable as tier2 only. r=whimbooreduce marionette-headless to run on linux64/shippable as tier2 onlyDifferential Revision: https://phabricator.services.mozilla.com/D28838|https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=f534de537db5
