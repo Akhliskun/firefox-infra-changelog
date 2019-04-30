@@ -109,7 +109,7 @@ def create_git_md_table(repository_name, path_to_files):
         LOGGER.info("Json for %s is empty! Skipping!", repository_name)
 
 
-def create_md_table_for_scriptworkers(repository_name):
+def create_scriptworker_files(repository_name):
     """
     This function creates the markdown table for the scriptworker repositories.
     :param: repositories_name: Expects the name of the repository
@@ -125,7 +125,7 @@ def create_md_table_for_scriptworkers(repository_name):
         create_git_md_table(scriptworker_repo, "git_files")
 
 
-def generate_main_md_table(repositories_holder, which_repo, days_to_generate):
+def generate_changelog_markdown(repositories_holder, which_repo, days_to_generate):
     """
     Looks into repositories folders (hg_files & git files),
     filters the files to load the json's using a passfilter and calls after
