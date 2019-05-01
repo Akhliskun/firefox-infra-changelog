@@ -4,17 +4,20 @@
 import github3
 from modules.FIC_Logger import FICLogger
 from modules.FIC_FileHandler import FICFileHandler
+from modules.FIC_DataVault import FICDataVault
 from modules.config import GIT_TOKEN
+from modules.config import CHANGELOG_JSON_PATH, CHANGELOG_MD_PATH, CHANGELOG_REPO_PATH
 from git import Repo
 import os
 import json
 
 
-class FICGithub(FICFileHandler, FICLogger):
+class FICGithub(FICFileHandler, FICLogger, FICDataVault):
 
     def __init__(self, team_name, repo_name):
         FICLogger.__init__(self)
         FICFileHandler.__init__(self)
+        FICDataVault.__init__(self)
         self.team_name = team_name
         self.repo_name = repo_name
         self.token_counter = 0
@@ -127,8 +130,106 @@ class FICGithub(FICFileHandler, FICLogger):
     def repo_type(self):
         return json.load(self.load(None, "repositories.json")).get("Github").get(self.repo_name).get("configuration").get("type")
 
+    def repo_team(self):
+        self.team_name = json.load(self.load(None, "repositories.json")).get("Github").get(self.repo_name).get("team")
+
+    def repo_files(self):
+        return json.load(self.load(None, "repositories.json")).get("Github").get(self.repo_name).get("configuration").get("folders-to-check")
+
+    def get_sha(self, commit):
+        self.commit_sha = commit.sha
+
+    def get_message(self, commit):
+        self.commit_message = commit.message
+
+    def get_date(self, commit):
+        self.commit_date = commit.commit.author.get("date")
+
+    def get_author(self, commit):
+        self.commit_author = commit.commit.author.get("name")
+
+    def get_author_email(self, commit):
+        self.commit_author_email = commit.commit.author.get("email")
+
+    def get_url(self, commit):
+        self.commit_url = commit.url
+
+    def get_files(self):
+        self.commit_files_changed = []
+        for item in (range(len(self.repo_data.commit(sha=self.commit_sha).files))):
+            self.commit_files_changed.append(self.repo_data.commit(sha=self.commit_sha).files[item].get('filename'))
+
+    def store_date(self, current_commit):
+        self.get_sha(current_commit)
+        self.get_message(current_commit)
+        self.get_date(current_commit)
+        self.get_author(current_commit)
+        self.get_author_email(current_commit)
+        self.get_url(current_commit)
+        self.get_files()
+
+    def construct_commit(self):
+        self.list_of_commits.update({self.commit_number: {'sha': self.commit_sha,
+                                                          'url': self.commit_url,
+                                                          'author': self.commit_author,
+                                                          'author_email': self.commit_author_email,
+                                                          'message': self.commit_message,
+                                                          'date': self.commit_date,
+                                                          'files': self.commit_files_changed}})
+
+    def last_checked(self):
+        self.last_check = json.load(self.load(CHANGELOG_REPO_PATH, self.repo_name.lower() + ".json")).get("0").get("last_checked")
+
+    def local_version(self):
+        self.release_date = json.load(self.load(CHANGELOG_REPO_PATH, self.repo_name.lower() + ".json")).get("0").get("last_release").get("version")
+
+    def not_tag(self):
+        pass
+
+    def build_puppet(self):
+        pass
+
+    def tag(self):
+        pass
+
+    def commit_keyword(self):
+        pass
+
+    def repo_selector(self):
+        if self.repo_type() == "no-tag":
+            self.not_tag()
+
+        elif self.repo_type() == "tag":
+
+            if self.repo_name == "build-puppet":
+                self.build_puppet()
+            else:
+                self.tag()
+
+        elif self.repo_type() == "commit-keyword":
+            self.commit_keyword()
+        else:
+            print("Repo type not defined for %s", self.repo_name)
+
+    # the main method to iterate trough the commits
+    def commit_iterator(self):
+        for current_commit in self.repo_data.commits(since=self.last_check, until=self.release_date):
+            self.store_date(current_commit)
+            self.construct_commit()
+            self.commit_number += 1
+
+    # the main method to iterate trough the Git repository
+    def repo_iterator(self):
+        for repo in json.load(self.load(None, "repositories.json")).get("Github"):
+            self.repo_name = repo
 
 # for testing
 a = FICGithub('mozilla-releng', 'OpenCloudConfig')
 print(a.get_repo_url())
 print(a.repo_type())
+a.commit_date = '2019-04-13'
+a.release_date = None
+a.commit_number = 0
+a.repo_iterator()
+print(a.commit_iterator())
+print(a.list_of_commits)
