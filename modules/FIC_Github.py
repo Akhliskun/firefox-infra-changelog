@@ -159,7 +159,7 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
         for item in (range(len(self.repo_data.commit(sha=self.commit_sha).files))):
             self.commit_files_changed.append(self.repo_data.commit(sha=self.commit_sha).files[item].get('filename'))
 
-    def store_date(self, current_commit):
+    def store_data(self, current_commit):
         self.get_sha(current_commit)
         self.get_message(current_commit)
         self.get_date(current_commit)
@@ -211,17 +211,18 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
         else:
             print("Repo type not defined for %s", self.repo_name)
 
-    # the main method to iterate trough the commits
+    # the main method to iterate through the commits
     def commit_iterator(self):
         for current_commit in self.repo_data.commits(since=self.last_check, until=self.release_date):
-            self.store_date(current_commit)
+            self.store_data(current_commit)
             self.construct_commit()
             self.commit_number += 1
 
-    # the main method to iterate trough the Git repository
+    # the main method to iterate through the Git repository
     def repo_iterator(self):
         for repo in json.load(self.load(None, "repositories.json")).get("Github"):
             self.repo_name = repo
+
 
 # for testing
 a = FICGithub('mozilla-releng', 'OpenCloudConfig')
