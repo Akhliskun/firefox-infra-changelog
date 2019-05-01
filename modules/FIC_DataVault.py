@@ -19,7 +19,8 @@ class FICDataVault:
         self.commit_author_email  = None
         self.commit_message       = None
         self.commit_date          = None
-        self.commit_files_changed = None
+        self.commit_files_changed = []
+        self.last_check           = None
 
         # HG Specific values
         self.changeset_index  = None
@@ -28,5 +29,9 @@ class FICDataVault:
         self.hg_commits_list = None
         self.changesets_json = None
         self.constructed_dict = {}
+
+        # GIT Specific values
+        self.release_date = None
+        self.list_of_commits = {}
 
 
