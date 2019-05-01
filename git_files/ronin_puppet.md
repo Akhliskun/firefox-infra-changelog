@@ -1,7 +1,9 @@
-## RONIN_PUPPET COMMIT MARKDOWN TABLE SINCE 2019-04-16 21:05:12.909225
+## RONIN_PUPPET COMMIT MARKDOWN TABLE SINCE 2019-04-17 10:46:18.952370
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|65|davehouse|Merge pull request #23 from davehouse/bug1546448_notarization [Bug 1546448](https://bugzilla.mozilla.org/show_bug.cgi?id=1546448)  notarization base|[URL](https://github.com/mozilla-platform-ops/ronin_puppet/commit/b07a9c709a702db512d9e99f64bb0e0606ac638f)|2019-04-30 20:28:11
+|64|aerickson|bitbar: fixes (#24)|[URL](https://github.com/mozilla-platform-ops/ronin_puppet/commit/a395466ca7863f4d630ce030f2358ba6fd0b68a9)|2019-04-30 20:11:10
 |63|aerickson|add bitbar_devicepool module (#22)|[URL](https://github.com/mozilla-platform-ops/ronin_puppet/commit/715fb0fc675aebe79556b20af6293ff1ccc124b4)|2019-04-29 22:31:09
 |62|markcor|correct geckotwin1064ht script download (#20) GW and automation from bootstrap do not hardcode bootstrap file name type correction specify r1k mod dir in install command remove tc github lookup correction Point puppet install to r10kdir in maintain system addressing requested changes Update tooltool.py source replace markcor with mozilla-platform-o.. [continue reading](https://github.com/mozilla-platform-ops/ronin_puppet/commit/4ffab51e3d723e7d9b4e53fe6add776dc0d512c4)|[URL](https://github.com/mozilla-platform-ops/ronin_puppet/commit/4ffab51e3d723e7d9b4e53fe6add776dc0d512c4)|2019-04-24 13:18:52
 |61|dividehex|Merge pull request #19 from dividehex/macos_provisioner_script Macos provisioner script|[URL](https://github.com/mozilla-platform-ops/ronin_puppet/commit/579a667566cf18c21db9c997e9c524140fc1a757)|2019-04-19 16:58:23

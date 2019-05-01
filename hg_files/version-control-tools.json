@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 3473
+    "last_push_id": 3474
   },
   "1": {
     "changeset_number": "3358",
@@ -2299,29 +2299,6 @@
     }
   },
   "88": {
-    "changeset_number": "3467",
-    "pusher": "cosheehan@mozilla.com",
-    "date_of_push": "2019-04-29 18:44:11",
-    "changeset_commits": {
-      "1": {
-        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=ae489559efe1",
-        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
-        "commit_message": "mozhg: use renamed keyword argument when running under Mercurial >= 5.0 (Bug 1546508) r=glob\n\nUnder Mercurial 5.0, the `copied` keyword argument passed\nto `context.memfilectx` has been renamed to `copysource`.\nThis commit adds a conditional to use the correct argument\nname when running under the new version.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29212",
-        "files_changed": [
-          "pylib/mozhg/mozhg/rewrite.py"
-        ]
-      },
-      "2": {
-        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=db9bc20ab995",
-        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
-        "commit_message": "push-to-try: mark as compatible with Mercurial 5.0 (Bug 1546508) r=glob\n\nWith `mozhg` now compatible with the 5.0 release candidate,\n`push-to-try` tests pass under the new version.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29213",
-        "files_changed": [
-          "hgext/push-to-try/__init__.py"
-        ]
-      }
-    }
-  },
-  "88": {
     "changeset_number": "3468",
     "pusher": "cosheehan@mozilla.com",
     "date_of_push": "2019-04-30 18:00:40",
@@ -2418,6 +2395,23 @@
         "commit_message": "ansible/monitoring-agent: remove retention policy from database name (Bug 1543989)\n\nWe only need the database name in this field.",
         "files_changed": [
           "ansible/roles/monitoring-agent/defaults/main.yml"
+        ]
+      }
+    }
+  },
+  "93": {
+    "changeset_number": "3474",
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-04-30 23:55:39",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=d9911e62f3a4",
+        "commiter_name": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "pushlog: fix tests regressed by 40-character node patch (Bug 1548054) r=lars\n\nA few tests were overlooked when changing `gitweb_mozilla`\nto display 40-character SHAs. This commit fixes those tests.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29397",
+        "files_changed": [
+          "hgext/pushlog/tests/test-hgweb-feed.t",
+          "hgext/pushlog/tests/test-hgweb.t",
+          "hgext/pushlog/tests/test-pushloghtml.t"
         ]
       }
     }

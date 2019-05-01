@@ -1,7 +1,11 @@
-## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-16 21:05:12.909225
+## TASKCLUSTER COMMIT MARKDOWN TABLE SINCE 2019-04-17 10:46:18.952370
 
 | Commit Number | Commiter | Commit Message | Commit Url | Date | 
 |:---:|:----:|:----------------------------------:|:------:|:----:| 
+|918|helfi92|Revert "Do not run strategy if config is undefined (#664)" (#666) This reverts commit 31618225c2c7a4d1bf77f8f5b213a4c0176b0ab4.|[URL](https://github.com/taskcluster/taskcluster/commit/d2d5d6418fedbe42b00d6842bbb5ccf86db930fa)|2019-04-30 19:50:19
+|917|helfi92|Do not run strategy if config is undefined (#664)|[URL](https://github.com/taskcluster/taskcluster/commit/31618225c2c7a4d1bf77f8f5b213a4c0176b0ab4)|2019-04-30 19:15:17
+|916|imbstack|Bump client versions|[URL](https://github.com/taskcluster/taskcluster/commit/4564286e712448533fd93c501e10ba6ca402952d)|2019-04-30 18:49:15
+|915|helfi92|Merge pull request #547 from helfi92/login-auth0 Add login via mozilla auth0|[URL](https://github.com/taskcluster/taskcluster/commit/50958a85588ee0f0f8b65887489f5d41855d6a6a)|2019-04-30 18:11:03
 |914|imbstack|Merge pull request #656 from taskcluster/fix-notify-irc Fix notify irc|[URL](https://github.com/taskcluster/taskcluster/commit/406583d316a34dcc86f90bf8bc196e82a6a6f923)|2019-04-30 16:34:32
 |913|helfi92|Merge pull request #655 from helfi92/resetting-store-issues [UI] Rely on key and fetchPolicy instead of resetStore|[URL](https://github.com/taskcluster/taskcluster/commit/8234b74b6c114a0a2b355312c006795e88ef4c51)|2019-04-30 15:32:01
 |912|owlishDeveloper|Merge pull request #632 from owlishDeveloper/bug1546789 Add `list worker types` endpoint to worker manager|[URL](https://github.com/taskcluster/taskcluster/commit/ece6b75a7051e28e936aa8454d54137861e27ac1)|2019-04-30 15:29:57

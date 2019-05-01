@@ -1,6 +1,6 @@
 {
   "0": {
-    "last_push_id": 35943
+    "last_push_id": 35945
   },
   "1": {
     "changeset_number": "35344",
@@ -16681,21 +16681,6 @@
     }
   },
   "165": {
-    "changeset_number": "35932",
-    "pusher": "csabou@mozilla.com",
-    "date_of_push": "2019-04-29 18:59:55",
-    "changeset_commits": {
-      "9": {
-        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=8484074f6e62",
-        "commiter_name": "ffxbld <ffxbld@mozilla.com>",
-        "commit_message": "No Bug, taskcluster/docker/funsize-update-generator pipfile-update. r=sfraser\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29170",
-        "files_changed": [
-          "taskcluster/docker/funsize-update-generator/Pipfile.lock"
-        ]
-      }
-    }
-  },
-  "165": {
     "changeset_number": "35941",
     "pusher": "archaeopteryx@coole-files.de",
     "date_of_push": "2019-04-30 14:32:04",
@@ -16707,6 +16692,233 @@
         "files_changed": [
           "python/mozbuild/mozbuild/action/tooltool.py",
           "testing/mozharness/external_tools/tooltool.py"
+        ]
+      }
+    }
+  },
+  "165": {
+    "changeset_number": "35944",
+    "pusher": "ccoroiu@mozilla.com",
+    "date_of_push": "2019-05-01 00:53:37",
+    "changeset_commits": {
+      "34": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=486f55e81c57",
+        "commiter_name": "Johan Lorenzo <jlorenzo@mozilla.com>",
+        "commit_message": "Bug 1546320 - Create mozconfigs for Fennec beta builds r=RyanVM\n\nCreate mozconfigs for Fennec beta builds.\nThis also prevents mergeday scripts from modifying nightly mozconfigs on beta\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29350",
+        "files_changed": [
+          "mobile/android/config/mozconfigs/android-aarch64/beta",
+          "mobile/android/config/mozconfigs/android-aarch64/debug-beta",
+          "mobile/android/config/mozconfigs/android-api-16/beta",
+          "mobile/android/config/mozconfigs/android-api-16/debug-beta",
+          "mobile/android/config/mozconfigs/android-x86/beta",
+          "mobile/android/config/mozconfigs/android-x86/debug-beta",
+          "mobile/android/config/mozconfigs/android-x86_64/beta",
+          "mobile/android/config/mozconfigs/android-x86_64/debug-beta",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_aarch64_beta.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_aarch64_beta_debug.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_api_16_beta.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_api_16_beta_debug.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_x86_64_beta.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_x86_64_beta_debug.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_x86_beta.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_x86_beta_debug.py",
+          "testing/mozharness/configs/builds/releng_sub_android_configs/64_x86_debug.py",
+          "testing/mozharness/configs/merge_day/central_to_beta.py",
+          "testing/mozharness/mozharness/mozilla/building/buildbase.py"
+        ]
+      }
+    }
+  },
+  "166": {
+    "changeset_number": "35945",
+    "pusher": "ccoroiu@mozilla.com",
+    "date_of_push": "2019-05-01 07:21:12",
+    "changeset_commits": {
+      "4": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=b7aa4980e921",
+        "commiter_name": "Mike Shal <mshal@mozilla.com>",
+        "commit_message": "Bug 1547395 - Allow specific tasks in the use-pgo field; r=tomprince\n\nSome groups of tasks need to share the same profile data. For example,\nAndroid PGO builds and Android Nightly builds both use the\ngenerate-profile-android-api-16/pgo task for profile data. Previously\nthis was done with a text substitution, but this is a bit hacky and\ndoesn't easily scale with different build types.\n\nAllowing use_pgo to be a string means we can just directly point to the\ngenerate-profile task that contains the profile data to be used in a PGO\nbuild.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29247",
+        "files_changed": [
+          "taskcluster/ci/build/android.yml",
+          "taskcluster/taskgraph/transforms/build.py"
+        ]
+      },
+      "5": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=2de8fcb8a341",
+        "commiter_name": "Mike Shal <mshal@mozilla.com>",
+        "commit_message": "Bug 1547395 - Use 3-tier PGO for linux64-devedition builds; r=chmanchester\n\nDepends on D29247\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29248",
+        "files_changed": [
+          "browser/config/mozconfigs/linux64/devedition",
+          "taskcluster/ci/build/linux.yml"
+        ]
+      },
+      "44": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=9aaca7d58bfa",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1541313 - Upgrade nightly rust to the last one that was versioned 1.34. r=dmajor\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29307",
+        "files_changed": [
+          "taskcluster/ci/toolchain/rust.yml"
+        ]
+      },
+      "45": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=67a90171e265",
+        "commiter_name": "Mike Hommey <mh+mozilla@glandium.org>",
+        "commit_message": "Bug 1536543 - Require rust 1.34. r=froydnj\n\nDifferential Revision: https://phabricator.services.mozilla.com/D25896",
+        "files_changed": [
+          "build/moz.configure/rust.configure",
+          "python/mozboot/mozboot/base.py",
+          "python/mozbuild/mozbuild/test/configure/test_toolchain_configure.py",
+          "taskcluster/ci/build/linux.yml"
+        ]
+      },
+      "47": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=cef374e9b298",
+        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "Bug 1532783: [taskgraph] Switch to using worker aliases for docker-worker and generic-worker; r=dustin\n\nDifferential Revision: https://phabricator.services.mozilla.com/D24238",
+        "files_changed": [
+          "taskcluster/ci/addon/kind.yml",
+          "taskcluster/ci/artifact-build/kind.yml",
+          "taskcluster/ci/build/linux.yml",
+          "taskcluster/ci/build/macosx.yml",
+          "taskcluster/ci/build/windows.yml",
+          "taskcluster/ci/code-review/kind.yml",
+          "taskcluster/ci/cron-bouncer-check/kind.yml",
+          "taskcluster/ci/geckodriver-repack/kind.yml",
+          "taskcluster/ci/generate-profile/kind.yml",
+          "taskcluster/ci/hazard/kind.yml",
+          "taskcluster/ci/instrumented-build/kind.yml",
+          "taskcluster/ci/l10n/kind.yml",
+          "taskcluster/ci/nightly-l10n/kind.yml",
+          "taskcluster/ci/openh264-plugin/kind.yml",
+          "taskcluster/ci/packages/kind.yml",
+          "taskcluster/ci/pipfile-update/kind.yml",
+          "taskcluster/ci/post-balrog-dummy/kind.yml",
+          "taskcluster/ci/post-beetmover-checksums-dummy/kind.yml",
+          "taskcluster/ci/post-beetmover-dummy/kind.yml",
+          "taskcluster/ci/post-langpack-dummy/kind.yml",
+          "taskcluster/ci/release-bouncer-check/kind.yml",
+          "taskcluster/ci/release-eme-free-repack/kind.yml",
+          "taskcluster/ci/release-final-verify/kind.yml",
+          "taskcluster/ci/release-generate-checksums/kind.yml",
+          "taskcluster/ci/release-notify-promote/kind.yml",
+          "taskcluster/ci/release-notify-push/kind.yml",
+          "taskcluster/ci/release-notify-ship/kind.yml",
+          "taskcluster/ci/release-notify-started/kind.yml",
+          "taskcluster/ci/release-partner-repack-chunking-dummy/kind.yml",
+          "taskcluster/ci/release-partner-repack/kind.yml",
+          "taskcluster/ci/release-secondary-final-verify/kind.yml",
+          "taskcluster/ci/release-secondary-notify-ship/kind.yml",
+          "taskcluster/ci/release-secondary-update-verify-config/kind.yml",
+          "taskcluster/ci/release-secondary-update-verify/kind.yml",
+          "taskcluster/ci/release-snap-repackage/kind.yml",
+          "taskcluster/ci/release-source/kind.yml",
+          "taskcluster/ci/release-update-verify-config/kind.yml",
+          "taskcluster/ci/release-update-verify/kind.yml",
+          "taskcluster/ci/repo-update/kind.yml",
+          "taskcluster/ci/searchfox/kind.yml",
+          "taskcluster/ci/source-test/clang.yml",
+          "taskcluster/ci/source-test/coverity.yml",
+          "taskcluster/ci/source-test/cram.yml",
+          "taskcluster/ci/source-test/doc.yml",
+          "taskcluster/ci/source-test/file-metadata.yml",
+          "taskcluster/ci/source-test/infer.yml",
+          "taskcluster/ci/source-test/jsshell.yml",
+          "taskcluster/ci/source-test/mozlint.yml",
+          "taskcluster/ci/source-test/node.yml",
+          "taskcluster/ci/source-test/python.yml",
+          "taskcluster/ci/source-test/webidl.yml",
+          "taskcluster/ci/source-test/wpt-manifest.yml",
+          "taskcluster/ci/source-test/wpt-metadata.yml",
+          "taskcluster/ci/spidermonkey/kind.yml",
+          "taskcluster/ci/spidermonkey/windows.yml",
+          "taskcluster/ci/static-analysis-autotest/kind.yml",
+          "taskcluster/ci/toolchain/android.yml",
+          "taskcluster/ci/toolchain/cbindgen.yml",
+          "taskcluster/ci/toolchain/cctools-port.yml",
+          "taskcluster/ci/toolchain/clang-tidy.yml",
+          "taskcluster/ci/toolchain/clang.yml",
+          "taskcluster/ci/toolchain/gcc.yml",
+          "taskcluster/ci/toolchain/gn.yml",
+          "taskcluster/ci/toolchain/grcov.yml",
+          "taskcluster/ci/toolchain/mingw.yml",
+          "taskcluster/ci/toolchain/minidump_stackwalk.yml",
+          "taskcluster/ci/toolchain/misc.yml",
+          "taskcluster/ci/toolchain/nasm.yml",
+          "taskcluster/ci/toolchain/node.yml",
+          "taskcluster/ci/toolchain/rust-size.yml",
+          "taskcluster/ci/toolchain/rust.yml",
+          "taskcluster/ci/toolchain/sccache.yml",
+          "taskcluster/ci/upload-generated-sources/kind.yml",
+          "taskcluster/ci/upload-symbols/kind.yml",
+          "taskcluster/ci/valgrind/kind.yml",
+          "taskcluster/ci/webrender/kind.yml",
+          "taskcluster/taskgraph/transforms/diffoscope.py",
+          "taskcluster/taskgraph/transforms/docker_image.py",
+          "taskcluster/taskgraph/transforms/fetch.py",
+          "taskcluster/taskgraph/transforms/job/mozharness.py",
+          "taskcluster/taskgraph/transforms/job/mozharness_test.py",
+          "taskcluster/taskgraph/transforms/l10n.py",
+          "taskcluster/taskgraph/transforms/partials.py",
+          "taskcluster/taskgraph/transforms/repackage.py",
+          "taskcluster/taskgraph/transforms/repackage_partner.py",
+          "taskcluster/taskgraph/transforms/tests.py"
+        ]
+      },
+      "48": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=49006e43876f",
+        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "Bug 1532783: [taskgraph] Remove entries from WORKER_TYPES that correspond to workers with aliases; r=dustin\n\nDifferential Revision: https://phabricator.services.mozilla.com/D24239",
+        "files_changed": [
+          "taskcluster/taskgraph/util/workertypes.py"
+        ]
+      },
+      "49": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=96a1f7afe8ae",
+        "commiter_name": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "Bug 1532783: [taskgraph] Fix lint error.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29438",
+        "files_changed": [
+          "taskcluster/taskgraph/transforms/job/mozharness.py"
+        ]
+      },
+      "50": {
+        "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=3c032a4347fa",
+        "commiter_name": "J.C. Jones <jc@mozilla.com>",
+        "commit_message": "Bug 1539227 - land NSS 56826bedabba UPGRADE_NSS_RELEASE, r=KevinJacobs\n\nNSS uplift, 30 April 2019.\n\nCommit log: https://hg.mozilla.org/projects/nss/log?rev=e5e10a46b9ad..56826bedabba\n\nDifferential Revision: https://phabricator.services.mozilla.com/D29382",
+        "files_changed": [
+          "security/nss/TAG-INFO",
+          "security/nss/automation/taskcluster/graph/src/try_syntax.js",
+          "security/nss/cmd/certutil/certutil.c",
+          "security/nss/cmd/selfserv/selfserv.c",
+          "security/nss/cmd/tstclnt/tstclnt.c",
+          "security/nss/coreconf/coreconf.dep",
+          "security/nss/cpputil/tls_parser.h",
+          "security/nss/gtests/pk11_gtest/pk11_chacha20poly1305_unittest.cc",
+          "security/nss/gtests/ssl_gtest/ssl_auth_unittest.cc",
+          "security/nss/lib/freebl/blapi.h",
+          "security/nss/lib/freebl/chacha20poly1305.c",
+          "security/nss/lib/freebl/crypto_primitives.c",
+          "security/nss/lib/freebl/crypto_primitives.h",
+          "security/nss/lib/freebl/ldvector.c",
+          "security/nss/lib/freebl/loader.c",
+          "security/nss/lib/freebl/loader.h",
+          "security/nss/lib/pk11wrap/pk11mech.c",
+          "security/nss/lib/softoken/pkcs11.c",
+          "security/nss/lib/softoken/pkcs11c.c",
+          "security/nss/lib/softoken/pkcs11i.h",
+          "security/nss/lib/softoken/sdb.c",
+          "security/nss/lib/ssl/SSLerrs.h",
+          "security/nss/lib/ssl/ssl3con.c",
+          "security/nss/lib/ssl/ssl3prot.h",
+          "security/nss/lib/ssl/sslencode.c",
+          "security/nss/lib/ssl/sslerr.h",
+          "security/nss/lib/ssl/sslimpl.h",
+          "security/nss/lib/ssl/sslsecur.c",
+          "security/nss/lib/ssl/tls13con.c",
+          "security/nss/lib/ssl/tls13con.h",
+          "security/nss/lib/ssl/tls13hashstate.c",
+          "security/nss/lib/util/pkcs11n.h",
+          "security/nss/tests/ssl/ssl.sh",
+          "security/nss/tests/ssl/sslauth.txt"
         ]
       }
     }
