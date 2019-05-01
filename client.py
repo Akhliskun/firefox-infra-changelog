@@ -182,18 +182,18 @@ def cli(all=False, git=False, mercurial=False, logger=False, repo=False,
         days=False, push=False):
     """
     Main function of the script that handles how the script runs
-    :param update: push the new changes to Github
-    :param complete: Used to run the script for all of the repositories.
+    :param push: push the new changes to Github
+    :param all: Used to run the script for all of the repositories.
     :param git: Used to run the script in git mode only
     :param mercurial: Used to run the script in mercurial mode only
     :param logger: used for displaying the logger while running the script
     manually from terminal.
-    :param manual: Used for running the script for specific repositories.
+    :param repo: Used for running the script for specific repositories.
     :param days: Used to change the amount of days the changelog will be
     generated for
     """
-    valid_args = ['-d', '--days', '-g', '--git', '-h', '--mercurial', '-l',
-                  '--logger', '-m', '--manual', '-c', '--complete', '-u', '--update']
+    valid_args = ['-d', '--days', '-g', '--git', '-hg', '--mercurial', '-l',
+                  '--logger', '-r', '--repo', '-a', '--all', '-p', '--push']
     run_arguments = list(click.get_current_context().args)
     len_args = 0
     list_args = []
