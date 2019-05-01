@@ -7,7 +7,7 @@ class FICExceptions():
     def __init__(self, error):
         self.e = int(error)
 
-    def handle_exception(self):
+    def handle_git_exception(self):
         if self.e == 301:
             LOGGER.critical("Error code 301: Not Modified")
             exit(301)

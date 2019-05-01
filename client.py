@@ -24,7 +24,7 @@ from fic_modules.configuration import (
     REPOSITORIES,
     LOGGER
 )
-from fic_modules.markdown_modules import generate_main_md_table
+from fic_modules.markdown_modules import generate_changelog_markdown
 
 
 def run_all(logger, days):
@@ -46,7 +46,7 @@ def run_all(logger, days):
     json.dump(changelog_data, data_file, indent=2)
     data_file.close()
     clear_file("changelog.md", int(days))
-    generate_main_md_table(REPOSITORIES, "complete", int(days))
+    generate_changelog_markdown(REPOSITORIES, "complete", int(days))
 
 
 def update_all(logger, days):
@@ -73,7 +73,7 @@ def update_all(logger, days):
     json.dump(changelog_data, data_file, indent=2)
     data_file.close()
     clear_file("changelog.md", int(days))
-    generate_main_md_table(REPOSITORIES, "complete", int(days))
+    generate_changelog_markdown(REPOSITORIES, "complete", int(days))
     update_fic_files.git_add()
     update_fic_files.git_commit()
     update_fic_files.git_push()
@@ -92,7 +92,7 @@ def run_git(logger, days):
     repo_name = "Github"
     write_to_changelog_json(git_data, repo_name)
     clear_file("changelog.md", int(days))
-    generate_main_md_table(REPOSITORIES, "Git", int(days))
+    generate_changelog_markdown(REPOSITORIES, "Git", int(days))
     click.echo("Script ran in GIT Only mode")
 
 
@@ -109,7 +109,7 @@ def run_hg(logger, days):
     repo_name = "Hg"
     write_to_changelog_json(hg_data, repo_name)
     clear_file("changelog.md", int(days))
-    generate_main_md_table(REPOSITORIES, "Hg", int(days))
+    generate_changelog_markdown(REPOSITORIES, "Hg", int(days))
     click.echo("Script ran in HG Only mode")
 
 
@@ -138,11 +138,11 @@ def run_multiple(logger, days):
             for repository in new_list:
                 if repository in REPOSITORIES.get("Github"):
                     create_files_for_git(repository, onerepo=True)
-                    generate_main_md_table(REPOSITORIES, "complete", int(days))
+                    generate_changelog_markdown(REPOSITORIES, "complete", int(days))
                 elif repository in REPOSITORIES.get("Mercurial"):
                     create_files_for_hg(repository, onerepo=True)
                     clear_file("changelog.md", int(days))
-                    generate_main_md_table(REPOSITORIES, "complete", int(days))
+                    generate_changelog_markdown(REPOSITORIES, "complete", int(days))
         try:
             new_entry = int(user_choice) - 1
             if new_entry < 0 or new_entry >= len(REPO_LIST):
@@ -168,18 +168,18 @@ def run_days(logger, days):
               help='Run only for HG repos')
 @click.option('-l', '--logger', is_flag=True, flag_value='logger',
               help='Display logger')
-@click.option('-m', '--manual', is_flag=True, flag_value='manual',
+@click.option('-r', '--repo', is_flag=True, flag_value='repo',
               help='Let you choose for which repositories the script will run')
-@click.option('-c', '--complete', is_flag=True, flag_value='complete',
+@click.option('-a', '--all', is_flag=True, flag_value='all',
               help='Run for all currently available repositories')
 @click.option('-d', '--days', default=3, help='Let user decide for how many '
                                               'days changelog.md will '
                                               'be generated')
-@click.option('-u', '--update', is_flag=True, help='Automatically push the updated'
+@click.option('-p', '--push', is_flag=True, help='Automatically push the updated'
                                                    'data to github.')
 @click.help_option('-h', '--help')
-def cli(complete=False, git=False, mercurial=False, logger=False, manual=False,
-        days=False, update=False):
+def cli(all=False, git=False, mercurial=False, logger=False, repo=False,
+        days=False, push=False):
     """
     Main function of the script that handles how the script runs
     :param update: push the new changes to Github
@@ -211,15 +211,15 @@ def cli(complete=False, git=False, mercurial=False, logger=False, manual=False,
         run_days(LOGGER, days)
     if logger:
         logging.getLogger().addHandler(logging.StreamHandler())
-    if complete:
+    if all:
         run_all(LOGGER, days)
     if git:
         run_git(LOGGER, days)
     if mercurial:
         run_hg(LOGGER, days)
-    if manual:
+    if repo:
         run_multiple(LOGGER, days)
-    if update:
+    if push:
         update_all(LOGGER, days)
 
 
@@ -235,4 +235,4 @@ if __name__ == "__main__":
     try:
         cli()
     except GithubException as error_code:
-        FICExceptions(error_code.status).handle_exception()
+        FICExceptions(error_code.status).handle_git_exception()

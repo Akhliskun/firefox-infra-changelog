@@ -26,7 +26,7 @@ from fic_modules.helper_functions import (
 )
 from fic_modules.markdown_modules import (
     create_git_md_table,
-    create_md_table_for_scriptworkers
+    create_scriptworker_files
 )
 
 
@@ -58,10 +58,10 @@ def filter_git_commit_data(repository_name, repository_team, repository_type,
     # TYPE = TAG
     if repository_type == "tag":
         if repository_name == "build-puppet":
-            filter_git_tag_bp(repository_name,
-                              repository_path)
+            filter_build_puppet(repository_name,
+                                repository_path)
         elif repository_name != "build-puppet":
-            filter_git_tag(repository_name, repository_team, repository_path)
+            filter_release_tag(repository_name, repository_team, repository_path)
 
 
 def create_files_for_git(repositories_holder, onerepo):
@@ -97,7 +97,7 @@ def create_files_for_git(repositories_holder, onerepo):
                                folders_to_check)
         if repositories_holder == "build-puppet":
             create_git_md_table(repositories_holder, "git_files")
-            create_md_table_for_scriptworkers(repositories_holder)
+            create_scriptworker_files(repositories_holder)
         else:
             create_git_md_table(repositories_holder, "git_files")
         work_path = "git_files/"
@@ -130,7 +130,7 @@ def create_files_for_git(repositories_holder, onerepo):
                                    folders_to_check)
             if repository_name == "build-puppet":
                 create_git_md_table(repository_name, "git_files")
-                create_md_table_for_scriptworkers(repository_name)
+                create_scriptworker_files(repository_name)
             else:
                 create_git_md_table(repository_name, "git_files")
             work_path = "git_files/"
@@ -141,7 +141,7 @@ def create_files_for_git(repositories_holder, onerepo):
     return complete_data
 
 
-def filter_git_tag_bp(repository_name, repository_path):
+def filter_build_puppet(repository_name, repository_path):
     """
     Filters out only the data that we need from a commit
     Substitute the special characters from commit message using 'sub' function
@@ -194,7 +194,7 @@ def filter_git_tag_bp(repository_name, repository_path):
     json_writer_git(repository_name, new_commit_dict)
 
 
-def filter_git_tag(repository_name, repository_team, repository_path):
+def filter_release_tag(repository_name, repository_team, repository_path):
     """
     Filters out only the data that we need from a commit
     Substitute the special characters from commit message using 'sub' function
@@ -289,7 +289,7 @@ def json_writer_git(repository_name, new_commits):
     """
     git_json_filename = "{}.json".format(repository_name)
     try:
-        with open("git_files/" + git_json_filename, "r") as \
+        with open("git_files/" + git_json_filename.lower(), "r") as \
                 commit_json:
             json_content = json.load(commit_json)
     except FileNotFoundError:
@@ -302,7 +302,7 @@ def json_writer_git(repository_name, new_commits):
                 new_commits.update({int(number): json_content[old_commit]})
 
     if new_commits:
-        json_file = open("git_files/" + git_json_filename, "w")
+        json_file = open("git_files/" + git_json_filename.lower(), "w")
         json.dump(new_commits, json_file, indent=2)
         json_file.close()
 
@@ -314,7 +314,7 @@ def last_check(repository_name):
     """
     git_json_filename = "{}.json".format(repository_name)
     try:
-        with open("git_files/" + git_json_filename, "r") as \
+        with open("git_files/" + git_json_filename.lower(), "r") as \
                 commit_json:
             json_content = json.load(commit_json)
             try:
@@ -344,7 +344,7 @@ def get_version_from_json(repo_name):
     """
     git_json_filename = "{}.json".format(repo_name)
     try:
-        with open("git_files/" + git_json_filename, "r") as \
+        with open("git_files/" + git_json_filename.lower(), "r") as \
                 commit_json:
             json_content = json.load(commit_json)
         last_stored_version = json_content \
@@ -364,7 +364,7 @@ def get_date_from_json(repo_name):
     """
     git_json_filename = "{}.json".format(repo_name)
     try:
-        with open("git_files/" + git_json_filename, "r") as \
+        with open("git_files/" + git_json_filename.lower(), "r") as \
                 commit_json:
             json_content = json.load(commit_json)
         last_stored_date = json_content \

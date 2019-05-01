@@ -15,13 +15,13 @@ The tool uses py-github and github token and requests on all mozilla's Git/HG in
 # Flags
 | Short Flag | Long Flag | Description |
 |-----|-----|----------------------------------------------------------------------------|
-| -c | --complete  | Runs script for all available repositories
+| -a | --all  | Runs script for all available repositories
 | -g | --git  | Runs script only for repos that are on GitHub                              |
 | -hg | --mercurial   | Runs script only for repos that are on Mercurial                           |
-| -m | --manual    | Let the user choose for which repositories the script will run             |
+| -r | --repo    | Let the user choose for which repositories the script will run             |
 | -l | --logger    | Activate logger output in the console             |
 | -d | --days | Generate the **changelog.md** for `<int>` amount of days. |
-| -u | --update | Runs script for all available repositories and auto push the changes to github
+| -p | --push | Runs script for all available repositories and auto push the changes to github
 
 # Release schedule
 Starting with 1st of March 2018, every **Friday** Firefox-Infra-Changelog will have a new release. 
