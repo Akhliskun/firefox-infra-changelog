@@ -33,5 +33,4 @@ class FICDataVault:
         # GIT Specific values
         self.release_date = None
         self.list_of_commits = {}
-
-
+        self.local_version = None
