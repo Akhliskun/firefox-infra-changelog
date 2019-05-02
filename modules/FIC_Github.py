@@ -183,7 +183,7 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
         self.last_check = json.load(self.load(CHANGELOG_REPO_PATH, self.repo_name.lower() + ".json")).get("0").get("last_checked")
 
     def local_version(self):
-        self.release_date = json.load(self.load(CHANGELOG_REPO_PATH, self.repo_name.lower() + ".json")).get("0").get("last_release").get("version")
+        self.local_version = json.load(self.load(CHANGELOG_REPO_PATH, self.repo_name.lower() + ".json")).get("0").get("last_release").get("version")
 
     def not_tag(self):
         pass
@@ -216,9 +216,10 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
     # the main method to iterate through the commits
     def commit_iterator(self):
         for current_commit in self.repo_data.commits(since=self.last_check, until=self.release_date):
+            self.commit_number += 1
             self.store_data(current_commit)
             self.construct_commit()
-            self.commit_number += 1
+
 
     # the main method to iterate through the Git repository
     def repo_iterator(self):
