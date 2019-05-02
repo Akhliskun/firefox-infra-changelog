@@ -11,8 +11,8 @@ import os
 class FICFileHandler(FICLogger, FICDataVault):
     def __init__(self):
         FICLogger.__init__(self)
+        FICDataVault.__init__(self)
         from modules.config import CHANGELOG_JSON_PATH, CHANGELOG_MD_PATH, CHANGELOG_REPO_PATH
-
         self.changelog_json = CHANGELOG_JSON_PATH
         self.changelog_md = CHANGELOG_MD_PATH
         self.data_folder = CHANGELOG_REPO_PATH
@@ -249,8 +249,14 @@ class FICFileHandler(FICLogger, FICDataVault):
                                  "or the final location \"{}\" has not been created"
                                  .format(self.construct_path(new_path, new_file)))
 
-    def last_checked(self, repo_name):
-        return json.load(self.load(CHANGELOG_REPO_PATH, repo_name.lower() + ".json")).get("0").get("last_checked")
-
-    def local_version(self, repo_name):
-        return json.load(self.load(CHANGELOG_REPO_PATH, repo_name.lower() + ".json")).get("0").get("last_release").get("version")
+    def update_json(self, repo_name):
+        local_json_data = json.load(self.load(CHANGELOG_REPO_PATH, repo_name.lower() + ".json"))
+        try:
+            del local_json_data["0"]
+        except KeyError:
+            pass
+        for key in local_json_data.keys():
+            self.commit_number += 1
+            print(self.commit_number)
+            self.list_of_commits.update({self.commit_number: local_json_data[key]})
+        print(self.list_of_commits)
