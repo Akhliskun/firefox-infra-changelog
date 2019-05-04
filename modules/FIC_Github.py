@@ -126,7 +126,7 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
     def get_repo_url(self):
         return self.repo_data.svn_url
 
-    def repo_type(self):
+    def extract_repo_type(self):
         return json.load(self.load(None, "repositories.json")).get("Github").get(self.repo_name).get("configuration").get("type")
 
     def repo_team(self):
@@ -134,9 +134,6 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
 
     def repo_files(self):
         self.folders_to_check = json.load(self.load(None, "repositories.json")).get("Github").get(self.repo_name).get("configuration").get("folders-to-check")
-
-    def last_checked(self):
-        self.last_check = json.load(self.load(CHANGELOG_REPO_PATH, self.repo_name.lower() + ".json")).get("0").get("last_checked")
 
     def local_version(self):
         self.local_version = json.load(self.load(CHANGELOG_REPO_PATH, self.repo_name.lower() + ".json")).get("0").get("last_release").get("version")
@@ -201,8 +198,8 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
             self.construct_commit()
 
     def not_tag(self):
-        # self.last_checked()
-        self.last_check = '2019-05-01'
+        self.last_checked()
+        # self.last_check = '2019-05-01'
         self.release_date = None
         self.commit_iterator()
 
@@ -223,23 +220,23 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
         self.commit_iterator()
 
     def commit_keyword(self):
-        # self.last_checked()
-        self.last_check = '2019-05-01'
+        self.last_checked()
+        # self.last_check = '2019-05-01'
         self.keyword = 'deploy'
         self.commit_iterator()
 
     def repo_switcher(self):
-        if self.repo_type() == "no-tag":
+        if self.extract_repo_type() == "no-tag":
             self.not_tag()
 
-        elif self.repo_type() == "tag":
+        elif self.extract_repo_type() == "tag":
 
             if self.repo_name == "build-puppet":
                 self.build_puppet()
             else:
                 self.tag()
 
-        elif self.repo_type() == "commit-keyword":
+        elif self.extract_repo_type() == "commit-keyword":
             self.commit_keyword()
         else:
             print("Repo type not defined for %s", self.repo_name)
@@ -248,10 +245,12 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
     def repo_iterator(self):
         for repo in json.load(self.load(None, "repositories.json")).get("Github"):
             self.repo_name = repo
+            self.repo_type = self.extract_repo_type()
             self.repo_team()
             self.read_repo()
             self.repo_files()
             self.repo_switcher()
+            self.update_json(self.repo_name)
 
     # the main method to iterate through the commits
     def commit_iterator(self):
@@ -260,7 +259,7 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
             self.commit_number += 1
             self.store_data(current_commit)
             self.commit_filter()
-        self.print_data()  # write json
+        # self.print_data()  # write json
 
     # for testing
     def print_data(self):
@@ -271,5 +270,5 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
 
 # for testing
 a = FICGithub()
+# print(a.repo_team())
 a.repo_iterator()
-

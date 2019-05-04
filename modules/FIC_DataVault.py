@@ -21,7 +21,7 @@ class FICDataVault:
         self.commit_date          = None
         self.commit_files_changed = []
         self.last_check           = None
-
+        self.repo_name            = None
         # HG Specific values
         self.changeset_index  = None
         self.changeset = None
@@ -29,6 +29,7 @@ class FICDataVault:
         self.hg_commits_list = None
         self.changesets_json = None
         self.constructed_dict = {}
+        self.last_local_push_id = None
 
         # GIT Specific values
         self.release_date = None
@@ -37,3 +38,4 @@ class FICDataVault:
         self.bump_version = "version 2"
         self.keyword = None
         self.folders_to_check = []
+        self.repo_type = None
