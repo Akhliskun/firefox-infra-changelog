@@ -34,3 +34,6 @@ class FICDataVault:
         self.release_date = None
         self.list_of_commits = {}
         self.local_version = None
+        self.bump_version = "version 2"
+        self.keyword = None
+        self.folders_to_check = []
