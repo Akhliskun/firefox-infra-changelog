@@ -250,7 +250,7 @@ class FICFileHandler(FICLogger, FICDataVault):
                                  .format(self.construct_path(new_path, new_file)))
 
     @staticmethod
-    def delete_element_0(dictionary):
+    def remove_first_element(dictionary):
         try:
             del dictionary["0"]
         except KeyError:
@@ -259,30 +259,29 @@ class FICFileHandler(FICLogger, FICDataVault):
     def last_checked(self):
         self.last_check = json.load(self.load(CHANGELOG_REPO_PATH, self.repo_name.lower() + ".json")).get("0").get("last_checked")
 
-    def handle_element_0(self):
+    def handle_first_element(self):
         if self.repo_type is None:
-            self.add_element_0_hg()
+            self.add_first_element_hg()
         elif self.repo_type is not None:
-            self.add_element_0_git()
+            self.add_first_element_git()
         else:
             exit(12)
 
-    def update_json(self, repo_name):
-        self.handle_element_0()
+    def update_json(self, repo_name, directory="data"):
+        self.handle_first_element()
         local_json_data = json.load(self.load(CHANGELOG_REPO_PATH, repo_name.lower() + ".json"))
-        self.delete_element_0(local_json_data)
+        self.remove_first_element(local_json_data)
         for key in local_json_data.keys():
             self.commit_number += 1
             self.list_of_commits.update({self.commit_number: local_json_data[key]})
-        self.save("data", "lol.json", self.list_of_commits)
+        self.save(directory, repo_name.lower() + ".json", self.list_of_commits)
 
-    def add_element_0_git(self):
+    def add_first_element_git(self):
         if self.repo_type == "tag":
             self.list_of_commits.update({"0": {"last_checked: ": self.last_check,
                                                "version: ": self.local_version}})
         else:
             self.list_of_commits.update({"0": {"last_checked: ": self.last_check}})
 
-    def add_element_0_hg(self):
+    def add_first_element_hg(self):
         self.list_of_commits.update({"0": {"last_push_id": self.last_local_push_id}})
-
