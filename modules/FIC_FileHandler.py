@@ -251,10 +251,8 @@ class FICFileHandler(FICLogger, FICDataVault):
 
     @staticmethod
     def remove_first_element(dictionary):
-        try:
+        if next(iter(dictionary)) == 0:
             del dictionary["0"]
-        except KeyError:
-            pass
 
     def last_checked(self):
         self.last_check = json.load(self.load(CHANGELOG_REPO_PATH, self.repo_name.lower() + ".json")).get("0").get("last_checked")
