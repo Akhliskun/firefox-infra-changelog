@@ -5,11 +5,13 @@
 
 class FICDataVault:
     def __init__(self):
+
         # Common Data
         self.uid = int()  # Used to find the object.
         self.repos_container = dict()
 
         # Commit Specific Data
+
         # Common Git and HG values
         self.commit_type          = None  # Can be "git" or "hg"
         self.commit_number        = None
@@ -22,6 +24,7 @@ class FICDataVault:
         self.commit_files_changed = []
         self.last_check           = None
         self.repo_name            = None
+
         # HG Specific values
         self.changeset_index  = None
         self.changeset = None
@@ -32,10 +35,11 @@ class FICDataVault:
         self.last_local_push_id = None
 
         # GIT Specific values
+        self.release_tag = None
         self.release_date = None
         self.list_of_commits = {}
         self.local_version = None
-        self.bump_version = "version 2"
+        self.bump_version = None
         self.keyword = None
         self.folders_to_check = []
         self.repo_type = None
