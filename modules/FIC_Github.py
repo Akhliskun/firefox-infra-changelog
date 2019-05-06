@@ -258,4 +258,3 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
         self._repo_files()
         self._repo_switcher()
         self.update_json(self.repo_name)
-        self.list_of_commits = {}
