@@ -73,7 +73,7 @@ class FICFileHandler(FICLogger, FICDataVault):
             # Check all Github files exist for each repository.
             for key in files_to_check["Github"].keys():
                 if not os.path.exists(os.path.join(self.path_level, CHANGELOG_REPO_PATH, key.lower() + ".json")):
-                    self._missing_files.append(key.lower() + ".json")
+                    self._missing_files.append(key + ".json")
 
                 if not os.path.exists(os.path.join(self.path_level, CHANGELOG_REPO_PATH, key.lower() + ".md")):
                     self._missing_files.append(key.lower() + ".md")
@@ -89,8 +89,53 @@ class FICFileHandler(FICLogger, FICDataVault):
             self._create_missing_repo_files()
 
     def _create_missing_repo_files(self):
+        git_repos, hg_repos = self.create_git_hg_repo_lists()
         for file_to_create in self._missing_files:
-            open(os.path.abspath(os.path.join(self.path_level, CHANGELOG_REPO_PATH, file_to_create.lower())), "w").close()
+            if file_to_create.endswith(".json"):
+                repo = self.partition_string(file_to_create)
+                if repo in git_repos:
+                    self.generate_first_element_git(repo, file_to_create)
+                elif repo in hg_repos:
+                    self.generate_first_element_hg(file_to_create)
+            else:
+                open(os.path.abspath(os.path.join(self.path_level, CHANGELOG_REPO_PATH, file_to_create.lower())), "w").close()
+
+    def generate_first_element_git(self, repo, file_to_create):
+        import datetime
+        time_week_ago = (datetime.datetime.utcnow() - datetime.timedelta(days=7)).strftime("%Y-%m-%d %H:%M:%S")
+        repo_type = self._extract_repo_type(repo)
+        if repo_type == "tag":
+            with open(os.path.abspath(
+                    os.path.join(self.path_level, CHANGELOG_REPO_PATH, file_to_create.lower())),
+                      "w") as the_file:
+                json.dump({"0": {"last_checked": time_week_ago,
+                                 "version": "version"}}, the_file, indent=2)
+        else:
+            with open(os.path.abspath(
+                    os.path.join(self.path_level, CHANGELOG_REPO_PATH, file_to_create.lower())),
+                      "w") as the_file:
+                json.dump({"0": {"last_checked": time_week_ago}}, the_file, indent=2)
+
+    def generate_first_element_hg(self, file_to_create):
+        with open(os.path.abspath(
+                os.path.join(self.path_level, CHANGELOG_REPO_PATH, file_to_create.lower())),
+                  "w") as the_file:
+            json.dump({"0": {"last_push_id": "2019-04-12"}}, the_file, indent=2)
+
+    def create_git_hg_repo_lists(self):
+        with open(self.construct_path(None, "repositories.json"), "r") as json_data:
+            files_to_check = json.load(json_data)
+            git_repos = [repo for repo in files_to_check["Github"].keys()]
+            hg_repos = [repo for repo in files_to_check["Mercurial"].keys()]
+        return git_repos, hg_repos
+
+    def _extract_repo_type(self, repo_name):
+        return json.load(self.load(None, "repositories.json")).get("Github").get(repo_name).get("configuration").get("type")
+
+    @staticmethod
+    def partition_string(word):
+        head, sep, tail = word.partition(".")
+        return head
 
     def _check_module_files(self):
         self._missing_files = []
