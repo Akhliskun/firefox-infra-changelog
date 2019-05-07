@@ -126,9 +126,6 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
     def get_repo_url(self):
         return self.repo_data.svn_url
 
-    def _extract_repo_type(self):
-        return json.load(self.load(None, "repositories.json")).get("Github").get(self.repo_name).get("configuration").get("type")
-
     def _repo_team(self):
         self.team_name = json.load(self.load(None, "repositories.json")).get("Github").get(self.repo_name).get("team")
 
@@ -252,7 +249,7 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
         self.bump_version = None
 
     def start(self):
-        self.repo_type = self._extract_repo_type()
+        self.repo_type = self._extract_repo_type(self.repo_name)
         self._repo_team()
         self.read_repo()
         self._repo_files()
