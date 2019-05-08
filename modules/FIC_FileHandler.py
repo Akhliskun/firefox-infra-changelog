@@ -129,9 +129,6 @@ class FICFileHandler(FICLogger, FICDataVault):
             hg_repos = [repo for repo in files_to_check["Mercurial"].keys()]
         return git_repos, hg_repos
 
-    def _extract_repo_type(self, repo_name):
-        return json.load(self.load(None, "repositories.json")).get("Github").get(repo_name).get("configuration").get("type")
-
     @staticmethod
     def partition_string(word):
         head, sep, tail = word.partition(".")
@@ -298,9 +295,6 @@ class FICFileHandler(FICLogger, FICDataVault):
     def remove_first_element(dictionary):
         if next(iter(dictionary)) == 0:
             del dictionary["0"]
-
-    def last_checked(self):
-        self.last_check = json.load(self.load(CHANGELOG_REPO_PATH, self.repo_name.lower() + ".json")).get("0").get("last_checked")
 
     def handle_first_element(self):
         if self.repo_type is None:

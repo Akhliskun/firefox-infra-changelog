@@ -14,12 +14,11 @@ import json
 
 class FICGithub(FICFileHandler, FICLogger, FICDataVault):
 
-    def __init__(self, repo_name):
+    def __init__(self):
         FICLogger.__init__(self)
         FICFileHandler.__init__(self)
         FICDataVault.__init__(self)
         self.team_name = None
-        self.repo_name = repo_name
         self.token_counter = 0
         self._get_os_var()
         self._token = os.environ.get(GIT_TOKEN[self.token_counter])
@@ -132,8 +131,14 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
     def _repo_files(self):
         self.folders_to_check = json.load(self.load(None, "repositories.json")).get("Github").get(self.repo_name).get("configuration").get("folders-to-check")
 
+    def _extract_repo_type(self, repo_name):
+        return json.load(self.load(None, "repositories.json")).get("Github").get(repo_name).get("configuration").get("type")
+
     def _local_version(self):
         self.local_version = json.load(self.load(CHANGELOG_REPO_PATH, self.repo_name.lower() + ".json")).get("0").get("last_release").get("version")
+
+    def _last_checked(self):
+        self.last_check = json.load(self.load(CHANGELOG_REPO_PATH, self.repo_name.lower() + ".json")).get("0").get("last_checked")
 
     def _get_sha(self, commit):
         self.commit_sha = commit.sha
@@ -203,22 +208,22 @@ class FICGithub(FICFileHandler, FICLogger, FICDataVault):
             self._construct_commit()
 
     def _not_tag(self):
-        self.last_checked()
+        self._last_checked()
         self.release_date = None
         self._commit_iterator()
 
     def _build_puppet(self):
-        self.last_checked()
+        self._last_checked()
         self.release_date = None
         self._commit_iterator()
 
     def _tag(self):
-        self.last_checked()
+        self._last_checked()
         self.release_date = None
         self._commit_iterator()
 
     def _commit_keyword(self):
-        self.last_checked()
+        self._last_checked()
         self.keyword = 'deploy'
         self._commit_iterator()
 
