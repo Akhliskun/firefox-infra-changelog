@@ -13,6 +13,7 @@
 - 10: Keyboard interrupt
 - 11: Provided input is not an integer. Used in modules.FIC_MainMenu.repo_selection_menu()
 - 12: Not a git or hg repository
+- 13: Unknown GitHub response code. Used in modules.FIC_MainMenu.handle_git_exception()
 - 301: Moved Permanently
 - 302: Found
 - 304: Not Modified

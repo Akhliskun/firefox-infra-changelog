@@ -5,10 +5,9 @@ from modules.FIC_Github import FICGithub
 
 
 class FICExceptions(FICGithub):
-    def __init__(self, error):
+    def __init__(self):
         self.SIGINT = False
         FICGithub.__init__(self)
-        self.e = int(error)
 
     def signal_handler(self, signal, frame):
         self.LOGGER.info("KeyboardInterrupt (ID: {}) has been caught. Cleaning up...".format(signal))
@@ -16,7 +15,9 @@ class FICExceptions(FICGithub):
         self.revert_modified_files()
         exit(10)
 
-    def handle_git_exception(self):
+    def handle_git_exception(self, error):
+        self.e = int(error)
+
         if self.e == 301:
             self.LOGGER.critical("Error code 301: Moved Permanently")
             exit(301)
@@ -63,5 +64,8 @@ class FICExceptions(FICGithub):
 
         elif self.e == 503:
             self.LOGGER.critical("Error code 503: Service Unavailable")
-
             exit(503)
+
+        else:
+            self.LOGGER.critical("Unknown Error Code!")
+            exit(13)
