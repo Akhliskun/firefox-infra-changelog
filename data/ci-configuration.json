@@ -1,0 +1,161 @@
+{
+  "0": {
+    "last_push_id": 190
+  },
+  "1": {
+    "pusher": "raliiev@mozilla.com",
+    "date_of_push": "2019-08-09T20:22:54.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=3726c8f50912",
+        "commit_author": "Rail Aliiev <rail@mozilla.com>",
+        "commit_message": "Bug 1572785 - Add new dev worker types to ci-configuration r=tomprince\n\nDifferential Revision: https://phabricator.services.mozilla.com/D41409",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "2": {
+    "pusher": "mhentges@mozilla.com",
+    "date_of_push": "2019-08-07T17:09:06.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=91740dfda4f4",
+        "commit_author": "Mitchell Hentges <mhentges@mozilla.com>",
+        "commit_message": "No bug: Gives fenix PRs access to \"project/mobile/fenix/pr\" r=mtabara\n\nDifferential Revision: https://phabricator.services.mozilla.com/D40893",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "3": {
+    "pusher": "mhentges@mozilla.com",
+    "date_of_push": "2019-08-07T16:18:48.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=bfb4eb1624be",
+        "commit_author": "Mitchell Hentges <mhentges@mozilla.com>",
+        "commit_message": "No bug: removes unused Fenix secret r=mtabara\n\nDifferential Revision: https://phabricator.services.mozilla.com/D40894",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "4": {
+    "pusher": "jlorenzo@mozilla.com",
+    "date_of_push": "2019-08-06T14:45:35.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=76219e37ffcf",
+        "commit_author": "Johan Lorenzo <jlorenzo@mozilla.com>",
+        "commit_message": "Bug 1571029 - part 2: Allow v3 mobile indexes r=mtabara\n\nDifferential Revision: https://phabricator.services.mozilla.com/D40809",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "5": {
+    "pusher": "jlorenzo@mozilla.com",
+    "date_of_push": "2019-08-05T14:50:28.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=4bc72094aa4e",
+        "commit_author": "Johan Lorenzo <jlorenzo@mozilla.com>",
+        "commit_message": "Bug 1571452 - Add nimbledroid scope to fenix r=Callek\n\nDifferential Revision: https://phabricator.services.mozilla.com/D40638",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "6": {
+    "pusher": "jlorenzo@mozilla.com",
+    "date_of_push": "2019-08-05T14:05:10.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=e8759ae170fc",
+        "commit_author": "Johan Lorenzo <jlorenzo@mozilla.com>",
+        "commit_message": "Bug 1571029 - Email perf-alerts on raptor failures on Fenix/Reference-browser r=mtabara\n\nDifferential Revision: https://phabricator.services.mozilla.com/D40448",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "7": {
+    "pusher": "jlorenzo@mozilla.com",
+    "date_of_push": "2019-08-02T13:48:56.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=c70e205b0749",
+        "commit_author": "Johan Lorenzo <jlorenzo@mozilla.com>",
+        "commit_message": "Bug 1570949 - Allow staging routes and dep signing on pull-requests r=mtabara\n\nDifferential Revision: https://phabricator.services.mozilla.com/D40412",
+        "files_changed": "This commit contains 2 files changed."
+      }
+    }
+  },
+  "8": {
+    "pusher": "mozilla@hocat.ca",
+    "date_of_push": "2019-07-31T21:05:09.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=ed979dcdfb67",
+        "commit_author": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "Bug 1570439: Fix typo in allow sheriffs to quarantine packet.net instances; r=me",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "9": {
+    "pusher": "mozilla@hocat.ca",
+    "date_of_push": "2019-07-31T20:12:57.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=5eb1110f066c",
+        "commit_author": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "Bug 1570439: Allow sheriffs to quarantine instances from more provisioner types, e.g. packet.net; r=mtabara\n\nDifferential Revision: https://phabricator.services.mozilla.com/D40099",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "10": {
+    "pusher": "mtabara@mozilla.com",
+    "date_of_push": "2019-07-24T10:06:01.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=072979ef59bf",
+        "commit_author": "Mihai Tabara <mtabara@mozilla.com>",
+        "commit_message": "Bug 1563328 - cleanup in application-services-r. r=jlorenzo",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "11": {
+    "pusher": "mtabara@mozilla.com",
+    "date_of_push": "2019-07-23T13:35:25.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=eb36171e35c6",
+        "commit_author": "Mihai Tabara <mtabara@mozilla.com>",
+        "commit_message": "Bug 1563328 - add per level workerTypes in app-services.r=tomprince",
+        "files_changed": "This commit contains 2 files changed."
+      }
+    }
+  },
+  "12": {
+    "pusher": "mozilla@hocat.ca",
+    "date_of_push": "2019-07-22T16:59:36.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=0b4697a948dd",
+        "commit_author": "Rob Lemley <rob@thunderbird.net>",
+        "commit_message": "Bug 1563627 - Restore Taskcluster access for Thunderbird releng. r=tomprince\n\nRestores rerun and cancel commandline access and allows cancel-all\nvia actions on comm level-3 (comm-central, comm-beta, etc)\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38683",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "13": {
+    "pusher": "mozilla@hocat.ca",
+    "date_of_push": "2019-07-16T17:10:56.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=a133ce097f7e",
+        "commit_author": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "Bug 1566234: Grant level-1 trust-domain scopes to reference-browser pull-requests; r=mhentges,mtabara.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38131",
+        "files_changed": "This commit contains 2 files changed."
+      }
+    }
+  }
+}

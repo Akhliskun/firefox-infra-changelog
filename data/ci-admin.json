@@ -1,0 +1,71 @@
+{
+  "0": {
+    "last_push_id": 76
+  },
+  "1": {
+    "pusher": "mozilla@hocat.ca",
+    "date_of_push": "2019-08-08T22:29:27.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-admin/pushloghtml?changeset=38079ced0eb1",
+        "commit_author": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "No bug: Update taskgraph version; r=mhentges\n\nDifferential Revision: https://phabricator.services.mozilla.com/D41142",
+        "files_changed": "This commit contains 3 files changed."
+      }
+    }
+  },
+  "2": {
+    "pusher": "mozilla@hocat.ca",
+    "date_of_push": "2019-08-08T16:17:10.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-admin/pushloghtml?changeset=910b77cf5b8b",
+        "commit_author": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "No bug: Add an option to change the amount of context shown in `ci-admin diff`; r=dustin\n\nDifferential Revision: https://phabricator.services.mozilla.com/D41130",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "3": {
+    "pusher": "mozilla@hocat.ca",
+    "date_of_push": "2019-08-08T01:08:29.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-admin/pushloghtml?changeset=27fb6514f634",
+        "commit_author": "Tom Prince <mozilla@hocat.ca>",
+        "commit_message": "No bug: Fix linting errors; r=me",
+        "files_changed": "This commit contains 2 files changed."
+      }
+    }
+  },
+  "4": {
+    "pusher": "dmitchell@mozilla.com",
+    "date_of_push": "2019-08-06T18:41:22.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-admin/pushloghtml?changeset=41187e1ecefa",
+        "commit_author": "Dustin J. Mitchell <dustin@mozilla.com>",
+        "commit_message": "Bug 1552242 - fix aws-provisioner support to operate in non-legacy environments r=tomprince,bstack\n\nThis fixes some bugs that occur when there is no AWS Provisioner service.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D40470",
+        "files_changed": "This commit contains 4 files changed."
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/ci/ci-admin/pushloghtml?changeset=c4e72c13a55c",
+        "commit_author": "Dustin J. Mitchell <dustin@mozilla.com>",
+        "commit_message": "Bug 1552242 - add support for worker-manager worker pools r=tomprince,bstack\n\nInvolving an update to the taskcluster library to get access to this API\n\nDifferential Revision: https://phabricator.services.mozilla.com/D40471",
+        "files_changed": "This commit contains 10 files changed."
+      }
+    }
+  },
+  "5": {
+    "pusher": "mtabara@mozilla.com",
+    "date_of_push": "2019-07-23T15:50:47.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/ci/ci-admin/pushloghtml?changeset=822214730f60",
+        "commit_author": "Mihai Tabara <mtabara@mozilla.com>",
+        "commit_message": "Bug 1563328 - allow canUseOndemand and canUseSpot in Aws createWorkerType. r=dustin",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "0": {
+    "last_push_id": 2124
+  },
+  "1": {
+    "pusher": "nthomas@mozilla.com",
+    "date_of_push": "2019-08-01T04:40:44.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/releases/mozilla-release/pushloghtml?changeset=40e6f8fd0172",
+        "commit_author": "Nick Thomas <nthomas@mozilla.com>",
+        "commit_message": "Bug 1553076 - Checksums for releases don't contain msi, stub installer, or pkg files, r=Callek DONTBUILD\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38580",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/releases/mozilla-release/pushloghtml?changeset=cd54e617eab9",
+        "commit_author": "Nick Thomas <nthomas@mozilla.com>",
+        "commit_message": "Bug 1567235 - notarize 5 partner & eme-free builds per task instead of individually, r=aki, a=release\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39482",
+        "files_changed": "This commit contains 6 files changed."
+      }
+    }
+  },
+  "2": {
+    "pusher": "jlorenzo@mozilla.com",
+    "date_of_push": "2019-07-24T12:39:14.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/releases/mozilla-release/pushloghtml?changeset=987dfedd80c0",
+        "commit_author": "Johan Lorenzo <jlorenzo@mozilla.com>",
+        "commit_message": "Bug 1562633 - 68 train: Remove Fennec redundant/useless jobs r=tomprince,RyanVM a=release\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38204",
+        "files_changed": "This commit contains 3 files changed."
+      }
+    }
+  },
+  "3": {
+    "pusher": "jlorenzo@mozilla.com",
+    "date_of_push": "2019-07-23T11:43:33.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/releases/mozilla-release/pushloghtml?changeset=f446e59460a1",
+        "commit_author": "Johan Lorenzo <jlorenzo@mozilla.com>",
+        "commit_message": "Bug 1562632 - Pass --with-{branding,version-file-path} as a mozharness extra config r=tomprince,mshal a=release\n\nDifferential Revision: https://phabricator.services.mozilla.com/D37601",
+        "files_changed": "This commit contains 49 files changed."
+      }
+    }
+  },
+  "4": {
+    "pusher": "jcristau@mozilla.com",
+    "date_of_push": "2019-07-17T15:51:31.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/releases/mozilla-release/pushloghtml?changeset=2d0bfd677567",
+        "commit_author": "Aki Sasaki <asasaki@mozilla.com>",
+        "commit_message": "Bug 1471004 - add notarization workerType aliases. r=nthomas, a=jcristau\n\nDifferential Revision: https://phabricator.services.mozilla.com/D33856",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/releases/mozilla-release/pushloghtml?changeset=61c20d63d900",
+        "commit_author": "Aki Sasaki <asasaki@mozilla.com>",
+        "commit_message": "Bug 1471004 - mac-signing transform logic + config. r=tomprince, a=jcristau\n\nThis moves mac signing tasks to the notarization/iscript pool. It also\nadds support for pkg installers and notarization.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D33857",
+        "files_changed": "This commit contains 5 files changed."
+      },
+      "3": {
+        "url": "https://hg.mozilla.org/releases/mozilla-release/pushloghtml?changeset=8cd93915bf33",
+        "commit_author": "Aki Sasaki <asasaki@mozilla.com>",
+        "commit_message": "Bug 1471004 - beetmove macosx pkg installer. r=sfraser, a=jcristau\n\nDifferential Revision: https://phabricator.services.mozilla.com/D33858",
+        "files_changed": "This commit contains 2 files changed."
+      },
+      "4": {
+        "url": "https://hg.mozilla.org/releases/mozilla-release/pushloghtml?changeset=275786b6dbbc",
+        "commit_author": "Aki Sasaki <asasaki@mozilla.com>",
+        "commit_message": "Bug 1471004 - add entitlements url for hardened runtime signing. r=tomprince, a=jcristau\n\nFor mac hardened runtime signing, we use an entitlements file that's now\nin-tree. This patch passes the url for that file in the task definition.\n\nThe original patch for this was written by sfraser.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D33859",
+        "files_changed": "This commit contains 5 files changed."
+      },
+      "5": {
+        "url": "https://hg.mozilla.org/releases/mozilla-release/pushloghtml?changeset=4d9343043408",
+        "commit_author": "Aki Sasaki <asasaki@mozilla.com>",
+        "commit_message": "Bug 1471004 - build_signing: macosx64-nightly -> macosx64-shippable. r=callek, a=jcristau\n\nDifferential Revision: https://phabricator.services.mozilla.com/D33860",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "6": {
+        "url": "https://hg.mozilla.org/releases/mozilla-release/pushloghtml?changeset=e74de06a2eb9",
+        "commit_author": "Aki Sasaki <asasaki@mozilla.com>",
+        "commit_message": "Bug 1471004 - ignore partner_subset if it's an empty list. r=tomprince, a=jcristau\n\nThe relpro action requires a list for partner_subset and defaults to\n`[]`. In `get_partner_config_by_url` we check to see `if\npartner_subset`, ignoring the subset if it's an empty list. We either\nneed to do the same thing in `get_partner_config_by_kind`, or we need to\nallow for a `null` value in the action (or populate an empty\n`partner_subset` with the partners from the partner config in the\naction)\n\nDifferential Revision: https://phabricator.services.mozilla.com/D33861",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "7": {
+        "url": "https://hg.mozilla.org/releases/mozilla-release/pushloghtml?changeset=45106a0c0a42",
+        "commit_author": "Aki Sasaki <asasaki@mozilla.com>",
+        "commit_message": "Bug 1471004 - add esr support for entitlements. r=tomprince, a=jcristau\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38208",
+        "files_changed": "This commit contains 3 files changed."
+      }
+    }
+  }
+}

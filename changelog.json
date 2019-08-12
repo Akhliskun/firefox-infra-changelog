@@ -1,0 +1,232 @@
+{
+  "Github": {
+    "OpenCloudConfig": {},
+    "build-cloud-tools": {},
+    "taskcluster": {},
+    "services": {},
+    "build-puppet": {
+      "0": {
+        "sha": "1108cc80b76455d0df1138f19b6436999358743a",
+        "url": "https://api.github.com/repos/mozilla-releng/build-puppet/commits/1108cc80b76455d0df1138f19b6436999358743a",
+        "author": "Jacob Watkins",
+        "author_email": "jwatkins@mozilla.com",
+        "message": "Merge pull request #575 from dragoscrisan/move_bug_component_to_from_ciduty_to_relops\n\nMove bug component to from ciduty to relops",
+        "date": "2019-08-09T15:57:04Z",
+        "files": "This commit contains 1 files changed."
+      }
+    },
+    "mozapkpublisher": {},
+    "beetmoverscript": {},
+    "addonscript": {},
+    "shipitscript": {},
+    "bouncerscript": {},
+    "treescript": {},
+    "scriptworker": {},
+    "pushsnapscript": {},
+    "signingscript": {},
+    "pushapkscript": {},
+    "balrogscript": {},
+    "signtool": {},
+    "relops-image-builder": {},
+    "relops-hardware-controller": {},
+    "ronin_puppet": {
+      "0": {
+        "sha": "1f3ffcd16bbf5513aece8b990c90546fec053330",
+        "url": "https://api.github.com/repos/mozilla-platform-ops/ronin_puppet/commits/1f3ffcd16bbf5513aece8b990c90546fec053330",
+        "author": "Andrew Erickson",
+        "author_email": "aerickson@mozilla.com",
+        "message": "bitbar_devicepool: add new services (#74)",
+        "date": "2019-08-09T18:08:27Z",
+        "files": "This commit contains 7 files changed."
+      }
+    }
+  },
+  "Mercurial": {
+    "mozilla-central": {
+      "0": {
+        "pusher": "rmaries@mozilla.com",
+        "date_of_push": "2019-08-11T09:56:40.000000",
+        "changeset_commits": {
+          "21": {
+            "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=451992f4d9af",
+            "commit_author": "Mike Hommey <mh+mozilla@glandium.org>",
+            "commit_message": "Bug 1571986 - Kill vctip at the end of more tasks. r=nalexander\n\nAlso, since we had problems with mspdbsrv in the past, kill it too.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D41340",
+            "files_changed": "This commit contains 8 files changed."
+          }
+        }
+      },
+      "1": {
+        "pusher": "ncsoregi@mozilla.com",
+        "date_of_push": "2019-08-10T21:31:07.000000",
+        "changeset_commits": {
+          "71": {
+            "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=b45f9acbdfe4",
+            "commit_author": "Cosmin Sabou <csabou@mozilla.com>",
+            "commit_message": "Merge mozilla-central to mozilla-inbound. CLOSED TREE",
+            "files_changed": "This commit contains 490 files changed."
+          }
+        }
+      },
+      "2": {
+        "pusher": "ncsoregi@mozilla.com",
+        "date_of_push": "2019-08-10T21:28:45.000000",
+        "changeset_commits": {
+          "3": {
+            "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=6a5852628b53",
+            "commit_author": "Agi Sferro <agi@sferro.dev>",
+            "commit_message": "Bug 1572523 - Increase mozlint-android timeout to 3600. r=nalexander\n\nDifferential Revision: https://phabricator.services.mozilla.com/D41393",
+            "files_changed": "This commit contains 1 files changed."
+          }
+        }
+      },
+      "3": {
+        "pusher": "csabou@mozilla.com",
+        "date_of_push": "2019-08-09T21:56:59.000000",
+        "changeset_commits": {
+          "5": {
+            "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=9fa54e718e2a",
+            "commit_author": "Marco Castelluccio <mcastelluccio@mozilla.com>",
+            "commit_message": "Bug 1433868 - Update grcov to 0.5.3. r=calixte\n\nDifferential Revision: https://phabricator.services.mozilla.com/D41203",
+            "files_changed": "This commit contains 1 files changed."
+          },
+          "41": {
+            "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=0f9e8c785bee",
+            "commit_author": "Narcis Beleuzu <nbeleuzu@mozilla.com>",
+            "commit_message": "Backed out 4 changesets (bug 1566298) for nightly-l10n-signing bustages\n\nBacked out changeset 610ee58dba1a (bug 1566298)\nBacked out changeset 7789c2a7decc (bug 1566298)\nBacked out changeset 4b7078499587 (bug 1566298)\nBacked out changeset 497f2b650c1b (bug 1566298)",
+            "files_changed": "This commit contains 12 files changed."
+          },
+          "62": {
+            "url": "https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=41e1201729b5",
+            "commit_author": "Tom Prince <mozilla@hocat.ca>",
+            "commit_message": "Bug 1459355: Don't pass parameters as part of actions; r=dustin\n\nThis causes actions to fail on graphs with large parameters, such as\nrelease graphs and try pushes.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D37499",
+            "files_changed": "This commit contains 4 files changed."
+          }
+        }
+      }
+    },
+    "mozilla-inbound": {
+      "0": {
+        "pusher": "rmaries@mozilla.com",
+        "date_of_push": "2019-08-11T10:02:13.000000",
+        "changeset_commits": {
+          "21": {
+            "url": "https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=451992f4d9af",
+            "commit_author": "Mike Hommey <mh+mozilla@glandium.org>",
+            "commit_message": "Bug 1571986 - Kill vctip at the end of more tasks. r=nalexander\n\nAlso, since we had problems with mspdbsrv in the past, kill it too.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D41340",
+            "files_changed": "This commit contains 8 files changed."
+          }
+        }
+      },
+      "1": {
+        "pusher": "ncsoregi@mozilla.com",
+        "date_of_push": "2019-08-10T21:42:30.000000",
+        "changeset_commits": {
+          "3": {
+            "url": "https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=6a5852628b53",
+            "commit_author": "Agi Sferro <agi@sferro.dev>",
+            "commit_message": "Bug 1572523 - Increase mozlint-android timeout to 3600. r=nalexander\n\nDifferential Revision: https://phabricator.services.mozilla.com/D41393",
+            "files_changed": "This commit contains 1 files changed."
+          }
+        }
+      },
+      "2": {
+        "pusher": "csabou@mozilla.com",
+        "date_of_push": "2019-08-09T22:18:05.000000",
+        "changeset_commits": {
+          "5": {
+            "url": "https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=9fa54e718e2a",
+            "commit_author": "Marco Castelluccio <mcastelluccio@mozilla.com>",
+            "commit_message": "Bug 1433868 - Update grcov to 0.5.3. r=calixte\n\nDifferential Revision: https://phabricator.services.mozilla.com/D41203",
+            "files_changed": "This commit contains 1 files changed."
+          },
+          "41": {
+            "url": "https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=0f9e8c785bee",
+            "commit_author": "Narcis Beleuzu <nbeleuzu@mozilla.com>",
+            "commit_message": "Backed out 4 changesets (bug 1566298) for nightly-l10n-signing bustages\n\nBacked out changeset 610ee58dba1a (bug 1566298)\nBacked out changeset 7789c2a7decc (bug 1566298)\nBacked out changeset 4b7078499587 (bug 1566298)\nBacked out changeset 497f2b650c1b (bug 1566298)",
+            "files_changed": "This commit contains 12 files changed."
+          },
+          "62": {
+            "url": "https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=41e1201729b5",
+            "commit_author": "Tom Prince <mozilla@hocat.ca>",
+            "commit_message": "Bug 1459355: Don't pass parameters as part of actions; r=dustin\n\nThis causes actions to fail on graphs with large parameters, such as\nrelease graphs and try pushes.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D37499",
+            "files_changed": "This commit contains 4 files changed."
+          },
+          "66": {
+            "url": "https://hg.mozilla.org/integration/mozilla-inbound/pushloghtml?changeset=b45f9acbdfe4",
+            "commit_author": "Cosmin Sabou <csabou@mozilla.com>",
+            "commit_message": "Merge mozilla-central to mozilla-inbound. CLOSED TREE",
+            "files_changed": "This commit contains 490 files changed."
+          }
+        }
+      }
+    },
+    "autoland": {
+      "0": {
+        "pusher": "mh@glandium.org",
+        "date_of_push": "2019-08-10T22:49:45.000000",
+        "changeset_commits": {
+          "1": {
+            "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=451992f4d9af",
+            "commit_author": "Mike Hommey <mh+mozilla@glandium.org>",
+            "commit_message": "Bug 1571986 - Kill vctip at the end of more tasks. r=nalexander\n\nAlso, since we had problems with mspdbsrv in the past, kill it too.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D41340",
+            "files_changed": "This commit contains 8 files changed."
+          }
+        }
+      },
+      "1": {
+        "pusher": "ncsoregi@mozilla.com",
+        "date_of_push": "2019-08-10T21:39:11.000000",
+        "changeset_commits": {
+          "71": {
+            "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=b45f9acbdfe4",
+            "commit_author": "Cosmin Sabou <csabou@mozilla.com>",
+            "commit_message": "Merge mozilla-central to mozilla-inbound. CLOSED TREE",
+            "files_changed": "This commit contains 490 files changed."
+          }
+        }
+      },
+      "2": {
+        "pusher": "asferro@mozilla.com",
+        "date_of_push": "2019-08-09T17:46:14.000000",
+        "changeset_commits": {
+          "1": {
+            "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=6a5852628b53",
+            "commit_author": "Agi Sferro <agi@sferro.dev>",
+            "commit_message": "Bug 1572523 - Increase mozlint-android timeout to 3600. r=nalexander\n\nDifferential Revision: https://phabricator.services.mozilla.com/D41393",
+            "files_changed": "This commit contains 1 files changed."
+          }
+        }
+      },
+      "3": {
+        "pusher": "mozilla@hocat.ca",
+        "date_of_push": "2019-08-09T17:12:29.000000",
+        "changeset_commits": {
+          "1": {
+            "url": "https://hg.mozilla.org/integration/autoland/pushloghtml?changeset=41e1201729b5",
+            "commit_author": "Tom Prince <mozilla@hocat.ca>",
+            "commit_message": "Bug 1459355: Don't pass parameters as part of actions; r=dustin\n\nThis causes actions to fail on graphs with large parameters, such as\nrelease graphs and try pushes.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D37499",
+            "files_changed": "This commit contains 4 files changed."
+          }
+        }
+      }
+    },
+    "mozilla-beta": {},
+    "mozilla-release": {},
+    "ci-configuration": {
+      "0": {
+        "pusher": "raliiev@mozilla.com",
+        "date_of_push": "2019-08-09T20:22:54.000000",
+        "changeset_commits": {
+          "1": {
+            "url": "https://hg.mozilla.org/ci/ci-configuration/pushloghtml?changeset=3726c8f50912",
+            "commit_author": "Rail Aliiev <rail@mozilla.com>",
+            "commit_message": "Bug 1572785 - Add new dev worker types to ci-configuration r=tomprince\n\nDifferential Revision: https://phabricator.services.mozilla.com/D41409",
+            "files_changed": "This commit contains 1 files changed."
+          }
+        }
+      }
+    },
+    "ci-admin": {},
+    "version-control-tools": {}
+  }
+}

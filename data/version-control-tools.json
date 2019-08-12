@@ -1,0 +1,407 @@
+{
+  "0": {
+    "last_push_id": 3558
+  },
+  "1": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-08-07T15:45:12.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=307f3c286876",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/hg-ssh: set Lando required list to correct values (Bug 1572128)\n\nI updated this manually during testing, then forgot to update\nit after. This lead to the correct value being overridden during\nthe following deploy.",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "2": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-08-07T14:25:16.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=01ef6e45d821",
+        "commit_author": "Victor Porof <vporof@mozilla.com>",
+        "commit_message": "Bug 1572072 - Disable the `format-source` extension since it served it's purpose for Prettier, r=sheehan\n\nDifferential Revision: https://phabricator.services.mozilla.com/D40998",
+        "files_changed": "This commit contains 2 files changed."
+      }
+    }
+  },
+  "3": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-08-01T22:03:49.000000",
+    "changeset_commits": {
+      "2": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=9efa8e908c25",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hgext: mark client-side extensions as compatible with Mercurial 5.1 (Bug 1569741)\n\nNo changes needed for passing tests in any of these extensions.",
+        "files_changed": "This commit contains 8 files changed."
+      }
+    }
+  },
+  "4": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-08-01T21:23:15.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=61c65ae8b33b",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "configwizard: fix `test-format-source.t` output (Bug 1568925)\n\nLess painful for me to update the test.",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "5": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-08-01T20:30:35.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=99dca4809de4",
+        "commit_author": "Daniel Holbert <dholbert@cs.stanford.edu>",
+        "commit_message": "Bug 1568925: hgext: Add a newline between 'format-source' descriptive text and yes/no prompt. r=sheehan\n\nDifferential Revision: https://phabricator.services.mozilla.com/D40289",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "6": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-08-01T15:26:51.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=1d53e657414f",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: remove extension-loaded `reviewboard` path (Bug 1569734) r=smacleod\n\nThis is obviously not needed, and slightly dangerous.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D40079",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "7": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-31T21:22:35.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=af0808f68d64",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: use new `templatekeyword` API everywhere (Bug 1528938) r=smacleod\n\nSince 4.9 has been released, our 4 official supported Mercurial\nversions are now 4.6-4.9. This allows us to switch off the old\ntemplatekeyword decorator API.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39945",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=68c646986378",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: remove the `hg cloneunified` command (Bug 1569734) r=smacleod\n\nIf you want to `cloneunified` these days, you clone\nmozilla-unified.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39947",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "3": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=ed5808efbfc7",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: remove `hg prunerelbranches` command (Bug 1569734) r=smacleod\n\nUse the `firefoxtree` extension and the `fxheads` command,\nand this problem goes away. The solution is much simpler,\ntoo.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39948",
+        "files_changed": "This commit contains 2 files changed."
+      },
+      "4": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=ae1aa880be83",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: remove template keywords related to `aurora` repository (Bug 1569734) r=smacleod\n\n\"Aurora\" is no longer one of the trains, so we don't need this\ntemplate keyword.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39949",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "5": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=39ec9297f750",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: mark as compatible with Mercurial 5.0 (Bug 1569734) r=smacleod\n\nAll these changes get tests passing under Mercurial 5.0.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39950",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "6": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=a8e3d70807b0",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: use extension wrapper mechanism for `hg._peerorrepo` (Bug 1569734) r=smacleod\n\nPrevious we did a manual override of this object, which was\ncausing tracebacks on my machine. Using the extension function\nwrapping utility gets rid of the issue.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39951",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "7": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=790b45463fd4",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: remove `bz_available` global variable (Bug 1569734) r=smacleod\n\nIt is unused at the moment.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39952",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "8": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=4ed18e15bb10",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: add `hg oops` command from `qbackout` (Bug 1565933) r=smacleod\n\nIn changeset b3a88dcabb6cccf0 we removed the `mq` related extensions\nstill checked in to version-control-tools. It turns out that the\n`qbackout` extension has a command `hg oops` which is not dependent\non `mq` and is used heavily in the sheriffing workflow. This commit\nmoves the extension into `mozext` to keep it alive for the sheriffs.\n\nMinimal changes have been made from the version in `qbackout`, and\nthe test is completely unmodified.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39953",
+        "files_changed": "This commit contains 2 files changed."
+      },
+      "9": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=c3b65e6e8bfb",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: flatten `extsetup` (Bug 1569734) r=smacleod\n\nRather than initialize many of the template utilities\nin a conditional block, have the conditional perform\nan early return and keep everything at the top level.\n\nAlso avoid the double lookup on `disable_local_database`.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39954",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "10": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=4851a84dfe4d",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: unify into a single test and improve coverage (Bug 1569734) r=smacleod\n\nThe test coverage for `mozext` was quite lacking, and contributed\nto a lot of the bit rot in the last few months. In this commit I\ncreate a single unified test that covers most of the added template\nkeywords, revset predicates and commands.\n\nSince we rely on the `pushlog` extension to enable several features,\nwe pin the Mercurial used in `hg serve` to a known-compatible version.\n\nChanging this test and pinning the version of `hg` used to serve the\npushlog allow us to remove the test from the flaky test list.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39955",
+        "files_changed": "This commit contains 5 files changed."
+      },
+      "11": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=28b74bc3450b",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: remove `hg pushlogsync` (Bug 1569734) r=smacleod\n\nRunning `hg pull` will sync the correct pushlog. Similar to\n`hg cloneunified`, this command was created in a time before\nwe had a unified repo and unified pushlog on hg.mo.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39956",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "12": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=3e1c648aeb62",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: remove `hg mybookmarks` (Bug 1569734) r=smacleod\n\nUsually the bookmarks in a repo are either the users own, or\nreferences to the various tree heads (central, inbound, etc).\nIf the user is using `firefoxtree`, they won't see the fxheads\nbookmarks in `hg bookmarks` or `hg show bookmarks` output. So\nthis solution is older and can be removed.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39957",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "13": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=e8bf67866f28",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: remove `hg moztrees` (Bug 1569734) r=smacleod\n\nAt this point it prints out so much information about so\nmany dead trees that it can't possbly be useful. Using\nthe `firefoxtree` extension is highly preferred, where\nthere is a `fxheads` command to see the state of various\ntrees.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39958",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "14": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=0e60a3fd0541",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: clarify some changes in the docstring (Bug 1569734) r=smacleod\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39959",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "15": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=5e857d4f3091",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "mozext: miscellaneous fixes (Bug 1569734) r=smacleod\n\nUse `util.safehasattr` and switch off a dynamic default\n(this was throwing a devel-warn in testing).\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39960",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "8": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-31T14:17:29.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=6a55c267116a",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/hgmo: wrap IRC notification in rescue block\n\nThe IRC notification constantly fails due to the deploy\nbot being unable to join #vcs. Wrap the notification\nin a rescue block, so failures are handled gracefully.",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "9": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-30T14:02:50.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=2d18b6a1ec9d",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks/lando_required: capture head commit hash instead of base (Bug 1569611) r=smacleod\n\nAlso set the full URL to the revision with the magic words as\nextra data in Sentry.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39690",
+        "files_changed": "This commit contains 2 files changed."
+      }
+    }
+  },
+  "10": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-29T18:27:24.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=12b76c16ff10",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks: remove `test-privileged-push.t`\n\nFor some reason both `test-privileged-push.t` and `test-lando-required.t`\nexist in the repo at the same time. Searching my history I can see I ran\n`hg mv` to rename the file. So I'm not sure what happened here.",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "11": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-25T20:19:57.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=0d68b0deeca2",
+        "commit_author": "Marco Castelluccio <mcastelluccio@mozilla.com>",
+        "commit_message": "Bug 1568878 - Don't try to parse bug IDs aggressively when the source repo is github. r=sheehan\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39358",
+        "files_changed": "This commit contains 2 files changed."
+      }
+    }
+  },
+  "12": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-25T18:03:19.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=348072c0e391",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks/lando_required: don't alert for `scm_allow_direct_push` pushes (Bug 1568927) r=smacleod\n\nNot doing so causes notifications for Lando landings.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39394",
+        "files_changed": "This commit contains 2 files changed."
+      }
+    }
+  },
+  "13": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-25T17:38:43.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=e1d74189a807",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "readonly: add byte string prefixes (Bug 1563138) r=glob\n\nDifferential Revision: https://phabricator.services.mozilla.com/D37822",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "14": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-25T16:57:06.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=24c9618eed4a",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ldap: perform lookup to map email to LDAP DN (Bug 1568853) r=smacleod\n\nPreviously we created the DN using a format string, however this\nwill only be correct when looking up real Mozilla employee entries.\nLooking up other entities (namely, bots) causes no groups to be\nreturned. This commit adds an extra LDAP lookup to map the email\nto the correct DN, which should cause the correct behaviour in\nboth cases.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39376",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "15": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-25T00:43:24.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=08f71d165162",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "TICKscripts: compare threshold against absolute value of measurement\n\nIf the value of the message lag is sufficiently negative,\nthere's probably something worth investigating. We saw this\nwith bug 1567946, where the Kafka consumers were reporting\nbeing far behind their expected position. Compare the\nthreshold against the absolute value of the measurement\nand we should pick up weird edge cases like this in the\nfuture.",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "16": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-24T16:44:17.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=273828b4d8d7",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks/lando_required: disable demandimporter when importing Sentry SDK (Bug 1515119) r=glob\n\nWhen testing the Lando required hook, I noticed that I was\nable to send notifications from the pash virtualenv on\nhgssh1 using the Python REPL, but could not get the message\nthrough to Sentry when performing a push. After some testing\nI discovered the Sentry SDK does not like Mercurial's\ndemandimporter. This commit disables the importer during the\nSentry SDK import.\n\nWe also move the import into the logging function. This\nis both for performance, and to avoid an `ImportError`\nin the `unifyrepo` process, which does not have the\nSentry SDK installed and fails when attempting to import\nthe SDK without demandimport.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39071",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=dbfd6ddc0525",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks/lando_required: refer to most recent topological commit as \"head\" (Bug 1515119) r=glob\n\nUsing the term \"top\" is confusing, since it could refer to either\nthe commit at the \"base\" of the stack, or the \"tip\" of the stack.\nMany VCS' use \"head\" to refer to a commit with no children,\nso this commit changes the Lando required hook to use the less\nambiguous term.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39072",
+        "files_changed": "This commit contains 3 files changed."
+      },
+      "3": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=6cce06c04c63",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks/lando_required: avoid double read of Sentry DSN (Bug 1515119) r=glob\n\nThis is a micro-optimization, but worth doing if we're updating\nthe hook anyways. We can also make the logging funcion slightly\nflatter with this change.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39073",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "4": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=2a8976cf424a",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks/lando_required: add more context to Sentry notifications (Bug 1515119) r=glob\n\nThis commit adds more context to the Sentry event messages.\n\nThe core message that is displayed in Slack is extended to add\nthe \"justification\" for using a manual push, and some unnecesary\ncruft is removed. The two unique message formats (one for each\nacceptable scm level) are consolidated into a single message\nwith the scm level as a parameter. As part of this change,\n`changeset_has_justification` is renamed and changed from a\nboolean check into a function which returns a value or `None`.\n\nThe Sentry APIs are used more extensively, adding user metadata\nas well as some \"tags\" and extra pieces of information. This\nwill make organizing events by different parameters easier in\nSentry. For example, determining which repo is used most\nfrequently for direct pushes, which user is pushing directly\nmost often, etc.\n\nSince users with `scm_allow_allow_direct_push` do not need to\nprovide justification for their pushes, a default string is\ninserted in place of the justification.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D39209",
+        "files_changed": "This commit contains 2 files changed."
+      }
+    }
+  },
+  "17": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-23T14:42:45.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=3aac07d797c6",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/hg-ssh: track correct hosts in `pushdataaggregator_groups` file (Bug 1549602)\n\nThese hosts were renamed locally, which caused the Kafka\nconsumer group name to change once Ansible was run on them.",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  },
+  "18": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-22T14:32:25.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=83cdb0bd4dcf",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/hg-ssh-server: change `scm_allow_direct_push` gid to 692 (Bug 1515119) r=glob\n\n`2500` was selected as the `gid` for the new scm group\ncompletely at random. Turns out, that value is important\nand will block the deploy during creation since it doesn't\nmatch the value on the hgssh servers.\n\nThis commit changes the value to 692, which should fix\nthe deploy blocker. This is untested but is harmless in\nthe event it doesn't work as we want it to.",
+        "files_changed": "This commit contains 2 files changed."
+      }
+    }
+  },
+  "19": {
+    "pusher": "cosheehan@mozilla.com",
+    "date_of_push": "2019-07-19T15:42:20.000000",
+    "changeset_commits": {
+      "1": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=f165a1d49900",
+        "commit_author": "K Lars Lohn <lars@mozilla.com>",
+        "commit_message": "mozhghooks: block pushes to mozilla-central without intentional action (Bug 1515119) r=sheehan\n\nThis hghook will vet pushes to mozilla-central and only allow\nPushes under these conditions:\n1 - the user has SCM_ALLOW_DIRECT_PUSH\n2 - without SCM_ALLOW_DIRECT_PUSH, the tip commit message contains\nspecific magic words followed by a justification\n\nThe code is written using the \"Check\" method of writing a hook.\n\nI chose the magic words \"PRIVILEGED PUSH:\" with the colon at the end to\ncoax the user into understanding that more than just the magic words are\nrequired for a successful push.\n\nThe Python code has been styled using the uncompromising 'black'.\n\nThe unit tests isolate every member method.  Care has been taken to cover\nevery line of the source and all normal method exit paths.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D32505",
+        "files_changed": "This commit contains 14 files changed."
+      },
+      "2": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=6778c5c94612",
+        "commit_author": "K Lars Lohn <lars@mozilla.com>",
+        "commit_message": "hg-ssh-server: ldap changes for new scm group (Bug 1515119) r=sheehan\n\nAdds a new scm group called `scm_allow_direct_push`.  This intended for\nthe new PrivilegedPushCheck that will force holders of `scm_level_3` to use\nLando instead of pushing directly.  Holders of `scm_allow_direct_push` will\nbe allowed to push without justification.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D33981",
+        "files_changed": "This commit contains 6 files changed."
+      },
+      "3": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=3fb3265831d7",
+        "commit_author": "K Lars Lohn <lars@mozilla.com>",
+        "commit_message": "mozhghooks: integration test for PrivilegedPushCheck (Bug 1515119) r=sheehan\n\nThis new integration tests tries the new PrivilegedPushCheck by exercising each\nof the combinations of `scm_level_3` and `scm_allow_direct_push` with various\ncommit messages.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D33980",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "4": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=7afaa8a8e1cc",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks: rename privileged push check and change magic words (Bug 1515119) r=glob\n\nAfter consulting with some engineers from other groups, it was\npointed out that the real intent of the magic words and message\nis to have the pushing user provide their reason for not using\nLando. The \"privileges\" required for this are not as important\nas having the user acknowledge they are going outside the\nrequired process, and providing their reason for doing so.\n\nThis commit changes the name of the check and most terminology\nto \"Lando Required Check\". The true technical details of this\ncheck are to enforce landings via Lando for a set of repositories,\nand create a process for circumventing the Lando requirement.\nIf the user wishes to go around the automated landing process,\nthey must specify they are pushing \"manually\", and thus the\nmagic words have been changed to indicate they should be used\nfor that purpose.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38349",
+        "files_changed": "This commit contains 7 files changed."
+      },
+      "5": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=a4f50f7a9240",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks: move hard-coded string constants to top level (Bug 1515119) r=glob\n\nThese strings are not required to be class-level constant variables,\nand their presence within the check class has no functional value.\nLeaving them in the class requires prefixing `self.` to each use\nof the variable. This commit moves all the variables to the top\nlevel and removes many uses of `self`.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38350",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "6": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=be31a1fbd411",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks: use `==` for string comparisons (Bug 1515119) r=glob\n\nThis probably wouldn't have caused any issues in practice,\nbut it's considered more correct to check the strings are\nequal in value, not identical objects.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38486",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "7": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=de20439d0889",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks: use same license header as other checks (Bug 1515119) r=glob\n\n`manual_push.py` has a more verbose license header than other\nchecks in the same directory.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38351",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "8": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=61e67e3f5010",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks: remove unused import (Bug 1515119) r=glob\n\nPreviously this was added to define configuration in the\ncheck file itself, but it was moved to a different file.\nWe also change the import style to multi-line.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38352",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "9": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=17c064383157",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks: flatten `ManualPushCheck.check` (Bug 1515119) r=glob\n\nThe `check` step in the manual push hook included several\nnested `if` statements. This commit flattens the function\nwhile ensuring the same output, increasing readability.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38353",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "10": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=7acd1ddd0b66",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks: move static methods outside class (Bug 1515119) r=glob\n\nSeveral methods in `ManualPushCheck` are static and can be moved\noutside the class definition.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38354",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "11": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=7bc74db2d5fe",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks: do not fail when `lando_required_repo_list` config is absent (Bug 1515119) r=glob\n\nWhen changing the name of the \"privileged push\" hook, I forgot\nto update the `docker-hg-ssh` role to modify the correct Ansible\nvariable in testing. As a result, the variable was missing from\nthe config altogether and many tests were failing. This is because\nwe were not checking the return value of `ui.config` before attempting\nto call `.split()` on it. This commit adds logic to assert the\nconfig value is usable before creating the list of repos.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38355",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "12": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=5b46ec42ff31",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "hghooks: fix unit test for lando required check (Bug 1515119) r=glob\n\nMostly just moving variables to their new locations and removing\na few mock `Check` objects that are no longer needed.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38356",
+        "files_changed": "This commit contains 1 files changed."
+      },
+      "13": {
+        "url": "https://hg.mozilla.org/hgcustom/version-control-tools/pushloghtml?changeset=25c9bed28326",
+        "commit_author": "Connor Sheehan <sheehan@mozilla.com>",
+        "commit_message": "ansible/hg-ssh: set `lando_required_repo_list` to my user repo for testing (Bug 1515119) r=glob\n\nLet's only enable the hook on my user repo, so I can test\nthe LDAP integration in production.\n\nDifferential Revision: https://phabricator.services.mozilla.com/D38357",
+        "files_changed": "This commit contains 1 files changed."
+      }
+    }
+  }
+}
